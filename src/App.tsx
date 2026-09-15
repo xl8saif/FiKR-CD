@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { User as FirebaseUser } from 'firebase/auth';
+import { Analytics } from '@vercel/analytics/react';
 import { Header } from './components/Header';
 import { AuthModal } from './components/AuthModal';
 import { ContributeForm } from './components/ContributeForm';
@@ -251,6 +252,9 @@ export default function App() {
           </div>
         </div>
       </footer>
+
+      {/* Vercel Web Analytics */}
+      <Analytics />
     </div>
   );
 }
