@@ -1,0 +1,7 @@
+{
+  "name": "FiKR&CD - IK Language Digital Preservation",
+  "description": "FiKR&CD — Forum for Indus-Kohistani Research & Culture Development: Indus-Kohistani Language Digital Preservation & Technology Initiative (اِنڈَس کُستَئی ژِیباں ڈیجیٹل سَنْبَھلتُب اَں تَکْنِیْکی مَنْصُوبَہ), Project Director: Saif Ullah.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

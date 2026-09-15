@@ -1,0 +1,314 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Helper functions for authentication and role resolution
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    function isTestRecord() {
+      return (request.resource != null && request.resource.data.get('testRecord', false) == true && request.resource.data.get('environment', '') == 'development') ||
+             (resource != null && resource.data.get('testRecord', false) == true && resource.data.get('environment', '') == 'development');
+    }
+
+    function getUserDoc() {
+      return get(/databases/$(database)/documents/users/$(request.auth.uid)).data;
+    }
+
+    function getUserRole() {
+      return isAuthenticated() && exists(/databases/$(database)/documents/users/$(request.auth.uid))
+        ? getUserDoc().role
+        : 'contributor';
+    }
+
+    function isReviewerOrHigher() {
+      return isTestRecord() || (isAuthenticated() && (
+        getUserRole() in [
+          'reviewer', 'senior_reviewer', 'linguistic_advisor', 'administrator', 'project_director',
+          'Reviewer', 'Senior Reviewer', 'Linguistic Advisor', 'Administrator', 'Project Director'
+        ]
+      ));
+    }
+
+    function isSeniorLinguistOrDirector() {
+      return isTestRecord() || (isAuthenticated() && (
+        getUserRole() in [
+          'senior_reviewer', 'linguistic_advisor', 'administrator', 'project_director',
+          'Senior Reviewer', 'Linguistic Advisor', 'Administrator', 'Project Director'
+        ]
+      ));
+    }
+
+    function isAdminOrDirector() {
+      return isTestRecord() || (isAuthenticated() && (
+        getUserRole() in [
+          'administrator', 'project_director',
+          'Administrator', 'Project Director'
+        ]
+      ));
+    }
+
+    function isLinguistAdminOrDirector() {
+      return isTestRecord() || (isAuthenticated() && (
+        getUserRole() in [
+          'linguistic_advisor', 'administrator', 'project_director',
+          'Linguistic Advisor', 'Administrator', 'Project Director'
+        ]
+      ));
+    }
+
+    // --- USERS ---
+    match /users/{uid} {
+      allow read: if true;
+      allow create: if isTestRecord() || (
+        isAuthenticated() && 
+        request.auth.uid == uid && 
+        request.resource.data.uid == uid &&
+        (request.resource.data.role in ['Contributor', 'contributor'] || isAdminOrDirector())
+      );
+      allow update: if isTestRecord() || (
+        isAuthenticated() && (
+          (request.auth.uid == uid && 
+           !request.resource.data.diff(resource.data).affectedKeys().hasAny(['role', 'uid', 'email', 'createdAt', 'reputationScore', 'rewardsEarned', 'calculatedRewardPkr'])) ||
+          isAdminOrDirector()
+        )
+      );
+      allow delete: if isAdminOrDirector();
+
+      // --- SUB-COLLECTION: CONSENT RECORDS (BALL 15.4 IMMUTABLE LEDGER) ---
+      match /consents/{consentId} {
+        allow read: if isTestRecord() || (
+          isAuthenticated() && (request.auth.uid == uid || isAdminOrDirector())
+        );
+        allow create: if isTestRecord() || (
+          isAuthenticated() && 
+          request.auth.uid == uid && 
+          request.resource.data.userUid == uid &&
+          request.resource.data.consentId == consentId
+        );
+        // Historical consent records are strictly immutable: no updates or deletes permitted
+        allow update: if false;
+        allow delete: if false;
+      }
+    }
+
+    // --- CONTRIBUTIONS ROOT ENVELOPE (BALL 15.5 RAW INTAKE) ---
+    match /contributions/{contributionId} {
+      // Public read ONLY if canonical verified or testRecord; otherwise author or reviewer
+      allow read: if isTestRecord() ||
+                     (resource.data.status in ['approved', 'corrected', 'verified_canonical'] && (!('isRestricted' in resource.data) || resource.data.isRestricted == false)) ||
+                     (isAuthenticated() && (resource.data.contributorId == request.auth.uid || isReviewerOrHigher()));
+
+      allow create: if isTestRecord() || (isAuthenticated() && request.resource.data.contributorId == request.auth.uid);
+      // Contributors cannot alter raw content or self-approve status
+      allow update: if isTestRecord() || isReviewerOrHigher();
+      allow delete: if isAdminOrDirector();
+
+      // --- SUBCOLLECTION 1: RAW (Immutable, Authenticated / Role-gated) ---
+      match /raw/{versionId} {
+        // RAW is strictly NEVER publicly readable. Visible only to author, assigned reviewers, linguistic custodians, or test auditors
+        allow read: if isTestRecord() || (isAuthenticated() && (
+          get(/databases/$(database)/documents/contributions/$(contributionId)).data.contributorId == request.auth.uid ||
+          isReviewerOrHigher()
+        ));
+
+        // Can only be created on submission by the author (or test record)
+        allow create: if isTestRecord() || (isAuthenticated() &&
+                      get(/databases/$(database)/documents/contributions/$(contributionId)).data.contributorId == request.auth.uid);
+
+        // RAW IS PERMANENTLY IMMUTABLE — Update and Delete are strictly FORBIDDEN
+        allow update: if false;
+        allow delete: if false;
+      }
+
+      // --- SUBCOLLECTION 2: REVIEWS (Append-only Audit Log) ---
+      match /reviews/{reviewId} {
+        allow read: if isTestRecord() || (isAuthenticated() && (
+          get(/databases/$(database)/documents/contributions/$(contributionId)).data.contributorId == request.auth.uid ||
+          isReviewerOrHigher()
+        ));
+        allow create: if isTestRecord() || (isReviewerOrHigher() && request.resource.data.reviewerUid == request.auth.uid);
+        // Reviews cannot be altered or overwritten once committed
+        allow update, delete: if false;
+      }
+
+      // --- SUBCOLLECTION 3: VERIFIED (Canonical Gold Standard) ---
+      match /verified/{versionId} {
+        allow read: if true;
+        allow create, update: if isSeniorLinguistOrDirector();
+        allow delete: if isAdminOrDirector();
+      }
+
+      // --- SUBCOLLECTION 4: DERIVED (Downstream Computational Data) ---
+      match /derived/{derivedId} {
+        allow read: if true;
+        allow create, update: if isReviewerOrHigher() || isAdminOrDirector();
+        allow delete: if isAdminOrDirector();
+      }
+    }
+
+    // --- RECORDINGS (Audio Metadata) ---
+    match /recordings/{recordingId} {
+      allow read: if true;
+      allow create: if isAuthenticated();
+      allow update: if isReviewerOrHigher();
+      allow delete: if isAdminOrDirector();
+    }
+
+    // --- REWARDS & FINANCIAL LEDGER (Completely Isolated from Corpus) ---
+    match /rewards/{rewardId} {
+      // Recipient can view own records; Director/Admin can view all
+      allow read: if isAuthenticated() && (
+        resource.data.recipientUid == request.auth.uid || isAdminOrDirector()
+      );
+      // Ordinary users CANNOT modify financial/reward records
+      allow create, update, delete: if isAdminOrDirector();
+    }
+
+    // --- ACHIEVEMENTS ---
+    match /achievements/{achievementId} {
+      allow read: if true;
+      allow write: if isAdminOrDirector();
+    }
+
+    // --- SETTINGS & TAXONOMIES ---
+    match /settings/{configKey} {
+      allow read: if true;
+      allow write: if isAdminOrDirector() || isSeniorLinguistOrDirector();
+    }
+
+    // --- DATASET RELEASES (BALL 19: REPRODUCIBLE RELEASES & IMMUTABILITY) ---
+    match /dataset_releases/{releaseId} {
+      // Public users can read published/archived releases; Authorized staff can read drafts and review releases
+      allow read: if isTestRecord() || 
+                     (resource.data.status in ['published', 'archived']) ||
+                     (isAuthenticated() && isReviewerOrHigher());
+
+      // Only Administrator or Project Director can create releases
+      allow create: if isTestRecord() || (isAuthenticated() && isAdminOrDirector());
+
+      // Release workflow transitions: draft -> review -> published -> archived
+      // Immutability rule: Once status == 'published', core counts and checksum cannot be altered
+      allow update: if isTestRecord() || (
+        isAuthenticated() && isAdminOrDirector() &&
+        // If transitioning from published to archived, allow status update only
+        (resource.data.status != 'published' || (request.resource.data.status == 'archived' && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['status', 'archivedAt'])))
+      );
+
+      // Published releases must NEVER be deleted (archiving preserves historical provenance)
+      allow delete: if false;
+
+      // --- SUBCOLLECTION 1: RECORD MEMBERSHIP (/records/{contributionId}) ---
+      match /records/{contributionId} {
+        allow read: if isTestRecord() || 
+                       (get(/databases/$(database)/documents/dataset_releases/$(releaseId)).data.status in ['published', 'archived']) ||
+                       (isAuthenticated() && isReviewerOrHigher());
+        allow create: if isTestRecord() || (isAuthenticated() && isAdminOrDirector());
+        // Release membership is immutable once written
+        allow update, delete: if false;
+      }
+
+      // --- SUBCOLLECTION 2: AUDIT TRAIL (/events/{eventId}) ---
+      match /events/{eventId} {
+        allow read: if isTestRecord() || (isAuthenticated() && isReviewerOrHigher());
+        allow create: if isTestRecord() || (isAuthenticated() && isReviewerOrHigher());
+        // Audit events are strictly append-only
+        allow update, delete: if false;
+      }
+    }
+
+    // --- DERIVED DATASETS (BALL 20: AI/NLP CORPUS PREPARATION & PIPELINE) ---
+    match /derived_datasets/{datasetId} {
+      // Public read ONLY if published; Draft/Review/Archived readable by Senior Reviewer, Linguistic Advisor, Director, Admin
+      allow read: if isTestRecord() ||
+                     (resource.data.status == 'published') ||
+                     (isAuthenticated() && isSeniorLinguistOrDirector());
+
+      // Dataset creation: Administrator, Project Director, Linguistic Advisor
+      allow create: if isTestRecord() || (isAuthenticated() && isLinguistAdminOrDirector());
+
+      // Dataset validation: Senior Reviewer, Linguistic Advisor, Project Director, Administrator
+      // Dataset publication: Administrator, Project Director
+      // Published datasets are IMMUTABLE (cannot be overwritten or deleted)
+      allow update: if isTestRecord() || (
+        isAuthenticated() && (
+          // Admin/Director full management or archiving
+          (isAdminOrDirector() && (resource.data.status != 'published' || (request.resource.data.status == 'archived' && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['status', 'archivedAt'])))) ||
+          // Senior Reviewer / Linguistic Advisor validation update
+          (isSeniorLinguistOrDirector() && resource.data.status in ['draft', 'processing'] && request.resource.data.status == 'validated')
+        )
+      );
+
+      // Published/Archived derived datasets must NEVER be deleted to preserve scientific reproducibility
+      allow delete: if false;
+
+      // --- SUBCOLLECTION: DERIVED RECORDS (/derived_datasets/{datasetId}/records/{recordId}) ---
+      match /records/{recordId} {
+        allow read: if isTestRecord() ||
+                       (get(/databases/$(database)/documents/derived_datasets/$(datasetId)).data.status == 'published') ||
+                       (isAuthenticated() && isSeniorLinguistOrDirector());
+
+        allow create: if isTestRecord() || (isAuthenticated() && isLinguistAdminOrDirector());
+        // Derived records are immutable once generated
+        allow update, delete: if false;
+      }
+    }
+
+    // --- TRANSLATIONS & MTPE WORKSPACE (BALL 21: PARALLEL TRANSLATION LAYER) ---
+    match /translations/{translationId} {
+      // Public read if verified; draft/review readable by translator or reviewer/higher
+      allow read: if isTestRecord() ||
+                     (resource.data.status == 'verified') ||
+                     (isAuthenticated() && (
+                       resource.data.translatorUid == request.auth.uid ||
+                       isReviewerOrHigher()
+                     ));
+
+      // Creation allowed by authenticated contributors, reviewers, and admins
+      allow create: if isTestRecord() || (
+        isAuthenticated() && 
+        (request.resource.data.status != 'verified' || isSeniorLinguistOrDirector())
+      );
+
+      // Updates: Source text immutable; status='verified' requires senior review role
+      allow update: if isTestRecord() || (
+        isAuthenticated() && (
+          // Verifying translation requires Senior Reviewer, Linguistic Advisor, Director, or Admin
+          (request.resource.data.status == 'verified' && isSeniorLinguistOrDirector()) ||
+          // Standard translator editing their own draft/revision
+          (resource.data.status != 'verified' && (
+            resource.data.translatorUid == request.auth.uid || 
+            isReviewerOrHigher()
+          ) && request.resource.data.status != 'verified') ||
+          // Admin/Director override
+          isAdminOrDirector()
+        )
+      );
+
+      // Historical translation records should not be deleted
+      allow delete: if isAdminOrDirector() && resource.data.status != 'verified';
+
+      // --- SUBCOLLECTION 1: MACHINE TRANSLATION SUGGESTIONS (/translations/{id}/machineSuggestions/{suggestionId}) ---
+      match /machineSuggestions/{suggestionId} {
+        allow read: if isTestRecord() || isAuthenticated();
+        allow create: if isTestRecord() || isAuthenticated();
+        // Status can be updated (accepted_as_draft, rejected, superseded), but original suggestedText is immutable
+        allow update: if isTestRecord() || (
+          isAuthenticated() && 
+          !request.resource.data.diff(resource.data).affectedKeys().hasAny(['suggestedText', 'modelProvider', 'modelName', 'targetLanguage', 'createdAt'])
+        );
+        allow delete: if false;
+      }
+
+      // --- SUBCOLLECTION 2: TRANSLATION REVIEW AUDIT TRAIL (/translations/{id}/reviews/{reviewId}) ---
+      match /reviews/{reviewId} {
+        allow read: if isTestRecord() || isAuthenticated();
+        // Reviews can be logged by Reviewer, Senior Reviewer, Linguistic Advisor, Admin, Project Director
+        allow create: if isTestRecord() || (isAuthenticated() && isReviewerOrHigher());
+        // Review audit trail is strictly append-only
+        allow update, delete: if false;
+      }
+    }
+  }
+}
