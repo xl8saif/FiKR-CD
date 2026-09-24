@@ -1,0 +1,41 @@
+{
+  "excluded_malformed": 0,
+  "known_speakers_by_split": {
+    "test": 14,
+    "train": 21,
+    "validation": 13
+  },
+  "known_speakers_total": 48,
+  "method": [
+    "Deterministic seed 3401.",
+    "Known client IDs are assigned to exactly one split.",
+    "Greedy speaker-group allocation targets 80/10/10 by recording count.",
+    "Rows without client_id are assigned to train and explicitly reported as a limitation.",
+    "No speaker or transcription data are modified."
+  ],
+  "milestone": "M3.4",
+  "next_milestone": "M3.5 ASR Dataset Release",
+  "ratios": {
+    "test": 0.1,
+    "train": 0.8,
+    "validation": 0.1
+  },
+  "records_without_client_id": 0,
+  "seed": 3401,
+  "source": "research/mvy/source/common-voice-27/validated.tsv",
+  "source_sha256": "497157f27dd7928236ecf66acffda639164a17ec5bab2ee2b44c6eb7d719e176",
+  "speaker_disjoint_known_ids": true,
+  "split_counts": {
+    "test": 1661,
+    "train": 13290,
+    "validation": 1661
+  },
+  "split_percentages": {
+    "test": 9.9988,
+    "train": 80.0024,
+    "validation": 9.9988
+  },
+  "title": "Train Validation Test Splits",
+  "unknown_client_rows_assigned_to": "train",
+  "usable_records": 16612
+}
