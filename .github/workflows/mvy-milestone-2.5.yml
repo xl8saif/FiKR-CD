@@ -1,0 +1,49 @@
+name: Mvy Milestone 2.5 Lexical Analysis
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'research/mvy/source/common-voice-27/validated.tsv'
+      - 'research/mvy/analysis/milestone-2.5/analyze_mvy_lexicon.py'
+      - '.github/workflows/mvy-milestone-2.5.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout FiKR-CD
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Run M2.5 analysis
+        shell: bash
+        run: |
+          python research/mvy/analysis/milestone-2.5/analyze_mvy_lexicon.py
+
+      - name: Publish machine-readable M2.5 manifest
+        shell: bash
+        run: |
+          mkdir -p public/research/mvy/milestone-2.5
+          cp research/mvy/analysis/milestone-2.5/output/mvy-lexical-frequency-manifest.json public/research/mvy/milestone-2.5/mvy-lexical-frequency-manifest.json
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add public/research/mvy/milestone-2.5/mvy-lexical-frequency-manifest.json
+          git diff --cached --quiet || git commit -m 'Publish Mvy Milestone 2.5 lexical manifest'
+          git push
+
+      - name: Upload M2.5 research package
+        uses: actions/upload-artifact@v4
+        with:
+          name: mvy-milestone-2.5
+          path: research/mvy/analysis/milestone-2.5/output/
+          if-no-files-found: error
+          retention-days: 90
