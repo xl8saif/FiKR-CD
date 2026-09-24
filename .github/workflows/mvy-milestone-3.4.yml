@@ -1,0 +1,44 @@
+name: Mvy Milestone 3.4 Train Validation Test Splits
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'research/mvy/source/common-voice-27/validated.tsv'
+      - 'research/mvy/analysis/milestone-3.4/create_mvy_asr_splits.py'
+      - '.github/workflows/mvy-milestone-3.4.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  split:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout FiKR-CD
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Create deterministic ASR splits
+        run: python research/mvy/analysis/milestone-3.4/create_mvy_asr_splits.py
+      - name: Publish public M3.4 manifest
+        run: |
+          mkdir -p public/research/mvy/milestone-3.4
+          cp research/mvy/analysis/milestone-3.4/output/mvy-asr-split-manifest.json public/research/mvy/milestone-3.4/mvy-asr-split-manifest.json
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add public/research/mvy/milestone-3.4/mvy-asr-split-manifest.json
+          git diff --cached --quiet || git commit -m 'Publish Mvy Milestone 3.4 ASR split manifest'
+          git push
+      - name: Upload M3.4 research package
+        uses: actions/upload-artifact@v4
+        with:
+          name: mvy-milestone-3.4
+          path: research/mvy/analysis/milestone-3.4/output/
+          if-no-files-found: error
+          retention-days: 90
