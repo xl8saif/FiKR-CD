@@ -1,0 +1,38 @@
+{
+  "known_speakers": 48,
+  "metadata_conflict_pairs": 0,
+  "metadata_missing_records": {
+    "accent": 16612,
+    "age": 601,
+    "client_id": 0,
+    "down_votes": 0,
+    "gender": 16592,
+    "locale": 0,
+    "segment": 16612,
+    "up_votes": 0
+  },
+  "method": [
+    "Use source-provided metadata only.",
+    "Treat missing values as unknown; do not infer speaker demographics.",
+    "Profile client-level recording counts and supplied age, gender, accent, and locale.",
+    "Flag within-client metadata conflicts for review rather than resolving them automatically.",
+    "Preserve recording-level provenance through source row and audio path."
+  ],
+  "milestone": "M3.3",
+  "next_milestone": "M3.4 Train/Validation/Test Splits",
+  "records": 16612,
+  "records_without_client_id": 0,
+  "source": "research/mvy/source/common-voice-27/validated.tsv",
+  "source_sha256": "497157f27dd7928236ecf66acffda639164a17ec5bab2ee2b44c6eb7d719e176",
+  "title": "Speaker & Recording Metadata",
+  "unique_values": {
+    "accent": 0,
+    "age": 5,
+    "client_id": 48,
+    "down_votes": 3,
+    "gender": 1,
+    "locale": 1,
+    "segment": 0,
+    "up_votes": 5
+  }
+}
