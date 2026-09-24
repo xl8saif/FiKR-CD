@@ -27,7 +27,7 @@ import { LinkedInIconLink } from './components/LinkedInIconLink';
 export default function App() {
   const [activeTab, setActiveTab] = useState<
     'contribute' | 'my_contributions' | 'verification_queue' | 'corpus_explorer' | 'admin_panel' | 'quality_dashboard' | 'dataset_releases' | 'nlp_workspace' | 'translation_workspace' | 'speech_workspace' | 'llm_workspace' | 'mvy_milestone_23' | 'roadmap' | 'my_profile' | 'consent_license'
-  >('contribute');
+  >('mvy_milestone_23');
 
 
   // Real Firebase Authentication State (BALL 15.2)
