@@ -1,0 +1,167 @@
+{
+  "project": "FiKR&CD",
+  "language": "Indus-Kohistani",
+  "iso_639_3": "mvy",
+  "milestone": "2.7",
+  "title": "Aspirated Consonant Analysis",
+  "corpus_rows": 16612,
+  "word_occurrences": 135375,
+  "established_aspirated_sequences": [
+    "بھ",
+    "تھ",
+    "جھ",
+    "دھ",
+    "رھ",
+    "لھ",
+    "مھ",
+    "نھ",
+    "ٹھ",
+    "پھ",
+    "څھ",
+    "چھ",
+    "ڇھ",
+    "ڈھ",
+    "ڑھ",
+    "ژھ",
+    "ڙھ",
+    "کھ",
+    "گھ",
+    "ݨھ"
+  ],
+  "observed_aspirated_sequences": [
+    {
+      "sequence": "بھ",
+      "frequency": 0,
+      "unique_words": 0,
+      "sentence_frequency": 0
+    },
+    {
+      "sequence": "تھ",
+      "frequency": 0,
+      "unique_words": 0,
+      "sentence_frequency": 0
+    },
+    {
+      "sequence": "جھ",
+      "frequency": 0,
+      "unique_words": 0,
+      "sentence_frequency": 0
+    },
+    {
+      "sequence": "دھ",
+      "frequency": 0,
+      "unique_words": 0,
+      "sentence_frequency": 0
+    },
+    {
+      "sequence": "رھ",
+      "frequency": 0,
+      "unique_words": 0,
+      "sentence_frequency": 0
+    },
+    {
+      "sequence": "لھ",
+      "frequency": 0,
+      "unique_words": 0,
+      "sentence_frequency": 0
+    },
+    {
+      "sequence": "مھ",
+      "frequency": 0,
+      "unique_words": 0,
+      "sentence_frequency": 0
+    },
+    {
+      "sequence": "نھ",
+      "frequency": 0,
+      "unique_words": 0,
+      "sentence_frequency": 0
+    },
+    {
+      "sequence": "ٹھ",
+      "frequency": 0,
+      "unique_words": 0,
+      "sentence_frequency": 0
+    },
+    {
+      "sequence": "پھ",
+      "frequency": 0,
+      "unique_words": 0,
+      "sentence_frequency": 0
+    },
+    {
+      "sequence": "څھ",
+      "frequency": 0,
+      "unique_words": 0,
+      "sentence_frequency": 0
+    },
+    {
+      "sequence": "چھ",
+      "frequency": 0,
+      "unique_words": 0,
+      "sentence_frequency": 0
+    },
+    {
+      "sequence": "ڇھ",
+      "frequency": 0,
+      "unique_words": 0,
+      "sentence_frequency": 0
+    },
+    {
+      "sequence": "ڈھ",
+      "frequency": 0,
+      "unique_words": 0,
+      "sentence_frequency": 0
+    },
+    {
+      "sequence": "ڑھ",
+      "frequency": 0,
+      "unique_words": 0,
+      "sentence_frequency": 0
+    },
+    {
+      "sequence": "ژھ",
+      "frequency": 0,
+      "unique_words": 0,
+      "sentence_frequency": 0
+    },
+    {
+      "sequence": "ڙھ",
+      "frequency": 0,
+      "unique_words": 0,
+      "sentence_frequency": 0
+    },
+    {
+      "sequence": "کھ",
+      "frequency": 0,
+      "unique_words": 0,
+      "sentence_frequency": 0
+    },
+    {
+      "sequence": "گھ",
+      "frequency": 0,
+      "unique_words": 0,
+      "sentence_frequency": 0
+    },
+    {
+      "sequence": "ݨھ",
+      "frequency": 0,
+      "unique_words": 0,
+      "sentence_frequency": 0
+    }
+  ],
+  "total_aspirated_occurrences": 0,
+  "distinct_observed_aspirated_sequences": 0,
+  "position_totals": {
+    "initial": 0,
+    "medial": 0,
+    "final": 0,
+    "isolated": 0
+  },
+  "outputs": [
+    "mvy-aspirated-frequency.csv",
+    "mvy-aspirated-left-context.csv",
+    "mvy-aspirated-neighborhoods.csv",
+    "mvy-aspirated-right-context.csv"
+  ]
+}
