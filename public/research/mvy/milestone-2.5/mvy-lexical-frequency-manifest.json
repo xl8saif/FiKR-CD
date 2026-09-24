@@ -1,0 +1,5787 @@
+{
+  "project": "FiKR&CD",
+  "language": "Indus-Kohistani",
+  "iso_639_3": "mvy",
+  "milestone": "2.5",
+  "title": "Lexical Frequency & Hapax Analysis",
+  "corpus_rows": 16612,
+  "token_occurrences": 135375,
+  "lexical_types": 10696,
+  "type_token_ratio": 0.07901016,
+  "hapax_types": 1088,
+  "hapax_ratio_types": 0.10172027,
+  "dislegomena_types": 3963,
+  "frequency_bands": {
+    "1": 1088,
+    "2": 3963,
+    "3-5": 1933,
+    "6-10": 1909,
+    "11-50": 1453,
+    "51+": 350
+  },
+  "yules_k": 31.720109,
+  "herdan_v": 0.7851878,
+  "lexical_entropy_bits": 10.83780173,
+  "top_50": [
+    {
+      "rank": 1,
+      "word": "مہ",
+      "frequency": 3206
+    },
+    {
+      "rank": 2,
+      "word": "آں",
+      "frequency": 2685
+    },
+    {
+      "rank": 3,
+      "word": "نہ",
+      "frequency": 2342
+    },
+    {
+      "rank": 4,
+      "word": "تُھو",
+      "frequency": 2088
+    },
+    {
+      "rank": 5,
+      "word": "لا",
+      "frequency": 1890
+    },
+    {
+      "rank": 6,
+      "word": "چے",
+      "frequency": 1456
+    },
+    {
+      "rank": 7,
+      "word": "تُھو۔",
+      "frequency": 1375
+    },
+    {
+      "rank": 8,
+      "word": "تے",
+      "frequency": 1245
+    },
+    {
+      "rank": 9,
+      "word": "تھی",
+      "frequency": 1241
+    },
+    {
+      "rank": 10,
+      "word": "نی",
+      "frequency": 1145
+    },
+    {
+      "rank": 11,
+      "word": "ہِن",
+      "frequency": 1083
+    },
+    {
+      "rank": 12,
+      "word": "کھیں",
+      "frequency": 1033
+    },
+    {
+      "rank": 13,
+      "word": "سو",
+      "frequency": 916
+    },
+    {
+      "rank": 14,
+      "word": "یاں",
+      "frequency": 902
+    },
+    {
+      "rank": 15,
+      "word": "ایک",
+      "frequency": 878
+    },
+    {
+      "rank": 16,
+      "word": "تاں",
+      "frequency": 831
+    },
+    {
+      "rank": 17,
+      "word": "ݜُو",
+      "frequency": 828
+    },
+    {
+      "rank": 18,
+      "word": "تھی۔",
+      "frequency": 735
+    },
+    {
+      "rank": 19,
+      "word": "ہُوئ",
+      "frequency": 727
+    },
+    {
+      "rank": 20,
+      "word": "یا",
+      "frequency": 670
+    },
+    {
+      "rank": 21,
+      "word": "تھو",
+      "frequency": 606
+    },
+    {
+      "rank": 22,
+      "word": "گی",
+      "frequency": 582
+    },
+    {
+      "rank": 23,
+      "word": "ہو",
+      "frequency": 564
+    },
+    {
+      "rank": 24,
+      "word": "تھہ۔",
+      "frequency": 508
+    },
+    {
+      "rank": 25,
+      "word": "واں",
+      "frequency": 506
+    },
+    {
+      "rank": 26,
+      "word": "ہر",
+      "frequency": 494
+    },
+    {
+      "rank": 27,
+      "word": "لہ",
+      "frequency": 470
+    },
+    {
+      "rank": 28,
+      "word": "اُو",
+      "frequency": 465
+    },
+    {
+      "rank": 29,
+      "word": "ہُم",
+      "frequency": 457
+    },
+    {
+      "rank": 30,
+      "word": "اسیں",
+      "frequency": 450
+    },
+    {
+      "rank": 31,
+      "word": "مژ",
+      "frequency": 441
+    },
+    {
+      "rank": 32,
+      "word": "مُت",
+      "frequency": 429
+    },
+    {
+      "rank": 33,
+      "word": "تھُو۔",
+      "frequency": 429
+    },
+    {
+      "rank": 34,
+      "word": "تل",
+      "frequency": 427
+    },
+    {
+      "rank": 35,
+      "word": "چو",
+      "frequency": 415
+    },
+    {
+      "rank": 36,
+      "word": "تسیں",
+      "frequency": 414
+    },
+    {
+      "rank": 37,
+      "word": "گتہ",
+      "frequency": 398
+    },
+    {
+      "rank": 38,
+      "word": "وَیں",
+      "frequency": 392
+    },
+    {
+      "rank": 39,
+      "word": "اسی",
+      "frequency": 353
+    },
+    {
+      "rank": 40,
+      "word": "بے",
+      "frequency": 352
+    },
+    {
+      "rank": 41,
+      "word": "چہ",
+      "frequency": 351
+    },
+    {
+      "rank": 42,
+      "word": "ہوں",
+      "frequency": 350
+    },
+    {
+      "rank": 43,
+      "word": "وے",
+      "frequency": 347
+    },
+    {
+      "rank": 44,
+      "word": "کرے",
+      "frequency": 346
+    },
+    {
+      "rank": 45,
+      "word": "بال",
+      "frequency": 338
+    },
+    {
+      "rank": 46,
+      "word": "میں",
+      "frequency": 326
+    },
+    {
+      "rank": 47,
+      "word": "تھہ",
+      "frequency": 322
+    },
+    {
+      "rank": 48,
+      "word": "ݜے",
+      "frequency": 319
+    },
+    {
+      "rank": 49,
+      "word": "ݜس",
+      "frequency": 315
+    },
+    {
+      "rank": 50,
+      "word": "کم",
+      "frequency": 309
+    }
+  ],
+  "top_100": [
+    {
+      "rank": 1,
+      "word": "مہ",
+      "frequency": 3206
+    },
+    {
+      "rank": 2,
+      "word": "آں",
+      "frequency": 2685
+    },
+    {
+      "rank": 3,
+      "word": "نہ",
+      "frequency": 2342
+    },
+    {
+      "rank": 4,
+      "word": "تُھو",
+      "frequency": 2088
+    },
+    {
+      "rank": 5,
+      "word": "لا",
+      "frequency": 1890
+    },
+    {
+      "rank": 6,
+      "word": "چے",
+      "frequency": 1456
+    },
+    {
+      "rank": 7,
+      "word": "تُھو۔",
+      "frequency": 1375
+    },
+    {
+      "rank": 8,
+      "word": "تے",
+      "frequency": 1245
+    },
+    {
+      "rank": 9,
+      "word": "تھی",
+      "frequency": 1241
+    },
+    {
+      "rank": 10,
+      "word": "نی",
+      "frequency": 1145
+    },
+    {
+      "rank": 11,
+      "word": "ہِن",
+      "frequency": 1083
+    },
+    {
+      "rank": 12,
+      "word": "کھیں",
+      "frequency": 1033
+    },
+    {
+      "rank": 13,
+      "word": "سو",
+      "frequency": 916
+    },
+    {
+      "rank": 14,
+      "word": "یاں",
+      "frequency": 902
+    },
+    {
+      "rank": 15,
+      "word": "ایک",
+      "frequency": 878
+    },
+    {
+      "rank": 16,
+      "word": "تاں",
+      "frequency": 831
+    },
+    {
+      "rank": 17,
+      "word": "ݜُو",
+      "frequency": 828
+    },
+    {
+      "rank": 18,
+      "word": "تھی۔",
+      "frequency": 735
+    },
+    {
+      "rank": 19,
+      "word": "ہُوئ",
+      "frequency": 727
+    },
+    {
+      "rank": 20,
+      "word": "یا",
+      "frequency": 670
+    },
+    {
+      "rank": 21,
+      "word": "تھو",
+      "frequency": 606
+    },
+    {
+      "rank": 22,
+      "word": "گی",
+      "frequency": 582
+    },
+    {
+      "rank": 23,
+      "word": "ہو",
+      "frequency": 564
+    },
+    {
+      "rank": 24,
+      "word": "تھہ۔",
+      "frequency": 508
+    },
+    {
+      "rank": 25,
+      "word": "واں",
+      "frequency": 506
+    },
+    {
+      "rank": 26,
+      "word": "ہر",
+      "frequency": 494
+    },
+    {
+      "rank": 27,
+      "word": "لہ",
+      "frequency": 470
+    },
+    {
+      "rank": 28,
+      "word": "اُو",
+      "frequency": 465
+    },
+    {
+      "rank": 29,
+      "word": "ہُم",
+      "frequency": 457
+    },
+    {
+      "rank": 30,
+      "word": "اسیں",
+      "frequency": 450
+    },
+    {
+      "rank": 31,
+      "word": "مژ",
+      "frequency": 441
+    },
+    {
+      "rank": 32,
+      "word": "مُت",
+      "frequency": 429
+    },
+    {
+      "rank": 33,
+      "word": "تھُو۔",
+      "frequency": 429
+    },
+    {
+      "rank": 34,
+      "word": "تل",
+      "frequency": 427
+    },
+    {
+      "rank": 35,
+      "word": "چو",
+      "frequency": 415
+    },
+    {
+      "rank": 36,
+      "word": "تسیں",
+      "frequency": 414
+    },
+    {
+      "rank": 37,
+      "word": "گتہ",
+      "frequency": 398
+    },
+    {
+      "rank": 38,
+      "word": "وَیں",
+      "frequency": 392
+    },
+    {
+      "rank": 39,
+      "word": "اسی",
+      "frequency": 353
+    },
+    {
+      "rank": 40,
+      "word": "بے",
+      "frequency": 352
+    },
+    {
+      "rank": 41,
+      "word": "چہ",
+      "frequency": 351
+    },
+    {
+      "rank": 42,
+      "word": "ہوں",
+      "frequency": 350
+    },
+    {
+      "rank": 43,
+      "word": "وے",
+      "frequency": 347
+    },
+    {
+      "rank": 44,
+      "word": "کرے",
+      "frequency": 346
+    },
+    {
+      "rank": 45,
+      "word": "بال",
+      "frequency": 338
+    },
+    {
+      "rank": 46,
+      "word": "میں",
+      "frequency": 326
+    },
+    {
+      "rank": 47,
+      "word": "تھہ",
+      "frequency": 322
+    },
+    {
+      "rank": 48,
+      "word": "ݜے",
+      "frequency": 319
+    },
+    {
+      "rank": 49,
+      "word": "ݜس",
+      "frequency": 315
+    },
+    {
+      "rank": 50,
+      "word": "کم",
+      "frequency": 309
+    },
+    {
+      "rank": 51,
+      "word": "کرؤں",
+      "frequency": 305
+    },
+    {
+      "rank": 52,
+      "word": "اللہ",
+      "frequency": 304
+    },
+    {
+      "rank": 53,
+      "word": "کام",
+      "frequency": 298
+    },
+    {
+      "rank": 54,
+      "word": "چےۡ",
+      "frequency": 296
+    },
+    {
+      "rank": 55,
+      "word": "گلے",
+      "frequency": 288
+    },
+    {
+      "rank": 56,
+      "word": "تسی",
+      "frequency": 286
+    },
+    {
+      "rank": 57,
+      "word": "ای",
+      "frequency": 281
+    },
+    {
+      "rank": 58,
+      "word": "کرَیں",
+      "frequency": 271
+    },
+    {
+      "rank": 59,
+      "word": "تَیں",
+      "frequency": 269
+    },
+    {
+      "rank": 60,
+      "word": "خلکہ",
+      "frequency": 263
+    },
+    {
+      "rank": 61,
+      "word": "ماݜ",
+      "frequency": 262
+    },
+    {
+      "rank": 62,
+      "word": "اَس",
+      "frequency": 262
+    },
+    {
+      "rank": 63,
+      "word": "کراں",
+      "frequency": 259
+    },
+    {
+      "rank": 64,
+      "word": "نِوان٘ز",
+      "frequency": 257
+    },
+    {
+      "rank": 65,
+      "word": "کریا",
+      "frequency": 253
+    },
+    {
+      "rank": 66,
+      "word": "کؤں",
+      "frequency": 253
+    },
+    {
+      "rank": 67,
+      "word": "اېک",
+      "frequency": 250
+    },
+    {
+      "rank": 68,
+      "word": "کِریا",
+      "frequency": 242
+    },
+    {
+      "rank": 69,
+      "word": "مقامی",
+      "frequency": 241
+    },
+    {
+      "rank": 70,
+      "word": "،",
+      "frequency": 238
+    },
+    {
+      "rank": 71,
+      "word": "تسے",
+      "frequency": 237
+    },
+    {
+      "rank": 72,
+      "word": "پکار",
+      "frequency": 230
+    },
+    {
+      "rank": 73,
+      "word": "تس",
+      "frequency": 227
+    },
+    {
+      "rank": 74,
+      "word": "تُو",
+      "frequency": 227
+    },
+    {
+      "rank": 75,
+      "word": "چئ",
+      "frequency": 226
+    },
+    {
+      "rank": 76,
+      "word": "دُو",
+      "frequency": 225
+    },
+    {
+      "rank": 77,
+      "word": "وجہۡ",
+      "frequency": 224
+    },
+    {
+      "rank": 78,
+      "word": "دی",
+      "frequency": 223
+    },
+    {
+      "rank": 79,
+      "word": "اک",
+      "frequency": 220
+    },
+    {
+      "rank": 80,
+      "word": "کرہ",
+      "frequency": 220
+    },
+    {
+      "rank": 81,
+      "word": "سیوں",
+      "frequency": 218
+    },
+    {
+      "rank": 82,
+      "word": "تھو۔",
+      "frequency": 217
+    },
+    {
+      "rank": 83,
+      "word": "بناں",
+      "frequency": 213
+    },
+    {
+      "rank": 84,
+      "word": "سیں",
+      "frequency": 207
+    },
+    {
+      "rank": 85,
+      "word": "اس",
+      "frequency": 206
+    },
+    {
+      "rank": 86,
+      "word": "ملی",
+      "frequency": 206
+    },
+    {
+      "rank": 87,
+      "word": "کِراں",
+      "frequency": 206
+    },
+    {
+      "rank": 88,
+      "word": "خو",
+      "frequency": 204
+    },
+    {
+      "rank": 89,
+      "word": "علاج",
+      "frequency": 203
+    },
+    {
+      "rank": 90,
+      "word": "بِگ",
+      "frequency": 200
+    },
+    {
+      "rank": 91,
+      "word": "بُٹ",
+      "frequency": 200
+    },
+    {
+      "rank": 92,
+      "word": "دن",
+      "frequency": 199
+    },
+    {
+      "rank": 93,
+      "word": "بئ",
+      "frequency": 198
+    },
+    {
+      "rank": 94,
+      "word": "چھی",
+      "frequency": 197
+    },
+    {
+      "rank": 95,
+      "word": "خلکوں",
+      "frequency": 191
+    },
+    {
+      "rank": 96,
+      "word": "ہُو",
+      "frequency": 190
+    },
+    {
+      "rank": 97,
+      "word": "تئیں",
+      "frequency": 189
+    },
+    {
+      "rank": 98,
+      "word": "استعمال",
+      "frequency": 188
+    },
+    {
+      "rank": 99,
+      "word": "علیہ",
+      "frequency": 187
+    },
+    {
+      "rank": 100,
+      "word": "تُھو،",
+      "frequency": 185
+    }
+  ],
+  "top_1000": [
+    {
+      "rank": 1,
+      "word": "مہ",
+      "frequency": 3206
+    },
+    {
+      "rank": 2,
+      "word": "آں",
+      "frequency": 2685
+    },
+    {
+      "rank": 3,
+      "word": "نہ",
+      "frequency": 2342
+    },
+    {
+      "rank": 4,
+      "word": "تُھو",
+      "frequency": 2088
+    },
+    {
+      "rank": 5,
+      "word": "لا",
+      "frequency": 1890
+    },
+    {
+      "rank": 6,
+      "word": "چے",
+      "frequency": 1456
+    },
+    {
+      "rank": 7,
+      "word": "تُھو۔",
+      "frequency": 1375
+    },
+    {
+      "rank": 8,
+      "word": "تے",
+      "frequency": 1245
+    },
+    {
+      "rank": 9,
+      "word": "تھی",
+      "frequency": 1241
+    },
+    {
+      "rank": 10,
+      "word": "نی",
+      "frequency": 1145
+    },
+    {
+      "rank": 11,
+      "word": "ہِن",
+      "frequency": 1083
+    },
+    {
+      "rank": 12,
+      "word": "کھیں",
+      "frequency": 1033
+    },
+    {
+      "rank": 13,
+      "word": "سو",
+      "frequency": 916
+    },
+    {
+      "rank": 14,
+      "word": "یاں",
+      "frequency": 902
+    },
+    {
+      "rank": 15,
+      "word": "ایک",
+      "frequency": 878
+    },
+    {
+      "rank": 16,
+      "word": "تاں",
+      "frequency": 831
+    },
+    {
+      "rank": 17,
+      "word": "ݜُو",
+      "frequency": 828
+    },
+    {
+      "rank": 18,
+      "word": "تھی۔",
+      "frequency": 735
+    },
+    {
+      "rank": 19,
+      "word": "ہُوئ",
+      "frequency": 727
+    },
+    {
+      "rank": 20,
+      "word": "یا",
+      "frequency": 670
+    },
+    {
+      "rank": 21,
+      "word": "تھو",
+      "frequency": 606
+    },
+    {
+      "rank": 22,
+      "word": "گی",
+      "frequency": 582
+    },
+    {
+      "rank": 23,
+      "word": "ہو",
+      "frequency": 564
+    },
+    {
+      "rank": 24,
+      "word": "تھہ۔",
+      "frequency": 508
+    },
+    {
+      "rank": 25,
+      "word": "واں",
+      "frequency": 506
+    },
+    {
+      "rank": 26,
+      "word": "ہر",
+      "frequency": 494
+    },
+    {
+      "rank": 27,
+      "word": "لہ",
+      "frequency": 470
+    },
+    {
+      "rank": 28,
+      "word": "اُو",
+      "frequency": 465
+    },
+    {
+      "rank": 29,
+      "word": "ہُم",
+      "frequency": 457
+    },
+    {
+      "rank": 30,
+      "word": "اسیں",
+      "frequency": 450
+    },
+    {
+      "rank": 31,
+      "word": "مژ",
+      "frequency": 441
+    },
+    {
+      "rank": 32,
+      "word": "مُت",
+      "frequency": 429
+    },
+    {
+      "rank": 33,
+      "word": "تھُو۔",
+      "frequency": 429
+    },
+    {
+      "rank": 34,
+      "word": "تل",
+      "frequency": 427
+    },
+    {
+      "rank": 35,
+      "word": "چو",
+      "frequency": 415
+    },
+    {
+      "rank": 36,
+      "word": "تسیں",
+      "frequency": 414
+    },
+    {
+      "rank": 37,
+      "word": "گتہ",
+      "frequency": 398
+    },
+    {
+      "rank": 38,
+      "word": "وَیں",
+      "frequency": 392
+    },
+    {
+      "rank": 39,
+      "word": "اسی",
+      "frequency": 353
+    },
+    {
+      "rank": 40,
+      "word": "بے",
+      "frequency": 352
+    },
+    {
+      "rank": 41,
+      "word": "چہ",
+      "frequency": 351
+    },
+    {
+      "rank": 42,
+      "word": "ہوں",
+      "frequency": 350
+    },
+    {
+      "rank": 43,
+      "word": "وے",
+      "frequency": 347
+    },
+    {
+      "rank": 44,
+      "word": "کرے",
+      "frequency": 346
+    },
+    {
+      "rank": 45,
+      "word": "بال",
+      "frequency": 338
+    },
+    {
+      "rank": 46,
+      "word": "میں",
+      "frequency": 326
+    },
+    {
+      "rank": 47,
+      "word": "تھہ",
+      "frequency": 322
+    },
+    {
+      "rank": 48,
+      "word": "ݜے",
+      "frequency": 319
+    },
+    {
+      "rank": 49,
+      "word": "ݜس",
+      "frequency": 315
+    },
+    {
+      "rank": 50,
+      "word": "کم",
+      "frequency": 309
+    },
+    {
+      "rank": 51,
+      "word": "کرؤں",
+      "frequency": 305
+    },
+    {
+      "rank": 52,
+      "word": "اللہ",
+      "frequency": 304
+    },
+    {
+      "rank": 53,
+      "word": "کام",
+      "frequency": 298
+    },
+    {
+      "rank": 54,
+      "word": "چےۡ",
+      "frequency": 296
+    },
+    {
+      "rank": 55,
+      "word": "گلے",
+      "frequency": 288
+    },
+    {
+      "rank": 56,
+      "word": "تسی",
+      "frequency": 286
+    },
+    {
+      "rank": 57,
+      "word": "ای",
+      "frequency": 281
+    },
+    {
+      "rank": 58,
+      "word": "کرَیں",
+      "frequency": 271
+    },
+    {
+      "rank": 59,
+      "word": "تَیں",
+      "frequency": 269
+    },
+    {
+      "rank": 60,
+      "word": "خلکہ",
+      "frequency": 263
+    },
+    {
+      "rank": 61,
+      "word": "ماݜ",
+      "frequency": 262
+    },
+    {
+      "rank": 62,
+      "word": "اَس",
+      "frequency": 262
+    },
+    {
+      "rank": 63,
+      "word": "کراں",
+      "frequency": 259
+    },
+    {
+      "rank": 64,
+      "word": "نِوان٘ز",
+      "frequency": 257
+    },
+    {
+      "rank": 65,
+      "word": "کریا",
+      "frequency": 253
+    },
+    {
+      "rank": 66,
+      "word": "کؤں",
+      "frequency": 253
+    },
+    {
+      "rank": 67,
+      "word": "اېک",
+      "frequency": 250
+    },
+    {
+      "rank": 68,
+      "word": "کِریا",
+      "frequency": 242
+    },
+    {
+      "rank": 69,
+      "word": "مقامی",
+      "frequency": 241
+    },
+    {
+      "rank": 70,
+      "word": "،",
+      "frequency": 238
+    },
+    {
+      "rank": 71,
+      "word": "تسے",
+      "frequency": 237
+    },
+    {
+      "rank": 72,
+      "word": "پکار",
+      "frequency": 230
+    },
+    {
+      "rank": 73,
+      "word": "تس",
+      "frequency": 227
+    },
+    {
+      "rank": 74,
+      "word": "تُو",
+      "frequency": 227
+    },
+    {
+      "rank": 75,
+      "word": "چئ",
+      "frequency": 226
+    },
+    {
+      "rank": 76,
+      "word": "دُو",
+      "frequency": 225
+    },
+    {
+      "rank": 77,
+      "word": "وجہۡ",
+      "frequency": 224
+    },
+    {
+      "rank": 78,
+      "word": "دی",
+      "frequency": 223
+    },
+    {
+      "rank": 79,
+      "word": "اک",
+      "frequency": 220
+    },
+    {
+      "rank": 80,
+      "word": "کرہ",
+      "frequency": 220
+    },
+    {
+      "rank": 81,
+      "word": "سیوں",
+      "frequency": 218
+    },
+    {
+      "rank": 82,
+      "word": "تھو۔",
+      "frequency": 217
+    },
+    {
+      "rank": 83,
+      "word": "بناں",
+      "frequency": 213
+    },
+    {
+      "rank": 84,
+      "word": "سیں",
+      "frequency": 207
+    },
+    {
+      "rank": 85,
+      "word": "اس",
+      "frequency": 206
+    },
+    {
+      "rank": 86,
+      "word": "ملی",
+      "frequency": 206
+    },
+    {
+      "rank": 87,
+      "word": "کِراں",
+      "frequency": 206
+    },
+    {
+      "rank": 88,
+      "word": "خو",
+      "frequency": 204
+    },
+    {
+      "rank": 89,
+      "word": "علاج",
+      "frequency": 203
+    },
+    {
+      "rank": 90,
+      "word": "بِگ",
+      "frequency": 200
+    },
+    {
+      "rank": 91,
+      "word": "بُٹ",
+      "frequency": 200
+    },
+    {
+      "rank": 92,
+      "word": "دن",
+      "frequency": 199
+    },
+    {
+      "rank": 93,
+      "word": "بئ",
+      "frequency": 198
+    },
+    {
+      "rank": 94,
+      "word": "چھی",
+      "frequency": 197
+    },
+    {
+      "rank": 95,
+      "word": "خلکوں",
+      "frequency": 191
+    },
+    {
+      "rank": 96,
+      "word": "ہُو",
+      "frequency": 190
+    },
+    {
+      "rank": 97,
+      "word": "تئیں",
+      "frequency": 189
+    },
+    {
+      "rank": 98,
+      "word": "استعمال",
+      "frequency": 188
+    },
+    {
+      "rank": 99,
+      "word": "علیہ",
+      "frequency": 187
+    },
+    {
+      "rank": 100,
+      "word": "تُھو،",
+      "frequency": 185
+    },
+    {
+      "rank": 101,
+      "word": "بلی",
+      "frequency": 185
+    },
+    {
+      "rank": 102,
+      "word": "شاناں",
+      "frequency": 183
+    },
+    {
+      "rank": 103,
+      "word": "ولے",
+      "frequency": 182
+    },
+    {
+      "rank": 104,
+      "word": "کیریۡ",
+      "frequency": 181
+    },
+    {
+      "rank": 105,
+      "word": "اېں",
+      "frequency": 181
+    },
+    {
+      "rank": 106,
+      "word": "دیس",
+      "frequency": 180
+    },
+    {
+      "rank": 107,
+      "word": "آن٘س",
+      "frequency": 176
+    },
+    {
+      "rank": 108,
+      "word": "نبی",
+      "frequency": 175
+    },
+    {
+      "rank": 109,
+      "word": "مِیں",
+      "frequency": 175
+    },
+    {
+      "rank": 110,
+      "word": "زئ",
+      "frequency": 171
+    },
+    {
+      "rank": 111,
+      "word": "یی",
+      "frequency": 167
+    },
+    {
+      "rank": 112,
+      "word": "آژ",
+      "frequency": 167
+    },
+    {
+      "rank": 113,
+      "word": "سم",
+      "frequency": 166
+    },
+    {
+      "rank": 114,
+      "word": "وجہ",
+      "frequency": 164
+    },
+    {
+      "rank": 115,
+      "word": "او",
+      "frequency": 163
+    },
+    {
+      "rank": 116,
+      "word": "کہ",
+      "frequency": 163
+    },
+    {
+      "rank": 117,
+      "word": "څیز",
+      "frequency": 161
+    },
+    {
+      "rank": 118,
+      "word": "اے",
+      "frequency": 157
+    },
+    {
+      "rank": 119,
+      "word": "تیں",
+      "frequency": 156
+    },
+    {
+      "rank": 120,
+      "word": "کرئیں",
+      "frequency": 156
+    },
+    {
+      "rank": 121,
+      "word": "بانیۡ",
+      "frequency": 154
+    },
+    {
+      "rank": 122,
+      "word": "ڇا",
+      "frequency": 154
+    },
+    {
+      "rank": 123,
+      "word": "مِلیۡ",
+      "frequency": 154
+    },
+    {
+      "rank": 124,
+      "word": "پھت",
+      "frequency": 153
+    },
+    {
+      "rank": 125,
+      "word": "پتَیں",
+      "frequency": 149
+    },
+    {
+      "rank": 126,
+      "word": "ایں",
+      "frequency": 148
+    },
+    {
+      "rank": 127,
+      "word": "کلہۡ",
+      "frequency": 148
+    },
+    {
+      "rank": 128,
+      "word": "تعلیم",
+      "frequency": 146
+    },
+    {
+      "rank": 129,
+      "word": "اماں",
+      "frequency": 145
+    },
+    {
+      "rank": 130,
+      "word": "خاص",
+      "frequency": 142
+    },
+    {
+      "rank": 131,
+      "word": "کیر",
+      "frequency": 142
+    },
+    {
+      "rank": 132,
+      "word": "ݜَیں",
+      "frequency": 137
+    },
+    {
+      "rank": 133,
+      "word": "حق",
+      "frequency": 136
+    },
+    {
+      "rank": 134,
+      "word": "تُس",
+      "frequency": 134
+    },
+    {
+      "rank": 135,
+      "word": "۔",
+      "frequency": 133
+    },
+    {
+      "rank": 136,
+      "word": "پاک",
+      "frequency": 133
+    },
+    {
+      "rank": 137,
+      "word": "امَیں",
+      "frequency": 133
+    },
+    {
+      "rank": 138,
+      "word": "اوک",
+      "frequency": 129
+    },
+    {
+      "rank": 139,
+      "word": "ختم",
+      "frequency": 128
+    },
+    {
+      "rank": 140,
+      "word": "گِشے",
+      "frequency": 127
+    },
+    {
+      "rank": 141,
+      "word": "کمہۡ",
+      "frequency": 126
+    },
+    {
+      "rank": 142,
+      "word": "دَن",
+      "frequency": 126
+    },
+    {
+      "rank": 143,
+      "word": "سَیں",
+      "frequency": 125
+    },
+    {
+      "rank": 144,
+      "word": "بارہ",
+      "frequency": 123
+    },
+    {
+      "rank": 145,
+      "word": "می",
+      "frequency": 122
+    },
+    {
+      "rank": 146,
+      "word": "ہویں",
+      "frequency": 122
+    },
+    {
+      "rank": 147,
+      "word": "څاں",
+      "frequency": 120
+    },
+    {
+      "rank": 148,
+      "word": "مِلی",
+      "frequency": 120
+    },
+    {
+      "rank": 149,
+      "word": "ہوتھی۔",
+      "frequency": 120
+    },
+    {
+      "rank": 150,
+      "word": "حاصل",
+      "frequency": 118
+    },
+    {
+      "rank": 151,
+      "word": "وخ",
+      "frequency": 117
+    },
+    {
+      "rank": 152,
+      "word": "ہوتُھو۔",
+      "frequency": 116
+    },
+    {
+      "rank": 153,
+      "word": "اما",
+      "frequency": 116
+    },
+    {
+      "rank": 154,
+      "word": "ہِلاک",
+      "frequency": 115
+    },
+    {
+      "rank": 155,
+      "word": "چور",
+      "frequency": 114
+    },
+    {
+      "rank": 156,
+      "word": "قانُون",
+      "frequency": 114
+    },
+    {
+      "rank": 157,
+      "word": "چھی۔",
+      "frequency": 114
+    },
+    {
+      "rank": 158,
+      "word": "ماسمہ",
+      "frequency": 113
+    },
+    {
+      "rank": 159,
+      "word": "آن٘س۔",
+      "frequency": 112
+    },
+    {
+      "rank": 160,
+      "word": "پاکے",
+      "frequency": 112
+    },
+    {
+      "rank": 161,
+      "word": "لازمی",
+      "frequency": 112
+    },
+    {
+      "rank": 162,
+      "word": "وار",
+      "frequency": 109
+    },
+    {
+      "rank": 163,
+      "word": "سِوَیں",
+      "frequency": 109
+    },
+    {
+      "rank": 164,
+      "word": "کاں",
+      "frequency": 108
+    },
+    {
+      "rank": 165,
+      "word": "اېوں",
+      "frequency": 108
+    },
+    {
+      "rank": 166,
+      "word": "ہو۔",
+      "frequency": 108
+    },
+    {
+      "rank": 167,
+      "word": "بانی",
+      "frequency": 107
+    },
+    {
+      "rank": 168,
+      "word": "بھا",
+      "frequency": 107
+    },
+    {
+      "rank": 169,
+      "word": "جواب",
+      "frequency": 106
+    },
+    {
+      "rank": 170,
+      "word": "والا",
+      "frequency": 103
+    },
+    {
+      "rank": 171,
+      "word": "زَیں",
+      "frequency": 102
+    },
+    {
+      "rank": 172,
+      "word": "ہاں",
+      "frequency": 102
+    },
+    {
+      "rank": 173,
+      "word": "تھُو",
+      "frequency": 101
+    },
+    {
+      "rank": 174,
+      "word": "طور",
+      "frequency": 100
+    },
+    {
+      "rank": 175,
+      "word": "سئیں",
+      "frequency": 98
+    },
+    {
+      "rank": 176,
+      "word": "اسے",
+      "frequency": 98
+    },
+    {
+      "rank": 177,
+      "word": "اِواں",
+      "frequency": 97
+    },
+    {
+      "rank": 178,
+      "word": "ہا",
+      "frequency": 97
+    },
+    {
+      "rank": 179,
+      "word": "گے",
+      "frequency": 97
+    },
+    {
+      "rank": 180,
+      "word": "کرؤ",
+      "frequency": 96
+    },
+    {
+      "rank": 181,
+      "word": "خلکؤں",
+      "frequency": 96
+    },
+    {
+      "rank": 182,
+      "word": "وختہ",
+      "frequency": 95
+    },
+    {
+      "rank": 183,
+      "word": "عمل",
+      "frequency": 95
+    },
+    {
+      "rank": 184,
+      "word": "دے",
+      "frequency": 95
+    },
+    {
+      "rank": 185,
+      "word": "سُگائ",
+      "frequency": 92
+    },
+    {
+      "rank": 186,
+      "word": "نَیں",
+      "frequency": 92
+    },
+    {
+      "rank": 187,
+      "word": "گَھیں",
+      "frequency": 92
+    },
+    {
+      "rank": 188,
+      "word": "ہُویں",
+      "frequency": 91
+    },
+    {
+      "rank": 189,
+      "word": "سِواں",
+      "frequency": 91
+    },
+    {
+      "rank": 190,
+      "word": "دُنئ",
+      "frequency": 91
+    },
+    {
+      "rank": 191,
+      "word": "څئی",
+      "frequency": 90
+    },
+    {
+      "rank": 192,
+      "word": "کوستَیں",
+      "frequency": 90
+    },
+    {
+      "rank": 193,
+      "word": "تھی،",
+      "frequency": 90
+    },
+    {
+      "rank": 194,
+      "word": "بُٹؤں",
+      "frequency": 90
+    },
+    {
+      "rank": 195,
+      "word": "پُور",
+      "frequency": 89
+    },
+    {
+      "rank": 196,
+      "word": "تلہ",
+      "frequency": 88
+    },
+    {
+      "rank": 197,
+      "word": "ٹی",
+      "frequency": 87
+    },
+    {
+      "rank": 198,
+      "word": "زاں",
+      "frequency": 87
+    },
+    {
+      "rank": 199,
+      "word": "حقوں",
+      "frequency": 86
+    },
+    {
+      "rank": 200,
+      "word": "روان",
+      "frequency": 86
+    },
+    {
+      "rank": 201,
+      "word": "زِبوں",
+      "frequency": 85
+    },
+    {
+      "rank": 202,
+      "word": "مٹی",
+      "frequency": 85
+    },
+    {
+      "rank": 203,
+      "word": "گولہ",
+      "frequency": 84
+    },
+    {
+      "rank": 204,
+      "word": "اِوَیں",
+      "frequency": 84
+    },
+    {
+      "rank": 205,
+      "word": "مال",
+      "frequency": 84
+    },
+    {
+      "rank": 206,
+      "word": "شروع",
+      "frequency": 83
+    },
+    {
+      "rank": 207,
+      "word": "ہاریۡ",
+      "frequency": 83
+    },
+    {
+      "rank": 208,
+      "word": "پاتُو",
+      "frequency": 82
+    },
+    {
+      "rank": 209,
+      "word": "سُوچ",
+      "frequency": 82
+    },
+    {
+      "rank": 210,
+      "word": "دھا",
+      "frequency": 81
+    },
+    {
+      "rank": 211,
+      "word": "تی",
+      "frequency": 80
+    },
+    {
+      "rank": 212,
+      "word": "سخ",
+      "frequency": 79
+    },
+    {
+      "rank": 213,
+      "word": "دڑ",
+      "frequency": 79
+    },
+    {
+      "rank": 214,
+      "word": "لیل",
+      "frequency": 79
+    },
+    {
+      "rank": 215,
+      "word": "لک",
+      "frequency": 79
+    },
+    {
+      "rank": 216,
+      "word": "علم",
+      "frequency": 78
+    },
+    {
+      "rank": 217,
+      "word": "زات",
+      "frequency": 78
+    },
+    {
+      "rank": 218,
+      "word": "تُھو؟",
+      "frequency": 78
+    },
+    {
+      "rank": 219,
+      "word": "کوستاں",
+      "frequency": 78
+    },
+    {
+      "rank": 220,
+      "word": "دُنَیں",
+      "frequency": 77
+    },
+    {
+      "rank": 221,
+      "word": "سېوں",
+      "frequency": 77
+    },
+    {
+      "rank": 222,
+      "word": "بھئ",
+      "frequency": 77
+    },
+    {
+      "rank": 223,
+      "word": "پیدا",
+      "frequency": 77
+    },
+    {
+      "rank": 224,
+      "word": "عام",
+      "frequency": 77
+    },
+    {
+      "rank": 225,
+      "word": "ژیب",
+      "frequency": 77
+    },
+    {
+      "rank": 226,
+      "word": "بِتُس",
+      "frequency": 76
+    },
+    {
+      "rank": 227,
+      "word": "بِڅَیں",
+      "frequency": 76
+    },
+    {
+      "rank": 228,
+      "word": "اُستا",
+      "frequency": 75
+    },
+    {
+      "rank": 229,
+      "word": "کمہ",
+      "frequency": 74
+    },
+    {
+      "rank": 230,
+      "word": "پاکاں",
+      "frequency": 74
+    },
+    {
+      "rank": 231,
+      "word": "حضرت",
+      "frequency": 74
+    },
+    {
+      "rank": 232,
+      "word": "جمع",
+      "frequency": 73
+    },
+    {
+      "rank": 233,
+      "word": "لُوں",
+      "frequency": 73
+    },
+    {
+      "rank": 234,
+      "word": "پاتیُون",
+      "frequency": 73
+    },
+    {
+      "rank": 235,
+      "word": "مے",
+      "frequency": 73
+    },
+    {
+      "rank": 236,
+      "word": "ماݜاں",
+      "frequency": 73
+    },
+    {
+      "rank": 237,
+      "word": "ترقی",
+      "frequency": 73
+    },
+    {
+      "rank": 238,
+      "word": "تُھوۡ۔",
+      "frequency": 73
+    },
+    {
+      "rank": 239,
+      "word": "آن٘ڇھی",
+      "frequency": 72
+    },
+    {
+      "rank": 240,
+      "word": "انسانی",
+      "frequency": 72
+    },
+    {
+      "rank": 241,
+      "word": "کیری",
+      "frequency": 72
+    },
+    {
+      "rank": 242,
+      "word": "اڅھک",
+      "frequency": 72
+    },
+    {
+      "rank": 243,
+      "word": "اکثر",
+      "frequency": 72
+    },
+    {
+      "rank": 244,
+      "word": "کال",
+      "frequency": 71
+    },
+    {
+      "rank": 245,
+      "word": "پی",
+      "frequency": 71
+    },
+    {
+      "rank": 246,
+      "word": "کرم",
+      "frequency": 71
+    },
+    {
+      "rank": 247,
+      "word": "ݜتُک",
+      "frequency": 71
+    },
+    {
+      "rank": 248,
+      "word": "کیں",
+      "frequency": 70
+    },
+    {
+      "rank": 249,
+      "word": "انساناں",
+      "frequency": 70
+    },
+    {
+      "rank": 250,
+      "word": "دُور",
+      "frequency": 70
+    },
+    {
+      "rank": 251,
+      "word": "ہی",
+      "frequency": 70
+    },
+    {
+      "rank": 252,
+      "word": "انٹرنیٹ",
+      "frequency": 70
+    },
+    {
+      "rank": 253,
+      "word": "اْے",
+      "frequency": 69
+    },
+    {
+      "rank": 254,
+      "word": "ہُوں",
+      "frequency": 69
+    },
+    {
+      "rank": 255,
+      "word": "شُو",
+      "frequency": 69
+    },
+    {
+      "rank": 256,
+      "word": "ہُوئیں",
+      "frequency": 69
+    },
+    {
+      "rank": 257,
+      "word": "تپُوس",
+      "frequency": 69
+    },
+    {
+      "rank": 258,
+      "word": "کرا",
+      "frequency": 69
+    },
+    {
+      "rank": 259,
+      "word": "ہری",
+      "frequency": 68
+    },
+    {
+      "rank": 260,
+      "word": "بنہ",
+      "frequency": 68
+    },
+    {
+      "rank": 261,
+      "word": "اگار",
+      "frequency": 68
+    },
+    {
+      "rank": 262,
+      "word": "کر",
+      "frequency": 67
+    },
+    {
+      "rank": 263,
+      "word": "جی",
+      "frequency": 67
+    },
+    {
+      "rank": 264,
+      "word": "بنیادی",
+      "frequency": 66
+    },
+    {
+      "rank": 265,
+      "word": "ہیُو",
+      "frequency": 66
+    },
+    {
+      "rank": 266,
+      "word": "نا",
+      "frequency": 66
+    },
+    {
+      "rank": 267,
+      "word": "کیریۡ۔",
+      "frequency": 65
+    },
+    {
+      "rank": 268,
+      "word": "غمی",
+      "frequency": 65
+    },
+    {
+      "rank": 269,
+      "word": "بېں",
+      "frequency": 65
+    },
+    {
+      "rank": 270,
+      "word": "کالہ",
+      "frequency": 64
+    },
+    {
+      "rank": 271,
+      "word": "خلق",
+      "frequency": 64
+    },
+    {
+      "rank": 272,
+      "word": "بدل",
+      "frequency": 64
+    },
+    {
+      "rank": 273,
+      "word": "انسان",
+      "frequency": 63
+    },
+    {
+      "rank": 274,
+      "word": "کِتاب",
+      "frequency": 63
+    },
+    {
+      "rank": 275,
+      "word": "ہوئ",
+      "frequency": 63
+    },
+    {
+      "rank": 276,
+      "word": "یان٘س",
+      "frequency": 63
+    },
+    {
+      "rank": 277,
+      "word": "اسمان",
+      "frequency": 62
+    },
+    {
+      "rank": 278,
+      "word": "ہُونٚت۔",
+      "frequency": 62
+    },
+    {
+      "rank": 279,
+      "word": "زائ",
+      "frequency": 61
+    },
+    {
+      "rank": 280,
+      "word": "ملیۡ",
+      "frequency": 61
+    },
+    {
+      "rank": 281,
+      "word": "اَئیں",
+      "frequency": 60
+    },
+    {
+      "rank": 282,
+      "word": "اَیں",
+      "frequency": 60
+    },
+    {
+      "rank": 283,
+      "word": "ملا",
+      "frequency": 60
+    },
+    {
+      "rank": 284,
+      "word": "ݜِݜ",
+      "frequency": 60
+    },
+    {
+      "rank": 285,
+      "word": "بِڅاں",
+      "frequency": 60
+    },
+    {
+      "rank": 286,
+      "word": "فرض",
+      "frequency": 60
+    },
+    {
+      "rank": 287,
+      "word": "استمال",
+      "frequency": 60
+    },
+    {
+      "rank": 288,
+      "word": "گا",
+      "frequency": 60
+    },
+    {
+      "rank": 289,
+      "word": "اقوام",
+      "frequency": 59
+    },
+    {
+      "rank": 290,
+      "word": "گازریۡ",
+      "frequency": 59
+    },
+    {
+      "rank": 291,
+      "word": "زِیب",
+      "frequency": 59
+    },
+    {
+      "rank": 292,
+      "word": "ہُوگا۔",
+      "frequency": 59
+    },
+    {
+      "rank": 293,
+      "word": "بی",
+      "frequency": 59
+    },
+    {
+      "rank": 294,
+      "word": "ول",
+      "frequency": 59
+    },
+    {
+      "rank": 295,
+      "word": "ہُون٘دُوں",
+      "frequency": 59
+    },
+    {
+      "rank": 296,
+      "word": "ہتہۡ",
+      "frequency": 59
+    },
+    {
+      "rank": 297,
+      "word": "بھاؤ",
+      "frequency": 58
+    },
+    {
+      "rank": 298,
+      "word": "رُوݜ",
+      "frequency": 58
+    },
+    {
+      "rank": 299,
+      "word": "الاقوامی",
+      "frequency": 58
+    },
+    {
+      "rank": 300,
+      "word": "گِنہۡ",
+      "frequency": 58
+    },
+    {
+      "rank": 301,
+      "word": "ہسانی",
+      "frequency": 58
+    },
+    {
+      "rank": 302,
+      "word": "پان٘ژ",
+      "frequency": 58
+    },
+    {
+      "rank": 303,
+      "word": "شُروع",
+      "frequency": 58
+    },
+    {
+      "rank": 304,
+      "word": "کس",
+      "frequency": 58
+    },
+    {
+      "rank": 305,
+      "word": "وختی",
+      "frequency": 58
+    },
+    {
+      "rank": 306,
+      "word": "شامل",
+      "frequency": 57
+    },
+    {
+      "rank": 307,
+      "word": "بن",
+      "frequency": 57
+    },
+    {
+      "rank": 308,
+      "word": "ChatGPT",
+      "frequency": 57
+    },
+    {
+      "rank": 309,
+      "word": "حصہ",
+      "frequency": 57
+    },
+    {
+      "rank": 310,
+      "word": "خبر",
+      "frequency": 57
+    },
+    {
+      "rank": 311,
+      "word": "وخت",
+      "frequency": 57
+    },
+    {
+      "rank": 312,
+      "word": "ہُسی",
+      "frequency": 56
+    },
+    {
+      "rank": 313,
+      "word": "گھوں",
+      "frequency": 56
+    },
+    {
+      "rank": 314,
+      "word": "بین",
+      "frequency": 56
+    },
+    {
+      "rank": 315,
+      "word": "خلکاں",
+      "frequency": 56
+    },
+    {
+      "rank": 316,
+      "word": "نؤں",
+      "frequency": 56
+    },
+    {
+      "rank": 317,
+      "word": "ثقافتی",
+      "frequency": 56
+    },
+    {
+      "rank": 318,
+      "word": "رن٘گاں",
+      "frequency": 56
+    },
+    {
+      "rank": 319,
+      "word": "خوش",
+      "frequency": 56
+    },
+    {
+      "rank": 320,
+      "word": "تَس",
+      "frequency": 55
+    },
+    {
+      "rank": 321,
+      "word": "ناں",
+      "frequency": 55
+    },
+    {
+      "rank": 322,
+      "word": "کتاب",
+      "frequency": 55
+    },
+    {
+      "rank": 323,
+      "word": "بُوئ",
+      "frequency": 55
+    },
+    {
+      "rank": 324,
+      "word": "رال",
+      "frequency": 55
+    },
+    {
+      "rank": 325,
+      "word": "قومی",
+      "frequency": 55
+    },
+    {
+      "rank": 326,
+      "word": "دین",
+      "frequency": 55
+    },
+    {
+      "rank": 327,
+      "word": "حُکُم",
+      "frequency": 55
+    },
+    {
+      "rank": 328,
+      "word": "مرگلئ",
+      "frequency": 54
+    },
+    {
+      "rank": 329,
+      "word": "خلقہ",
+      "frequency": 54
+    },
+    {
+      "rank": 330,
+      "word": "تعلیماں",
+      "frequency": 54
+    },
+    {
+      "rank": 331,
+      "word": "بغیر",
+      "frequency": 54
+    },
+    {
+      "rank": 332,
+      "word": "بیماری",
+      "frequency": 54
+    },
+    {
+      "rank": 333,
+      "word": "کسی",
+      "frequency": 54
+    },
+    {
+      "rank": 334,
+      "word": "کېر",
+      "frequency": 54
+    },
+    {
+      "rank": 335,
+      "word": "معنہ",
+      "frequency": 53
+    },
+    {
+      "rank": 336,
+      "word": "سلام",
+      "frequency": 53
+    },
+    {
+      "rank": 337,
+      "word": "گئ",
+      "frequency": 53
+    },
+    {
+      "rank": 338,
+      "word": "دېں",
+      "frequency": 53
+    },
+    {
+      "rank": 339,
+      "word": "مالَیں",
+      "frequency": 52
+    },
+    {
+      "rank": 340,
+      "word": "طریقہ",
+      "frequency": 52
+    },
+    {
+      "rank": 341,
+      "word": "ہریۡ",
+      "frequency": 52
+    },
+    {
+      "rank": 342,
+      "word": "تھی؟",
+      "frequency": 52
+    },
+    {
+      "rank": 343,
+      "word": "سبق",
+      "frequency": 52
+    },
+    {
+      "rank": 344,
+      "word": "سېں",
+      "frequency": 52
+    },
+    {
+      "rank": 345,
+      "word": "عقل",
+      "frequency": 52
+    },
+    {
+      "rank": 346,
+      "word": "ٹیم",
+      "frequency": 52
+    },
+    {
+      "rank": 347,
+      "word": "پان٘د",
+      "frequency": 51
+    },
+    {
+      "rank": 348,
+      "word": "فَیدہ",
+      "frequency": 51
+    },
+    {
+      "rank": 349,
+      "word": "مختلف",
+      "frequency": 51
+    },
+    {
+      "rank": 350,
+      "word": "ادُوس",
+      "frequency": 51
+    },
+    {
+      "rank": 351,
+      "word": "روپئ",
+      "frequency": 50
+    },
+    {
+      "rank": 352,
+      "word": "بِس",
+      "frequency": 50
+    },
+    {
+      "rank": 353,
+      "word": "حُکمہ",
+      "frequency": 50
+    },
+    {
+      "rank": 354,
+      "word": "تلاں",
+      "frequency": 50
+    },
+    {
+      "rank": 355,
+      "word": "کری",
+      "frequency": 50
+    },
+    {
+      "rank": 356,
+      "word": "زندگی",
+      "frequency": 49
+    },
+    {
+      "rank": 357,
+      "word": "کری۔",
+      "frequency": 49
+    },
+    {
+      "rank": 358,
+      "word": "کل",
+      "frequency": 49
+    },
+    {
+      "rank": 359,
+      "word": "رڇھؤں",
+      "frequency": 49
+    },
+    {
+      "rank": 360,
+      "word": "گلہ",
+      "frequency": 49
+    },
+    {
+      "rank": 361,
+      "word": "زُمُک",
+      "frequency": 49
+    },
+    {
+      "rank": 362,
+      "word": "څَیں",
+      "frequency": 49
+    },
+    {
+      "rank": 363,
+      "word": "علاوہ",
+      "frequency": 48
+    },
+    {
+      "rank": 364,
+      "word": "ݜِݜہ",
+      "frequency": 48
+    },
+    {
+      "rank": 365,
+      "word": "فائدہ",
+      "frequency": 48
+    },
+    {
+      "rank": 366,
+      "word": "من٘ڑنئ",
+      "frequency": 48
+    },
+    {
+      "rank": 367,
+      "word": "گھین٘رہ",
+      "frequency": 48
+    },
+    {
+      "rank": 368,
+      "word": "اِسکُلاں",
+      "frequency": 48
+    },
+    {
+      "rank": 369,
+      "word": "پشی",
+      "frequency": 48
+    },
+    {
+      "rank": 370,
+      "word": "آن٘سیۡ",
+      "frequency": 48
+    },
+    {
+      "rank": 371,
+      "word": "یعنی",
+      "frequency": 48
+    },
+    {
+      "rank": 372,
+      "word": "کسیں",
+      "frequency": 48
+    },
+    {
+      "rank": 373,
+      "word": "گائ",
+      "frequency": 48
+    },
+    {
+      "rank": 374,
+      "word": "دیسؤں",
+      "frequency": 48
+    },
+    {
+      "rank": 375,
+      "word": "چئی",
+      "frequency": 48
+    },
+    {
+      "rank": 376,
+      "word": "اڅھکاݜ",
+      "frequency": 48
+    },
+    {
+      "rank": 377,
+      "word": "کیرُوں",
+      "frequency": 47
+    },
+    {
+      "rank": 378,
+      "word": "کریل",
+      "frequency": 47
+    },
+    {
+      "rank": 379,
+      "word": "وطن",
+      "frequency": 47
+    },
+    {
+      "rank": 380,
+      "word": "لر",
+      "frequency": 47
+    },
+    {
+      "rank": 381,
+      "word": "شریۡ",
+      "frequency": 47
+    },
+    {
+      "rank": 382,
+      "word": "صرف",
+      "frequency": 47
+    },
+    {
+      "rank": 383,
+      "word": "مُوٹُھو",
+      "frequency": 47
+    },
+    {
+      "rank": 384,
+      "word": "بیں",
+      "frequency": 47
+    },
+    {
+      "rank": 385,
+      "word": "متحداں",
+      "frequency": 46
+    },
+    {
+      "rank": 386,
+      "word": "کِھیں",
+      "frequency": 46
+    },
+    {
+      "rank": 387,
+      "word": "پاتیُوں",
+      "frequency": 46
+    },
+    {
+      "rank": 388,
+      "word": "بھاں",
+      "frequency": 46
+    },
+    {
+      "rank": 389,
+      "word": "دیوں",
+      "frequency": 46
+    },
+    {
+      "rank": 390,
+      "word": "کېں",
+      "frequency": 46
+    },
+    {
+      "rank": 391,
+      "word": "گھریں",
+      "frequency": 46
+    },
+    {
+      "rank": 392,
+      "word": "یادی",
+      "frequency": 46
+    },
+    {
+      "rank": 393,
+      "word": "مرض",
+      "frequency": 46
+    },
+    {
+      "rank": 394,
+      "word": "معلومات",
+      "frequency": 46
+    },
+    {
+      "rank": 395,
+      "word": "گِن",
+      "frequency": 45
+    },
+    {
+      "rank": 396,
+      "word": "کران٘لہ",
+      "frequency": 45
+    },
+    {
+      "rank": 397,
+      "word": "سنت",
+      "frequency": 45
+    },
+    {
+      "rank": 398,
+      "word": "ہُوگے",
+      "frequency": 45
+    },
+    {
+      "rank": 399,
+      "word": "واپس",
+      "frequency": 45
+    },
+    {
+      "rank": 400,
+      "word": "آ",
+      "frequency": 45
+    },
+    {
+      "rank": 401,
+      "word": "ذریعہ",
+      "frequency": 45
+    },
+    {
+      "rank": 402,
+      "word": "قِسمہ",
+      "frequency": 45
+    },
+    {
+      "rank": 403,
+      "word": "اُولی",
+      "frequency": 45
+    },
+    {
+      "rank": 404,
+      "word": "بان",
+      "frequency": 45
+    },
+    {
+      "rank": 405,
+      "word": "وو",
+      "frequency": 45
+    },
+    {
+      "rank": 406,
+      "word": "مکمل",
+      "frequency": 44
+    },
+    {
+      "rank": 407,
+      "word": "سُگاؤ",
+      "frequency": 44
+    },
+    {
+      "rank": 408,
+      "word": "آن٘سیۡ۔",
+      "frequency": 44
+    },
+    {
+      "rank": 409,
+      "word": "السلام",
+      "frequency": 44
+    },
+    {
+      "rank": 410,
+      "word": "تُوں",
+      "frequency": 44
+    },
+    {
+      "rank": 411,
+      "word": "مِل",
+      "frequency": 44
+    },
+    {
+      "rank": 412,
+      "word": "دو",
+      "frequency": 44
+    },
+    {
+      "rank": 413,
+      "word": "اعلان",
+      "frequency": 44
+    },
+    {
+      "rank": 414,
+      "word": "بیش",
+      "frequency": 44
+    },
+    {
+      "rank": 415,
+      "word": "ہُون٘د",
+      "frequency": 44
+    },
+    {
+      "rank": 416,
+      "word": "غلطی",
+      "frequency": 44
+    },
+    {
+      "rank": 417,
+      "word": "مریض",
+      "frequency": 44
+    },
+    {
+      "rank": 418,
+      "word": "نظام",
+      "frequency": 44
+    },
+    {
+      "rank": 419,
+      "word": "مِشر",
+      "frequency": 44
+    },
+    {
+      "rank": 420,
+      "word": "حکم",
+      "frequency": 44
+    },
+    {
+      "rank": 421,
+      "word": "حقہ",
+      "frequency": 43
+    },
+    {
+      "rank": 422,
+      "word": "تھے۔",
+      "frequency": 43
+    },
+    {
+      "rank": 423,
+      "word": "وی",
+      "frequency": 43
+    },
+    {
+      "rank": 424,
+      "word": "پو",
+      "frequency": 43
+    },
+    {
+      "rank": 425,
+      "word": "بِکسی",
+      "frequency": 43
+    },
+    {
+      "rank": 426,
+      "word": "خلک",
+      "frequency": 43
+    },
+    {
+      "rank": 427,
+      "word": "نیرہ",
+      "frequency": 43
+    },
+    {
+      "rank": 428,
+      "word": "ماݜی",
+      "frequency": 43
+    },
+    {
+      "rank": 429,
+      "word": "ہُوند",
+      "frequency": 43
+    },
+    {
+      "rank": 430,
+      "word": "ݜلہ",
+      "frequency": 43
+    },
+    {
+      "rank": 431,
+      "word": "مُتیۡ",
+      "frequency": 43
+    },
+    {
+      "rank": 432,
+      "word": "ہو،",
+      "frequency": 43
+    },
+    {
+      "rank": 433,
+      "word": "یی؟",
+      "frequency": 42
+    },
+    {
+      "rank": 434,
+      "word": "قانون",
+      "frequency": 42
+    },
+    {
+      "rank": 435,
+      "word": "کھؤں",
+      "frequency": 42
+    },
+    {
+      "rank": 436,
+      "word": "دڑی",
+      "frequency": 42
+    },
+    {
+      "rank": 437,
+      "word": "مرضی",
+      "frequency": 42
+    },
+    {
+      "rank": 438,
+      "word": "لِکَیں",
+      "frequency": 42
+    },
+    {
+      "rank": 439,
+      "word": "رس",
+      "frequency": 42
+    },
+    {
+      "rank": 440,
+      "word": "گیل",
+      "frequency": 42
+    },
+    {
+      "rank": 441,
+      "word": "سُگو",
+      "frequency": 42
+    },
+    {
+      "rank": 442,
+      "word": "ماݜَیں",
+      "frequency": 42
+    },
+    {
+      "rank": 443,
+      "word": "امن",
+      "frequency": 42
+    },
+    {
+      "rank": 444,
+      "word": "ݜو",
+      "frequency": 42
+    },
+    {
+      "rank": 445,
+      "word": "ہوئیں",
+      "frequency": 41
+    },
+    {
+      "rank": 446,
+      "word": "مطلب",
+      "frequency": 41
+    },
+    {
+      "rank": 447,
+      "word": "انشاءاللہ",
+      "frequency": 41
+    },
+    {
+      "rank": 448,
+      "word": "دیں",
+      "frequency": 41
+    },
+    {
+      "rank": 449,
+      "word": "ایل",
+      "frequency": 41
+    },
+    {
+      "rank": 450,
+      "word": "تسئیں",
+      "frequency": 41
+    },
+    {
+      "rank": 451,
+      "word": "احترام",
+      "frequency": 41
+    },
+    {
+      "rank": 452,
+      "word": "ڇھاری",
+      "frequency": 41
+    },
+    {
+      "rank": 453,
+      "word": "طاقت",
+      "frequency": 41
+    },
+    {
+      "rank": 454,
+      "word": "قلم",
+      "frequency": 41
+    },
+    {
+      "rank": 455,
+      "word": "محنت",
+      "frequency": 41
+    },
+    {
+      "rank": 456,
+      "word": "مُسُلماں",
+      "frequency": 41
+    },
+    {
+      "rank": 457,
+      "word": "نیۡ",
+      "frequency": 41
+    },
+    {
+      "rank": 458,
+      "word": "خوشال",
+      "frequency": 40
+    },
+    {
+      "rank": 459,
+      "word": "کتُک",
+      "frequency": 40
+    },
+    {
+      "rank": 460,
+      "word": "رُشتا",
+      "frequency": 40
+    },
+    {
+      "rank": 461,
+      "word": "اسد",
+      "frequency": 40
+    },
+    {
+      "rank": 462,
+      "word": "نئ",
+      "frequency": 40
+    },
+    {
+      "rank": 463,
+      "word": "تواں",
+      "frequency": 40
+    },
+    {
+      "rank": 464,
+      "word": "لکھ",
+      "frequency": 40
+    },
+    {
+      "rank": 465,
+      "word": "دھان٘کہ",
+      "frequency": 40
+    },
+    {
+      "rank": 466,
+      "word": "سماجی",
+      "frequency": 40
+    },
+    {
+      "rank": 467,
+      "word": "ایوں",
+      "frequency": 39
+    },
+    {
+      "rank": 468,
+      "word": "من",
+      "frequency": 39
+    },
+    {
+      "rank": 469,
+      "word": "بنَیں",
+      "frequency": 39
+    },
+    {
+      "rank": 470,
+      "word": "ضرورت",
+      "frequency": 39
+    },
+    {
+      "rank": 471,
+      "word": "پاکَیں",
+      "frequency": 39
+    },
+    {
+      "rank": 472,
+      "word": "پتہۡ",
+      "frequency": 39
+    },
+    {
+      "rank": 473,
+      "word": "گُھوں",
+      "frequency": 39
+    },
+    {
+      "rank": 474,
+      "word": "بھژدہ",
+      "frequency": 39
+    },
+    {
+      "rank": 475,
+      "word": "چؤر",
+      "frequency": 39
+    },
+    {
+      "rank": 476,
+      "word": "سِڇھیا",
+      "frequency": 39
+    },
+    {
+      "rank": 477,
+      "word": "سات",
+      "frequency": 38
+    },
+    {
+      "rank": 478,
+      "word": "بالٹو",
+      "frequency": 38
+    },
+    {
+      "rank": 479,
+      "word": "ہن",
+      "frequency": 38
+    },
+    {
+      "rank": 480,
+      "word": "لَک",
+      "frequency": 38
+    },
+    {
+      "rank": 481,
+      "word": "ٹِکنالوجی",
+      "frequency": 38
+    },
+    {
+      "rank": 482,
+      "word": "حملہ",
+      "frequency": 38
+    },
+    {
+      "rank": 483,
+      "word": "ضروری",
+      "frequency": 38
+    },
+    {
+      "rank": 484,
+      "word": "سامُوٹھ",
+      "frequency": 38
+    },
+    {
+      "rank": 485,
+      "word": "تھہ،",
+      "frequency": 38
+    },
+    {
+      "rank": 486,
+      "word": "ماسُم",
+      "frequency": 37
+    },
+    {
+      "rank": 487,
+      "word": "ݜَس",
+      "frequency": 37
+    },
+    {
+      "rank": 488,
+      "word": "ژری",
+      "frequency": 37
+    },
+    {
+      "rank": 489,
+      "word": "شاہِری",
+      "frequency": 37
+    },
+    {
+      "rank": 490,
+      "word": "رسول",
+      "frequency": 37
+    },
+    {
+      "rank": 491,
+      "word": "موجود",
+      "frequency": 37
+    },
+    {
+      "rank": 492,
+      "word": "اثر",
+      "frequency": 37
+    },
+    {
+      "rank": 493,
+      "word": "نِوان٘زاں",
+      "frequency": 37
+    },
+    {
+      "rank": 494,
+      "word": "ادا",
+      "frequency": 37
+    },
+    {
+      "rank": 495,
+      "word": "شرط",
+      "frequency": 37
+    },
+    {
+      "rank": 496,
+      "word": "تسلیم",
+      "frequency": 37
+    },
+    {
+      "rank": 497,
+      "word": "کرِگ",
+      "frequency": 37
+    },
+    {
+      "rank": 498,
+      "word": "ہُون٘دیۡ",
+      "frequency": 37
+    },
+    {
+      "rank": 499,
+      "word": "معاشی،",
+      "frequency": 36
+    },
+    {
+      "rank": 500,
+      "word": "قسماں",
+      "frequency": 36
+    },
+    {
+      "rank": 501,
+      "word": "سُون٘ݜ",
+      "frequency": 36
+    },
+    {
+      "rank": 502,
+      "word": "علاقہ",
+      "frequency": 36
+    },
+    {
+      "rank": 503,
+      "word": "اور",
+      "frequency": 36
+    },
+    {
+      "rank": 504,
+      "word": "جُوڑ",
+      "frequency": 36
+    },
+    {
+      "rank": 505,
+      "word": "ماݜہ",
+      "frequency": 36
+    },
+    {
+      "rank": 506,
+      "word": "مَیں",
+      "frequency": 36
+    },
+    {
+      "rank": 507,
+      "word": "رُپئ",
+      "frequency": 36
+    },
+    {
+      "rank": 508,
+      "word": "خراب",
+      "frequency": 35
+    },
+    {
+      "rank": 509,
+      "word": "کمؤں",
+      "frequency": 35
+    },
+    {
+      "rank": 510,
+      "word": "شاں",
+      "frequency": 35
+    },
+    {
+      "rank": 511,
+      "word": "کَھیں",
+      "frequency": 35
+    },
+    {
+      "rank": 512,
+      "word": "کھئیں",
+      "frequency": 35
+    },
+    {
+      "rank": 513,
+      "word": "ذمہ",
+      "frequency": 35
+    },
+    {
+      "rank": 514,
+      "word": "حل",
+      "frequency": 35
+    },
+    {
+      "rank": 515,
+      "word": "ہم",
+      "frequency": 35
+    },
+    {
+      "rank": 516,
+      "word": "دُویُوں",
+      "frequency": 35
+    },
+    {
+      "rank": 517,
+      "word": "کالؤں",
+      "frequency": 35
+    },
+    {
+      "rank": 518,
+      "word": "تُھوۡ",
+      "frequency": 35
+    },
+    {
+      "rank": 519,
+      "word": "قرآن",
+      "frequency": 35
+    },
+    {
+      "rank": 520,
+      "word": "ککی",
+      "frequency": 35
+    },
+    {
+      "rank": 521,
+      "word": "احساس",
+      "frequency": 35
+    },
+    {
+      "rank": 522,
+      "word": "لِکہ",
+      "frequency": 35
+    },
+    {
+      "rank": 523,
+      "word": "ژا",
+      "frequency": 35
+    },
+    {
+      "rank": 524,
+      "word": "مثال",
+      "frequency": 35
+    },
+    {
+      "rank": 525,
+      "word": "ݜسی",
+      "frequency": 35
+    },
+    {
+      "rank": 526,
+      "word": "بنؤں",
+      "frequency": 35
+    },
+    {
+      "rank": 527,
+      "word": "انسانَیں",
+      "frequency": 35
+    },
+    {
+      "rank": 528,
+      "word": "نظر",
+      "frequency": 35
+    },
+    {
+      "rank": 529,
+      "word": "خان",
+      "frequency": 35
+    },
+    {
+      "rank": 530,
+      "word": "مُسلماں",
+      "frequency": 35
+    },
+    {
+      "rank": 531,
+      "word": "بُٹیۡ",
+      "frequency": 35
+    },
+    {
+      "rank": 532,
+      "word": "مالاں",
+      "frequency": 35
+    },
+    {
+      "rank": 533,
+      "word": "ڇیلی",
+      "frequency": 34
+    },
+    {
+      "rank": 534,
+      "word": "چاپ",
+      "frequency": 34
+    },
+    {
+      "rank": 535,
+      "word": "ﷺ",
+      "frequency": 34
+    },
+    {
+      "rank": 536,
+      "word": "مُتاں",
+      "frequency": 34
+    },
+    {
+      "rank": 537,
+      "word": "نِکئ",
+      "frequency": 34
+    },
+    {
+      "rank": 538,
+      "word": "تھہ؛",
+      "frequency": 34
+    },
+    {
+      "rank": 539,
+      "word": "کرہانس",
+      "frequency": 34
+    },
+    {
+      "rank": 540,
+      "word": "رات",
+      "frequency": 34
+    },
+    {
+      "rank": 541,
+      "word": "پن٘ڑہۡ",
+      "frequency": 34
+    },
+    {
+      "rank": 542,
+      "word": "اسمبلی",
+      "frequency": 34
+    },
+    {
+      "rank": 543,
+      "word": "دیساں",
+      "frequency": 34
+    },
+    {
+      "rank": 544,
+      "word": "ہول",
+      "frequency": 34
+    },
+    {
+      "rank": 545,
+      "word": "مِثال",
+      "frequency": 34
+    },
+    {
+      "rank": 546,
+      "word": "نیڙ",
+      "frequency": 34
+    },
+    {
+      "rank": 547,
+      "word": "کماں",
+      "frequency": 34
+    },
+    {
+      "rank": 548,
+      "word": "ہیو",
+      "frequency": 34
+    },
+    {
+      "rank": 549,
+      "word": "مَہ",
+      "frequency": 34
+    },
+    {
+      "rank": 550,
+      "word": "نسل",
+      "frequency": 33
+    },
+    {
+      "rank": 551,
+      "word": "صاف",
+      "frequency": 33
+    },
+    {
+      "rank": 552,
+      "word": "ہار",
+      "frequency": 33
+    },
+    {
+      "rank": 553,
+      "word": "حُکم",
+      "frequency": 33
+    },
+    {
+      "rank": 554,
+      "word": "متعلق",
+      "frequency": 33
+    },
+    {
+      "rank": 555,
+      "word": "غرضی",
+      "frequency": 33
+    },
+    {
+      "rank": 556,
+      "word": "کلَیں",
+      "frequency": 33
+    },
+    {
+      "rank": 557,
+      "word": "سن٘دے",
+      "frequency": 33
+    },
+    {
+      "rank": 558,
+      "word": "مطابق",
+      "frequency": 33
+    },
+    {
+      "rank": 559,
+      "word": "تعلق",
+      "frequency": 33
+    },
+    {
+      "rank": 560,
+      "word": "وات",
+      "frequency": 33
+    },
+    {
+      "rank": 561,
+      "word": "ارمان",
+      "frequency": 33
+    },
+    {
+      "rank": 562,
+      "word": "گھَیں",
+      "frequency": 33
+    },
+    {
+      "rank": 563,
+      "word": "با",
+      "frequency": 33
+    },
+    {
+      "rank": 564,
+      "word": "گران",
+      "frequency": 33
+    },
+    {
+      "rank": 565,
+      "word": "انٹرنیٹاں",
+      "frequency": 33
+    },
+    {
+      "rank": 566,
+      "word": "مزی",
+      "frequency": 33
+    },
+    {
+      "rank": 567,
+      "word": "اکبر",
+      "frequency": 33
+    },
+    {
+      "rank": 568,
+      "word": "تیار",
+      "frequency": 33
+    },
+    {
+      "rank": 569,
+      "word": "ایلیۡ",
+      "frequency": 33
+    },
+    {
+      "rank": 570,
+      "word": "تھو؟",
+      "frequency": 32
+    },
+    {
+      "rank": 571,
+      "word": "ہلالیں",
+      "frequency": 32
+    },
+    {
+      "rank": 572,
+      "word": "محبت",
+      "frequency": 32
+    },
+    {
+      "rank": 573,
+      "word": "دھری",
+      "frequency": 32
+    },
+    {
+      "rank": 574,
+      "word": "منی",
+      "frequency": 32
+    },
+    {
+      "rank": 575,
+      "word": "اُتھی",
+      "frequency": 32
+    },
+    {
+      "rank": 576,
+      "word": "محفوظ",
+      "frequency": 32
+    },
+    {
+      "rank": 577,
+      "word": "غور",
+      "frequency": 32
+    },
+    {
+      "rank": 578,
+      "word": "اَک",
+      "frequency": 32
+    },
+    {
+      "rank": 579,
+      "word": "ویں",
+      "frequency": 32
+    },
+    {
+      "rank": 580,
+      "word": "چېٹ",
+      "frequency": 32
+    },
+    {
+      "rank": 581,
+      "word": "کردار",
+      "frequency": 32
+    },
+    {
+      "rank": 582,
+      "word": "کرؤں۔",
+      "frequency": 32
+    },
+    {
+      "rank": 583,
+      "word": "ژر",
+      "frequency": 32
+    },
+    {
+      "rank": 584,
+      "word": "ہُون٘دوۡ",
+      "frequency": 32
+    },
+    {
+      "rank": 585,
+      "word": "رنگاں",
+      "frequency": 32
+    },
+    {
+      "rank": 586,
+      "word": "فرق",
+      "frequency": 32
+    },
+    {
+      "rank": 587,
+      "word": "تربیت",
+      "frequency": 32
+    },
+    {
+      "rank": 588,
+      "word": "بنا",
+      "frequency": 32
+    },
+    {
+      "rank": 589,
+      "word": "جُدا",
+      "frequency": 32
+    },
+    {
+      "rank": 590,
+      "word": "پاکستان",
+      "frequency": 32
+    },
+    {
+      "rank": 591,
+      "word": "عملی",
+      "frequency": 32
+    },
+    {
+      "rank": 592,
+      "word": "سامان",
+      "frequency": 32
+    },
+    {
+      "rank": 593,
+      "word": "څیزہۡ",
+      "frequency": 32
+    },
+    {
+      "rank": 594,
+      "word": "ایشیاء",
+      "frequency": 31
+    },
+    {
+      "rank": 595,
+      "word": "گے۔",
+      "frequency": 31
+    },
+    {
+      "rank": 596,
+      "word": "اؤں",
+      "frequency": 31
+    },
+    {
+      "rank": 597,
+      "word": "تعلیمئیں",
+      "frequency": 31
+    },
+    {
+      "rank": 598,
+      "word": "گھریۡماݜہ",
+      "frequency": 31
+    },
+    {
+      "rank": 599,
+      "word": "تقریباً",
+      "frequency": 31
+    },
+    {
+      "rank": 600,
+      "word": "اسدے",
+      "frequency": 31
+    },
+    {
+      "rank": 601,
+      "word": "بنم",
+      "frequency": 31
+    },
+    {
+      "rank": 602,
+      "word": "وئ",
+      "frequency": 31
+    },
+    {
+      "rank": 603,
+      "word": "بنژا",
+      "frequency": 31
+    },
+    {
+      "rank": 604,
+      "word": "ڙر",
+      "frequency": 31
+    },
+    {
+      "rank": 605,
+      "word": "بنیاد",
+      "frequency": 31
+    },
+    {
+      "rank": 606,
+      "word": "کمی",
+      "frequency": 31
+    },
+    {
+      "rank": 607,
+      "word": "بالہ",
+      "frequency": 31
+    },
+    {
+      "rank": 608,
+      "word": "کُھرؤں",
+      "frequency": 31
+    },
+    {
+      "rank": 609,
+      "word": "اسلام",
+      "frequency": 31
+    },
+    {
+      "rank": 610,
+      "word": "چائ",
+      "frequency": 31
+    },
+    {
+      "rank": 611,
+      "word": "دېس",
+      "frequency": 31
+    },
+    {
+      "rank": 612,
+      "word": "شِدیۡ",
+      "frequency": 31
+    },
+    {
+      "rank": 613,
+      "word": "نھیلے",
+      "frequency": 30
+    },
+    {
+      "rank": 614,
+      "word": "گھئیں",
+      "frequency": 30
+    },
+    {
+      "rank": 615,
+      "word": "السلامے",
+      "frequency": 30
+    },
+    {
+      "rank": 616,
+      "word": "سلامے",
+      "frequency": 30
+    },
+    {
+      "rank": 617,
+      "word": "فِکِر",
+      "frequency": 30
+    },
+    {
+      "rank": 618,
+      "word": "رسولؐ",
+      "frequency": 30
+    },
+    {
+      "rank": 619,
+      "word": "منڑنئی",
+      "frequency": 30
+    },
+    {
+      "rank": 620,
+      "word": "اےتھی۔",
+      "frequency": 30
+    },
+    {
+      "rank": 621,
+      "word": "گھیل",
+      "frequency": 30
+    },
+    {
+      "rank": 622,
+      "word": "ݜېں",
+      "frequency": 30
+    },
+    {
+      "rank": 623,
+      "word": "بُو",
+      "frequency": 30
+    },
+    {
+      "rank": 624,
+      "word": "مقصد",
+      "frequency": 30
+    },
+    {
+      "rank": 625,
+      "word": "اضافہ",
+      "frequency": 30
+    },
+    {
+      "rank": 626,
+      "word": "خدائ",
+      "frequency": 30
+    },
+    {
+      "rank": 627,
+      "word": "پیݜی",
+      "frequency": 30
+    },
+    {
+      "rank": 628,
+      "word": "اےآئی",
+      "frequency": 30
+    },
+    {
+      "rank": 629,
+      "word": "کران٘لو",
+      "frequency": 30
+    },
+    {
+      "rank": 630,
+      "word": "سُوریۡ",
+      "frequency": 30
+    },
+    {
+      "rank": 631,
+      "word": "متعلقہ",
+      "frequency": 30
+    },
+    {
+      "rank": 632,
+      "word": "چیٹ",
+      "frequency": 30
+    },
+    {
+      "rank": 633,
+      "word": "پورژیل",
+      "frequency": 30
+    },
+    {
+      "rank": 634,
+      "word": "زن٘گلہ",
+      "frequency": 30
+    },
+    {
+      "rank": 635,
+      "word": "کرائ",
+      "frequency": 30
+    },
+    {
+      "rank": 636,
+      "word": "نَیں۔",
+      "frequency": 30
+    },
+    {
+      "rank": 637,
+      "word": "تھو،",
+      "frequency": 30
+    },
+    {
+      "rank": 638,
+      "word": "چینی",
+      "frequency": 30
+    },
+    {
+      "rank": 639,
+      "word": "پن٘دہۡ",
+      "frequency": 30
+    },
+    {
+      "rank": 640,
+      "word": "چین",
+      "frequency": 29
+    },
+    {
+      "rank": 641,
+      "word": "مڑنئ",
+      "frequency": 29
+    },
+    {
+      "rank": 642,
+      "word": "چِے",
+      "frequency": 29
+    },
+    {
+      "rank": 643,
+      "word": "ماݜے",
+      "frequency": 29
+    },
+    {
+      "rank": 644,
+      "word": "بنے",
+      "frequency": 29
+    },
+    {
+      "rank": 645,
+      "word": "سامُوٹھیۡ",
+      "frequency": 29
+    },
+    {
+      "rank": 646,
+      "word": "مؤں",
+      "frequency": 29
+    },
+    {
+      "rank": 647,
+      "word": "پویں",
+      "frequency": 29
+    },
+    {
+      "rank": 648,
+      "word": "ذاتی",
+      "frequency": 29
+    },
+    {
+      "rank": 649,
+      "word": "طرفی",
+      "frequency": 29
+    },
+    {
+      "rank": 650,
+      "word": "وَخ",
+      "frequency": 29
+    },
+    {
+      "rank": 651,
+      "word": "چھا",
+      "frequency": 29
+    },
+    {
+      "rank": 652,
+      "word": "اَسیں",
+      "frequency": 29
+    },
+    {
+      "rank": 653,
+      "word": "مذہبی",
+      "frequency": 29
+    },
+    {
+      "rank": 654,
+      "word": "گِران",
+      "frequency": 29
+    },
+    {
+      "rank": 655,
+      "word": "تېرئ",
+      "frequency": 29
+    },
+    {
+      "rank": 656,
+      "word": "ہَیں",
+      "frequency": 29
+    },
+    {
+      "rank": 657,
+      "word": "ساریۡ",
+      "frequency": 29
+    },
+    {
+      "rank": 658,
+      "word": "کَرٶں",
+      "frequency": 29
+    },
+    {
+      "rank": 659,
+      "word": "ابو",
+      "frequency": 28
+    },
+    {
+      "rank": 660,
+      "word": "کھن٘ڑہ",
+      "frequency": 28
+    },
+    {
+      "rank": 661,
+      "word": "برابر",
+      "frequency": 28
+    },
+    {
+      "rank": 662,
+      "word": "معلوم",
+      "frequency": 28
+    },
+    {
+      "rank": 663,
+      "word": "بېکتُک",
+      "frequency": 28
+    },
+    {
+      "rank": 664,
+      "word": "قدر",
+      "frequency": 28
+    },
+    {
+      "rank": 665,
+      "word": "من٘ڑنَیں",
+      "frequency": 28
+    },
+    {
+      "rank": 666,
+      "word": "خلکَیں",
+      "frequency": 28
+    },
+    {
+      "rank": 667,
+      "word": "منہ",
+      "frequency": 28
+    },
+    {
+      "rank": 668,
+      "word": "قابُو",
+      "frequency": 28
+    },
+    {
+      "rank": 669,
+      "word": "دماغ",
+      "frequency": 28
+    },
+    {
+      "rank": 670,
+      "word": "قصی",
+      "frequency": 28
+    },
+    {
+      "rank": 671,
+      "word": "لفظ",
+      "frequency": 28
+    },
+    {
+      "rank": 672,
+      "word": "سُگائی",
+      "frequency": 28
+    },
+    {
+      "rank": 673,
+      "word": "چام",
+      "frequency": 28
+    },
+    {
+      "rank": 674,
+      "word": "دَش",
+      "frequency": 28
+    },
+    {
+      "rank": 675,
+      "word": "کِھن٘گ",
+      "frequency": 28
+    },
+    {
+      "rank": 676,
+      "word": "والے",
+      "frequency": 28
+    },
+    {
+      "rank": 677,
+      "word": "ہُوگا",
+      "frequency": 28
+    },
+    {
+      "rank": 678,
+      "word": "نیل",
+      "frequency": 27
+    },
+    {
+      "rank": 679,
+      "word": "ہُون٘دوۡ۔",
+      "frequency": 27
+    },
+    {
+      "rank": 680,
+      "word": "سُگا",
+      "frequency": 27
+    },
+    {
+      "rank": 681,
+      "word": "ہوں۔",
+      "frequency": 27
+    },
+    {
+      "rank": 682,
+      "word": "یے",
+      "frequency": 27
+    },
+    {
+      "rank": 683,
+      "word": "تُھو؛",
+      "frequency": 27
+    },
+    {
+      "rank": 684,
+      "word": "کسے",
+      "frequency": 27
+    },
+    {
+      "rank": 685,
+      "word": "بئیل",
+      "frequency": 27
+    },
+    {
+      "rank": 686,
+      "word": "قوم",
+      "frequency": 27
+    },
+    {
+      "rank": 687,
+      "word": "قصہ",
+      "frequency": 27
+    },
+    {
+      "rank": 688,
+      "word": "نھالے",
+      "frequency": 27
+    },
+    {
+      "rank": 689,
+      "word": "وہ",
+      "frequency": 27
+    },
+    {
+      "rank": 690,
+      "word": "گِی",
+      "frequency": 27
+    },
+    {
+      "rank": 691,
+      "word": "مُلکہ",
+      "frequency": 27
+    },
+    {
+      "rank": 692,
+      "word": "واجب",
+      "frequency": 27
+    },
+    {
+      "rank": 693,
+      "word": "کاپھرہ",
+      "frequency": 27
+    },
+    {
+      "rank": 694,
+      "word": "ہراں",
+      "frequency": 27
+    },
+    {
+      "rank": 695,
+      "word": "یار",
+      "frequency": 27
+    },
+    {
+      "rank": 696,
+      "word": "زوڑہ",
+      "frequency": 27
+    },
+    {
+      "rank": 697,
+      "word": "ذکر",
+      "frequency": 27
+    },
+    {
+      "rank": 698,
+      "word": "رن٘گَیں",
+      "frequency": 27
+    },
+    {
+      "rank": 699,
+      "word": "اجتماعی",
+      "frequency": 27
+    },
+    {
+      "rank": 700,
+      "word": "مانݜوں",
+      "frequency": 27
+    },
+    {
+      "rank": 701,
+      "word": "معاشرہ",
+      "frequency": 27
+    },
+    {
+      "rank": 702,
+      "word": "مِگے",
+      "frequency": 27
+    },
+    {
+      "rank": 703,
+      "word": "دگلے",
+      "frequency": 27
+    },
+    {
+      "rank": 704,
+      "word": "نھیلہ",
+      "frequency": 27
+    },
+    {
+      "rank": 705,
+      "word": "کؤ",
+      "frequency": 27
+    },
+    {
+      "rank": 706,
+      "word": "قسمَیں",
+      "frequency": 27
+    },
+    {
+      "rank": 707,
+      "word": "کڑاؤ",
+      "frequency": 27
+    },
+    {
+      "rank": 708,
+      "word": "دُویں",
+      "frequency": 27
+    },
+    {
+      "rank": 709,
+      "word": "حالتی",
+      "frequency": 27
+    },
+    {
+      "rank": 710,
+      "word": "دژی",
+      "frequency": 27
+    },
+    {
+      "rank": 711,
+      "word": "اَسی",
+      "frequency": 27
+    },
+    {
+      "rank": 712,
+      "word": "نھالاں",
+      "frequency": 27
+    },
+    {
+      "rank": 713,
+      "word": "ݜیں",
+      "frequency": 27
+    },
+    {
+      "rank": 714,
+      "word": "پن٘دہ",
+      "frequency": 26
+    },
+    {
+      "rank": 715,
+      "word": "میڈیا",
+      "frequency": 26
+    },
+    {
+      "rank": 716,
+      "word": "تصدیق",
+      "frequency": 26
+    },
+    {
+      "rank": 717,
+      "word": "قومہ",
+      "frequency": 26
+    },
+    {
+      "rank": 718,
+      "word": "مدینہ",
+      "frequency": 26
+    },
+    {
+      "rank": 719,
+      "word": "ڇِھڇئیں",
+      "frequency": 26
+    },
+    {
+      "rank": 720,
+      "word": "خیال",
+      "frequency": 26
+    },
+    {
+      "rank": 721,
+      "word": "زوڑہۡ",
+      "frequency": 26
+    },
+    {
+      "rank": 722,
+      "word": "توفیق",
+      "frequency": 26
+    },
+    {
+      "rank": 723,
+      "word": "مرگے",
+      "frequency": 26
+    },
+    {
+      "rank": 724,
+      "word": "گاڑی",
+      "frequency": 26
+    },
+    {
+      "rank": 725,
+      "word": "ال",
+      "frequency": 26
+    },
+    {
+      "rank": 726,
+      "word": "گاں",
+      "frequency": 26
+    },
+    {
+      "rank": 727,
+      "word": "صحیح",
+      "frequency": 26
+    },
+    {
+      "rank": 728,
+      "word": "مھالی",
+      "frequency": 26
+    },
+    {
+      "rank": 729,
+      "word": "ݜسیں",
+      "frequency": 26
+    },
+    {
+      "rank": 730,
+      "word": "دعا",
+      "frequency": 26
+    },
+    {
+      "rank": 731,
+      "word": "بُٹی",
+      "frequency": 26
+    },
+    {
+      "rank": 732,
+      "word": "اکرم",
+      "frequency": 26
+    },
+    {
+      "rank": 733,
+      "word": "شل",
+      "frequency": 26
+    },
+    {
+      "rank": 734,
+      "word": "سیاسی،",
+      "frequency": 26
+    },
+    {
+      "rank": 735,
+      "word": "ݜِݜَیں",
+      "frequency": 26
+    },
+    {
+      "rank": 736,
+      "word": "آخری",
+      "frequency": 26
+    },
+    {
+      "rank": 737,
+      "word": "رواج",
+      "frequency": 26
+    },
+    {
+      "rank": 738,
+      "word": "کھݜ",
+      "frequency": 25
+    },
+    {
+      "rank": 739,
+      "word": "بس",
+      "frequency": 25
+    },
+    {
+      "rank": 740,
+      "word": "بحث",
+      "frequency": 25
+    },
+    {
+      "rank": 741,
+      "word": "تمام",
+      "frequency": 25
+    },
+    {
+      "rank": 742,
+      "word": "تھی؛",
+      "frequency": 25
+    },
+    {
+      "rank": 743,
+      "word": "چھی،",
+      "frequency": 25
+    },
+    {
+      "rank": 744,
+      "word": "زُور",
+      "frequency": 25
+    },
+    {
+      "rank": 745,
+      "word": "ڇھپ",
+      "frequency": 25
+    },
+    {
+      "rank": 746,
+      "word": "را",
+      "frequency": 25
+    },
+    {
+      "rank": 747,
+      "word": "کروں",
+      "frequency": 25
+    },
+    {
+      "rank": 748,
+      "word": "فیصلہ",
+      "frequency": 25
+    },
+    {
+      "rank": 749,
+      "word": "نیری",
+      "frequency": 25
+    },
+    {
+      "rank": 750,
+      "word": "ختُم",
+      "frequency": 25
+    },
+    {
+      "rank": 751,
+      "word": "کَل",
+      "frequency": 25
+    },
+    {
+      "rank": 752,
+      "word": "گشے",
+      "frequency": 25
+    },
+    {
+      "rank": 753,
+      "word": "چھال",
+      "frequency": 25
+    },
+    {
+      "rank": 754,
+      "word": "کُور",
+      "frequency": 25
+    },
+    {
+      "rank": 755,
+      "word": "زرت",
+      "frequency": 25
+    },
+    {
+      "rank": 756,
+      "word": "ہُوۡئ",
+      "frequency": 25
+    },
+    {
+      "rank": 757,
+      "word": "کرہ۔",
+      "frequency": 25
+    },
+    {
+      "rank": 758,
+      "word": "دھؤں",
+      "frequency": 25
+    },
+    {
+      "rank": 759,
+      "word": "اُستاں",
+      "frequency": 25
+    },
+    {
+      "rank": 760,
+      "word": "بنِگ",
+      "frequency": 25
+    },
+    {
+      "rank": 761,
+      "word": "کھَیں",
+      "frequency": 25
+    },
+    {
+      "rank": 762,
+      "word": "اول",
+      "frequency": 25
+    },
+    {
+      "rank": 763,
+      "word": "ہوتُھو",
+      "frequency": 25
+    },
+    {
+      "rank": 764,
+      "word": "بلیُوں",
+      "frequency": 25
+    },
+    {
+      "rank": 765,
+      "word": "لکئ",
+      "frequency": 25
+    },
+    {
+      "rank": 766,
+      "word": "نھال",
+      "frequency": 25
+    },
+    {
+      "rank": 767,
+      "word": "زِب",
+      "frequency": 25
+    },
+    {
+      "rank": 768,
+      "word": "پالیسیوں",
+      "frequency": 25
+    },
+    {
+      "rank": 769,
+      "word": "سُنّت",
+      "frequency": 25
+    },
+    {
+      "rank": 770,
+      "word": "کھیں،",
+      "frequency": 25
+    },
+    {
+      "rank": 771,
+      "word": "گھېں",
+      "frequency": 25
+    },
+    {
+      "rank": 772,
+      "word": "رض",
+      "frequency": 25
+    },
+    {
+      "rank": 773,
+      "word": "مڑنَیں",
+      "frequency": 24
+    },
+    {
+      "rank": 774,
+      "word": "خوار",
+      "frequency": 24
+    },
+    {
+      "rank": 775,
+      "word": "نھالُوں",
+      "frequency": 24
+    },
+    {
+      "rank": 776,
+      "word": "تعریف",
+      "frequency": 24
+    },
+    {
+      "rank": 777,
+      "word": "اگر",
+      "frequency": 24
+    },
+    {
+      "rank": 778,
+      "word": "ہُون٘دیۡ۔",
+      "frequency": 24
+    },
+    {
+      "rank": 779,
+      "word": "چېرہ",
+      "frequency": 24
+    },
+    {
+      "rank": 780,
+      "word": "باں",
+      "frequency": 24
+    },
+    {
+      "rank": 781,
+      "word": "ماݜؤں",
+      "frequency": 24
+    },
+    {
+      "rank": 782,
+      "word": "اسم",
+      "frequency": 24
+    },
+    {
+      "rank": 783,
+      "word": "تام",
+      "frequency": 24
+    },
+    {
+      "rank": 784,
+      "word": "بیوں",
+      "frequency": 24
+    },
+    {
+      "rank": 785,
+      "word": "دی۔",
+      "frequency": 24
+    },
+    {
+      "rank": 786,
+      "word": "پلیت",
+      "frequency": 24
+    },
+    {
+      "rank": 787,
+      "word": "پسل",
+      "frequency": 24
+    },
+    {
+      "rank": 788,
+      "word": "کان٘ڑ",
+      "frequency": 24
+    },
+    {
+      "rank": 789,
+      "word": "تعلیمی",
+      "frequency": 24
+    },
+    {
+      "rank": 790,
+      "word": "تھہ؟",
+      "frequency": 24
+    },
+    {
+      "rank": 791,
+      "word": "بہ",
+      "frequency": 24
+    },
+    {
+      "rank": 792,
+      "word": "چیغ",
+      "frequency": 23
+    },
+    {
+      "rank": 793,
+      "word": "ڙھا",
+      "frequency": 23
+    },
+    {
+      "rank": 794,
+      "word": "دنہۡ",
+      "frequency": 23
+    },
+    {
+      "rank": 795,
+      "word": "آن٘س،",
+      "frequency": 23
+    },
+    {
+      "rank": 796,
+      "word": "اُوش",
+      "frequency": 23
+    },
+    {
+      "rank": 797,
+      "word": "معصوموں",
+      "frequency": 23
+    },
+    {
+      "rank": 798,
+      "word": "بَیل",
+      "frequency": 23
+    },
+    {
+      "rank": 799,
+      "word": "تھے",
+      "frequency": 23
+    },
+    {
+      "rank": 800,
+      "word": "لکھہ",
+      "frequency": 23
+    },
+    {
+      "rank": 801,
+      "word": "بند",
+      "frequency": 23
+    },
+    {
+      "rank": 802,
+      "word": "زمین",
+      "frequency": 23
+    },
+    {
+      "rank": 803,
+      "word": "کموں",
+      "frequency": 23
+    },
+    {
+      "rank": 804,
+      "word": "بېل",
+      "frequency": 23
+    },
+    {
+      "rank": 805,
+      "word": "سزا",
+      "frequency": 23
+    },
+    {
+      "rank": 806,
+      "word": "غلط",
+      "frequency": 23
+    },
+    {
+      "rank": 807,
+      "word": "حیثیت",
+      "frequency": 23
+    },
+    {
+      "rank": 808,
+      "word": "دھاؤ",
+      "frequency": 23
+    },
+    {
+      "rank": 809,
+      "word": "لمِل",
+      "frequency": 23
+    },
+    {
+      "rank": 810,
+      "word": "گھریماݜہ",
+      "frequency": 23
+    },
+    {
+      "rank": 811,
+      "word": "خلاف",
+      "frequency": 23
+    },
+    {
+      "rank": 812,
+      "word": "کھہ",
+      "frequency": 23
+    },
+    {
+      "rank": 813,
+      "word": "انتہائی",
+      "frequency": 23
+    },
+    {
+      "rank": 814,
+      "word": "مُوٹُھک",
+      "frequency": 23
+    },
+    {
+      "rank": 815,
+      "word": "ہسی",
+      "frequency": 23
+    },
+    {
+      "rank": 816,
+      "word": "گھېن٘رہ",
+      "frequency": 23
+    },
+    {
+      "rank": 817,
+      "word": "دِتیۡ",
+      "frequency": 23
+    },
+    {
+      "rank": 818,
+      "word": "سجدہ",
+      "frequency": 23
+    },
+    {
+      "rank": 819,
+      "word": "مُوٹِھن",
+      "frequency": 23
+    },
+    {
+      "rank": 820,
+      "word": "نھالہ",
+      "frequency": 23
+    },
+    {
+      "rank": 821,
+      "word": "ناشتہ",
+      "frequency": 23
+    },
+    {
+      "rank": 822,
+      "word": "مشورہ",
+      "frequency": 23
+    },
+    {
+      "rank": 823,
+      "word": "ثابت",
+      "frequency": 23
+    },
+    {
+      "rank": 824,
+      "word": "مدد",
+      "frequency": 23
+    },
+    {
+      "rank": 825,
+      "word": "چیٹی",
+      "frequency": 23
+    },
+    {
+      "rank": 826,
+      "word": "زائے",
+      "frequency": 23
+    },
+    {
+      "rank": 827,
+      "word": "اَماں",
+      "frequency": 23
+    },
+    {
+      "rank": 828,
+      "word": "نھالیۡ",
+      "frequency": 23
+    },
+    {
+      "rank": 829,
+      "word": "کچھ",
+      "frequency": 23
+    },
+    {
+      "rank": 830,
+      "word": "سن٘دژی",
+      "frequency": 23
+    },
+    {
+      "rank": 831,
+      "word": "زؤں",
+      "frequency": 23
+    },
+    {
+      "rank": 832,
+      "word": "مرک",
+      "frequency": 23
+    },
+    {
+      "rank": 833,
+      "word": "سوشل",
+      "frequency": 23
+    },
+    {
+      "rank": 834,
+      "word": "تاریخ",
+      "frequency": 23
+    },
+    {
+      "rank": 835,
+      "word": "ٹل",
+      "frequency": 23
+    },
+    {
+      "rank": 836,
+      "word": "کرؤں،",
+      "frequency": 23
+    },
+    {
+      "rank": 837,
+      "word": "بِگلہ",
+      "frequency": 23
+    },
+    {
+      "rank": 838,
+      "word": "و",
+      "frequency": 23
+    },
+    {
+      "rank": 839,
+      "word": "مفید",
+      "frequency": 23
+    },
+    {
+      "rank": 840,
+      "word": "گېل",
+      "frequency": 23
+    },
+    {
+      "rank": 841,
+      "word": "عزت",
+      "frequency": 22
+    },
+    {
+      "rank": 842,
+      "word": "کالی",
+      "frequency": 22
+    },
+    {
+      "rank": 843,
+      "word": "علاقوں",
+      "frequency": 22
+    },
+    {
+      "rank": 844,
+      "word": "ھُم",
+      "frequency": 22
+    },
+    {
+      "rank": 845,
+      "word": "شان",
+      "frequency": 22
+    },
+    {
+      "rank": 846,
+      "word": "شِکلہ",
+      "frequency": 22
+    },
+    {
+      "rank": 847,
+      "word": "ڇھیرہ",
+      "frequency": 22
+    },
+    {
+      "rank": 848,
+      "word": "رباں",
+      "frequency": 22
+    },
+    {
+      "rank": 849,
+      "word": "تعمیری",
+      "frequency": 22
+    },
+    {
+      "rank": 850,
+      "word": "اکرمَیں",
+      "frequency": 22
+    },
+    {
+      "rank": 851,
+      "word": "اُصول",
+      "frequency": 22
+    },
+    {
+      "rank": 852,
+      "word": "گا۔",
+      "frequency": 22
+    },
+    {
+      "rank": 853,
+      "word": "پاتیۡ",
+      "frequency": 22
+    },
+    {
+      "rank": 854,
+      "word": "اڑ",
+      "frequency": 22
+    },
+    {
+      "rank": 855,
+      "word": "بلیں",
+      "frequency": 22
+    },
+    {
+      "rank": 856,
+      "word": "AI",
+      "frequency": 22
+    },
+    {
+      "rank": 857,
+      "word": "انٹرنېٹ",
+      "frequency": 22
+    },
+    {
+      "rank": 858,
+      "word": "تحقیق",
+      "frequency": 22
+    },
+    {
+      "rank": 859,
+      "word": "موقع",
+      "frequency": 22
+    },
+    {
+      "rank": 860,
+      "word": "تَم",
+      "frequency": 22
+    },
+    {
+      "rank": 861,
+      "word": "نقصان",
+      "frequency": 22
+    },
+    {
+      "rank": 862,
+      "word": "بنی",
+      "frequency": 22
+    },
+    {
+      "rank": 863,
+      "word": "ہوتھی",
+      "frequency": 22
+    },
+    {
+      "rank": 864,
+      "word": "ہِوان٘د",
+      "frequency": 22
+    },
+    {
+      "rank": 865,
+      "word": "دِش",
+      "frequency": 22
+    },
+    {
+      "rank": 866,
+      "word": "بوغمہ",
+      "frequency": 22
+    },
+    {
+      "rank": 867,
+      "word": "یؤں",
+      "frequency": 22
+    },
+    {
+      "rank": 868,
+      "word": "اڅھکی",
+      "frequency": 22
+    },
+    {
+      "rank": 869,
+      "word": "زوڑ",
+      "frequency": 22
+    },
+    {
+      "rank": 870,
+      "word": "کھا",
+      "frequency": 22
+    },
+    {
+      "rank": 871,
+      "word": "حال",
+      "frequency": 22
+    },
+    {
+      "rank": 872,
+      "word": "آزاد",
+      "frequency": 22
+    },
+    {
+      "rank": 873,
+      "word": "دوائ",
+      "frequency": 22
+    },
+    {
+      "rank": 874,
+      "word": "جسمہ",
+      "frequency": 22
+    },
+    {
+      "rank": 875,
+      "word": "گرم",
+      "frequency": 22
+    },
+    {
+      "rank": 876,
+      "word": "آرام",
+      "frequency": 22
+    },
+    {
+      "rank": 877,
+      "word": "یُو",
+      "frequency": 22
+    },
+    {
+      "rank": 878,
+      "word": "ہون٘د",
+      "frequency": 22
+    },
+    {
+      "rank": 879,
+      "word": "یُوں",
+      "frequency": 22
+    },
+    {
+      "rank": 880,
+      "word": "پُوریۡ",
+      "frequency": 22
+    },
+    {
+      "rank": 881,
+      "word": "خامخا",
+      "frequency": 21
+    },
+    {
+      "rank": 882,
+      "word": "مھال",
+      "frequency": 21
+    },
+    {
+      "rank": 883,
+      "word": "پالیسیہ",
+      "frequency": 21
+    },
+    {
+      "rank": 884,
+      "word": "نھالی",
+      "frequency": 21
+    },
+    {
+      "rank": 885,
+      "word": "پیسیفک",
+      "frequency": 21
+    },
+    {
+      "rank": 886,
+      "word": "کراتے",
+      "frequency": 21
+    },
+    {
+      "rank": 887,
+      "word": "ݜژی",
+      "frequency": 21
+    },
+    {
+      "rank": 888,
+      "word": "بِگی",
+      "frequency": 21
+    },
+    {
+      "rank": 889,
+      "word": "رِن٘گا",
+      "frequency": 21
+    },
+    {
+      "rank": 890,
+      "word": "زور",
+      "frequency": 21
+    },
+    {
+      "rank": 891,
+      "word": "اہم",
+      "frequency": 21
+    },
+    {
+      "rank": 892,
+      "word": "منٚز",
+      "frequency": 21
+    },
+    {
+      "rank": 893,
+      "word": "شہری",
+      "frequency": 21
+    },
+    {
+      "rank": 894,
+      "word": "بېن٘یاں",
+      "frequency": 21
+    },
+    {
+      "rank": 895,
+      "word": "نبیؐ",
+      "frequency": 21
+    },
+    {
+      "rank": 896,
+      "word": "منز",
+      "frequency": 21
+    },
+    {
+      "rank": 897,
+      "word": "بَلی",
+      "frequency": 21
+    },
+    {
+      "rank": 898,
+      "word": "پُوڇ",
+      "frequency": 21
+    },
+    {
+      "rank": 899,
+      "word": "تیاری",
+      "frequency": 21
+    },
+    {
+      "rank": 900,
+      "word": "دان٘ڑیال",
+      "frequency": 21
+    },
+    {
+      "rank": 901,
+      "word": "داری",
+      "frequency": 21
+    },
+    {
+      "rank": 902,
+      "word": "آباد",
+      "frequency": 21
+    },
+    {
+      "rank": 903,
+      "word": "گو",
+      "frequency": 21
+    },
+    {
+      "rank": 904,
+      "word": "اولاد",
+      "frequency": 21
+    },
+    {
+      "rank": 905,
+      "word": "بِلال",
+      "frequency": 21
+    },
+    {
+      "rank": 906,
+      "word": "کالئ",
+      "frequency": 21
+    },
+    {
+      "rank": 907,
+      "word": "کرٶں",
+      "frequency": 21
+    },
+    {
+      "rank": 908,
+      "word": "بچ",
+      "frequency": 21
+    },
+    {
+      "rank": 909,
+      "word": "دېوں",
+      "frequency": 21
+    },
+    {
+      "rank": 910,
+      "word": "اوان",
+      "frequency": 21
+    },
+    {
+      "rank": 911,
+      "word": "آن",
+      "frequency": 21
+    },
+    {
+      "rank": 912,
+      "word": "لائن",
+      "frequency": 21
+    },
+    {
+      "rank": 913,
+      "word": "بوغمئ",
+      "frequency": 21
+    },
+    {
+      "rank": 914,
+      "word": "مجبور",
+      "frequency": 21
+    },
+    {
+      "rank": 915,
+      "word": "استازہ",
+      "frequency": 21
+    },
+    {
+      "rank": 916,
+      "word": "شاگڑہ",
+      "frequency": 21
+    },
+    {
+      "rank": 917,
+      "word": "اُستائے",
+      "frequency": 21
+    },
+    {
+      "rank": 918,
+      "word": "ہون٘دُوں",
+      "frequency": 21
+    },
+    {
+      "rank": 919,
+      "word": "اجمل",
+      "frequency": 21
+    },
+    {
+      "rank": 920,
+      "word": "حُکمتی",
+      "frequency": 21
+    },
+    {
+      "rank": 921,
+      "word": "ژؤن٘دُن",
+      "frequency": 21
+    },
+    {
+      "rank": 922,
+      "word": "گھنی",
+      "frequency": 21
+    },
+    {
+      "rank": 923,
+      "word": "بو",
+      "frequency": 21
+    },
+    {
+      "rank": 924,
+      "word": "مالے",
+      "frequency": 21
+    },
+    {
+      "rank": 925,
+      "word": "موجُود",
+      "frequency": 21
+    },
+    {
+      "rank": 926,
+      "word": "مِلا",
+      "frequency": 21
+    },
+    {
+      "rank": 927,
+      "word": "ادم",
+      "frequency": 21
+    },
+    {
+      "rank": 928,
+      "word": "ہلالیُوں",
+      "frequency": 21
+    },
+    {
+      "rank": 929,
+      "word": "ٹېم",
+      "frequency": 21
+    },
+    {
+      "rank": 930,
+      "word": "مٹُو",
+      "frequency": 21
+    },
+    {
+      "rank": 931,
+      "word": "نېرؤں",
+      "frequency": 21
+    },
+    {
+      "rank": 932,
+      "word": "کران٘لاں",
+      "frequency": 21
+    },
+    {
+      "rank": 933,
+      "word": "دُوئیں",
+      "frequency": 21
+    },
+    {
+      "rank": 934,
+      "word": "زیات",
+      "frequency": 20
+    },
+    {
+      "rank": 935,
+      "word": "واضح",
+      "frequency": 20
+    },
+    {
+      "rank": 936,
+      "word": "بُڇھہ",
+      "frequency": 20
+    },
+    {
+      "rank": 937,
+      "word": "گھېن٘رو",
+      "frequency": 20
+    },
+    {
+      "rank": 938,
+      "word": "یقین",
+      "frequency": 20
+    },
+    {
+      "rank": 939,
+      "word": "ڈیوی",
+      "frequency": 20
+    },
+    {
+      "rank": 940,
+      "word": "ان٘گرزی",
+      "frequency": 20
+    },
+    {
+      "rank": 941,
+      "word": "نتیجہ",
+      "frequency": 20
+    },
+    {
+      "rank": 942,
+      "word": "کتاباں",
+      "frequency": 20
+    },
+    {
+      "rank": 943,
+      "word": "پُھٹ",
+      "frequency": 20
+    },
+    {
+      "rank": 944,
+      "word": "زید",
+      "frequency": 20
+    },
+    {
+      "rank": 945,
+      "word": "پُھت",
+      "frequency": 20
+    },
+    {
+      "rank": 946,
+      "word": "اردو",
+      "frequency": 20
+    },
+    {
+      "rank": 947,
+      "word": "گھریُوں",
+      "frequency": 20
+    },
+    {
+      "rank": 948,
+      "word": "کریں",
+      "frequency": 20
+    },
+    {
+      "rank": 949,
+      "word": "سِس",
+      "frequency": 20
+    },
+    {
+      "rank": 950,
+      "word": "پیال",
+      "frequency": 20
+    },
+    {
+      "rank": 951,
+      "word": "سلیم",
+      "frequency": 20
+    },
+    {
+      "rank": 952,
+      "word": "آن٘سیۡ،",
+      "frequency": 20
+    },
+    {
+      "rank": 953,
+      "word": "یان٘س۔",
+      "frequency": 20
+    },
+    {
+      "rank": 954,
+      "word": "تربیتی",
+      "frequency": 20
+    },
+    {
+      "rank": 955,
+      "word": "مہ،",
+      "frequency": 20
+    },
+    {
+      "rank": 956,
+      "word": "مُوٹھیُوں",
+      "frequency": 20
+    },
+    {
+      "rank": 957,
+      "word": "گولی",
+      "frequency": 20
+    },
+    {
+      "rank": 958,
+      "word": "گیس",
+      "frequency": 20
+    },
+    {
+      "rank": 959,
+      "word": "والؤں",
+      "frequency": 20
+    },
+    {
+      "rank": 960,
+      "word": "خُدائ",
+      "frequency": 20
+    },
+    {
+      "rank": 961,
+      "word": "تال",
+      "frequency": 20
+    },
+    {
+      "rank": 962,
+      "word": "ھِن",
+      "frequency": 20
+    },
+    {
+      "rank": 963,
+      "word": "ݜتے۔",
+      "frequency": 20
+    },
+    {
+      "rank": 964,
+      "word": "رُخصت",
+      "frequency": 20
+    },
+    {
+      "rank": 965,
+      "word": "نشی",
+      "frequency": 20
+    },
+    {
+      "rank": 966,
+      "word": "زناؤرہ",
+      "frequency": 20
+    },
+    {
+      "rank": 967,
+      "word": "عِلماں",
+      "frequency": 20
+    },
+    {
+      "rank": 968,
+      "word": "مُتَیں",
+      "frequency": 20
+    },
+    {
+      "rank": 969,
+      "word": "فِکرے",
+      "frequency": 20
+    },
+    {
+      "rank": 970,
+      "word": "ٹک",
+      "frequency": 20
+    },
+    {
+      "rank": 971,
+      "word": "دے۔",
+      "frequency": 20
+    },
+    {
+      "rank": 972,
+      "word": "لس۔",
+      "frequency": 20
+    },
+    {
+      "rank": 973,
+      "word": "ماحول",
+      "frequency": 20
+    },
+    {
+      "rank": 974,
+      "word": "زَئے",
+      "frequency": 20
+    },
+    {
+      "rank": 975,
+      "word": "کراتے۔",
+      "frequency": 20
+    },
+    {
+      "rank": 976,
+      "word": "سلوک",
+      "frequency": 20
+    },
+    {
+      "rank": 977,
+      "word": "مری",
+      "frequency": 20
+    },
+    {
+      "rank": 978,
+      "word": "چھون٘ل",
+      "frequency": 20
+    },
+    {
+      "rank": 979,
+      "word": "خپا",
+      "frequency": 20
+    },
+    {
+      "rank": 980,
+      "word": "ہمیش",
+      "frequency": 20
+    },
+    {
+      "rank": 981,
+      "word": "پٹ",
+      "frequency": 20
+    },
+    {
+      "rank": 982,
+      "word": "مھالیۡ",
+      "frequency": 20
+    },
+    {
+      "rank": 983,
+      "word": "علی",
+      "frequency": 19
+    },
+    {
+      "rank": 984,
+      "word": "ہُوئینٚت۔",
+      "frequency": 19
+    },
+    {
+      "rank": 985,
+      "word": "پو۔",
+      "frequency": 19
+    },
+    {
+      "rank": 986,
+      "word": "جامع",
+      "frequency": 19
+    },
+    {
+      "rank": 987,
+      "word": "ریاستوں",
+      "frequency": 19
+    },
+    {
+      "rank": 988,
+      "word": "گِنہ",
+      "frequency": 19
+    },
+    {
+      "rank": 989,
+      "word": "نِکاں",
+      "frequency": 19
+    },
+    {
+      "rank": 990,
+      "word": "ٹیکنالوجی",
+      "frequency": 19
+    },
+    {
+      "rank": 991,
+      "word": "ہلاک",
+      "frequency": 19
+    },
+    {
+      "rank": 992,
+      "word": "سرکاری",
+      "frequency": 19
+    },
+    {
+      "rank": 993,
+      "word": "بر",
+      "frequency": 19
+    },
+    {
+      "rank": 994,
+      "word": "ڈول",
+      "frequency": 19
+    },
+    {
+      "rank": 995,
+      "word": "زبوں",
+      "frequency": 19
+    },
+    {
+      "rank": 996,
+      "word": "گلاں",
+      "frequency": 19
+    },
+    {
+      "rank": 997,
+      "word": "بکرہۡ",
+      "frequency": 19
+    },
+    {
+      "rank": 998,
+      "word": "خالی",
+      "frequency": 19
+    },
+    {
+      "rank": 999,
+      "word": "انٹرنیٹَیں",
+      "frequency": 19
+    },
+    {
+      "rank": 1000,
+      "word": "امریکاں",
+      "frequency": 19
+    }
+  ],
+  "outputs": [
+    "mvy-frequency-spectrum.csv",
+    "mvy-hapax-legomena.csv",
+    "mvy-lexical-frequency.csv",
+    "mvy-word-length-lexical.csv"
+  ]
+}
