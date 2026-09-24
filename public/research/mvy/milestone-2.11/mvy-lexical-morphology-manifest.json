@@ -1,0 +1,15 @@
+{
+  "milestone": "2.11",
+  "title": "Lexical & Morphological Analysis",
+  "language": "Indus-Kohistani",
+  "iso_639_3": "mvy",
+  "source": "research/mvy/source/common-voice-27/validated.tsv",
+  "corpus_rows": 16612,
+  "word_tokens": 134820,
+  "word_types": 9947,
+  "type_token_ratio": 0.07377985,
+  "hapax_types": 983,
+  "candidate_prefixes": 13,
+  "candidate_suffixes": 20,
+  "method": "Exploratory lexical and morphology-oriented corpus analysis; candidate affixes are not linguistically validated morpheme segmentations."
+}
