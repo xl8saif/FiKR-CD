@@ -1,0 +1,35 @@
+name: Mvy Milestone 2.10 — Orthographic Inventory Validation
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "research/mvy/source/common-voice-27/validated.tsv"
+      - "research/mvy/analysis/milestone-2.10/**"
+      - ".github/workflows/mvy-milestone-2.10.yml"
+permissions:
+  contents: write
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run M2.10 validation
+        run: python research/mvy/analysis/milestone-2.10/validate_mvy_inventory.py
+      - name: Publish public manifest
+        run: |
+          mkdir -p public/research/mvy/milestone-2.10
+          cp research/mvy/analysis/milestone-2.10/mvy-inventory-validation-manifest.json public/research/mvy/milestone-2.10/
+      - name: Commit public manifest
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/research/mvy/milestone-2.10/mvy-inventory-validation-manifest.json
+          if git diff --cached --quiet; then echo "No manifest changes."; else git commit -m "chore: publish M2.10 inventory validation manifest"; git push; fi
+      - uses: actions/upload-artifact@v4
+        with:
+          name: mvy-milestone-2.10-inventory-validation
+          path: research/mvy/analysis/milestone-2.10/
+          retention-days: 90
