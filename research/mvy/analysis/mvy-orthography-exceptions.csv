@@ -1,0 +1,9 @@
+class,examples,status,action
+Arabic/Persian/Urdu yeh variants,"ي,ی",observed,retain raw; normalize only in separate analytical layer
+Arabic/Persian kaf variants,"ك,ک",observed/potential,retain raw; flag for review
+Combining-mark variation,"diacritic sequences and canonical-order differences",observed,retain marks; compare NFC/NFD
+Aspirated sequences,"بھ,پھ,تھ,ٹھ,دھ,ڈھ,کھ,گھ",observed,model as multi-codepoint graphemic sequences
+Special mvy letters,"ݜ,ڇ,څ,ڙ,ݨ",observed,retain as distinct graphemic inventory candidates
+Latin-script material,"English/Latin tokens",observed,classify as script-mixing/borrowed material
+Punctuation/quotation variation,"quotation marks, brackets, terminal punctuation",observed,separate orthographic punctuation layer
+Rare code points,"low-frequency Unicode characters",observed,manual linguistic validation required
