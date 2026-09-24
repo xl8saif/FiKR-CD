@@ -1,0 +1,48 @@
+name: Mvy Milestone 3.1 ASR Dataset Preparation
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'research/mvy/source/common-voice-27/validated.tsv'
+      - 'research/mvy/analysis/milestone-3.1/prepare_mvy_asr_dataset.py'
+      - '.github/workflows/mvy-milestone-3.1.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout FiKR-CD
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Prepare M3.1 ASR manifest
+        run: python research/mvy/analysis/milestone-3.1/prepare_mvy_asr_dataset.py
+
+      - name: Publish public M3.1 manifest
+        run: |
+          mkdir -p public/research/mvy/milestone-3.1
+          cp research/mvy/analysis/milestone-3.1/output/mvy-asr-preparation-summary.json public/research/mvy/milestone-3.1/mvy-asr-preparation-manifest.json
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add public/research/mvy/milestone-3.1/mvy-asr-preparation-manifest.json
+          git diff --cached --quiet || git commit -m 'Publish Mvy Milestone 3.1 ASR preparation manifest'
+          git push
+
+      - name: Upload M3.1 research package
+        uses: actions/upload-artifact@v4
+        with:
+          name: mvy-milestone-3.1
+          path: research/mvy/analysis/milestone-3.1/output/
+          if-no-files-found: error
+          retention-days: 90
