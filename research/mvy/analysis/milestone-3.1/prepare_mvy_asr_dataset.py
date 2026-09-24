@@ -11,7 +11,7 @@ import csv, hashlib, json, os, re, unicodedata
 from collections import Counter
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[3]
+ROOT = Path(__file__).resolve().parents[4]
 SOURCE = ROOT / "research/mvy/source/common-voice-27"
 TSV = SOURCE / "validated.tsv"
 OUT = ROOT / "research/mvy/analysis/milestone-3.1/output"
