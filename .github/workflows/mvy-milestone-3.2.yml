@@ -1,0 +1,44 @@
+name: Mvy Milestone 3.2 Audio Text QC
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'research/mvy/source/common-voice-27/validated.tsv'
+      - 'research/mvy/analysis/milestone-3.2/analyze_mvy_audio_text_qc.py'
+      - '.github/workflows/mvy-milestone-3.2.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  qc:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout FiKR-CD
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run M3.2 audio-text QC
+        run: python research/mvy/analysis/milestone-3.2/analyze_mvy_audio_text_qc.py
+      - name: Publish public M3.2 manifest
+        run: |
+          mkdir -p public/research/mvy/milestone-3.2
+          cp research/mvy/analysis/milestone-3.2/output/mvy-audio-text-qc-manifest.json public/research/mvy/milestone-3.2/mvy-audio-text-qc-manifest.json
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add public/research/mvy/milestone-3.2/mvy-audio-text-qc-manifest.json
+          git diff --cached --quiet || git commit -m 'Publish Mvy Milestone 3.2 audio text QC manifest'
+          git push
+      - name: Upload M3.2 research package
+        uses: actions/upload-artifact@v4
+        with:
+          name: mvy-milestone-3.2
+          path: research/mvy/analysis/milestone-3.2/output/
+          if-no-files-found: error
+          retention-days: 90
