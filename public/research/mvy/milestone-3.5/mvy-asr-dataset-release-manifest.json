@@ -1,0 +1,52 @@
+{
+  "audio_available_records": 0,
+  "audio_unavailable_records": 16612,
+  "files": [
+    {
+      "bytes": 7865890,
+      "file": "mvy-asr-dataset-release.jsonl",
+      "sha256": "14d2312297699e49ffdecabfa3b019756fffa198de92741530b0d4baf0f451ae"
+    },
+    {
+      "bytes": 797624,
+      "file": "mvy-asr-test.jsonl",
+      "sha256": "ad20f826ba71926f796c6cf4da05be514c8d4a03f722a3cf576c59a9a80e93c3"
+    },
+    {
+      "bytes": 6270827,
+      "file": "mvy-asr-train.jsonl",
+      "sha256": "a0bf3ac0213e2f6a82a2b69b76489b8577485a0530d47165f9ffbca519c08805"
+    },
+    {
+      "bytes": 797439,
+      "file": "mvy-asr-validation.jsonl",
+      "sha256": "5c5347c4f6455899486538b1fcc6d678192cc7111ec653f9ebec1a0a94544927"
+    }
+  ],
+  "limitations": [
+    "Text-side manifest release; audio is referenced, not redistributed.",
+    "Records without client_id retain the M3.4 train-only limitation.",
+    "External audio licensing/redistribution rights are not established by this repository release."
+  ],
+  "m3_4_split_manifest_sha256": "13156e06aa42d2b66179e7d752b9c8470041d8ca2e8d6a2f50a6359f2e00c862",
+  "milestone": "M3.5",
+  "next_milestone": "M4.1 Linguistic Corpus Research",
+  "records": 16612,
+  "release_status": "release_candidate",
+  "reproducibility": {
+    "split_ratios": {
+      "test": 0.1,
+      "train": 0.8,
+      "validation": 0.1
+    },
+    "split_seed": 3401
+  },
+  "source": "research/mvy/source/common-voice-27/validated.tsv",
+  "speaker_disjointness_basis": "M3.4 known client_id groups",
+  "split_counts": {
+    "test": 1661,
+    "train": 13290,
+    "validation": 1661
+  },
+  "title": "ASR Dataset Release"
+}
