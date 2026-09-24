@@ -1,0 +1,1196 @@
+{
+  "project": "FiKR&CD",
+  "language": "Indus-Kohistani",
+  "iso_639_3": "mvy",
+  "milestone": "2.9",
+  "title": "Rare & Anomalous Sequence Detection",
+  "corpus_rows": 16612,
+  "word_occurrences": 135375,
+  "established_grapheme_count": 62,
+  "special_letter_count": 5,
+  "unestablished_graphemes": [
+    {
+      "sequence": "ں",
+      "frequency": 29839,
+      "unique_words": 2747
+    },
+    {
+      "sequence": "ھ",
+      "frequency": 17786,
+      "unique_words": 1378
+    },
+    {
+      "sequence": "ئ",
+      "frequency": 6985,
+      "unique_words": 841
+    },
+    {
+      "sequence": "۔",
+      "frequency": 6825,
+      "unique_words": 565
+    },
+    {
+      "sequence": "تُ",
+      "frequency": 5092,
+      "unique_words": 109
+    },
+    {
+      "sequence": "ن٘",
+      "frequency": 5046,
+      "unique_words": 787
+    },
+    {
+      "sequence": "آ",
+      "frequency": 4074,
+      "unique_words": 125
+    },
+    {
+      "sequence": "ؤ",
+      "frequency": 3518,
+      "unique_words": 492
+    },
+    {
+      "sequence": "یۡ",
+      "frequency": 3129,
+      "unique_words": 503
+    },
+    {
+      "sequence": "ہُ",
+      "frequency": 2822,
+      "unique_words": 161
+    },
+    {
+      "sequence": "،",
+      "frequency": 2402,
+      "unique_words": 545
+    },
+    {
+      "sequence": "مُ",
+      "frequency": 1819,
+      "unique_words": 233
+    },
+    {
+      "sequence": "ہۡ",
+      "frequency": 1496,
+      "unique_words": 181
+    },
+    {
+      "sequence": "ہِ",
+      "frequency": 1446,
+      "unique_words": 53
+    },
+    {
+      "sequence": "دُ",
+      "frequency": 1205,
+      "unique_words": 122
+    },
+    {
+      "sequence": "اُ",
+      "frequency": 1127,
+      "unique_words": 108
+    },
+    {
+      "sequence": "مِ",
+      "frequency": 1018,
+      "unique_words": 91
+    },
+    {
+      "sequence": "بِ",
+      "frequency": 983,
+      "unique_words": 102
+    },
+    {
+      "sequence": "ݜُ",
+      "frequency": 944,
+      "unique_words": 33
+    },
+    {
+      "sequence": "وۡ",
+      "frequency": 889,
+      "unique_words": 217
+    },
+    {
+      "sequence": "بُ",
+      "frequency": 885,
+      "unique_words": 103
+    },
+    {
+      "sequence": "تَ",
+      "frequency": 882,
+      "unique_words": 62
+    },
+    {
+      "sequence": "کِ",
+      "frequency": 824,
+      "unique_words": 59
+    },
+    {
+      "sequence": "یُ",
+      "frequency": 803,
+      "unique_words": 133
+    },
+    {
+      "sequence": "وَ",
+      "frequency": 784,
+      "unique_words": 70
+    },
+    {
+      "sequence": "سُ",
+      "frequency": 777,
+      "unique_words": 96
+    },
+    {
+      "sequence": "ھُ",
+      "frequency": 752,
+      "unique_words": 55
+    },
+    {
+      "sequence": "اَ",
+      "frequency": 744,
+      "unique_words": 85
+    },
+    {
+      "sequence": "پُ",
+      "frequency": 716,
+      "unique_words": 103
+    },
+    {
+      "sequence": "رَ",
+      "frequency": 673,
+      "unique_words": 113
+    },
+    {
+      "sequence": "اِ",
+      "frequency": 666,
+      "unique_words": 99
+    },
+    {
+      "sequence": "نِ",
+      "frequency": 635,
+      "unique_words": 72
+    },
+    {
+      "sequence": "مَ",
+      "frequency": 620,
+      "unique_words": 91
+    },
+    {
+      "sequence": "کُ",
+      "frequency": 588,
+      "unique_words": 104
+    },
+    {
+      "sequence": "نٚ",
+      "frequency": 577,
+      "unique_words": 114
+    },
+    {
+      "sequence": "لُ",
+      "frequency": 576,
+      "unique_words": 134
+    },
+    {
+      "sequence": "گِ",
+      "frequency": 574,
+      "unique_words": 63
+    },
+    {
+      "sequence": "نَ",
+      "frequency": 515,
+      "unique_words": 69
+    },
+    {
+      "sequence": "لَ",
+      "frequency": 487,
+      "unique_words": 95
+    },
+    {
+      "sequence": "کَ",
+      "frequency": 486,
+      "unique_words": 83
+    },
+    {
+      "sequence": "رُ",
+      "frequency": 463,
+      "unique_words": 85
+    },
+    {
+      "sequence": "سِ",
+      "frequency": 459,
+      "unique_words": 60
+    },
+    {
+      "sequence": "لِ",
+      "frequency": 448,
+      "unique_words": 92
+    },
+    {
+      "sequence": "رِ",
+      "frequency": 443,
+      "unique_words": 122
+    },
+    {
+      "sequence": "دَ",
+      "frequency": 405,
+      "unique_words": 65
+    },
+    {
+      "sequence": "بَ",
+      "frequency": 399,
+      "unique_words": 108
+    },
+    {
+      "sequence": "گُ",
+      "frequency": 394,
+      "unique_words": 100
+    },
+    {
+      "sequence": "؟",
+      "frequency": 345,
+      "unique_words": 46
+    },
+    {
+      "sequence": "ےۡ",
+      "frequency": 344,
+      "unique_words": 10
+    },
+    {
+      "sequence": "سَ",
+      "frequency": 336,
+      "unique_words": 49
+    },
+    {
+      "sequence": "ݜَ",
+      "frequency": 324,
+      "unique_words": 30
+    },
+    {
+      "sequence": "؛",
+      "frequency": 311,
+      "unique_words": 75
+    },
+    {
+      "sequence": "زِ",
+      "frequency": 302,
+      "unique_words": 26
+    },
+    {
+      "sequence": "ٶ",
+      "frequency": 291,
+      "unique_words": 67
+    },
+    {
+      "sequence": "شُ",
+      "frequency": 275,
+      "unique_words": 36
+    },
+    {
+      "sequence": "تِ",
+      "frequency": 266,
+      "unique_words": 69
+    },
+    {
+      "sequence": "حُ",
+      "frequency": 246,
+      "unique_words": 28
+    },
+    {
+      "sequence": "گَ",
+      "frequency": 243,
+      "unique_words": 39
+    },
+    {
+      "sequence": "دِ",
+      "frequency": 228,
+      "unique_words": 40
+    },
+    {
+      "sequence": "پَ",
+      "frequency": 227,
+      "unique_words": 50
+    },
+    {
+      "sequence": "جُ",
+      "frequency": 211,
+      "unique_words": 36
+    },
+    {
+      "sequence": "زَ",
+      "frequency": 210,
+      "unique_words": 30
+    },
+    {
+      "sequence": "ھَ",
+      "frequency": 209,
+      "unique_words": 46
+    },
+    {
+      "sequence": "شِ",
+      "frequency": 204,
+      "unique_words": 42
+    },
+    {
+      "sequence": "ݜِ",
+      "frequency": 203,
+      "unique_words": 21
+    },
+    {
+      "sequence": "نُ",
+      "frequency": 201,
+      "unique_words": 21
+    },
+    {
+      "sequence": "ڇِ",
+      "frequency": 196,
+      "unique_words": 42
+    },
+    {
+      "sequence": "ٹُ",
+      "frequency": 186,
+      "unique_words": 31
+    },
+    {
+      "sequence": "زُ",
+      "frequency": 185,
+      "unique_words": 27
+    },
+    {
+      "sequence": "ݩ",
+      "frequency": 159,
+      "unique_words": 54
+    },
+    {
+      "sequence": "ہَ",
+      "frequency": 154,
+      "unique_words": 39
+    },
+    {
+      "sequence": "څَ",
+      "frequency": 151,
+      "unique_words": 12
+    },
+    {
+      "sequence": "ژِ",
+      "frequency": 148,
+      "unique_words": 42
+    },
+    {
+      "sequence": "چِ",
+      "frequency": 147,
+      "unique_words": 33
+    },
+    {
+      "sequence": "ٹَ",
+      "frequency": 142,
+      "unique_words": 24
+    },
+    {
+      "sequence": "قِ",
+      "frequency": 132,
+      "unique_words": 16
+    },
+    {
+      "sequence": "ٹِ",
+      "frequency": 131,
+      "unique_words": 19
+    },
+    {
+      "sequence": "یَ",
+      "frequency": 129,
+      "unique_words": 37
+    },
+    {
+      "sequence": "ڇَ",
+      "frequency": 123,
+      "unique_words": 24
+    },
+    {
+      "sequence": "ھِ",
+      "frequency": 122,
+      "unique_words": 30
+    },
+    {
+      "sequence": "خُ",
+      "frequency": 121,
+      "unique_words": 30
+    },
+    {
+      "sequence": "فَ",
+      "frequency": 120,
+      "unique_words": 19
+    },
+    {
+      "sequence": "چُ",
+      "frequency": 104,
+      "unique_words": 33
+    },
+    {
+      "sequence": "شَ",
+      "frequency": 94,
+      "unique_words": 33
+    },
+    {
+      "sequence": "قَ",
+      "frequency": 89,
+      "unique_words": 24
+    },
+    {
+      "sequence": "فِ",
+      "frequency": 87,
+      "unique_words": 15
+    },
+    {
+      "sequence": "قُ",
+      "frequency": 85,
+      "unique_words": 26
+    },
+    {
+      "sequence": "ژُ",
+      "frequency": 83,
+      "unique_words": 13
+    },
+    {
+      "sequence": "چَ",
+      "frequency": 80,
+      "unique_words": 28
+    },
+    {
+      "sequence": "اْ",
+      "frequency": 76,
+      "unique_words": 6
+    },
+    {
+      "sequence": "عِ",
+      "frequency": 76,
+      "unique_words": 20
+    },
+    {
+      "sequence": "ںٚ",
+      "frequency": 70,
+      "unique_words": 12
+    },
+    {
+      "sequence": "پِ",
+      "frequency": 70,
+      "unique_words": 16
+    },
+    {
+      "sequence": "خَ",
+      "frequency": 67,
+      "unique_words": 23
+    },
+    {
+      "sequence": "a",
+      "frequency": 62,
+      "unique_words": 3
+    },
+    {
+      "sequence": "t",
+      "frequency": 61,
+      "unique_words": 2
+    },
+    {
+      "sequence": "صُ",
+      "frequency": 60,
+      "unique_words": 13
+    },
+    {
+      "sequence": "h",
+      "frequency": 59,
+      "unique_words": 2
+    },
+    {
+      "sequence": "P",
+      "frequency": 59,
+      "unique_words": 2
+    },
+    {
+      "sequence": "عُ",
+      "frequency": 59,
+      "unique_words": 18
+    },
+    {
+      "sequence": "ڈِ",
+      "frequency": 57,
+      "unique_words": 21
+    },
+    {
+      "sequence": "C",
+      "frequency": 57,
+      "unique_words": 1
+    },
+    {
+      "sequence": "G",
+      "frequency": 57,
+      "unique_words": 1
+    },
+    {
+      "sequence": "T",
+      "frequency": 57,
+      "unique_words": 1
+    },
+    {
+      "sequence": "خِ",
+      "frequency": 54,
+      "unique_words": 14
+    },
+    {
+      "sequence": "ڙِ",
+      "frequency": 53,
+      "unique_words": 10
+    },
+    {
+      "sequence": "صِ",
+      "frequency": 51,
+      "unique_words": 10
+    },
+    {
+      "sequence": "ژَ",
+      "frequency": 48,
+      "unique_words": 21
+    },
+    {
+      "sequence": "ﷺ",
+      "frequency": 47,
+      "unique_words": 5
+    },
+    {
+      "sequence": "جِ",
+      "frequency": 45,
+      "unique_words": 13
+    },
+    {
+      "sequence": "اً",
+      "frequency": 43,
+      "unique_words": 7
+    },
+    {
+      "sequence": "ڑُ",
+      "frequency": 41,
+      "unique_words": 8
+    },
+    {
+      "sequence": "وُ",
+      "frequency": 39,
+      "unique_words": 11
+    },
+    {
+      "sequence": "جَ",
+      "frequency": 39,
+      "unique_words": 13
+    },
+    {
+      "sequence": "ٸ",
+      "frequency": 37,
+      "unique_words": 13
+    },
+    {
+      "sequence": "حِ",
+      "frequency": 36,
+      "unique_words": 11
+    },
+    {
+      "sequence": "څِ",
+      "frequency": 33,
+      "unique_words": 6
+    },
+    {
+      "sequence": "نّ",
+      "frequency": 31,
+      "unique_words": 4
+    },
+    {
+      "sequence": "لؐ",
+      "frequency": 30,
+      "unique_words": 1
+    },
+    {
+      "sequence": "کّ",
+      "frequency": 30,
+      "unique_words": 4
+    },
+    {
+      "sequence": "ڙُ",
+      "frequency": 30,
+      "unique_words": 9
+    },
+    {
+      "sequence": "ڇُ",
+      "frequency": 29,
+      "unique_words": 5
+    },
+    {
+      "sequence": "ڑَ",
+      "frequency": 27,
+      "unique_words": 13
+    },
+    {
+      "sequence": "ڈَ",
+      "frequency": 26,
+      "unique_words": 8
+    },
+    {
+      "sequence": "A",
+      "frequency": 25,
+      "unique_words": 3
+    },
+    {
+      "sequence": "I",
+      "frequency": 22,
+      "unique_words": 1
+    },
+    {
+      "sequence": "یؐ",
+      "frequency": 21,
+      "unique_words": 1
+    },
+    {
+      "sequence": "یّ",
+      "frequency": 20,
+      "unique_words": 2
+    },
+    {
+      "sequence": "وِ",
+      "frequency": 20,
+      "unique_words": 7
+    },
+    {
+      "sequence": "فُ",
+      "frequency": 20,
+      "unique_words": 7
+    },
+    {
+      "sequence": "یْ",
+      "frequency": 19,
+      "unique_words": 5
+    },
+    {
+      "sequence": "ڈُ",
+      "frequency": 18,
+      "unique_words": 7
+    },
+    {
+      "sequence": "وْ",
+      "frequency": 18,
+      "unique_words": 5
+    },
+    {
+      "sequence": "ه",
+      "frequency": 18,
+      "unique_words": 8
+    },
+    {
+      "sequence": "یٙ",
+      "frequency": 17,
+      "unique_words": 6
+    },
+    {
+      "sequence": "رؐ",
+      "frequency": 17,
+      "unique_words": 1
+    },
+    {
+      "sequence": "حَ",
+      "frequency": 17,
+      "unique_words": 5
+    },
+    {
+      "sequence": "ذِ",
+      "frequency": 16,
+      "unique_words": 4
+    },
+    {
+      "sequence": "غُ",
+      "frequency": 16,
+      "unique_words": 3
+    },
+    {
+      "sequence": "ڑِ",
+      "frequency": 16,
+      "unique_words": 7
+    },
+    {
+      "sequence": "یٛ",
+      "frequency": 14,
+      "unique_words": 2
+    },
+    {
+      "sequence": "ظِ",
+      "frequency": 14,
+      "unique_words": 4
+    },
+    {
+      "sequence": "یٰ",
+      "frequency": 13,
+      "unique_words": 6
+    },
+    {
+      "sequence": "ظُ",
+      "frequency": 12,
+      "unique_words": 2
+    },
+    {
+      "sequence": "َ",
+      "frequency": 11,
+      "unique_words": 2
+    },
+    {
+      "sequence": "رّ",
+      "frequency": 11,
+      "unique_words": 5
+    },
+    {
+      "sequence": "وٙ",
+      "frequency": 11,
+      "unique_words": 2
+    },
+    {
+      "sequence": "کٙ",
+      "frequency": 10,
+      "unique_words": 3
+    },
+    {
+      "sequence": "ضِ",
+      "frequency": 10,
+      "unique_words": 5
+    },
+    {
+      "sequence": "غَ",
+      "frequency": 10,
+      "unique_words": 1
+    },
+    {
+      "sequence": "ي",
+      "frequency": 10,
+      "unique_words": 3
+    },
+    {
+      "sequence": "e",
+      "frequency": 10,
+      "unique_words": 3
+    },
+    {
+      "sequence": "یِ",
+      "frequency": 9,
+      "unique_words": 4
+    },
+    {
+      "sequence": "ہٛ",
+      "frequency": 9,
+      "unique_words": 2
+    },
+    {
+      "sequence": "یؓ",
+      "frequency": 9,
+      "unique_words": 3
+    },
+    {
+      "sequence": "لّٰ",
+      "frequency": 9,
+      "unique_words": 2
+    },
+    {
+      "sequence": "وّ",
+      "frequency": 9,
+      "unique_words": 3
+    },
+    {
+      "sequence": "ضَ",
+      "frequency": 9,
+      "unique_words": 4
+    },
+    {
+      "sequence": "یؑ",
+      "frequency": 9,
+      "unique_words": 1
+    },
+    {
+      "sequence": "عَ",
+      "frequency": 8,
+      "unique_words": 5
+    },
+    {
+      "sequence": "ثَ",
+      "frequency": 8,
+      "unique_words": 2
+    },
+    {
+      "sequence": "چُّ",
+      "frequency": 8,
+      "unique_words": 1
+    },
+    {
+      "sequence": "o",
+      "frequency": 8,
+      "unique_words": 2
+    },
+    {
+      "sequence": "s",
+      "frequency": 8,
+      "unique_words": 4
+    },
+    {
+      "sequence": "طِ",
+      "frequency": 8,
+      "unique_words": 4
+    },
+    {
+      "sequence": "رؓ",
+      "frequency": 8,
+      "unique_words": 4
+    },
+    {
+      "sequence": "نؓ",
+      "frequency": 8,
+      "unique_words": 2
+    },
+    {
+      "sequence": "ئِ",
+      "frequency": 7,
+      "unique_words": 4
+    },
+    {
+      "sequence": "ںْ",
+      "frequency": 6,
+      "unique_words": 1
+    },
+    {
+      "sequence": "ؽ",
+      "frequency": 6,
+      "unique_words": 1
+    },
+    {
+      "sequence": "څُ",
+      "frequency": 6,
+      "unique_words": 3
+    },
+    {
+      "sequence": "i",
+      "frequency": 6,
+      "unique_words": 1
+    },
+    {
+      "sequence": "r",
+      "frequency": 6,
+      "unique_words": 1
+    },
+    {
+      "sequence": "ة",
+      "frequency": 6,
+      "unique_words": 3
+    },
+    {
+      "sequence": "l",
+      "frequency": 6,
+      "unique_words": 2
+    },
+    {
+      "sequence": "طَ",
+      "frequency": 6,
+      "unique_words": 2
+    },
+    {
+      "sequence": "نۡ",
+      "frequency": 5,
+      "unique_words": 2
+    },
+    {
+      "sequence": "اۡ",
+      "frequency": 5,
+      "unique_words": 1
+    },
+    {
+      "sequence": "n",
+      "frequency": 5,
+      "unique_words": 2
+    },
+    {
+      "sequence": "اٛ",
+      "frequency": 4,
+      "unique_words": 2
+    },
+    {
+      "sequence": "ڜ",
+      "frequency": 4,
+      "unique_words": 3
+    },
+    {
+      "sequence": "بؓ",
+      "frequency": 4,
+      "unique_words": 2
+    },
+    {
+      "sequence": "ظَ",
+      "frequency": 4,
+      "unique_words": 1
+    },
+    {
+      "sequence": "پُّ",
+      "frequency": 4,
+      "unique_words": 2
+    },
+    {
+      "sequence": "ڙَ",
+      "frequency": 4,
+      "unique_words": 2
+    },
+    {
+      "sequence": "ُ",
+      "frequency": 4,
+      "unique_words": 2
+    },
+    {
+      "sequence": "ثُ",
+      "frequency": 4,
+      "unique_words": 1
+    },
+    {
+      "sequence": "ِ",
+      "frequency": 3,
+      "unique_words": 1
+    },
+    {
+      "sequence": "صَ",
+      "frequency": 3,
+      "unique_words": 2
+    },
+    {
+      "sequence": "قؓ",
+      "frequency": 3,
+      "unique_words": 1
+    },
+    {
+      "sequence": "M",
+      "frequency": 3,
+      "unique_words": 1
+    },
+    {
+      "sequence": "c",
+      "frequency": 3,
+      "unique_words": 1
+    },
+    {
+      "sequence": "g",
+      "frequency": 3,
+      "unique_words": 1
+    },
+    {
+      "sequence": "m",
+      "frequency": 3,
+      "unique_words": 1
+    },
+    {
+      "sequence": "ݨَ",
+      "frequency": 3,
+      "unique_words": 1
+    },
+    {
+      "sequence": "لّ",
+      "frequency": 3,
+      "unique_words": 2
+    },
+    {
+      "sequence": "رِؐ",
+      "frequency": 3,
+      "unique_words": 1
+    },
+    {
+      "sequence": "ۃ",
+      "frequency": 3,
+      "unique_words": 2
+    },
+    {
+      "sequence": "تَّ",
+      "frequency": 3,
+      "unique_words": 2
+    },
+    {
+      "sequence": "یَّ",
+      "frequency": 3,
+      "unique_words": 2
+    },
+    {
+      "sequence": "سؓ",
+      "frequency": 3,
+      "unique_words": 1
+    },
+    {
+      "sequence": "کَّ",
+      "frequency": 2,
+      "unique_words": 1
+    },
+    {
+      "sequence": "نْ",
+      "frequency": 2,
+      "unique_words": 1
+    },
+    {
+      "sequence": "دؓ",
+      "frequency": 2,
+      "unique_words": 1
+    },
+    {
+      "sequence": "لِؐ",
+      "frequency": 2,
+      "unique_words": 1
+    },
+    {
+      "sequence": "لِؐ",
+      "frequency": 2,
+      "unique_words": 1
+    },
+    {
+      "sequence": "بۡ",
+      "frequency": 2,
+      "unique_words": 1
+    },
+    {
+      "sequence": "نِ٘",
+      "frequency": 2,
+      "unique_words": 1
+    },
+    {
+      "sequence": "ثِ",
+      "frequency": 2,
+      "unique_words": 1
+    },
+    {
+      "sequence": "سٓ",
+      "frequency": 2,
+      "unique_words": 1
+    },
+    {
+      "sequence": "ہؓ",
+      "frequency": 2,
+      "unique_words": 1
+    },
+    {
+      "sequence": "وۡؑ",
+      "frequency": 2,
+      "unique_words": 1
+    },
+    {
+      "sequence": "کۡ",
+      "frequency": 2,
+      "unique_words": 1
+    },
+    {
+      "sequence": "ئۡ",
+      "frequency": 2,
+      "unique_words": 1
+    },
+    {
+      "sequence": "ںؓ",
+      "frequency": 2,
+      "unique_words": 1
+    },
+    {
+      "sequence": "رً",
+      "frequency": 2,
+      "unique_words": 1
+    },
+    {
+      "sequence": "قُّ",
+      "frequency": 2,
+      "unique_words": 1
+    },
+    {
+      "sequence": "فٰ",
+      "frequency": 2,
+      "unique_words": 1
+    },
+    {
+      "sequence": "مَّ",
+      "frequency": 2,
+      "unique_words": 1
+    },
+    {
+      "sequence": "۔َ",
+      "frequency": 2,
+      "unique_words": 1
+    },
+    {
+      "sequence": "لۡ",
+      "frequency": 2,
+      "unique_words": 1
+    },
+    {
+      "sequence": "رَؓ",
+      "frequency": 2,
+      "unique_words": 1
+    },
+    {
+      "sequence": "مٍ",
+      "frequency": 2,
+      "unique_words": 1
+    },
+    {
+      "sequence": "مُّ",
+      "frequency": 2,
+      "unique_words": 1
+    },
+    {
+      "sequence": "ذُ",
+      "frequency": 2,
+      "unique_words": 1
+    },
+    {
+      "sequence": "لً",
+      "frequency": 2,
+      "unique_words": 1
+    },
+    {
+      "sequence": "p",
+      "frequency": 2,
+      "unique_words": 1
+    },
+    {
+      "sequence": "دّ",
+      "frequency": 1,
+      "unique_words": 1
+    },
+    {
+      "sequence": "ېَ",
+      "frequency": 1,
+      "unique_words": 1
+    },
+    {
+      "sequence": "ںؐ",
+      "frequency": 1,
+      "unique_words": 1
+    },
+    {
+      "sequence": "ذؓ",
+      "frequency": 1,
+      "unique_words": 1
+    },
+    {
+      "sequence": "d",
+      "frequency": 1,
+      "unique_words": 1
+    },
+    {
+      "sequence": "نً",
+      "frequency": 1,
+      "unique_words": 1
+    }
+  ],
+  "rare_sequence_threshold": 2,
+  "rare_sequence_count": 1918,
+  "anomalous_bigram_count": 436,
+  "anomalous_trigram_count": 1900,
+  "method_notes": [
+    "A grapheme is anomalous when it is not in the established Mvy grapheme inventory used by the FiKR&CD analysis pipeline.",
+    "Rare sequences are corpus bigrams/trigrams occurring no more than twice.",
+    "Sequence detection is descriptive and orthographic; anomalies are candidates for review, not automatic corrections.",
+    "Known multi-character aspirated patterns are retained as expected orthographic sequences."
+  ],
+  "outputs": [
+    "mvy-anomalous-bigrams.csv",
+    "mvy-anomalous-graphemes.csv",
+    "mvy-anomalous-sequence-summary.csv",
+    "mvy-anomalous-trigrams.csv",
+    "mvy-rare-adjacent-sequences.csv",
+    "mvy-rare-sequences.csv"
+  ]
+}
