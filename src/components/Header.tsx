@@ -32,7 +32,7 @@ import { LinkedInIconLink } from './LinkedInIconLink';
 import fikrLogo from '../assets/images/fikrcd_logo_1787381137891.jpg';
 
 interface HeaderProps {
-  activeTab: 'contribute' | 'my_contributions' | 'verification_queue' | 'corpus_explorer' | 'admin_panel' | 'quality_dashboard' | 'dataset_releases' | 'nlp_workspace' | 'translation_workspace' | 'speech_workspace' | 'llm_workspace' | 'roadmap' | 'my_profile' | 'consent_license';
+  activeTab: 'contribute' | 'my_contributions' | 'verification_queue' | 'corpus_explorer' | 'admin_panel' | 'quality_dashboard' | 'dataset_releases' | 'nlp_workspace' | 'translation_workspace' | 'speech_workspace' | 'llm_workspace' | 'mvy_milestone_23' | 'roadmap' | 'my_profile' | 'consent_license';
   setActiveTab: (tab: 'contribute' | 'my_contributions' | 'verification_queue' | 'corpus_explorer' | 'admin_panel' | 'quality_dashboard' | 'dataset_releases' | 'nlp_workspace' | 'translation_workspace' | 'speech_workspace' | 'llm_workspace' | 'roadmap' | 'my_profile' | 'consent_license') => void;
   currentUser: UserProfile;
   setCurrentUser: (user: UserProfile) => void;
@@ -107,6 +107,7 @@ export const Header: React.FC<HeaderProps> = ({
     { id: 'translation_workspace', label: 'MTPE Translation', sublabel: 'مشینی ترجمہ', icon: Sparkles, group: 'AI & Computational NLP' },
     { id: 'speech_workspace', label: 'Speech AI', sublabel: 'صوتی ماڈلز', icon: Mic, group: 'AI & Computational NLP' },
     { id: 'llm_workspace', label: 'LLM Benchmarks', sublabel: 'بڑے لسانی ماڈلز', icon: Brain, group: 'AI & Computational NLP' },
+    { id: 'mvy_milestone_23', label: 'Mvy Research 2.3', sublabel: 'املا اور لسانی تجزیہ', icon: BookOpen, group: 'AI & Computational NLP' },
     
     { id: 'quality_dashboard', label: 'Integrity Audit', sublabel: 'معیار کا تجزیہ', icon: Activity, group: 'Governance & System' },
     { id: 'dataset_releases', label: 'Dataset Releases', sublabel: 'ڈیٹاسیٹ ریلیز', icon: GitBranch, group: 'Governance & System' },
