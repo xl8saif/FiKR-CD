@@ -1,0 +1,154 @@
+{
+  "project": "FiKR&CD",
+  "language": "Indus-Kohistani",
+  "iso_639_3": "mvy",
+  "milestone": "2.6",
+  "title": "Diacritic & Combining-Mark Analysis",
+  "corpus_rows": 16612,
+  "word_occurrences": 135375,
+  "grapheme_cluster_occurrences": 487829,
+  "unicode_codepoint_occurrences": 661805,
+  "distinct_combining_marks": 17,
+  "combining_mark_occurrences": 52304,
+  "distinct_marked_graphemes": 192,
+  "marked_grapheme_occurrences": 52256,
+  "marked_word_occurrences": 43986,
+  "marked_sentence_occurrences": 15442,
+  "unattached_mark_occurrences": 18,
+  "top_marks": [
+    {
+      "mark": "ُ",
+      "frequency": 21016,
+      "unicode": "U+064F"
+    },
+    {
+      "mark": "ِ",
+      "frequency": 10251,
+      "unicode": "U+0650"
+    },
+    {
+      "mark": "َ",
+      "frequency": 8931,
+      "unicode": "U+064E"
+    },
+    {
+      "mark": "ۡ",
+      "frequency": 5878,
+      "unicode": "U+06E1"
+    },
+    {
+      "mark": "٘",
+      "frequency": 5048,
+      "unicode": "U+0658"
+    },
+    {
+      "mark": "ٚ",
+      "frequency": 647,
+      "unicode": "U+065A"
+    },
+    {
+      "mark": "ّ",
+      "frequency": 140,
+      "unicode": "U+0651"
+    },
+    {
+      "mark": "ْ",
+      "frequency": 121,
+      "unicode": "U+0652"
+    },
+    {
+      "mark": "ؐ",
+      "frequency": 76,
+      "unicode": "U+0610"
+    },
+    {
+      "mark": "ً",
+      "frequency": 48,
+      "unicode": "U+064B"
+    },
+    {
+      "mark": "ؓ",
+      "frequency": 44,
+      "unicode": "U+0613"
+    },
+    {
+      "mark": "ٙ",
+      "frequency": 38,
+      "unicode": "U+0659"
+    },
+    {
+      "mark": "ٛ",
+      "frequency": 27,
+      "unicode": "U+065B"
+    },
+    {
+      "mark": "ٰ",
+      "frequency": 24,
+      "unicode": "U+0670"
+    },
+    {
+      "mark": "ؑ",
+      "frequency": 11,
+      "unicode": "U+0611"
+    },
+    {
+      "mark": "ٓ",
+      "frequency": 2,
+      "unicode": "U+0653"
+    },
+    {
+      "mark": "ٍ",
+      "frequency": 2,
+      "unicode": "U+064D"
+    }
+  ],
+  "top_marked_graphemes": [
+    {
+      "grapheme": "تُ",
+      "frequency": 5092
+    },
+    {
+      "grapheme": "ن٘",
+      "frequency": 5046
+    },
+    {
+      "grapheme": "یۡ",
+      "frequency": 3129
+    },
+    {
+      "grapheme": "ہُ",
+      "frequency": 2822
+    },
+    {
+      "grapheme": "مُ",
+      "frequency": 1819
+    },
+    {
+      "grapheme": "ہۡ",
+      "frequency": 1496
+    },
+    {
+      "grapheme": "ہِ",
+      "frequency": 1446
+    },
+    {
+      "grapheme": "دُ",
+      "frequency": 1205
+    },
+    {
+      "grapheme": "اُ",
+      "frequency": 1127
+    },
+    {
+      "grapheme": "مِ",
+      "frequency": 1018
+    }
+  ],
+  "outputs": [
+    "mvy-diacritic-base-context.csv",
+    "mvy-diacritic-frequency.csv",
+    "mvy-diacritic-stacks.csv",
+    "mvy-marked-graphemes.csv",
+    "mvy-unattached-combining-marks.csv"
+  ]
+}
