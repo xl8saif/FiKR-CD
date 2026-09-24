@@ -1,0 +1,22 @@
+{
+  "audio_formats": [],
+  "duplicate_audio_paths": 0,
+  "duration_records": 0,
+  "method": [
+    "Check referenced audio presence and safe path resolution.",
+    "Perform detailed metadata/readability checks for WAV using Python standard library.",
+    "Flag zero-byte/zero-duration/unreadable WAV files as failures.",
+    "Flag unusually long or low-sample-rate WAVs for review, not automatic rejection.",
+    "Do not modify or correct transcriptions.",
+    "Non-WAV files are retained and reported without fabricated duration metadata."
+  ],
+  "milestone": "M3.2",
+  "next_milestone": "M3.3 Speaker & Recording Metadata",
+  "records": 16612,
+  "source": "research/mvy/source/common-voice-27/validated.tsv",
+  "source_sha256": "497157f27dd7928236ecf66acffda639164a17ec5bab2ee2b44c6eb7d719e176",
+  "status_counts": {
+    "missing_audio": 16612
+  },
+  "title": "Audio–Text Quality Control"
+}
