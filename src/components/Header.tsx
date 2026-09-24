@@ -186,6 +186,17 @@ export const Header: React.FC<HeaderProps> = ({
               </div>
             </div>
 
+            {/* Direct Mvy Research access */}
+            <button
+              id="header-mvy-research-btn"
+              type="button"
+              onClick={() => handleSelectTab('mvy_milestone_23')}
+              className="hidden sm:inline-flex items-center gap-1.5 rounded-lg border border-[#C9A66B]/40 bg-[#C9A66B]/10 px-2.5 py-1.5 text-xs font-semibold text-[#D4B582] hover:bg-[#C9A66B]/20 transition"
+            >
+              <BookOpen className="h-3.5 w-3.5" />
+              <span>Mvy 2.3 Research</span>
+            </button>
+
             {/* Active Workspace Indicator Pill */}
             <div className="hidden md:flex items-center gap-2 pl-3 border-l border-zinc-800">
               <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-zinc-900 border border-zinc-800 text-xs text-zinc-200 font-medium">
