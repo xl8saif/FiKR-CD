@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Mvy M4.1 — reproducible descriptive linguistic corpus analysis."""
 from __future__ import annotations
-import csv,hashlib,json,math,re,unicodedata
+import csv,hashlib,json,math,re,unicodedata\ntry:\n import regex as rx\nexcept ImportError:\n rx=None
 from collections import Counter
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[4]
