@@ -1,0 +1,2616 @@
+{
+  "dataset": "Mvy Written Corpus",
+  "language": "mvy",
+  "iso_639_3": "mvy",
+  "source_documents": 8,
+  "text_units": 8197,
+  "token_occurrences_estimate": 6496,
+  "nfc_normalization": {
+    "units_changed": 53,
+    "units_total": 8197,
+    "percent": 0.6466
+  },
+  "target_grapheme_counts": {
+    "څ": 3162,
+    "ڇ": 3438,
+    "ڙ": 497,
+    "ݜ": 5730,
+    "ݨ": 58
+  },
+  "combining_marks": {
+    "ARABIC SUKUN": 55615,
+    "ARABIC DAMMA": 28289,
+    "ARABIC KASRA": 10041,
+    "ARABIC MARK NOON GHUNNA": 8987,
+    "ARABIC FATHA": 6231,
+    "ARABIC SMALL HIGH DOTLESS HEAD OF KHAH": 5506,
+    "ARABIC LETTER SUPERSCRIPT ALEF": 3313,
+    "ARABIC SHADDA": 3064,
+    "ARABIC VOWEL SIGN INVERTED SMALL V ABOVE": 784,
+    "ARABIC SIGN ALAYHE ASSALLAM": 590,
+    "ARABIC VOWEL SIGN SMALL V ABOVE": 137,
+    "ARABIC SIGN SALLALLAHOU ALAYHE WASSALLAM": 56,
+    "COMBINING INVERTED BREVE BELOW": 45,
+    "ARABIC FATHATAN": 44,
+    "ARABIC SIGN RADI ALLAHOU ANHU": 44,
+    "ARABIC HAMZA ABOVE": 40,
+    "COMBINING DOUBLE LOW LINE": 24,
+    "ARABIC ZWARAKAY": 22,
+    "COMBINING PALATALIZED HOOK BELOW": 19,
+    "COMBINING TILDE BELOW": 15,
+    "ARABIC INVERTED DAMMA": 8,
+    "COMBINING TILDE OVERLAY": 8,
+    "COMBINING LOW LINE": 8,
+    "COMBINING RETROFLEX HOOK BELOW": 6,
+    "COMBINING MINUS SIGN BELOW": 4,
+    "ARABIC MADDAH ABOVE": 3,
+    "ARABIC KASRATAN": 3,
+    "COMBINING LATIN SMALL LETTER T": 2,
+    "ARABIC SIGN RAHMATULLAH ALAYHE": 1,
+    "COMBINING BREVE BELOW": 1
+  },
+  "unicode_character_inventory": [
+    {
+      "char": " ",
+      "codepoint": "U+0020",
+      "name": "SPACE",
+      "count": 241043
+    },
+    {
+      "char": "ی",
+      "codepoint": "U+06CC",
+      "name": "ARABIC LETTER FARSI YEH",
+      "count": 89190
+    },
+    {
+      "char": "ا",
+      "codepoint": "U+0627",
+      "name": "ARABIC LETTER ALEF",
+      "count": 83846
+    },
+    {
+      "char": "ں",
+      "codepoint": "U+06BA",
+      "name": "ARABIC LETTER NOON GHUNNA",
+      "count": 62420
+    },
+    {
+      "char": "و",
+      "codepoint": "U+0648",
+      "name": "ARABIC LETTER WAW",
+      "count": 56934
+    },
+    {
+      "char": "ْ",
+      "codepoint": "U+0652",
+      "name": "ARABIC SUKUN",
+      "count": 55615
+    },
+    {
+      "char": "ل",
+      "codepoint": "U+0644",
+      "name": "ARABIC LETTER LAM",
+      "count": 42453
+    },
+    {
+      "char": "ہ",
+      "codepoint": "U+06C1",
+      "name": "ARABIC LETTER HEH GOAL",
+      "count": 42382
+    },
+    {
+      "char": "ت",
+      "codepoint": "U+062A",
+      "name": "ARABIC LETTER TEH",
+      "count": 41645
+    },
+    {
+      "char": "ن",
+      "codepoint": "U+0646",
+      "name": "ARABIC LETTER NOON",
+      "count": 38358
+    },
+    {
+      "char": "ھ",
+      "codepoint": "U+06BE",
+      "name": "ARABIC LETTER HEH DOACHASHMEE",
+      "count": 36570
+    },
+    {
+      "char": "ک",
+      "codepoint": "U+06A9",
+      "name": "ARABIC LETTER KEHEH",
+      "count": 36147
+    },
+    {
+      "char": "ر",
+      "codepoint": "U+0631",
+      "name": "ARABIC LETTER REH",
+      "count": 30794
+    },
+    {
+      "char": "م",
+      "codepoint": "U+0645",
+      "name": "ARABIC LETTER MEEM",
+      "count": 29776
+    },
+    {
+      "char": "ُ",
+      "codepoint": "U+064F",
+      "name": "ARABIC DAMMA",
+      "count": 28289
+    },
+    {
+      "char": "س",
+      "codepoint": "U+0633",
+      "name": "ARABIC LETTER SEEN",
+      "count": 27514
+    },
+    {
+      "char": "ب",
+      "codepoint": "U+0628",
+      "name": "ARABIC LETTER BEH",
+      "count": 22293
+    },
+    {
+      "char": "ے",
+      "codepoint": "U+06D2",
+      "name": "ARABIC LETTER YEH BARREE",
+      "count": 21955
+    },
+    {
+      "char": "د",
+      "codepoint": "U+062F",
+      "name": "ARABIC LETTER DAL",
+      "count": 14821
+    },
+    {
+      "char": "چ",
+      "codepoint": "U+0686",
+      "name": "ARABIC LETTER TCHEH",
+      "count": 14702
+    },
+    {
+      "char": "۔",
+      "codepoint": "U+06D4",
+      "name": "ARABIC FULL STOP",
+      "count": 14545
+    },
+    {
+      "char": "گ",
+      "codepoint": "U+06AF",
+      "name": "ARABIC LETTER GAF",
+      "count": 13076
+    },
+    {
+      "char": "ئ",
+      "codepoint": "U+0626",
+      "name": "ARABIC LETTER YEH WITH HAMZA ABOVE",
+      "count": 12396
+    },
+    {
+      "char": "پ",
+      "codepoint": "U+067E",
+      "name": "ARABIC LETTER PEH",
+      "count": 12181
+    },
+    {
+      "char": "آ",
+      "codepoint": "U+0622",
+      "name": "ARABIC LETTER ALEF WITH MADDA ABOVE",
+      "count": 11195
+    },
+    {
+      "char": "ِ",
+      "codepoint": "U+0650",
+      "name": "ARABIC KASRA",
+      "count": 10041
+    },
+    {
+      "char": "٘",
+      "codepoint": "U+0658",
+      "name": "ARABIC MARK NOON GHUNNA",
+      "count": 8987
+    },
+    {
+      "char": "،",
+      "codepoint": "U+060C",
+      "name": "ARABIC COMMA",
+      "count": 7178
+    },
+    {
+      "char": "ؤ",
+      "codepoint": "U+0624",
+      "name": "ARABIC LETTER WAW WITH HAMZA ABOVE",
+      "count": 7174
+    },
+    {
+      "char": "ش",
+      "codepoint": "U+0634",
+      "name": "ARABIC LETTER SHEEN",
+      "count": 6594
+    },
+    {
+      "char": "ز",
+      "codepoint": "U+0632",
+      "name": "ARABIC LETTER ZAIN",
+      "count": 6475
+    },
+    {
+      "char": "خ",
+      "codepoint": "U+062E",
+      "name": "ARABIC LETTER KHAH",
+      "count": 6233
+    },
+    {
+      "char": "َ",
+      "codepoint": "U+064E",
+      "name": "ARABIC FATHA",
+      "count": 6231
+    },
+    {
+      "char": "ݜ",
+      "codepoint": "U+075C",
+      "name": "ARABIC LETTER SEEN WITH FOUR DOTS ABOVE",
+      "count": 5730
+    },
+    {
+      "char": "ۡ",
+      "codepoint": "U+06E1",
+      "name": "ARABIC SMALL HIGH DOTLESS HEAD OF KHAH",
+      "count": 5506
+    },
+    {
+      "char": "ق",
+      "codepoint": "U+0642",
+      "name": "ARABIC LETTER QAF",
+      "count": 5048
+    },
+    {
+      "char": "ع",
+      "codepoint": "U+0639",
+      "name": "ARABIC LETTER AIN",
+      "count": 4418
+    },
+    {
+      "char": "ح",
+      "codepoint": "U+062D",
+      "name": "ARABIC LETTER HAH",
+      "count": 3836
+    },
+    {
+      "char": "ٹ",
+      "codepoint": "U+0679",
+      "name": "ARABIC LETTER TTEH",
+      "count": 3659
+    },
+    {
+      "char": "ڇ",
+      "codepoint": "U+0687",
+      "name": "ARABIC LETTER TCHEHEH",
+      "count": 3438
+    },
+    {
+      "char": "ٰ",
+      "codepoint": "U+0670",
+      "name": "ARABIC LETTER SUPERSCRIPT ALEF",
+      "count": 3313
+    },
+    {
+      "char": "ې",
+      "codepoint": "U+06D0",
+      "name": "ARABIC LETTER E",
+      "count": 3209
+    },
+    {
+      "char": "څ",
+      "codepoint": "U+0685",
+      "name": "ARABIC LETTER HAH WITH THREE DOTS ABOVE",
+      "count": 3162
+    },
+    {
+      "char": "ّ",
+      "codepoint": "U+0651",
+      "name": "ARABIC SHADDA",
+      "count": 3064
+    },
+    {
+      "char": "ج",
+      "codepoint": "U+062C",
+      "name": "ARABIC LETTER JEEM",
+      "count": 3040
+    },
+    {
+      "char": "ژ",
+      "codepoint": "U+0698",
+      "name": "ARABIC LETTER JEH",
+      "count": 2830
+    },
+    {
+      "char": "ف",
+      "codepoint": "U+0641",
+      "name": "ARABIC LETTER FEH",
+      "count": 2810
+    },
+    {
+      "char": "ص",
+      "codepoint": "U+0635",
+      "name": "ARABIC LETTER SAD",
+      "count": 2035
+    },
+    {
+      "char": ")",
+      "codepoint": "U+0029",
+      "name": "RIGHT PARENTHESIS",
+      "count": 1884
+    },
+    {
+      "char": "(",
+      "codepoint": "U+0028",
+      "name": "LEFT PARENTHESIS",
+      "count": 1865
+    },
+    {
+      "char": "1",
+      "codepoint": "U+0031",
+      "name": "DIGIT ONE",
+      "count": 1835
+    },
+    {
+      "char": "غ",
+      "codepoint": "U+063A",
+      "name": "ARABIC LETTER GHAIN",
+      "count": 1606
+    },
+    {
+      "char": "ڑ",
+      "codepoint": "U+0691",
+      "name": "ARABIC LETTER RREH",
+      "count": 1440
+    },
+    {
+      "char": "2",
+      "codepoint": "U+0032",
+      "name": "DIGIT TWO",
+      "count": 1359
+    },
+    {
+      "char": "ڈ",
+      "codepoint": "U+0688",
+      "name": "ARABIC LETTER DDAL",
+      "count": 1214
+    },
+    {
+      "char": "ط",
+      "codepoint": "U+0637",
+      "name": "ARABIC LETTER TAH",
+      "count": 1166
+    },
+    {
+      "char": "3",
+      "codepoint": "U+0033",
+      "name": "DIGIT THREE",
+      "count": 1089
+    },
+    {
+      "char": "4",
+      "codepoint": "U+0034",
+      "name": "DIGIT FOUR",
+      "count": 965
+    },
+    {
+      "char": "5",
+      "codepoint": "U+0035",
+      "name": "DIGIT FIVE",
+      "count": 845
+    },
+    {
+      "char": "ض",
+      "codepoint": "U+0636",
+      "name": "ARABIC LETTER DAD",
+      "count": 828
+    },
+    {
+      "char": "ٛ",
+      "codepoint": "U+065B",
+      "name": "ARABIC VOWEL SIGN INVERTED SMALL V ABOVE",
+      "count": 784
+    },
+    {
+      "char": "6",
+      "codepoint": "U+0036",
+      "name": "DIGIT SIX",
+      "count": 749
+    },
+    {
+      "char": "ذ",
+      "codepoint": "U+0630",
+      "name": "ARABIC LETTER THAL",
+      "count": 742
+    },
+    {
+      "char": "ث",
+      "codepoint": "U+062B",
+      "name": "ARABIC LETTER THEH",
+      "count": 739
+    },
+    {
+      "char": ":",
+      "codepoint": "U+003A",
+      "name": "COLON",
+      "count": 736
+    },
+    {
+      "char": "7",
+      "codepoint": "U+0037",
+      "name": "DIGIT SEVEN",
+      "count": 711
+    },
+    {
+      "char": "ظ",
+      "codepoint": "U+0638",
+      "name": "ARABIC LETTER ZAH",
+      "count": 662
+    },
+    {
+      "char": "8",
+      "codepoint": "U+0038",
+      "name": "DIGIT EIGHT",
+      "count": 651
+    },
+    {
+      "char": "9",
+      "codepoint": "U+0039",
+      "name": "DIGIT NINE",
+      "count": 606
+    },
+    {
+      "char": "0",
+      "codepoint": "U+0030",
+      "name": "DIGIT ZERO",
+      "count": 604
+    },
+    {
+      "char": "ؑ",
+      "codepoint": "U+0611",
+      "name": "ARABIC SIGN ALAYHE ASSALLAM",
+      "count": 590
+    },
+    {
+      "char": "\n",
+      "codepoint": "U+000A",
+      "name": "UNKNOWN",
+      "count": 580
+    },
+    {
+      "char": "ڙ",
+      "codepoint": "U+0699",
+      "name": "ARABIC LETTER REH WITH FOUR DOTS ABOVE",
+      "count": 497
+    },
+    {
+      "char": "a",
+      "codepoint": "U+0061",
+      "name": "LATIN SMALL LETTER A",
+      "count": 407
+    },
+    {
+      "char": "e",
+      "codepoint": "U+0065",
+      "name": "LATIN SMALL LETTER E",
+      "count": 376
+    },
+    {
+      "char": "ﺎ",
+      "codepoint": "U+FE8E",
+      "name": "ARABIC LETTER ALEF FINAL FORM",
+      "count": 369
+    },
+    {
+      "char": "ሔ",
+      "codepoint": "U+1214",
+      "name": "ETHIOPIC SYLLABLE HHEE",
+      "count": 368
+    },
+    {
+      "char": "o",
+      "codepoint": "U+006F",
+      "name": "LATIN SMALL LETTER O",
+      "count": 367
+    },
+    {
+      "char": "ﷺ",
+      "codepoint": "U+FDFA",
+      "name": "ARABIC LIGATURE SALLALLAHOU ALAYHE WASALLAM",
+      "count": 343
+    },
+    {
+      "char": "؛",
+      "codepoint": "U+061B",
+      "name": "ARABIC SEMICOLON",
+      "count": 336
+    },
+    {
+      "char": "t",
+      "codepoint": "U+0074",
+      "name": "LATIN SMALL LETTER T",
+      "count": 332
+    },
+    {
+      "char": "i",
+      "codepoint": "U+0069",
+      "name": "LATIN SMALL LETTER I",
+      "count": 318
+    },
+    {
+      "char": "r",
+      "codepoint": "U+0072",
+      "name": "LATIN SMALL LETTER R",
+      "count": 316
+    },
+    {
+      "char": "s",
+      "codepoint": "U+0073",
+      "name": "LATIN SMALL LETTER S",
+      "count": 294
+    },
+    {
+      "char": "n",
+      "codepoint": "U+006E",
+      "name": "LATIN SMALL LETTER N",
+      "count": 277
+    },
+    {
+      "char": "/",
+      "codepoint": "U+002F",
+      "name": "SOLIDUS",
+      "count": 273
+    },
+    {
+      "char": "”",
+      "codepoint": "U+201D",
+      "name": "RIGHT DOUBLE QUOTATION MARK",
+      "count": 273
+    },
+    {
+      "char": "ﻮ",
+      "codepoint": "U+FEEE",
+      "name": "ARABIC LETTER WAW FINAL FORM",
+      "count": 273
+    },
+    {
+      "char": "؟",
+      "codepoint": "U+061F",
+      "name": "ARABIC QUESTION MARK",
+      "count": 253
+    },
+    {
+      "char": "“",
+      "codepoint": "U+201C",
+      "name": "LEFT DOUBLE QUOTATION MARK",
+      "count": 234
+    },
+    {
+      "char": "˴",
+      "codepoint": "U+02F4",
+      "name": "MODIFIER LETTER MIDDLE GRAVE ACCENT",
+      "count": 215
+    },
+    {
+      "char": "ٶ",
+      "codepoint": "U+0676",
+      "name": "ARABIC LETTER HIGH HAMZA WAW",
+      "count": 199
+    },
+    {
+      "char": "l",
+      "codepoint": "U+006C",
+      "name": "LATIN SMALL LETTER L",
+      "count": 180
+    },
+    {
+      "char": "!",
+      "codepoint": "U+0021",
+      "name": "EXCLAMATION MARK",
+      "count": 174
+    },
+    {
+      "char": "'",
+      "codepoint": "U+0027",
+      "name": "APOSTROPHE",
+      "count": 161
+    },
+    {
+      "char": ".",
+      "codepoint": "U+002E",
+      "name": "FULL STOP",
+      "count": 150
+    },
+    {
+      "char": "h",
+      "codepoint": "U+0068",
+      "name": "LATIN SMALL LETTER H",
+      "count": 150
+    },
+    {
+      "char": "ﻣ",
+      "codepoint": "U+FEE3",
+      "name": "ARABIC LETTER MEEM INITIAL FORM",
+      "count": 148
+    },
+    {
+      "char": "᠐",
+      "codepoint": "U+1810",
+      "name": "MONGOLIAN DIGIT ZERO",
+      "count": 142
+    },
+    {
+      "char": "ﮭ",
+      "codepoint": "U+FBAD",
+      "name": "ARABIC LETTER HEH DOACHASHMEE MEDIAL FORM",
+      "count": 141
+    },
+    {
+      "char": "‌",
+      "codepoint": "U+200C",
+      "name": "ZERO WIDTH NON-JOINER",
+      "count": 140
+    },
+    {
+      "char": "u",
+      "codepoint": "U+0075",
+      "name": "LATIN SMALL LETTER U",
+      "count": 139
+    },
+    {
+      "char": "ٚ",
+      "codepoint": "U+065A",
+      "name": "ARABIC VOWEL SIGN SMALL V ABOVE",
+      "count": 137
+    },
+    {
+      "char": "d",
+      "codepoint": "U+0064",
+      "name": "LATIN SMALL LETTER D",
+      "count": 136
+    },
+    {
+      "char": "ﻧ",
+      "codepoint": "U+FEE7",
+      "name": "ARABIC LETTER NOON INITIAL FORM",
+      "count": 134
+    },
+    {
+      "char": "ﺮ",
+      "codepoint": "U+FEAE",
+      "name": "ARABIC LETTER REH FINAL FORM",
+      "count": 124
+    },
+    {
+      "char": "\t",
+      "codepoint": "U+0009",
+      "name": "UNKNOWN",
+      "count": 122
+    },
+    {
+      "char": "ሖ",
+      "codepoint": "U+1216",
+      "name": "ETHIOPIC SYLLABLE HHO",
+      "count": 121
+    },
+    {
+      "char": "m",
+      "codepoint": "U+006D",
+      "name": "LATIN SMALL LETTER M",
+      "count": 117
+    },
+    {
+      "char": "\"",
+      "codepoint": "U+0022",
+      "name": "QUOTATION MARK",
+      "count": 108
+    },
+    {
+      "char": "ሕ",
+      "codepoint": "U+1215",
+      "name": "ETHIOPIC SYLLABLE HHE",
+      "count": 105
+    },
+    {
+      "char": "˶",
+      "codepoint": "U+02F6",
+      "name": "MODIFIER LETTER MIDDLE DOUBLE ACUTE ACCENT",
+      "count": 101
+    },
+    {
+      "char": "ᢕ",
+      "codepoint": "U+1895",
+      "name": "MONGOLIAN LETTER ALI GALI ZHA",
+      "count": 101
+    },
+    {
+      "char": "ﮐ",
+      "codepoint": "U+FB90",
+      "name": "ARABIC LETTER KEHEH INITIAL FORM",
+      "count": 99
+    },
+    {
+      "char": "ᡧ",
+      "codepoint": "U+1867",
+      "name": "MONGOLIAN LETTER SIBE SHA",
+      "count": 96
+    },
+    {
+      "char": "c",
+      "codepoint": "U+0063",
+      "name": "LATIN SMALL LETTER C",
+      "count": 91
+    },
+    {
+      "char": "ϴ",
+      "codepoint": "U+03F4",
+      "name": "GREEK CAPITAL THETA SYMBOL",
+      "count": 88
+    },
+    {
+      "char": "ጴ",
+      "codepoint": "U+1334",
+      "name": "ETHIOPIC SYLLABLE PHEE",
+      "count": 88
+    },
+    {
+      "char": "ݩ",
+      "codepoint": "U+0769",
+      "name": "ARABIC LETTER NOON WITH SMALL V",
+      "count": 87
+    },
+    {
+      "char": "ﮧ",
+      "codepoint": "U+FBA7",
+      "name": "ARABIC LETTER HEH GOAL FINAL FORM",
+      "count": 87
+    },
+    {
+      "char": "ጳ",
+      "codepoint": "U+1333",
+      "name": "ETHIOPIC SYLLABLE PHAA",
+      "count": 86
+    },
+    {
+      "char": "ﯽ",
+      "codepoint": "U+FBFD",
+      "name": "ARABIC LETTER FARSI YEH FINAL FORM",
+      "count": 85
+    },
+    {
+      "char": "ᣌ",
+      "codepoint": "U+18CC",
+      "name": "CANADIAN SYLLABICS NWOO",
+      "count": 83
+    },
+    {
+      "char": "y",
+      "codepoint": "U+0079",
+      "name": "LATIN SMALL LETTER Y",
+      "count": 81
+    },
+    {
+      "char": ",",
+      "codepoint": "U+002C",
+      "name": "COMMA",
+      "count": 78
+    },
+    {
+      "char": "˵",
+      "codepoint": "U+02F5",
+      "name": "MODIFIER LETTER MIDDLE DOUBLE GRAVE ACCENT",
+      "count": 77
+    },
+    {
+      "char": "ᡨ",
+      "codepoint": "U+1868",
+      "name": "MONGOLIAN LETTER SIBE TA",
+      "count": 77
+    },
+    {
+      "char": "ﺋ",
+      "codepoint": "U+FE8B",
+      "name": "ARABIC LETTER YEH WITH HAMZA ABOVE INITIAL FORM",
+      "count": 77
+    },
+    {
+      "char": "g",
+      "codepoint": "U+0067",
+      "name": "LATIN SMALL LETTER G",
+      "count": 75
+    },
+    {
+      "char": "ﺗ",
+      "codepoint": "U+FE97",
+      "name": "ARABIC LETTER TEH INITIAL FORM",
+      "count": 73
+    },
+    {
+      "char": "ϣ",
+      "codepoint": "U+03E3",
+      "name": "COPTIC SMALL LETTER SHEI",
+      "count": 70
+    },
+    {
+      "char": "ﻞ",
+      "codepoint": "U+FEDE",
+      "name": "ARABIC LETTER LAM FINAL FORM",
+      "count": 70
+    },
+    {
+      "char": "ء",
+      "codepoint": "U+0621",
+      "name": "ARABIC LETTER HAMZA",
+      "count": 69
+    },
+    {
+      "char": "ﺌ",
+      "codepoint": "U+FE8C",
+      "name": "ARABIC LETTER YEH WITH HAMZA ABOVE MEDIAL FORM",
+      "count": 69
+    },
+    {
+      "char": "ﻨ",
+      "codepoint": "U+FEE8",
+      "name": "ARABIC LETTER NOON MEDIAL FORM",
+      "count": 69
+    },
+    {
+      "char": "p",
+      "codepoint": "U+0070",
+      "name": "LATIN SMALL LETTER P",
+      "count": 68
+    },
+    {
+      "char": "ᕼ",
+      "codepoint": "U+157C",
+      "name": "CANADIAN SYLLABICS NUNAVUT H",
+      "count": 68
+    },
+    {
+      "char": "ۓ",
+      "codepoint": "U+06D3",
+      "name": "ARABIC LETTER YEH BARREE WITH HAMZA ABOVE",
+      "count": 66
+    },
+    {
+      "char": "Η",
+      "codepoint": "U+0397",
+      "name": "GREEK CAPITAL LETTER ETA",
+      "count": 65
+    },
+    {
+      "char": "ﻠ",
+      "codepoint": "U+FEE0",
+      "name": "ARABIC LETTER LAM MEDIAL FORM",
+      "count": 60
+    },
+    {
+      "char": "C",
+      "codepoint": "U+0043",
+      "name": "LATIN CAPITAL LETTER C",
+      "count": 59
+    },
+    {
+      "char": "ᣂ",
+      "codepoint": "U+18C2",
+      "name": "CANADIAN SYLLABICS SHWOY",
+      "count": 59
+    },
+    {
+      "char": "ݨ",
+      "codepoint": "U+0768",
+      "name": "ARABIC LETTER NOON WITH SMALL TAH",
+      "count": 58
+    },
+    {
+      "char": "b",
+      "codepoint": "U+0062",
+      "name": "LATIN SMALL LETTER B",
+      "count": 57
+    },
+    {
+      "char": "ؐ",
+      "codepoint": "U+0610",
+      "name": "ARABIC SIGN SALLALLAHOU ALAYHE WASSALLAM",
+      "count": 56
+    },
+    {
+      "char": "P",
+      "codepoint": "U+0050",
+      "name": "LATIN CAPITAL LETTER P",
+      "count": 56
+    },
+    {
+      "char": "ﭼ",
+      "codepoint": "U+FB7C",
+      "name": "ARABIC LETTER TCHEH INITIAL FORM",
+      "count": 55
+    },
+    {
+      "char": "Ό",
+      "codepoint": "U+038C",
+      "name": "GREEK CAPITAL LETTER OMICRON WITH TONOS",
+      "count": 53
+    },
+    {
+      "char": "ﺧ",
+      "codepoint": "U+FEA7",
+      "name": "ARABIC LETTER KHAH INITIAL FORM",
+      "count": 51
+    },
+    {
+      "char": "ﺑ",
+      "codepoint": "U+FE91",
+      "name": "ARABIC LETTER BEH INITIAL FORM",
+      "count": 50
+    },
+    {
+      "char": "A",
+      "codepoint": "U+0041",
+      "name": "LATIN CAPITAL LETTER A",
+      "count": 49
+    },
+    {
+      "char": "k",
+      "codepoint": "U+006B",
+      "name": "LATIN SMALL LETTER K",
+      "count": 49
+    },
+    {
+      "char": "ﺖ",
+      "codepoint": "U+FE96",
+      "name": "ARABIC LETTER TEH FINAL FORM",
+      "count": 49
+    },
+    {
+      "char": "ﻟ",
+      "codepoint": "U+FEDF",
+      "name": "ARABIC LETTER LAM INITIAL FORM",
+      "count": 48
+    },
+    {
+      "char": "ᣯ",
+      "codepoint": "U+18EF",
+      "name": "CANADIAN SYLLABICS CARRIER GAA",
+      "count": 48
+    },
+    {
+      "char": "B",
+      "codepoint": "U+0042",
+      "name": "LATIN CAPITAL LETTER B",
+      "count": 47
+    },
+    {
+      "char": "ﺳ",
+      "codepoint": "U+FEB3",
+      "name": "ARABIC LETTER SEEN INITIAL FORM",
+      "count": 47
+    },
+    {
+      "char": "̯",
+      "codepoint": "U+032F",
+      "name": "COMBINING INVERTED BREVE BELOW",
+      "count": 45
+    },
+    {
+      "char": "ً",
+      "codepoint": "U+064B",
+      "name": "ARABIC FATHATAN",
+      "count": 44
+    },
+    {
+      "char": "ؓ",
+      "codepoint": "U+0613",
+      "name": "ARABIC SIGN RADI ALLAHOU ANHU",
+      "count": 44
+    },
+    {
+      "char": "f",
+      "codepoint": "U+0066",
+      "name": "LATIN SMALL LETTER F",
+      "count": 44
+    },
+    {
+      "char": "ϟ",
+      "codepoint": "U+03DF",
+      "name": "GREEK SMALL LETTER KOPPA",
+      "count": 42
+    },
+    {
+      "char": "ﮯ",
+      "codepoint": "U+FBAF",
+      "name": "ARABIC LETTER YEH BARREE FINAL FORM",
+      "count": 42
+    },
+    {
+      "char": "ᘮ",
+      "codepoint": "U+162E",
+      "name": "CANADIAN SYLLABICS CARRIER LHU",
+      "count": 42
+    },
+    {
+      "char": "ۃ",
+      "codepoint": "U+06C3",
+      "name": "ARABIC LETTER TEH MARBUTA GOAL",
+      "count": 41
+    },
+    {
+      "char": "᡽",
+      "codepoint": "U+187D",
+      "name": "UNKNOWN",
+      "count": 41
+    },
+    {
+      "char": "ٔ",
+      "codepoint": "U+0654",
+      "name": "ARABIC HAMZA ABOVE",
+      "count": 40
+    },
+    {
+      "char": "᠑",
+      "codepoint": "U+1811",
+      "name": "MONGOLIAN DIGIT ONE",
+      "count": 40
+    },
+    {
+      "char": "T",
+      "codepoint": "U+0054",
+      "name": "LATIN CAPITAL LETTER T",
+      "count": 39
+    },
+    {
+      "char": "I",
+      "codepoint": "U+0049",
+      "name": "LATIN CAPITAL LETTER I",
+      "count": 39
+    },
+    {
+      "char": "ه",
+      "codepoint": "U+0647",
+      "name": "ARABIC LETTER HEH",
+      "count": 39
+    },
+    {
+      "char": "Ϩ",
+      "codepoint": "U+03E8",
+      "name": "COPTIC CAPITAL LETTER HORI",
+      "count": 39
+    },
+    {
+      "char": "ጕ",
+      "codepoint": "U+1315",
+      "name": "ETHIOPIC SYLLABLE GWE",
+      "count": 39
+    },
+    {
+      "char": "v",
+      "codepoint": "U+0076",
+      "name": "LATIN SMALL LETTER V",
+      "count": 38
+    },
+    {
+      "char": "ﮟ",
+      "codepoint": "U+FB9F",
+      "name": "ARABIC LETTER NOON GHUNNA FINAL FORM",
+      "count": 38
+    },
+    {
+      "char": "ﺣ",
+      "codepoint": "U+FEA3",
+      "name": "ARABIC LETTER HAH INITIAL FORM",
+      "count": 37
+    },
+    {
+      "char": "K",
+      "codepoint": "U+004B",
+      "name": "LATIN CAPITAL LETTER K",
+      "count": 35
+    },
+    {
+      "char": "ﯿ",
+      "codepoint": "U+FBFF",
+      "name": "ARABIC LETTER FARSI YEH MEDIAL FORM",
+      "count": 35
+    },
+    {
+      "char": "ﮔ",
+      "codepoint": "U+FB94",
+      "name": "ARABIC LETTER GAF INITIAL FORM",
+      "count": 35
+    },
+    {
+      "char": "ﻤ",
+      "codepoint": "U+FEE4",
+      "name": "ARABIC LETTER MEEM MEDIAL FORM",
+      "count": 34
+    },
+    {
+      "char": "ﺪ",
+      "codepoint": "U+FEAA",
+      "name": "ARABIC LETTER DAL FINAL FORM",
+      "count": 33
+    },
+    {
+      "char": "ي",
+      "codepoint": "U+064A",
+      "name": "ARABIC LETTER YEH",
+      "count": 32
+    },
+    {
+      "char": "ϧ",
+      "codepoint": "U+03E7",
+      "name": "COPTIC SMALL LETTER KHEI",
+      "count": 31
+    },
+    {
+      "char": "᝱",
+      "codepoint": "U+1771",
+      "name": "UNKNOWN",
+      "count": 31
+    },
+    {
+      "char": "-",
+      "codepoint": "U+002D",
+      "name": "HYPHEN-MINUS",
+      "count": 30
+    },
+    {
+      "char": "Α",
+      "codepoint": "U+0391",
+      "name": "GREEK CAPITAL LETTER ALPHA",
+      "count": 30
+    },
+    {
+      "char": "ﺘ",
+      "codepoint": "U+FE98",
+      "name": "ARABIC LETTER TEH MEDIAL FORM",
+      "count": 30
+    },
+    {
+      "char": "Y",
+      "codepoint": "U+0059",
+      "name": "LATIN CAPITAL LETTER Y",
+      "count": 29
+    },
+    {
+      "char": "ﺰ",
+      "codepoint": "U+FEB0",
+      "name": "ARABIC LETTER ZAIN FINAL FORM",
+      "count": 27
+    },
+    {
+      "char": "΋",
+      "codepoint": "U+038B",
+      "name": "UNKNOWN",
+      "count": 27
+    },
+    {
+      "char": "ﺴ",
+      "codepoint": "U+FEB4",
+      "name": "ARABIC LETTER SEEN MEDIAL FORM",
+      "count": 27
+    },
+    {
+      "char": "ϳ",
+      "codepoint": "U+03F3",
+      "name": "GREEK LETTER YOT",
+      "count": 26
+    },
+    {
+      "char": "᠒",
+      "codepoint": "U+1812",
+      "name": "MONGOLIAN DIGIT TWO",
+      "count": 26
+    },
+    {
+      "char": "E",
+      "codepoint": "U+0045",
+      "name": "LATIN CAPITAL LETTER E",
+      "count": 25
+    },
+    {
+      "char": "ዦ",
+      "codepoint": "U+12E6",
+      "name": "ETHIOPIC SYLLABLE ZHO",
+      "count": 25
+    },
+    {
+      "char": "ﺲ",
+      "codepoint": "U+FEB2",
+      "name": "ARABIC LETTER SEEN FINAL FORM",
+      "count": 25
+    },
+    {
+      "char": "D",
+      "codepoint": "U+0044",
+      "name": "LATIN CAPITAL LETTER D",
+      "count": 24
+    },
+    {
+      "char": "ո",
+      "codepoint": "U+0578",
+      "name": "ARMENIAN SMALL LETTER VO",
+      "count": 24
+    },
+    {
+      "char": "̳",
+      "codepoint": "U+0333",
+      "name": "COMBINING DOUBLE LOW LINE",
+      "count": 24
+    },
+    {
+      "char": "ﺍ",
+      "codepoint": "U+FE8D",
+      "name": "ARABIC LETTER ALEF ISOLATED FORM",
+      "count": 24
+    },
+    {
+      "char": "S",
+      "codepoint": "U+0053",
+      "name": "LATIN CAPITAL LETTER S",
+      "count": 22
+    },
+    {
+      "char": "ٙ",
+      "codepoint": "U+0659",
+      "name": "ARABIC ZWARAKAY",
+      "count": 22
+    },
+    {
+      "char": "w",
+      "codepoint": "U+0077",
+      "name": "LATIN SMALL LETTER W",
+      "count": 22
+    },
+    {
+      "char": "ﮬ",
+      "codepoint": "U+FBAC",
+      "name": "ARABIC LETTER HEH DOACHASHMEE INITIAL FORM",
+      "count": 22
+    },
+    {
+      "char": "ﻴ",
+      "codepoint": "U+FEF4",
+      "name": "ARABIC LETTER YEH MEDIAL FORM",
+      "count": 22
+    },
+    {
+      "char": "ﺟ",
+      "codepoint": "U+FE9F",
+      "name": "ARABIC LETTER JEEM INITIAL FORM",
+      "count": 21
+    },
+    {
+      "char": "ᚑ",
+      "codepoint": "U+1691",
+      "name": "OGHAM LETTER ONN",
+      "count": 21
+    },
+    {
+      "char": "᜛",
+      "codepoint": "U+171B",
+      "name": "UNKNOWN",
+      "count": 21
+    },
+    {
+      "char": "ᣪ",
+      "codepoint": "U+18EA",
+      "name": "CANADIAN SYLLABICS SAYISI SHWE",
+      "count": 21
+    },
+    {
+      "char": "ﻗ",
+      "codepoint": "U+FED7",
+      "name": "ARABIC LETTER QAF INITIAL FORM",
+      "count": 21
+    },
+    {
+      "char": "ﻢ",
+      "codepoint": "U+FEE2",
+      "name": "ARABIC LETTER MEEM FINAL FORM",
+      "count": 21
+    },
+    {
+      "char": "ﭩ",
+      "codepoint": "U+FB69",
+      "name": "ARABIC LETTER TTEH MEDIAL FORM",
+      "count": 21
+    },
+    {
+      "char": "ٸ",
+      "codepoint": "U+0678",
+      "name": "ARABIC LETTER HIGH HAMZA YEH",
+      "count": 20
+    },
+    {
+      "char": "ﻘ",
+      "codepoint": "U+FED8",
+      "name": "ARABIC LETTER QAF MEDIAL FORM",
+      "count": 20
+    },
+    {
+      "char": "ᣍ",
+      "codepoint": "U+18CD",
+      "name": "CANADIAN SYLLABICS OJIBWAY NWOO",
+      "count": 20
+    },
+    {
+      "char": "ᗺ",
+      "codepoint": "U+15FA",
+      "name": "CANADIAN SYLLABICS CARRIER KHA",
+      "count": 20
+    },
+    {
+      "char": "N",
+      "codepoint": "U+004E",
+      "name": "LATIN CAPITAL LETTER N",
+      "count": 19
+    },
+    {
+      "char": "̡",
+      "codepoint": "U+0321",
+      "name": "COMBINING PALATALIZED HOOK BELOW",
+      "count": 19
+    },
+    {
+      "char": "٫",
+      "codepoint": "U+066B",
+      "name": "ARABIC DECIMAL SEPARATOR",
+      "count": 19
+    },
+    {
+      "char": "ﻌ",
+      "codepoint": "U+FECC",
+      "name": "ARABIC LETTER AIN MEDIAL FORM",
+      "count": 19
+    },
+    {
+      "char": "ᗬ",
+      "codepoint": "U+15EC",
+      "name": "CANADIAN SYLLABICS CARRIER PI",
+      "count": 19
+    },
+    {
+      "char": "ᜇ",
+      "codepoint": "U+1707",
+      "name": "TAGALOG LETTER DA",
+      "count": 19
+    },
+    {
+      "char": "β",
+      "codepoint": "U+03B2",
+      "name": "GREEK SMALL LETTER BETA",
+      "count": 18
+    },
+    {
+      "char": "ᗷ",
+      "codepoint": "U+15F7",
+      "name": "CANADIAN SYLLABICS CARRIER KHE",
+      "count": 18
+    },
+    {
+      "char": "Ϡ",
+      "codepoint": "U+03E0",
+      "name": "GREEK LETTER SAMPI",
+      "count": 17
+    },
+    {
+      "char": "ᣎ",
+      "codepoint": "U+18CE",
+      "name": "CANADIAN SYLLABICS RWEE",
+      "count": 17
+    },
+    {
+      "char": "ﺷ",
+      "codepoint": "U+FEB7",
+      "name": "ARABIC LETTER SHEEN INITIAL FORM",
+      "count": 17
+    },
+    {
+      "char": "M",
+      "codepoint": "U+004D",
+      "name": "LATIN CAPITAL LETTER M",
+      "count": 16
+    },
+    {
+      "char": "J",
+      "codepoint": "U+004A",
+      "name": "LATIN CAPITAL LETTER J",
+      "count": 16
+    },
+    {
+      "char": "ᙏ",
+      "codepoint": "U+164F",
+      "name": "CANADIAN SYLLABICS CARRIER SO",
+      "count": 16
+    },
+    {
+      "char": "ﻦ",
+      "codepoint": "U+FEE6",
+      "name": "ARABIC LETTER NOON FINAL FORM",
+      "count": 16
+    },
+    {
+      "char": "̰",
+      "codepoint": "U+0330",
+      "name": "COMBINING TILDE BELOW",
+      "count": 15
+    },
+    {
+      "char": "Ζ",
+      "codepoint": "U+0396",
+      "name": "GREEK CAPITAL LETTER ZETA",
+      "count": 15
+    },
+    {
+      "char": "ᚊ",
+      "codepoint": "U+168A",
+      "name": "OGHAM LETTER CEIRT",
+      "count": 15
+    },
+    {
+      "char": "ᣰ",
+      "codepoint": "U+18F0",
+      "name": "CANADIAN SYLLABICS CARRIER GWA",
+      "count": 15
+    },
+    {
+      "char": "ە",
+      "codepoint": "U+06D5",
+      "name": "ARABIC LETTER AE",
+      "count": 15
+    },
+    {
+      "char": "[",
+      "codepoint": "U+005B",
+      "name": "LEFT SQUARE BRACKET",
+      "count": 14
+    },
+    {
+      "char": "]",
+      "codepoint": "U+005D",
+      "name": "RIGHT SQUARE BRACKET",
+      "count": 14
+    },
+    {
+      "char": "R",
+      "codepoint": "U+0052",
+      "name": "LATIN CAPITAL LETTER R",
+      "count": 14
+    },
+    {
+      "char": "L",
+      "codepoint": "U+004C",
+      "name": "LATIN CAPITAL LETTER L",
+      "count": 14
+    },
+    {
+      "char": "ﮍ",
+      "codepoint": "U+FB8D",
+      "name": "ARABIC LETTER RREH FINAL FORM",
+      "count": 14
+    },
+    {
+      "char": "ﮀ",
+      "codepoint": "U+FB80",
+      "name": "ARABIC LETTER TCHEHEH INITIAL FORM",
+      "count": 14
+    },
+    {
+      "char": "ﻼ",
+      "codepoint": "U+FEFC",
+      "name": "ARABIC LIGATURE LAM WITH ALEF FINAL FORM",
+      "count": 14
+    },
+    {
+      "char": " ",
+      "codepoint": "U+00A0",
+      "name": "NO-BREAK SPACE",
+      "count": 13
+    },
+    {
+      "char": "ﺼ",
+      "codepoint": "U+FEBC",
+      "name": "ARABIC LETTER SAD MEDIAL FORM",
+      "count": 13
+    },
+    {
+      "char": "ﻻ",
+      "codepoint": "U+FEFB",
+      "name": "ARABIC LIGATURE LAM WITH ALEF ISOLATED FORM",
+      "count": 13
+    },
+    {
+      "char": "V",
+      "codepoint": "U+0056",
+      "name": "LATIN CAPITAL LETTER V",
+      "count": 12
+    },
+    {
+      "char": "ﭘ",
+      "codepoint": "U+FB58",
+      "name": "ARABIC LETTER PEH INITIAL FORM",
+      "count": 12
+    },
+    {
+      "char": "ជ",
+      "codepoint": "U+1787",
+      "name": "KHMER LETTER CO",
+      "count": 12
+    },
+    {
+      "char": "©",
+      "codepoint": "U+00A9",
+      "name": "COPYRIGHT SIGN",
+      "count": 11
+    },
+    {
+      "char": "Θ",
+      "codepoint": "U+0398",
+      "name": "GREEK CAPITAL LETTER THETA",
+      "count": 11
+    },
+    {
+      "char": "ᣃ",
+      "codepoint": "U+18C3",
+      "name": "CANADIAN SYLLABICS YOY",
+      "count": 11
+    },
+    {
+      "char": "ﮩ",
+      "codepoint": "U+FBA9",
+      "name": "ARABIC LETTER HEH GOAL MEDIAL FORM",
+      "count": 11
+    },
+    {
+      "char": "ᝃ",
+      "codepoint": "U+1743",
+      "name": "BUHID LETTER KA",
+      "count": 11
+    },
+    {
+      "char": "ـ",
+      "codepoint": "U+0640",
+      "name": "ARABIC TATWEEL",
+      "count": 10
+    },
+    {
+      "char": "ؽ",
+      "codepoint": "U+063D",
+      "name": "ARABIC LETTER FARSI YEH WITH INVERTED V",
+      "count": 10
+    },
+    {
+      "char": "ﮉ",
+      "codepoint": "U+FB89",
+      "name": "ARABIC LETTER DDAL FINAL FORM",
+      "count": 10
+    },
+    {
+      "char": "δ",
+      "codepoint": "U+03B4",
+      "name": "GREEK SMALL LETTER DELTA",
+      "count": 10
+    },
+    {
+      "char": "Ϯ",
+      "codepoint": "U+03EE",
+      "name": "COPTIC CAPITAL LETTER DEI",
+      "count": 10
+    },
+    {
+      "char": "ﻃ",
+      "codepoint": "U+FEC3",
+      "name": "ARABIC LETTER TAH INITIAL FORM",
+      "count": 10
+    },
+    {
+      "char": "ᤍ",
+      "codepoint": "U+190D",
+      "name": "LIMBU LETTER DA",
+      "count": 10
+    },
+    {
+      "char": "F",
+      "codepoint": "U+0046",
+      "name": "LATIN CAPITAL LETTER F",
+      "count": 9
+    },
+    {
+      "char": "•",
+      "codepoint": "U+2022",
+      "name": "BULLET",
+      "count": 9
+    },
+    {
+      "char": "‏",
+      "codepoint": "U+200F",
+      "name": "RIGHT-TO-LEFT MARK",
+      "count": 9
+    },
+    {
+      "char": "ᘻ",
+      "codepoint": "U+163B",
+      "name": "CANADIAN SYLLABICS CARRIER TLO",
+      "count": 9
+    },
+    {
+      "char": "ﻋ",
+      "codepoint": "U+FECB",
+      "name": "ARABIC LETTER AIN INITIAL FORM",
+      "count": 9
+    },
+    {
+      "char": "ﻄ",
+      "codepoint": "U+FEC4",
+      "name": "ARABIC LETTER TAH MEDIAL FORM",
+      "count": 9
+    },
+    {
+      "char": "ﺒ",
+      "codepoint": "U+FE92",
+      "name": "ARABIC LETTER BEH MEDIAL FORM",
+      "count": 9
+    },
+    {
+      "char": "ﻭ",
+      "codepoint": "U+FEED",
+      "name": "ARABIC LETTER WAW ISOLATED FORM",
+      "count": 9
+    },
+    {
+      "char": "ٗ",
+      "codepoint": "U+0657",
+      "name": "ARABIC INVERTED DAMMA",
+      "count": 8
+    },
+    {
+      "char": " ",
+      "codepoint": "U+2003",
+      "name": "EM SPACE",
+      "count": 8
+    },
+    {
+      "char": "γ",
+      "codepoint": "U+03B3",
+      "name": "GREEK SMALL LETTER GAMMA",
+      "count": 8
+    },
+    {
+      "char": "̴",
+      "codepoint": "U+0334",
+      "name": "COMBINING TILDE OVERLAY",
+      "count": 8
+    },
+    {
+      "char": "θ",
+      "codepoint": "U+03B8",
+      "name": "GREEK SMALL LETTER THETA",
+      "count": 8
+    },
+    {
+      "char": "Ϧ",
+      "codepoint": "U+03E6",
+      "name": "COPTIC CAPITAL LETTER KHEI",
+      "count": 8
+    },
+    {
+      "char": "ﻏ",
+      "codepoint": "U+FECF",
+      "name": "ARABIC LETTER GHAIN INITIAL FORM",
+      "count": 8
+    },
+    {
+      "char": "Ŷ",
+      "codepoint": "U+0176",
+      "name": "LATIN CAPITAL LETTER Y WITH CIRCUMFLEX",
+      "count": 8
+    },
+    {
+      "char": "ᘍ",
+      "codepoint": "U+160D",
+      "name": "CANADIAN SYLLABICS CARRIER MA",
+      "count": 8
+    },
+    {
+      "char": "ϭ",
+      "codepoint": "U+03ED",
+      "name": "COPTIC SMALL LETTER SHIMA",
+      "count": 8
+    },
+    {
+      "char": "ﯾ",
+      "codepoint": "U+FBFE",
+      "name": "ARABIC LETTER FARSI YEH INITIAL FORM",
+      "count": 8
+    },
+    {
+      "char": "ᛴ",
+      "codepoint": "U+16F4",
+      "name": "RUNIC LETTER FRANKS CASKET OS",
+      "count": 8
+    },
+    {
+      "char": "ﮫ",
+      "codepoint": "U+FBAB",
+      "name": "ARABIC LETTER HEH DOACHASHMEE FINAL FORM",
+      "count": 8
+    },
+    {
+      "char": "ϗ",
+      "codepoint": "U+03D7",
+      "name": "GREEK KAI SYMBOL",
+      "count": 8
+    },
+    {
+      "char": "̲",
+      "codepoint": "U+0332",
+      "name": "COMBINING LOW LINE",
+      "count": 8
+    },
+    {
+      "char": "ﺩ",
+      "codepoint": "U+FEA9",
+      "name": "ARABIC LETTER DAL ISOLATED FORM",
+      "count": 8
+    },
+    {
+      "char": "ﻳ",
+      "codepoint": "U+FEF3",
+      "name": "ARABIC LETTER YEH INITIAL FORM",
+      "count": 8
+    },
+    {
+      "char": "z",
+      "codepoint": "U+007A",
+      "name": "LATIN SMALL LETTER Z",
+      "count": 7
+    },
+    {
+      "char": "x",
+      "codepoint": "U+0078",
+      "name": "LATIN SMALL LETTER X",
+      "count": 7
+    },
+    {
+      "char": "إ",
+      "codepoint": "U+0625",
+      "name": "ARABIC LETTER ALEF WITH HAMZA BELOW",
+      "count": 7
+    },
+    {
+      "char": "Ϥ",
+      "codepoint": "U+03E4",
+      "name": "COPTIC CAPITAL LETTER FEI",
+      "count": 7
+    },
+    {
+      "char": "η",
+      "codepoint": "U+03B7",
+      "name": "GREEK SMALL LETTER ETA",
+      "count": 7
+    },
+    {
+      "char": "ﻖ",
+      "codepoint": "U+FED6",
+      "name": "ARABIC LETTER QAF FINAL FORM",
+      "count": 7
+    },
+    {
+      "char": "ᣜ",
+      "codepoint": "U+18DC",
+      "name": "CANADIAN SYLLABICS EASTERN W",
+      "count": 7
+    },
+    {
+      "char": "ᢇ",
+      "codepoint": "U+1887",
+      "name": "MONGOLIAN LETTER ALI GALI A",
+      "count": 7
+    },
+    {
+      "char": "ន",
+      "codepoint": "U+1793",
+      "name": "KHMER LETTER NO",
+      "count": 7
+    },
+    {
+      "char": "ᢄ",
+      "codepoint": "U+1884",
+      "name": "MONGOLIAN LETTER ALI GALI INVERTED UBADAMA",
+      "count": 7
+    },
+    {
+      "char": "᝹",
+      "codepoint": "U+1779",
+      "name": "UNKNOWN",
+      "count": 7
+    },
+    {
+      "char": "ﮨ",
+      "codepoint": "U+FBA8",
+      "name": "ARABIC LETTER HEH GOAL INITIAL FORM",
+      "count": 7
+    },
+    {
+      "char": "أ",
+      "codepoint": "U+0623",
+      "name": "ARABIC LETTER ALEF WITH HAMZA ABOVE",
+      "count": 6
+    },
+    {
+      "char": "{",
+      "codepoint": "U+007B",
+      "name": "LEFT CURLY BRACKET",
+      "count": 6
+    },
+    {
+      "char": "٬",
+      "codepoint": "U+066C",
+      "name": "ARABIC THOUSANDS SEPARATOR",
+      "count": 6
+    },
+    {
+      "char": "ﺨ",
+      "codepoint": "U+FEA8",
+      "name": "ARABIC LETTER KHAH MEDIAL FORM",
+      "count": 6
+    },
+    {
+      "char": "ᖁ",
+      "codepoint": "U+1581",
+      "name": "CANADIAN SYLLABICS QO",
+      "count": 6
+    },
+    {
+      "char": "ᣢ",
+      "codepoint": "U+18E2",
+      "name": "CANADIAN SYLLABICS WEST-CREE LAA",
+      "count": 6
+    },
+    {
+      "char": "ᤃ",
+      "codepoint": "U+1903",
+      "name": "LIMBU LETTER GA",
+      "count": 6
+    },
+    {
+      "char": "ﻓ",
+      "codepoint": "U+FED3",
+      "name": "ARABIC LETTER FEH INITIAL FORM",
+      "count": 6
+    },
+    {
+      "char": "ዸ",
+      "codepoint": "U+12F8",
+      "name": "ETHIOPIC SYLLABLE DDA",
+      "count": 6
+    },
+    {
+      "char": "ﺸ",
+      "codepoint": "U+FEB8",
+      "name": "ARABIC LETTER SHEEN MEDIAL FORM",
+      "count": 6
+    },
+    {
+      "char": "ϯ",
+      "codepoint": "U+03EF",
+      "name": "COPTIC SMALL LETTER DEI",
+      "count": 6
+    },
+    {
+      "char": "ᤎ",
+      "codepoint": "U+190E",
+      "name": "LIMBU LETTER DHA",
+      "count": 6
+    },
+    {
+      "char": "̢",
+      "codepoint": "U+0322",
+      "name": "COMBINING RETROFLEX HOOK BELOW",
+      "count": 6
+    },
+    {
+      "char": "W",
+      "codepoint": "U+0057",
+      "name": "LATIN CAPITAL LETTER W",
+      "count": 5
+    },
+    {
+      "char": "ة",
+      "codepoint": "U+0629",
+      "name": "ARABIC LETTER TEH MARBUTA",
+      "count": 5
+    },
+    {
+      "char": "భ",
+      "codepoint": "U+0C2D",
+      "name": "TELUGU LETTER BHA",
+      "count": 5
+    },
+    {
+      "char": "ᡫ",
+      "codepoint": "U+186B",
+      "name": "MONGOLIAN LETTER SIBE FA",
+      "count": 5
+    },
+    {
+      "char": "ﻂ",
+      "codepoint": "U+FEC2",
+      "name": "ARABIC LETTER TAH FINAL FORM",
+      "count": 5
+    },
+    {
+      "char": "፨",
+      "codepoint": "U+1368",
+      "name": "ETHIOPIC PARAGRAPH SEPARATOR",
+      "count": 5
+    },
+    {
+      "char": "ᜍ",
+      "codepoint": "U+170D",
+      "name": "TAGALOG LETTER RA",
+      "count": 5
+    },
+    {
+      "char": "ᖔ",
+      "codepoint": "U+1594",
+      "name": "CANADIAN SYLLABICS NGAA",
+      "count": 5
+    },
+    {
+      "char": "ﺶ",
+      "codepoint": "U+FEB6",
+      "name": "ARABIC LETTER SHEEN FINAL FORM",
+      "count": 5
+    },
+    {
+      "char": "ﭨ",
+      "codepoint": "U+FB68",
+      "name": "ARABIC LETTER TTEH INITIAL FORM",
+      "count": 5
+    },
+    {
+      "char": "ﻬ",
+      "codepoint": "U+FEEC",
+      "name": "ARABIC LETTER HEH MEDIAL FORM",
+      "count": 5
+    },
+    {
+      "char": "ﷲ",
+      "codepoint": "U+FDF2",
+      "name": "ARABIC LIGATURE ALLAH ISOLATED FORM",
+      "count": 4
+    },
+    {
+      "char": "Ռ",
+      "codepoint": "U+054C",
+      "name": "ARMENIAN CAPITAL LETTER RA",
+      "count": 4
+    },
+    {
+      "char": "̠",
+      "codepoint": "U+0320",
+      "name": "COMBINING MINUS SIGN BELOW",
+      "count": 4
+    },
+    {
+      "char": "ϰ",
+      "codepoint": "U+03F0",
+      "name": "GREEK KAPPA SYMBOL",
+      "count": 4
+    },
+    {
+      "char": "ﻇ",
+      "codepoint": "U+FEC7",
+      "name": "ARABIC LETTER ZAH INITIAL FORM",
+      "count": 4
+    },
+    {
+      "char": "ﮑ",
+      "codepoint": "U+FB91",
+      "name": "ARABIC LETTER KEHEH MEDIAL FORM",
+      "count": 4
+    },
+    {
+      "char": "ᣠ",
+      "codepoint": "U+18E0",
+      "name": "CANADIAN SYLLABICS R-CREE RWE",
+      "count": 4
+    },
+    {
+      "char": "፳",
+      "codepoint": "U+1373",
+      "name": "ETHIOPIC NUMBER TWENTY",
+      "count": 4
+    },
+    {
+      "char": "ᛓ",
+      "codepoint": "U+16D3",
+      "name": "RUNIC LETTER SHORT-TWIG-BJARKAN B",
+      "count": 4
+    },
+    {
+      "char": "j",
+      "codepoint": "U+006A",
+      "name": "LATIN SMALL LETTER J",
+      "count": 4
+    },
+    {
+      "char": "ﺯ",
+      "codepoint": "U+FEAF",
+      "name": "ARABIC LETTER ZAIN ISOLATED FORM",
+      "count": 4
+    },
+    {
+      "char": "ٓ",
+      "codepoint": "U+0653",
+      "name": "ARABIC MADDAH ABOVE",
+      "count": 3
+    },
+    {
+      "char": "ٍ",
+      "codepoint": "U+064D",
+      "name": "ARABIC KASRATAN",
+      "count": 3
+    },
+    {
+      "char": "మ",
+      "codepoint": "U+0C2E",
+      "name": "TELUGU LETTER MA",
+      "count": 3
+    },
+    {
+      "char": "ﻊ",
+      "codepoint": "U+FECA",
+      "name": "ARABIC LETTER AIN FINAL FORM",
+      "count": 3
+    },
+    {
+      "char": "Ϣ",
+      "codepoint": "U+03E2",
+      "name": "COPTIC CAPITAL LETTER SHEI",
+      "count": 3
+    },
+    {
+      "char": "Ϟ",
+      "codepoint": "U+03DE",
+      "name": "GREEK LETTER KOPPA",
+      "count": 3
+    },
+    {
+      "char": "Ս",
+      "codepoint": "U+054D",
+      "name": "ARMENIAN CAPITAL LETTER SEH",
+      "count": 3
+    },
+    {
+      "char": "é",
+      "codepoint": "U+00E9",
+      "name": "LATIN SMALL LETTER E WITH ACUTE",
+      "count": 3
+    },
+    {
+      "char": "ᣚ",
+      "codepoint": "U+18DA",
+      "name": "CANADIAN SYLLABICS OJIBWAY S",
+      "count": 3
+    },
+    {
+      "char": "ភ",
+      "codepoint": "U+1797",
+      "name": "KHMER LETTER PHO",
+      "count": 3
+    },
+    {
+      "char": "ﻔ",
+      "codepoint": "U+FED4",
+      "name": "ARABIC LETTER FEH MEDIAL FORM",
+      "count": 3
+    },
+    {
+      "char": "ϱ",
+      "codepoint": "U+03F1",
+      "name": "GREEK RHO SYMBOL",
+      "count": 3
+    },
+    {
+      "char": "ᣐ",
+      "codepoint": "U+18D0",
+      "name": "CANADIAN SYLLABICS RWII",
+      "count": 3
+    },
+    {
+      "char": "ᡵ",
+      "codepoint": "U+1875",
+      "name": "MONGOLIAN LETTER MANCHU RA",
+      "count": 3
+    },
+    {
+      "char": "ﺭ",
+      "codepoint": "U+FEAD",
+      "name": "ARABIC LETTER REH ISOLATED FORM",
+      "count": 3
+    },
+    {
+      "char": "ﷻ",
+      "codepoint": "U+FDFB",
+      "name": "ARABIC LIGATURE JALLAJALALOUHOU",
+      "count": 2
+    },
+    {
+      "char": "‍",
+      "codepoint": "U+200D",
+      "name": "ZERO WIDTH JOINER",
+      "count": 2
+    },
+    {
+      "char": "G",
+      "codepoint": "U+0047",
+      "name": "LATIN CAPITAL LETTER G",
+      "count": 2
+    },
+    {
+      "char": "+",
+      "codepoint": "U+002B",
+      "name": "PLUS SIGN",
+      "count": 2
+    },
+    {
+      "char": "}",
+      "codepoint": "U+007D",
+      "name": "RIGHT CURLY BRACKET",
+      "count": 2
+    },
+    {
+      "char": "Ɵ",
+      "codepoint": "U+019F",
+      "name": "LATIN CAPITAL LETTER O WITH MIDDLE TILDE",
+      "count": 2
+    },
+    {
+      "char": "ﻒ",
+      "codepoint": "U+FED2",
+      "name": "ARABIC LETTER FEH FINAL FORM",
+      "count": 2
+    },
+    {
+      "char": "ឍ",
+      "codepoint": "U+178D",
+      "name": "KHMER LETTER TTHO",
+      "count": 2
+    },
+    {
+      "char": "ﺤ",
+      "codepoint": "U+FEA4",
+      "name": "ARABIC LETTER HAH MEDIAL FORM",
+      "count": 2
+    },
+    {
+      "char": "ͭ",
+      "codepoint": "U+036D",
+      "name": "COMBINING LATIN SMALL LETTER T",
+      "count": 2
+    },
+    {
+      "char": "ᙬ",
+      "codepoint": "U+166C",
+      "name": "CANADIAN SYLLABICS CARRIER TTSA",
+      "count": 2
+    },
+    {
+      "char": "፾",
+      "codepoint": "U+137E",
+      "name": "UNKNOWN",
+      "count": 2
+    },
+    {
+      "char": "ᗁ",
+      "codepoint": "U+15C1",
+      "name": "CANADIAN SYLLABICS SAYISI HI",
+      "count": 2
+    },
+    {
+      "char": "ᣟ",
+      "codepoint": "U+18DF",
+      "name": "CANADIAN SYLLABICS FINAL RAISED DOT",
+      "count": 2
+    },
+    {
+      "char": "ᝉ",
+      "codepoint": "U+1749",
+      "name": "BUHID LETTER PA",
+      "count": 2
+    },
+    {
+      "char": "᝝",
+      "codepoint": "U+175D",
+      "name": "UNKNOWN",
+      "count": 2
+    },
+    {
+      "char": "ﻀ",
+      "codepoint": "U+FEC0",
+      "name": "ARABIC LETTER DAD MEDIAL FORM",
+      "count": 2
+    },
+    {
+      "char": "ﭻ",
+      "codepoint": "U+FB7B",
+      "name": "ARABIC LETTER TCHEH FINAL FORM",
+      "count": 2
+    },
+    {
+      "char": "ﺞ",
+      "codepoint": "U+FE9E",
+      "name": "ARABIC LETTER JEEM FINAL FORM",
+      "count": 2
+    },
+    {
+      "char": "ᣤ",
+      "codepoint": "U+18E4",
+      "name": "CANADIAN SYLLABICS THWA",
+      "count": 2
+    },
+    {
+      "char": "ﺐ",
+      "codepoint": "U+FE90",
+      "name": "ARABIC LETTER BEH FINAL FORM",
+      "count": 2
+    },
+    {
+      "char": "ᜡ",
+      "codepoint": "U+1721",
+      "name": "HANUNOO LETTER I",
+      "count": 2
+    },
+    {
+      "char": "ᎃ",
+      "codepoint": "U+1383",
+      "name": "ETHIOPIC SYLLABLE MWE",
+      "count": 2
+    },
+    {
+      "char": "ᗖ",
+      "codepoint": "U+15D6",
+      "name": "CANADIAN SYLLABICS CARRIER HWU",
+      "count": 2
+    },
+    {
+      "char": "ϋ",
+      "codepoint": "U+03CB",
+      "name": "GREEK SMALL LETTER UPSILON WITH DIALYTIKA",
+      "count": 2
+    },
+    {
+      "char": "Ϙ",
+      "codepoint": "U+03D8",
+      "name": "GREEK LETTER ARCHAIC KOPPA",
+      "count": 2
+    },
+    {
+      "char": "ό",
+      "codepoint": "U+03CC",
+      "name": "GREEK SMALL LETTER OMICRON WITH TONOS",
+      "count": 2
+    },
+    {
+      "char": "ΐ",
+      "codepoint": "U+0390",
+      "name": "GREEK SMALL LETTER IOTA WITH DIALYTIKA AND TONOS",
+      "count": 2
+    },
+    {
+      "char": "Ջ",
+      "codepoint": "U+054B",
+      "name": "ARMENIAN CAPITAL LETTER JHEH",
+      "count": 2
+    },
+    {
+      "char": "Ί",
+      "codepoint": "U+038A",
+      "name": "GREEK CAPITAL LETTER IOTA WITH TONOS",
+      "count": 2
+    },
+    {
+      "char": "ﻑ",
+      "codepoint": "U+FED1",
+      "name": "ARABIC LETTER FEH ISOLATED FORM",
+      "count": 2
+    },
+    {
+      "char": "ۉ",
+      "codepoint": "U+06C9",
+      "name": "ARABIC LETTER KIRGHIZ YU",
+      "count": 1
+    },
+    {
+      "char": "ؒ",
+      "codepoint": "U+0612",
+      "name": "ARABIC SIGN RAHMATULLAH ALAYHE",
+      "count": 1
+    },
+    {
+      "char": "O",
+      "codepoint": "U+004F",
+      "name": "LATIN CAPITAL LETTER O",
+      "count": 1
+    },
+    {
+      "char": "؂",
+      "codepoint": "U+0602",
+      "name": "ARABIC FOOTNOTE MARKER",
+      "count": 1
+    },
+    {
+      "char": "=",
+      "codepoint": "U+003D",
+      "name": "EQUALS SIGN",
+      "count": 1
+    },
+    {
+      "char": "«",
+      "codepoint": "U+00AB",
+      "name": "LEFT-POINTING DOUBLE ANGLE QUOTATION MARK",
+      "count": 1
+    },
+    {
+      "char": "»",
+      "codepoint": "U+00BB",
+      "name": "RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK",
+      "count": 1
+    },
+    {
+      "char": "ك",
+      "codepoint": "U+0643",
+      "name": "ARABIC LETTER KAF",
+      "count": 1
+    },
+    {
+      "char": "Β",
+      "codepoint": "U+0392",
+      "name": "GREEK CAPITAL LETTER BETA",
+      "count": 1
+    },
+    {
+      "char": "ϼ",
+      "codepoint": "U+03FC",
+      "name": "GREEK RHO WITH STROKE SYMBOL",
+      "count": 1
+    },
+    {
+      "char": "̮",
+      "codepoint": "U+032E",
+      "name": "COMBINING BREVE BELOW",
+      "count": 1
+    },
+    {
+      "char": "չ",
+      "codepoint": "U+0579",
+      "name": "ARMENIAN SMALL LETTER CHA",
+      "count": 1
+    },
+    {
+      "char": "ϻ",
+      "codepoint": "U+03FB",
+      "name": "GREEK SMALL LETTER SAN",
+      "count": 1
+    },
+    {
+      "char": ";",
+      "codepoint": "U+037E",
+      "name": "GREEK QUESTION MARK",
+      "count": 1
+    },
+    {
+      "char": "Ϳ",
+      "codepoint": "U+037F",
+      "name": "GREEK CAPITAL LETTER YOT",
+      "count": 1
+    },
+    {
+      "char": "ŵ",
+      "codepoint": "U+0175",
+      "name": "LATIN SMALL LETTER W WITH CIRCUMFLEX",
+      "count": 1
+    },
+    {
+      "char": "Ϭ",
+      "codepoint": "U+03EC",
+      "name": "COPTIC CAPITAL LETTER SHIMA",
+      "count": 1
+    },
+    {
+      "char": "ᘘ",
+      "codepoint": "U+1618",
+      "name": "CANADIAN SYLLABICS CARRIER JEE",
+      "count": 1
+    },
+    {
+      "char": "ᣛ",
+      "codepoint": "U+18DB",
+      "name": "CANADIAN SYLLABICS OJIBWAY SH",
+      "count": 1
+    },
+    {
+      "char": "ﭧ",
+      "codepoint": "U+FB67",
+      "name": "ARABIC LETTER TTEH FINAL FORM",
+      "count": 1
+    },
+    {
+      "char": "ᣄ",
+      "codepoint": "U+18C4",
+      "name": "CANADIAN SYLLABICS YAY",
+      "count": 1
+    },
+    {
+      "char": "ᣥ",
+      "codepoint": "U+18E5",
+      "name": "CANADIAN SYLLABICS TTHWE",
+      "count": 1
+    },
+    {
+      "char": "ᛀ",
+      "codepoint": "U+16C0",
+      "name": "RUNIC LETTER DOTTED-N",
+      "count": 1
+    },
+    {
+      "char": "ﺜ",
+      "codepoint": "U+FE9C",
+      "name": "ARABIC LETTER THEH MEDIAL FORM",
+      "count": 1
+    },
+    {
+      "char": "ᢔ",
+      "codepoint": "U+1894",
+      "name": "MONGOLIAN LETTER ALI GALI SSA",
+      "count": 1
+    },
+    {
+      "char": "ᤦ",
+      "codepoint": "U+1926",
+      "name": "LIMBU VOWEL SIGN AU",
+      "count": 1
+    },
+    {
+      "char": "᝿",
+      "codepoint": "U+177F",
+      "name": "UNKNOWN",
+      "count": 1
+    },
+    {
+      "char": "ᣒ",
+      "codepoint": "U+18D2",
+      "name": "CANADIAN SYLLABICS RWOO",
+      "count": 1
+    },
+    {
+      "char": "ﺾ",
+      "codepoint": "U+FEBE",
+      "name": "ARABIC LETTER DAD FINAL FORM",
+      "count": 1
+    },
+    {
+      "char": "ᤁ",
+      "codepoint": "U+1901",
+      "name": "LIMBU LETTER KA",
+      "count": 1
+    },
+    {
+      "char": "᝗",
+      "codepoint": "U+1757",
+      "name": "UNKNOWN",
+      "count": 1
+    },
+    {
+      "char": "ᣅ",
+      "codepoint": "U+18C5",
+      "name": "CANADIAN SYLLABICS RAY",
+      "count": 1
+    },
+    {
+      "char": "጖",
+      "codepoint": "U+1316",
+      "name": "UNKNOWN",
+      "count": 1
+    },
+    {
+      "char": "ﺿ",
+      "codepoint": "U+FEBF",
+      "name": "ARABIC LETTER DAD INITIAL FORM",
+      "count": 1
+    },
+    {
+      "char": "ﮕ",
+      "codepoint": "U+FB95",
+      "name": "ARABIC LETTER GAF MEDIAL FORM",
+      "count": 1
+    },
+    {
+      "char": "ﺻ",
+      "codepoint": "U+FEBB",
+      "name": "ARABIC LETTER SAD INITIAL FORM",
+      "count": 1
+    },
+    {
+      "char": "ﺛ",
+      "codepoint": "U+FE9B",
+      "name": "ARABIC LETTER THEH INITIAL FORM",
+      "count": 1
+    },
+    {
+      "char": "ϲ",
+      "codepoint": "U+03F2",
+      "name": "GREEK LUNATE SIGMA SYMBOL",
+      "count": 1
+    },
+    {
+      "char": "ᜯ",
+      "codepoint": "U+172F",
+      "name": "HANUNOO LETTER WA",
+      "count": 1
+    },
+    {
+      "char": "ᣞ",
+      "codepoint": "U+18DE",
+      "name": "CANADIAN SYLLABICS FINAL SMALL RING",
+      "count": 1
+    },
+    {
+      "char": "ᣩ",
+      "codepoint": "U+18E9",
+      "name": "CANADIAN SYLLABICS TLHOO",
+      "count": 1
+    },
+    {
+      "char": "ᎄ",
+      "codepoint": "U+1384",
+      "name": "ETHIOPIC SYLLABLE SEBATBEIT BWA",
+      "count": 1
+    },
+    {
+      "char": "ﻝ",
+      "codepoint": "U+FEDD",
+      "name": "ARABIC LETTER LAM ISOLATED FORM",
+      "count": 1
+    },
+    {
+      "char": "ﺁ",
+      "codepoint": "U+FE81",
+      "name": "ARABIC LETTER ALEF WITH MADDA ABOVE ISOLATED FORM",
+      "count": 1
+    },
+    {
+      "char": "ﮏ",
+      "codepoint": "U+FB8F",
+      "name": "ARABIC LETTER KEHEH FINAL FORM",
+      "count": 1
+    },
+    {
+      "char": "ﻅ",
+      "codepoint": "U+FEC5",
+      "name": "ARABIC LETTER ZAH ISOLATED FORM",
+      "count": 1
+    },
+    {
+      "char": "ﺥ",
+      "codepoint": "U+FEA5",
+      "name": "ARABIC LETTER KHAH ISOLATED FORM",
+      "count": 1
+    },
+    {
+      "char": "?",
+      "codepoint": "U+003F",
+      "name": "QUESTION MARK",
+      "count": 1
+    }
+  ]
+}
