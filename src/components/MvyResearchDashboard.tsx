@@ -1,56 +1,30 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
-type ResearchIndex = {
-  schema_version?: string;
-  project?: string;
-  language?: string;
-  language_code?: string;
-  resources?: Array<{id:string; title:string; milestone:string; status:string; manifest?:string; description?:string}>;
-};
-
-const milestones = [
-  ['M2','Orthographic & Lexical Analysis','2.3–2.12'],
-  ['M3','ASR Dataset Engineering','3.1–3.5'],
-  ['M4','Linguistic Corpus Research','4.1–4.6'],
-  ['M5','Research Publication & API','5.2–5.4'],
-];
+type Resource = { id:string; title:string; milestone?:string; status?:string; description?:string };
+type Index = { schema_version?:string; resources?:Resource[] };
 
 export const MvyResearchDashboard: React.FC = () => {
-  const [index,setIndex]=useState<ResearchIndex|null>(null);
-  const [error,setError]=useState(false);
-  useEffect(()=>{fetch('/research/mvy/milestone-5.4/index.json',{cache:'no-store'}).then(r=>r.ok?r.json():Promise.reject()).then(setIndex).catch(()=>setError(true));},[]);
-  const resources=useMemo(()=>index?.resources ?? [],[index]);
-  const published=resources.filter(r=>r.status==='published').length;
-  return <section className="mx-auto w-full max-w-7xl px-4 py-8 sm:py-12">
-    <div className="rounded-3xl border border-[#C9A66B]/25 bg-gradient-to-br from-zinc-950 via-zinc-900 to-[#17130d] p-6 sm:p-9 shadow-2xl">
-      <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-5">
-        <div>
-          <div className="text-[11px] uppercase tracking-[0.28em] text-[#C9A66B]">FiKR&CD • Mvy Research</div>
-          <h1 className="mt-2 text-3xl sm:text-4xl font-semibold text-zinc-50">Indus-Kohistani Research Programme</h1>
-          <p className="mt-3 max-w-3xl text-sm sm:text-base leading-7 text-zinc-400">A reproducible research interface for orthography, corpus linguistics, ASR preparation, comparative analysis, publication and machine-readable research resources.</p>
-        </div>
-        <div className="grid grid-cols-2 gap-2 min-w-[220px]">
-          <Stat label="Published resources" value={String(published)} />
-          <Stat label="API schema" value={index?.schema_version || '1.1'} />
-        </div>
-      </div>
-      <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-        {milestones.map(([id,title,range])=><div key={id} className="rounded-2xl border border-zinc-800 bg-zinc-950/70 p-4">
-          <div className="text-xs font-mono text-[#C9A66B]">{id}</div><div className="mt-2 font-semibold text-zinc-100">{title}</div><div className="mt-1 text-xs text-zinc-500">{range}</div>
+  const [index,setIndex]=useState<Index|null>(null);
+  useEffect(()=>{fetch('/research/mvy/milestone-5.4/index.json',{cache:'no-store'}).then(r=>r.ok?r.json():null).then(setIndex).catch(()=>setIndex(null));},[]);
+  const resources=index?.resources ?? [];
+  return <section className="mx-auto w-full max-w-6xl px-4 py-8 sm:py-12">
+    <header className="border-b border-zinc-800 pb-7">
+      <p className="text-[11px] uppercase tracking-[.22em] text-[#C9A66B]">FiKR&CD Research</p>
+      <h1 className="mt-2 text-2xl sm:text-3xl font-semibold tracking-tight text-zinc-100">Indus-Kohistani language research</h1>
+      <p className="mt-2 max-w-2xl text-sm leading-6 text-zinc-400">Corpus, language documentation, speech data and computational research resources.</p>
+    </header>
+    <div className="mt-7 grid grid-cols-2 sm:grid-cols-4 gap-px overflow-hidden rounded-xl border border-zinc-800 bg-zinc-800">
+      {[['Corpus','M2'],['Speech data','M3'],['Language research','M4'],['Public resources','M5']].map(([a,b])=><div key={b} className="bg-zinc-950 px-4 py-4"><div className="text-sm text-zinc-200">{a}</div><div className="mt-1 text-[11px] text-zinc-500">{b}</div></div>)}
+    </div>
+    <div className="mt-8">
+      <div className="flex items-baseline justify-between"><h2 className="text-base font-medium text-zinc-200">Research resources</h2><span className="text-[11px] text-zinc-600">{index?.schema_version ? `catalogue ${index.schema_version}` : ''}</span></div>
+      <div className="mt-3 divide-y divide-zinc-800 border-y border-zinc-800">
+        {resources.map(r=><div key={r.id} className="flex items-center justify-between gap-4 py-4">
+          <div className="min-w-0"><div className="text-sm text-zinc-200 truncate">{r.title}</div><div className="mt-1 text-xs text-zinc-500">{r.description || r.milestone || 'Research resource'}</div></div>
+          <span className="shrink-0 text-[10px] uppercase tracking-wider text-zinc-500">{r.status || 'available'}</span>
         </div>)}
-      </div>
-      <div className="mt-8 border-t border-zinc-800 pt-6">
-        <div className="flex items-center justify-between gap-3"><h2 className="text-lg font-semibold text-zinc-100">Machine-readable research catalogue</h2><span className="text-xs text-zinc-500">Live manifest</span></div>
-        {error ? <p className="mt-4 text-sm text-amber-300">Research index is being regenerated by GitHub Actions. The interface will update automatically after the published manifest is available.</p> :
-          <div className="mt-4 grid gap-2">
-            {resources.map(r=><div key={r.id} className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 rounded-xl border border-zinc-800/80 bg-zinc-950/60 px-4 py-3">
-              <div><div className="text-sm font-medium text-zinc-200">{r.title}</div><div className="text-xs text-zinc-500">{r.milestone} · {r.description || 'Research resource'}</div></div>
-              <span className={`w-fit rounded-full border px-2 py-1 text-[10px] uppercase tracking-wider ${r.status==='published'?'border-emerald-800/50 text-emerald-300 bg-emerald-950/30':'border-amber-800/50 text-amber-300 bg-amber-950/30'}`}>{r.status}</span>
-            </div>)}
-            {!resources.length && <p className="text-sm text-zinc-500">No catalogue entries are currently exposed.</p>}
-          </div>}
+        {!resources.length && <div className="py-8 text-sm text-zinc-500">Research resources are loading.</div>}
       </div>
     </div>
   </section>;
 };
-const Stat=({label,value}:{label:string;value:string})=><div className="rounded-xl border border-zinc-800 bg-zinc-950/60 p-3"><div className="text-[10px] uppercase tracking-wider text-zinc-500">{label}</div><div className="mt-1 text-lg font-semibold text-zinc-100">{value}</div></div>;
