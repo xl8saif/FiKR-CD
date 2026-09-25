@@ -527,5 +527,6 @@ export const MyProfile: React.FC<MyProfileProps> = ({
         <AboutProjectDirector />
       </div>
       </div>
+    </div>
   );
 };
