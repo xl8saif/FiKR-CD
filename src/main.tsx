@@ -36,7 +36,7 @@ class RootErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState
               FiKR&CD — Application Recovery
             </h2>
             <p className="text-xs text-[#AAA] mb-4">
-              A temporary runtime warning occurred. The application state has been preserved.
+              A temporary runtime warning occurred. The application encountered a temporary runtime error. Reload to continue.
             </p>
             <button
               onClick={() => {
@@ -56,9 +56,13 @@ class RootErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState
 }
 
 if (typeof window !== 'undefined') {
-  window.addEventListener('unhandledrejection', (event) => {
-    console.warn('Handled unhandled rejection in preview context:', event.reason);
+  window.addEventListener('vite:preloadError', (event) => {
     event.preventDefault();
+    window.location.reload();
+  });
+
+  window.addEventListener('unhandledrejection', (event) => {
+    console.warn('Unhandled promise rejection:', event.reason);
   });
 }
 
