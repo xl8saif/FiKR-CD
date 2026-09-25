@@ -106,6 +106,17 @@ service cloud.firestore {
       }
     }
 
+    match /dictionary_entries/{entryId} {
+      // Only published/verified lexical entries are public.
+      allow read: if resource.data.status == 'verified' || isAdminOrDirector();
+      // Administrators and the project director curate the public dictionary.
+      allow create: if isAdminOrDirector() &&
+        request.resource.data.status in ['pending_review', 'verified'];
+      allow update: if isAdminOrDirector() &&
+        request.resource.data.status in ['pending_review', 'verified'];
+      allow delete: if isAdminOrDirector();
+    }
+
     match /recordings/{recordingId} {
       allow read: if true;
       allow create: if isAuthenticated();
