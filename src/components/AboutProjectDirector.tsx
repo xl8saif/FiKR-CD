@@ -41,6 +41,7 @@ import {
   PROJECT_DIRECTOR_WHATSAPP
 } from '../services/speechAiService';
 import { LinkedInIconLink } from './LinkedInIconLink';
+import { UILanguage } from '../types';
 import {
   MASTER_EVIDENCE_LEDGER,
   WORK_EXPERIENCE_RECORDS,
@@ -55,6 +56,7 @@ import {
 interface AboutProjectDirectorProps {
   className?: string;
   showCardWrapper?: boolean;
+  uiLang?: UILanguage;
 }
 
 type EvidenceTabSection = 
@@ -321,12 +323,12 @@ export const AboutProjectDirector: React.FC<AboutProjectDirectorProps> = ({
             {/* Quick Metrics Badges */}
             <div className="grid grid-cols-2 gap-2 mt-4 text-left">
               <div className="p-3 rounded-xl bg-[#141414] border border-[#222]">
-                <span className="text-[10px] text-[#777] block uppercase font-bold tracking-wider">Experience</span>
+                <span className="text-[10px] text-[#777] block uppercase font-bold tracking-wider">{t("Experience", "تجربہ")}</span>
                 <span className="text-sm font-extrabold text-[#F5F5F5]">12+ Years</span>
                 <span className="text-[10px] text-[#666] block">Verified Work Records</span>
               </div>
               <div className="p-3 rounded-xl bg-[#141414] border border-[#222]">
-                <span className="text-[10px] text-[#777] block uppercase font-bold tracking-wider">Initiative</span>
+                <span className="text-[10px] text-[#777] block uppercase font-bold tracking-wider">{t("Initiative", "منصوبہ")}</span>
                 <span className="text-sm font-extrabold text-[#C9A66B]">FiKR&CD</span>
                 <span className="text-[10px] text-[#666] block">Indus-Kohistani</span>
               </div>
@@ -407,7 +409,7 @@ export const AboutProjectDirector: React.FC<AboutProjectDirectorProps> = ({
               </div>
               <div className="space-y-1.5">
                 <div className="flex items-center gap-2">
-                  <h4 className="text-xs font-bold text-[#F5F5F5]">Community-Centered and Human-Verified Principle</h4>
+                  <h4 className="text-xs font-bold text-[#F5F5F5]">{t("Community-Centered and Human-Verified Principle", "برادری پر مبنی اور انسانی تصدیق کا اصول")}</h4>
                   <Sparkles className="h-3.5 w-3.5 text-[#C9A66B]" />
                 </div>
                 <p className="text-xs text-[#AAA] leading-relaxed">
@@ -469,7 +471,7 @@ export const AboutProjectDirector: React.FC<AboutProjectDirectorProps> = ({
             <div className="p-4 rounded-2xl bg-[#141414] border border-[#222] space-y-1.5">
               <div className="flex items-center gap-2 text-[#C9A66B]">
                 <BookOpen className="h-4 w-4" />
-                <h4 className="text-xs font-bold text-[#F5F5F5]">Corpus & Dictionary</h4>
+                <h4 className="text-xs font-bold text-[#F5F5F5]">{t("Corpus & Dictionary", "کارپس اور ڈکشنری")}</h4>
               </div>
               <p className="text-[11px] text-[#888] leading-normal">
                 Standardized digital text corpus, trilingual lexical databases, and morphological tagging across Duber-Kandia, Jijal, Seo, and Patan dialects.
@@ -479,7 +481,7 @@ export const AboutProjectDirector: React.FC<AboutProjectDirectorProps> = ({
             <div className="p-4 rounded-2xl bg-[#141414] border border-[#222] space-y-1.5">
               <div className="flex items-center gap-2 text-emerald-400">
                 <Mic className="h-4 w-4" />
-                <h4 className="text-xs font-bold text-[#F5F5F5]">Speech & Orthography</h4>
+                <h4 className="text-xs font-bold text-[#F5F5F5]">{t("Speech & Orthography", "صوتی مواد اور املا")}</h4>
               </div>
               <p className="text-[11px] text-[#888] leading-normal">
                 High-fidelity native speech collection, sub-second timestamps, and standardizing specialized Perso-Arabic Unicode glyphs (ڇ، څ، ݜ، ڙ، ݨ).
@@ -489,7 +491,7 @@ export const AboutProjectDirector: React.FC<AboutProjectDirectorProps> = ({
             <div className="p-4 rounded-2xl bg-[#141414] border border-[#222] space-y-1.5">
               <div className="flex items-center gap-2 text-indigo-400">
                 <Cpu className="h-4 w-4" />
-                <h4 className="text-xs font-bold text-[#F5F5F5]">AI & NLP Infrastructure</h4>
+                <h4 className="text-xs font-bold text-[#F5F5F5]">{t("AI & NLP Infrastructure", "AI اور NLP بنیادی ڈھانچہ")}</h4>
               </div>
               <p className="text-[11px] text-[#888] leading-normal">
                 Whisper ASR dataset manifests, Alpaca/DPO/ShareGPT instruction tuning splits, and neural MTPE workflows for low-resource preservation.
@@ -499,7 +501,7 @@ export const AboutProjectDirector: React.FC<AboutProjectDirectorProps> = ({
             <div className="p-4 rounded-2xl bg-[#141414] border border-[#222] space-y-1.5">
               <div className="flex items-center gap-2 text-amber-400">
                 <Users className="h-4 w-4" />
-                <h4 className="text-xs font-bold text-[#F5F5F5]">Community Leadership</h4>
+                <h4 className="text-xs font-bold text-[#F5F5F5]">{t("Community Leadership", "برادری کی قیادت")}</h4>
               </div>
               <p className="text-[11px] text-[#888] leading-normal">
                 Mobilizing native elders, educators, writers, and youth contributors under strict human-verification and community consensus custody.
@@ -529,12 +531,12 @@ export const AboutProjectDirector: React.FC<AboutProjectDirectorProps> = ({
               </div>
               <div className="p-3.5 rounded-xl bg-[#181818] border border-[#282828] space-y-1">
                 <span className="text-[10px] text-[#777] uppercase font-bold block">Linguistics</span>
-                <p className="text-xs font-semibold text-[#EEE]">Indus-Kohistani Specialist</p>
+                <p className="text-xs font-semibold text-[#EEE]">{t("Indus-Kohistani Specialist", "انڈس کوہستانی ماہر")}</p>
                 <p className="text-[11px] text-[#888]">Digital orthography, 4-dialect taxonomy, 40 Hadith translation (~5,000 copies).</p>
               </div>
               <div className="p-3.5 rounded-xl bg-[#181818] border border-[#282828] space-y-1">
-                <span className="text-[10px] text-[#777] uppercase font-bold block">Experience</span>
-                <p className="text-xs font-semibold text-[#EEE]">12+ Years Multilingual Practice</p>
+                <span className="text-[10px] text-[#777] uppercase font-bold block">{t("Experience", "تجربہ")}</span>
+                <p className="text-xs font-semibold text-[#EEE]">{t("12+ Years Multilingual Practice", "12+ سالہ کثیر لسانی پیشہ ورانہ تجربہ")}</p>
                 <p className="text-[11px] text-[#888]">CloudTrans 30k words sprint, ~500k words Saudi project, 1,500+ Shina videos audit.</p>
               </div>
             </div>
@@ -1183,7 +1185,7 @@ export const AboutProjectDirector: React.FC<AboutProjectDirectorProps> = ({
           <div className="space-y-1">
             <div className="flex items-center gap-2">
               <Calendar className="h-4 w-4 text-[#C9A66B]" />
-              <h3 className="text-lg font-bold text-[#F5F5F5]">Career Evidence Timeline</h3>
+              <h3 className="text-lg font-bold text-[#F5F5F5]">{t("Career Evidence Timeline", "پیشہ ورانہ شواہد کی ٹائم لائن")}</h3>
             </div>
             <p className="text-xs text-[#888]">
               Chronological progression showing development across professional translation, documentation, leadership, and language technology.
@@ -1223,7 +1225,7 @@ export const AboutProjectDirector: React.FC<AboutProjectDirectorProps> = ({
             <div>
               <div className="flex items-center gap-2">
                 <FileText className="h-4 w-4 text-[#C9A66B]" />
-                <h3 className="text-lg font-bold text-[#F5F5F5]">Evidence Document Index</h3>
+                <h3 className="text-lg font-bold text-[#F5F5F5]">{t("Evidence Document Index", "شواہد کی دستاویزات کا اشاریہ")}</h3>
               </div>
               <p className="text-xs text-[#888]">
                 Confidential index and reference system cataloging primary documentation and verification artifacts.
