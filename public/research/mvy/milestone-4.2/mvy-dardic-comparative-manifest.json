@@ -1,0 +1,26 @@
+{
+  "milestone": "M4.2",
+  "title": "Comparative Dardic Analysis",
+  "status": "comparative_framework_with_available_sources",
+  "profiles": [
+    {
+      "language": "mvy",
+      "label": "Indus-Kohistani (Mvy)",
+      "profile": {
+        "file": "research/mvy/source/common-voice-27/validated.tsv",
+        "sha256": "497157f27dd7928236ecf66acffda639164a17ec5bab2ee2b44c6eb7d719e176",
+        "sentences": 16612,
+        "tokens": 181583,
+        "types": 7261,
+        "ttr": 0.039987
+      }
+    }
+  ],
+  "comparability_notes": [
+    "Only corpora physically supplied in the repository are compared.",
+    "Absence of a corpus is not treated as evidence about a language.",
+    "Frequency differences are corpus-dependent and are not interpreted as typological conclusions.",
+    "Validated comparative claims require documented, comparable corpora and linguistic metadata."
+  ],
+  "next_milestone": "M4.3 Phonology & Orthography"
+}
