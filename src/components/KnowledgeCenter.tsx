@@ -49,6 +49,13 @@ export const KnowledgeCenter: React.FC<KnowledgeCenterProps> = ({ uiLang, onNavi
 
   const t = (en: string, urdu: string) => ur ? urdu : en;
 
+  const knowledgeStats: Array<[React.ComponentType<{ className?: string }>, string, string]> = [
+    [Database, t('Corpus', 'متنی ذخیرہ'), t('Written language data', 'تحریری لسانی ڈیٹا')],
+    [Headphones, t('Speech', 'صوتی مواد'), t('Audio and ASR research', 'آڈیو اور ASR تحقیق')],
+    [Languages, t('Orthography', 'املاء'), t('Letters and writing system', 'حروف اور نظامِ تحریر')],
+    [Users, t('Contributors', 'معاونین'), t('People and sources', 'افراد اور ماخذ')],
+  ];
+
   const cards = [
     {
       icon: FileText,
@@ -124,13 +131,7 @@ export const KnowledgeCenter: React.FC<KnowledgeCenterProps> = ({ uiLang, onNavi
         </div>
 
         <div className="mt-7 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-          {[
-            [Database, t('Corpus', 'متنی ذخیرہ'), t('Written language data', 'تحریری لسانی ڈیٹا')],
-            [Headphones, t('Speech', 'صوتی مواد'), t('Audio and ASR research', 'آڈیو اور ASR تحقیق')],
-            [Languages, t('Orthography', 'املاء'), t('Letters and writing system', 'حروف اور نظامِ تحریر')],
-            [Users, t('Contributors', 'معاونین'), t('People and sources', 'افراد اور ماخذ')],
-          ].map(([Icon, title, subtitle], index) => {
-            const IconComponent = Icon as React.ComponentType<{ className?: string }>;
+          {knowledgeStats.map(([IconComponent, title, subtitle], index) => {
             return (
               <div key={index} className="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-4">
                 <IconComponent className="h-5 w-5 text-[#C9A66B]" />
