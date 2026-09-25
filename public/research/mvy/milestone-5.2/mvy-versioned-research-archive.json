@@ -106,8 +106,8 @@
     },
     {
       "path": "research/mvy/analysis/milestone-4.3/analyze_phonology_orthography.py",
-      "sha256": "1184b78f1bc78e0cb0176b1ce6b56bf3ed7d824e06b6f8b230c135f04f1cbc4a",
-      "bytes": 2470
+      "sha256": "e2f05c9c9197f23e7ab190fd549fd05fba9c137bb8f6a198de6390810251fa39",
+      "bytes": 2475
     },
     {
       "path": "research/mvy/analysis/milestone-4.4/analyze_morphology_syntax.py",
