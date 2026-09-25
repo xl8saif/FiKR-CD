@@ -29,64 +29,16 @@ export const CONTRIBUTORS: Contributor[] = [
       email: undefined
     }
   },
-  {
-    name: 'Dr. Hussain Ahmad Faizy',
-    role: 'Co-founder of FiKR&CD · Book Author · Researcher · Linguist · Contributor',
-    social: {}
-  },
-  {
-    name: 'Mujeeb ul Haq Jailani',
-    role: 'Native speaker · Researcher · Linguist · Contributor',
-    social: {}
-  },
-  {
-    name: 'Rasheed Ahmad Faizy',
-    role: 'Native speaker · Researcher · Linguist · Contributor',
-    social: {}
-  },
-  {
-    name: 'Muhammad Iqbal Abasindi',
-    role: 'Native speaker · Researcher · Linguist · Contributor',
-    social: {}
-  },
-  {
-    name: 'Ihsan Ullah',
-    role: 'Native speaker · Researcher · Contributor',
-    social: {}
-  },
-  {
-    name: 'Abdul Hadi',
-    role: 'Native speaker · Researcher · Contributor',
-    social: {}
-  },
-  {
-    name: 'Aslam Dani',
-    role: 'Native speaker · Researcher · Contributor',
-    social: {}
-  },
-  {
-    name: 'Atta Ur Rehman Aziz',
-    role: 'Native speaker · Researcher · Linguist · Contributor',
-    social: {}
-  },
-  {
-    name: 'Jameel Ahmad Umang',
-    role: 'Native speaker · Researcher · Linguist · Contributor',
-    social: {}
-  },
-  {
-    name: 'Ahsanullah Majid',
-    role: 'Native speaker · Researcher · Linguist · Contributor',
-    social: {}
-  },
-  {
-    name: 'Hasan Jamil',
-    role: 'Native speaker · Researcher · Linguist · Contributor',
-    social: {}
-  },
-  {
-    name: 'FiKR&CD Admin Team',
-    role: 'Administrator',
-    social: {}
-  }
+  { name: 'Dr. Hussain Ahmad Faizy', role: 'Co-founder of FiKR&CD · Book Author · Researcher · Linguist · Contributor', social: {} },
+  { name: 'Mujeeb ul Haq Jailani', role: 'Native speaker · Researcher · Linguist · Contributor', social: {} },
+  { name: 'Rasheed Ahmad Faizy', role: 'Native speaker · Researcher · Linguist · Contributor', social: {} },
+  { name: 'Muhammad Iqbal Abasindi', role: 'Native speaker · Researcher · Linguist · Contributor', social: {} },
+  { name: 'Ihsan Ullah', role: 'Native speaker · Researcher · Contributor', social: {} },
+  { name: 'Abdul Hadi', role: 'Native speaker · Researcher · Contributor', social: {} },
+  { name: 'Aslam Dani', role: 'Native speaker · Researcher · Contributor', social: {} },
+  { name: 'Atta Ur Rehman Aziz', role: 'Native speaker · Researcher · Linguist · Contributor', social: {} },
+  { name: 'Jameel Ahmad Umang', role: 'Native speaker · Researcher · Linguist · Contributor', social: {} },
+  { name: 'Ahsanullah Majid', role: 'Native speaker · Researcher · Linguist · Contributor', social: {} },
+  { name: 'Hasan Jamil', role: 'Native speaker · Researcher · Linguist · Contributor', social: {} },
+  { name: 'FiKR&CD Admin Team', role: 'Administrator', social: {} }
 ];
