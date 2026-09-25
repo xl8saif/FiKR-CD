@@ -16,6 +16,7 @@ jobs:
         with: {lfs: true}
       - uses: actions/setup-python@v5
         with: {python-version: '3.12'}
+      - run: pip install regex
       - run: python research/mvy/analysis/milestone-4.1/analyze_mvy_linguistic_corpus.py
       - name: Publish public M4.1 manifest
         run: |
