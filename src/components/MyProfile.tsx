@@ -226,7 +226,7 @@ export const MyProfile: React.FC<MyProfileProps> = ({
             className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#C9A66B] hover:bg-[#D4B582] text-[#0C0C0C] text-xs font-bold transition shadow-sm"
           >
             <LogIn className="h-4 w-4" />
-            <span>Sign In to Firebase</span>
+            <span>{t("Sign In to Firebase", "Firebase میں سائن اِن کریں")}</span>
           </button>
         </div>
         </div>
@@ -272,7 +272,7 @@ export const MyProfile: React.FC<MyProfileProps> = ({
           <LinkedInIconLink id="profile-director-linkedin-btn" size={24} />
           <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-[#1B1B1B] border border-[#333] text-xs text-[#AAA]">
             <ShieldCheck className="h-4 w-4 text-emerald-400" />
-            <span className="text-[11px] font-mono">Firebase Verified</span>
+            <span className="text-[11px] font-mono">{t("Firebase Verified", "Firebase سے تصدیق شدہ")}</span>
           </div>
         </div>
       </div>
@@ -289,7 +289,7 @@ export const MyProfile: React.FC<MyProfileProps> = ({
         <div className="flex items-start gap-2.5 p-4 rounded-xl bg-rose-950/40 border border-rose-800/40 text-rose-300 text-xs">
           <AlertCircle className="h-4 w-4 shrink-0 mt-0.5 text-rose-400" />
           <div>
-            <strong className="block mb-0.5">Profile Notice</strong>
+            <strong className="block mb-0.5">{t("Profile Notice", "پروفائل اطلاع")}</strong>
             <span>{errorMsg}</span>
           </div>
         </div>
@@ -335,7 +335,7 @@ export const MyProfile: React.FC<MyProfileProps> = ({
               </label>
               <div className="flex items-center justify-between p-2.5 rounded-xl bg-[#1A1A1A] border border-[#262626] text-xs text-[#E5E5E5]">
                 <span className="font-semibold">{profile?.role || 'Contributor'}</span>
-                <span className="text-[10px] text-[#777] font-mono">No Self-Escalation</span>
+                <span className="text-[10px] text-[#777] font-mono">{t("No Self-Escalation", "خود سے عہدہ بڑھانا ممنوع")}</span>
               </div>
               <p className="text-[10px] text-[#666] mt-1">
                 Roles are managed exclusively by Project Leadership and cannot be modified by client requests.
@@ -468,7 +468,7 @@ export const MyProfile: React.FC<MyProfileProps> = ({
                 ) : (
                   <Save className="h-4 w-4" />
                 )}
-                <span>Save Profile Changes</span>
+                <span>{t("Save Profile Changes", "پروفائل کی تبدیلیاں محفوظ کریں")}</span>
               </button>
             </div>
           </div>
