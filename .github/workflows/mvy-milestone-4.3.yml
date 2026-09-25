@@ -18,3 +18,4 @@ jobs:
           git add public/research/mvy/milestone-4.3; git diff --cached --quiet || git commit -m 'Publish Mvy M4.3 phonology orthography manifest'; for i in 1 2 3 4 5; do git pull --rebase origin main && git push && break; sleep 2; done
       - uses: actions/upload-artifact@v4
         with: {name: mvy-milestone-4.3, path: research/mvy/analysis/milestone-4.3/output/, retention-days: 90}
+# Validation rerun trigger 2026-09-25
