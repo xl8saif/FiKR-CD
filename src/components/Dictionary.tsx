@@ -372,11 +372,18 @@ const Dictionary: React.FC<DictionaryProps> = ({ uiLang, firebaseUser }) => {
                     <div className="rounded-xl border border-zinc-800 bg-zinc-900/40 p-4">
                       <div className="text-[10px] uppercase tracking-wider text-zinc-500">{t('Frequency', 'تعدد')}</div>
                       <div className="mt-2 text-lg text-zinc-100">{selectedRecord.candidate.frequency}</div>
+                      {selectedRecord.evidence?.occurrences ? (
+                        <div className="mt-1 text-[10px] text-zinc-500">
+                          {selectedRecord.evidence.occurrences} {t('indexed corpus matches', 'اشاریہ شدہ کارپس مطابقتیں')}
+                        </div>
+                      ) : null}
                     </div>
                   </div>
                   <div className="grid gap-4 sm:grid-cols-2">
                     <div><div className="text-[10px] uppercase tracking-wider text-zinc-500">{t('Source', 'ماخذ')}</div><div className="mt-1 text-sm text-zinc-200">M2.5 corpus lexicon · Common Voice 27.0</div></div>
-                    <div><div className="text-[10px] uppercase tracking-wider text-zinc-500">{t('Verification', 'تصدیق')}</div><div className="mt-1 text-sm text-amber-400">{t('Candidate — not verified', 'امیدوار — ابھی مصدقہ نہیں')}</div></div>
+                    <div><div className="text-[10px] uppercase tracking-wider text-zinc-500">{t('Verification', 'تصدیق')}</div><div className="mt-1 text-sm text-amber-400">{selectedRecord.evidence?.examples?.length
+                        ? t('Candidate — examples indexed, not verified', 'امیدوار — مثالیں اشاریہ شدہ، ابھی مصدقہ نہیں')
+                        : t('Candidate — not verified', 'امیدوار — ابھی مصدقہ نہیں')}</div></div>
                   </div>
                   <div>
                     <div className="text-[10px] uppercase tracking-wider text-zinc-500">{t('Attested corpus examples', 'مستند کارپس مثالیں')}</div>
