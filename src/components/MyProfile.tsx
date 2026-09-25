@@ -85,8 +85,22 @@ export const MyProfile: React.FC<MyProfileProps> = ({
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
       {contributors.map(([name, role]) => (
         <article key={name} className="rounded-2xl bg-[#141414] border border-[#262626] p-5 hover:border-[#C9A66B]/40 transition">
-          <h2 className="text-sm font-bold text-[#F5F5F5]">{name}</h2>
-          <p className="mt-1.5 text-xs leading-5 text-[#999]">{role}</p>
+          <div className="flex items-center gap-4">
+            {name === 'Saif Ullah' && (
+              <div className="h-14 w-14 rounded-xl overflow-hidden border border-[#C9A66B]/40 bg-[#161616] shrink-0">
+                <img
+                  src={saifPortrait}
+                  alt="Saif Ullah - Project Director"
+                  referrerPolicy="no-referrer"
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
+            )}
+            <div className="min-w-0">
+              <h2 className="text-sm font-bold text-[#F5F5F5]">{name}</h2>
+              <p className="mt-1.5 text-xs leading-5 text-[#999]">{role}</p>
+            </div>
+          </div>
         </article>
       ))}
     </div>
