@@ -34,8 +34,8 @@ import { LinkedInIconLink } from './LinkedInIconLink';
 import fikrLogo from '../assets/images/fikrcd_logo_1787381137891.jpg';
 
 interface HeaderProps {
-  activeTab: 'contribute' | 'my_contributions' | 'verification_queue' | 'corpus_explorer' | 'admin_panel' | 'quality_dashboard' | 'dataset_releases' | 'nlp_workspace' | 'translation_workspace' | 'speech_workspace' | 'llm_workspace' | 'mvy_milestone_23' | 'mvy_research' | 'knowledge_center' | 'roadmap' | 'my_profile' | 'consent_license';
-  setActiveTab: (tab: 'contribute' | 'my_contributions' | 'verification_queue' | 'corpus_explorer' | 'admin_panel' | 'quality_dashboard' | 'dataset_releases' | 'nlp_workspace' | 'translation_workspace' | 'speech_workspace' | 'llm_workspace' | 'mvy_research' | 'knowledge_center' | 'roadmap' | 'my_profile' | 'consent_license') => void;
+  activeTab: 'contribute' | 'my_contributions' | 'verification_queue' | 'corpus_explorer' | 'admin_panel' | 'quality_dashboard' | 'dataset_releases' | 'nlp_workspace' | 'translation_workspace' | 'speech_workspace' | 'llm_workspace' | 'mvy_milestone_23' | 'mvy_research' | 'knowledge_center' | 'roadmap' | 'my_profile' | 'consent_license' | 'dictionary';
+  setActiveTab: (tab: 'contribute' | 'my_contributions' | 'verification_queue' | 'corpus_explorer' | 'admin_panel' | 'quality_dashboard' | 'dataset_releases' | 'nlp_workspace' | 'translation_workspace' | 'speech_workspace' | 'llm_workspace' | 'mvy_research' | 'knowledge_center' | 'roadmap' | 'my_profile' | 'consent_license' | 'dictionary') => void;
   currentUser: UserProfile;
   setCurrentUser: (user: UserProfile) => void;
   uiLang: UILanguage;
@@ -102,6 +102,7 @@ export const Header: React.FC<HeaderProps> = ({
 
   const t = (en: string, ur: string) => uiLang === 'ur' ? ur : en;
   const navTabs: NavTabItem[] = [
+    { id: 'dictionary', label: t('Dictionary', 'ڈکشنری'), sublabel: 'Dictionary / ڈکشنری', icon: BookOpen, group: 'Intake & Archive' },
     { id: 'knowledge_center', label: t('Knowledge & Data', 'علم و ڈیٹا'), sublabel: 'Knowledge & Data / علم و ڈیٹا', icon: Database, group: 'Intake & Archive' },
     { id: 'mvy_milestone_23', label: t('Research', 'تحقیق'), sublabel: 'Research / تحقیق', icon: BookOpen, group: 'AI & Computational NLP' },
     { id: 'corpus_explorer', label: t('Explore', 'دریافت'), sublabel: 'Explore / دریافت', icon: Layers, group: 'Intake & Archive' },
@@ -121,10 +122,10 @@ export const Header: React.FC<HeaderProps> = ({
   ];
 
   const publicNavTabs = navTabs.filter(tab =>
-    ['knowledge_center', 'mvy_milestone_23', 'corpus_explorer', 'contribute', 'my_profile'].includes(tab.id)
+    ['knowledge_center', 'mvy_milestone_23', 'dictionary', 'corpus_explorer', 'contribute', 'my_profile'].includes(tab.id)
   );
   const platformTabs = navTabs.filter(tab =>
-    !['knowledge_center', 'mvy_research', 'corpus_explorer', 'contribute', 'my_profile'].includes(tab.id)
+    !['knowledge_center', 'mvy_research', 'dictionary', 'corpus_explorer', 'contribute', 'my_profile'].includes(tab.id)
   );
 
   const currentActiveTabObj = navTabs.find(t => t.id === activeTab) || navTabs[0];
