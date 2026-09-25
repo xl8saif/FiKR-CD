@@ -209,7 +209,7 @@ export const Header: React.FC<HeaderProps> = ({
                   <span className="text-sm font-bold tracking-wider text-[#C9A66B]">FiKR&CD</span>
                   <span className="text-zinc-600 hidden sm:inline">•</span>
                   <span className="hidden sm:inline-block text-xs text-zinc-300 font-medium">
-                    Indus-Kohistani Language & Culture
+                    Indus-Kohistani Language & Cultural Research
                   </span>
                 </div>
                 <div className="flex items-center gap-1.5 text-[11px] text-zinc-400">
