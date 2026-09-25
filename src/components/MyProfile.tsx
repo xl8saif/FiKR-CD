@@ -54,6 +54,14 @@ export const MyProfile: React.FC<MyProfileProps> = ({
   const [successMsg, setSuccessMsg] = useState<string | null>(null);
 
   const contributors = CONTRIBUTORS;
+  const t = (en: string, ur: string) => uiLang === 'ur' ? ur : en;
+  const localizeRole = (role: string) => uiLang === 'ur' ? ({
+    'Project Director · Co-founder · Researcher · Linguist · Translator · Language Technology & Localization Specialist': 'پراجیکٹ ڈائریکٹر · شریک بانی · محقق · ماہر لسانیات · مترجم · زبان ٹیکنالوجی و لوکلائزیشن ماہر',
+    'Co-founder of FiKR&CD · Book Author · Researcher · Linguist · Contributor': 'FiKR&CD کے شریک بانی · کتاب کے مصنف · محقق · ماہر لسانیات · معاون',
+    'Native speaker · Researcher · Linguist · Contributor': 'مادری زبان بولنے والے · محقق · ماہر لسانیات · معاون',
+    'Native speaker · Researcher · Contributor': 'مادری زبان بولنے والے · محقق · معاون',
+    'Administrator': 'منتظم'
+  } as Record<string, string>)[role] || role : role;
 
 
 
@@ -66,10 +74,10 @@ export const MyProfile: React.FC<MyProfileProps> = ({
   const contributorsSection = (
   <section id="fikrcd-contributors" className="max-w-5xl mx-auto px-4 py-10 space-y-6">
     <div className="text-center max-w-3xl mx-auto">
-      <p className="text-[11px] uppercase tracking-[0.2em] text-[#C9A66B] font-semibold mb-2">FiKR&CD contributors</p>
-      <h1 className="text-2xl sm:text-3xl font-bold text-[#F5F5F5]">Contributors to the Indus-Kohistani research programme</h1>
+      <p className="text-[11px] uppercase tracking-[0.2em] text-[#C9A66B] font-semibold mb-2">{t('FiKR&CD contributors', 'FiKR&CD کے معاونین')}</p>
+      <h1 className="text-2xl sm:text-3xl font-bold text-[#F5F5F5]">{t('Contributors to the Indus-Kohistani research programme', 'انڈس کوہستانی تحقیقی پروگرام کے معاونین')}</h1>
       <p className="mt-3 text-sm leading-6 text-[#999]">
-        Native speakers, researchers, linguists and contributors to the Indus-Kohistani language and cultural research programme.
+        {t('Native speakers, researchers, linguists and contributors to the Indus-Kohistani language and cultural research programme.', 'مادری زبان بولنے والے، محققین، ماہرینِ لسانیات اور معاونین جو انڈس کوہستانی زبان و ثقافت کے تحقیقی پروگرام میں خدمات انجام دے رہے ہیں۔')}
       </p>
     </div>
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -80,7 +88,7 @@ export const MyProfile: React.FC<MyProfileProps> = ({
               <div className="h-14 w-14 rounded-xl overflow-hidden border border-[#C9A66B]/40 bg-[#161616] shrink-0">
                 <img
                   src={saifPortrait}
-                  alt="Saif Ullah - Project Director"
+                  alt={t("Saif Ullah - Project Director","سَیْفُ اللہ — پراجیکٹ ڈائریکٹر")}
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover object-top"
                 />
@@ -88,28 +96,28 @@ export const MyProfile: React.FC<MyProfileProps> = ({
             )}
             <div className="min-w-0 flex-1">
               <h2 className="text-sm font-bold text-[#F5F5F5]">{name}</h2>
-              <p className="mt-1.5 text-xs leading-5 text-[#999]">{role}</p>
+              <p className="mt-1.5 text-xs leading-5 text-[#999]">{localizeRole(role)}</p>
               <div className="flex items-center gap-1.5 mt-3">
                 {social.linkedin && (
-                  <a href={social.linkedin} target="_blank" rel="noopener noreferrer" aria-label={`${name} on LinkedIn`} title="LinkedIn"
+                  <a href={social.linkedin} target="_blank" rel="noopener noreferrer" aria-label={`${name} on LinkedIn`} title={t("LinkedIn","لنکڈ اِن")}
                     className="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-[#1B1B1B] border border-[#333] text-[#AAA] hover:text-[#0A66C2] hover:border-[#0A66C2]/50 transition">
                     <Linkedin className="h-3.5 w-3.5" />
                   </a>
                 )}
                 {social.facebook && (
-                  <a href={social.facebook} target="_blank" rel="noopener noreferrer" aria-label={`${name} on Facebook`} title="Facebook"
+                  <a href={social.facebook} target="_blank" rel="noopener noreferrer" aria-label={`${name} on Facebook`} title={t("Facebook","فیس بک")}
                     className="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-[#1B1B1B] border border-[#333] text-[#AAA] hover:text-[#1877F2] hover:border-[#1877F2]/50 transition">
                     <Facebook className="h-3.5 w-3.5" />
                   </a>
                 )}
                 {social.whatsapp && (
-                  <a href={social.whatsapp} target="_blank" rel="noopener noreferrer" aria-label={`Contact ${name} on WhatsApp`} title="WhatsApp"
+                  <a href={social.whatsapp} target="_blank" rel="noopener noreferrer" aria-label={`Contact ${name} on WhatsApp`} title={t("WhatsApp","واٹس ایپ")}
                     className="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-[#1B1B1B] border border-[#333] text-[#AAA] hover:text-[#25D366] hover:border-[#25D366]/50 transition">
                     <MessageCircle className="h-3.5 w-3.5" />
                   </a>
                 )}
                 {social.email && (
-                  <a href={`mailto:${social.email}`} aria-label={`Email ${name}`} title="Email"
+                  <a href={`mailto:${social.email}`} aria-label={`Email ${name}`} title={t("Email","ای میل")}
                     className="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-[#1B1B1B] border border-[#333] text-[#AAA] hover:text-[#C9A66B] hover:border-[#C9A66B]/50 transition">
                     <Mail className="h-3.5 w-3.5" />
                   </a>
@@ -552,7 +560,7 @@ export const MyProfile: React.FC<MyProfileProps> = ({
 
       {/* Full About the Project Director Section */}
       <div className="mt-8">
-        <AboutProjectDirector />
+        <AboutProjectDirector uiLang={uiLang} />
       </div>
       </div>
     </div>
