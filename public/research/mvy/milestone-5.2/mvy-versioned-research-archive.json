@@ -101,8 +101,8 @@
     },
     {
       "path": "research/mvy/analysis/milestone-4.2/analyze_dardic_comparison.py",
-      "sha256": "240fb1b972f4c169cb605ed6f582e60536f54403d8ae55791d10acb2d13ddebd",
-      "bytes": 2581
+      "sha256": "16f2fde850f38b8e73cdf3ab644aba38fb1547f83fdca38e6bd6c01d0d8145df",
+      "bytes": 2550
     },
     {
       "path": "research/mvy/analysis/milestone-4.3/analyze_phonology_orthography.py",
