@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import { addDoc, collection, doc, getDoc, onSnapshot, serverTimestamp, updateDoc } from 'firebase/firestore';
+import { addDoc, collection, doc, getDoc, onSnapshot, serverTimestamp, updateDoc, where, query as firestoreQuery } from 'firebase/firestore';
 import { BookOpen, CheckCircle2, Database, ExternalLink, Plus, Search, ShieldCheck, Sparkles } from 'lucide-react';
 import { db } from '../services/firebase';
 import corpusLexicon from '../data/mvyCorpusFullLexicon.json';
@@ -75,8 +75,11 @@ const Dictionary: React.FC<DictionaryProps> = ({ uiLang, firebaseUser }) => {
   const t = (en: string, urdu: string) => ur ? urdu : en;
 
   useEffect(() => {
+    const source = adminAllowed
+      ? collection(db, 'dictionary_entries')
+      : firestoreQuery(collection(db, 'dictionary_entries'), where('status', '==', 'verified'));
     const unsubscribe = onSnapshot(
-      collection(db, 'dictionary_entries'),
+      source,
       (snapshot) => {
         const all = snapshot.docs.map((item) => ({ id: item.id, ...item.data() } as DictionaryEntry));
         setEntries(all.filter((item) => item.status === 'verified'));
