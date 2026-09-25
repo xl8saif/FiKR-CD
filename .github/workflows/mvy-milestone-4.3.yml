@@ -1,0 +1,19 @@
+name: Mvy Milestone 4.3 Phonology and Orthography
+on: {workflow_dispatch: {}, push: {paths: ['research/mvy/source/**','research/mvy/analysis/milestone-4.3/**','.github/workflows/mvy-milestone-4.3.yml']}}
+permissions: {contents: write}
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: {lfs: true}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: python research/mvy/analysis/milestone-4.3/analyze_phonology_orthography.py
+      - run: |
+          mkdir -p public/research/mvy/milestone-4.3
+          cp research/mvy/analysis/milestone-4.3/output/mvy-phonology-orthography-manifest.json public/research/mvy/milestone-4.3/
+          git config user.name 'github-actions[bot]'; git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add public/research/mvy/milestone-4.3; git diff --cached --quiet || git commit -m 'Publish Mvy M4.3 phonology orthography manifest'; git push
+      - uses: actions/upload-artifact@v4
+        with: {name: mvy-milestone-4.3, path: research/mvy/analysis/milestone-4.3/output/, retention-days: 90}
