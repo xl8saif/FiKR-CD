@@ -1,0 +1,9 @@
+{
+  "project": "FiKR&CD",
+  "language": "Indus-Kohistani",
+  "iso_639_3": "mvy",
+  "milestone": "Corpus sentence-level lexical evidence",
+  "status": "attested corpus examples",
+  "max_examples_per_word": 5,
+  "entries": {}
+}
