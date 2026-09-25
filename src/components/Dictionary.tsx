@@ -15,10 +15,21 @@ interface DictionaryEntry {
   dialect?: string;
   notes?: string;
   source?: string;
+  sourceDataset?: string;
+  corpusExamples?: string[];
   status?: string;
   createdAt?: unknown;
   createdBy?: string;
 }
+
+interface CorpusCandidate {
+  word: string;
+  frequency: number;
+}
+
+type SelectedRecord =
+  | { kind: 'canonical'; entry: DictionaryEntry }
+  | { kind: 'candidate'; candidate: CorpusCandidate };
 
 interface DictionaryProps {
   uiLang: UILang;
@@ -28,7 +39,7 @@ interface DictionaryProps {
 const Dictionary: React.FC<DictionaryProps> = ({ uiLang, firebaseUser }) => {
   const ur = uiLang === 'ur';
   const [entries, setEntries] = useState<DictionaryEntry[]>([]);
-  const [mozillaWords] = useState<Array<{ word: string; frequency: number }>>(
+  const [mozillaWords] = useState<CorpusCandidate[]>(
     Array.isArray(corpusLexicon.entries) ? corpusLexicon.entries : []
   );
   const mozillaLoading = false;
@@ -36,7 +47,17 @@ const Dictionary: React.FC<DictionaryProps> = ({ uiLang, firebaseUser }) => {
   const [showAdminForm, setShowAdminForm] = useState(false);
   const [adminAllowed, setAdminAllowed] = useState(false);
   const [saving, setSaving] = useState(false);
-  const [form, setForm] = useState({ indusKohistani: '', urdu: '', english: '', dialect: '', notes: '', verified: true });
+  const [selectedRecord, setSelectedRecord] = useState<SelectedRecord | null>(null);
+  const [form, setForm] = useState({
+    indusKohistani: '',
+    urdu: '',
+    english: '',
+    dialect: '',
+    notes: '',
+    corpusExamples: '',
+    source: 'FiKR&CD Dictionary',
+    verified: true
+  });
 
   const t = (en: string, urdu: string) => ur ? urdu : en;
 
@@ -88,7 +109,16 @@ const Dictionary: React.FC<DictionaryProps> = ({ uiLang, firebaseUser }) => {
   }, [mozillaWords, query]);
 
   const openAdd = (word = '') => {
-    setForm({ indusKohistani: word, urdu: '', english: '', dialect: '', notes: '', verified: true });
+    setForm({
+      indusKohistani: word,
+      urdu: '',
+      english: '',
+      dialect: '',
+      notes: '',
+      corpusExamples: '',
+      source: 'FiKR&CD Dictionary',
+      verified: true
+    });
     setShowAdminForm(true);
   };
 
@@ -103,14 +133,27 @@ const Dictionary: React.FC<DictionaryProps> = ({ uiLang, firebaseUser }) => {
         english: form.english.trim(),
         dialect: form.dialect.trim(),
         notes: form.notes.trim(),
-        source: form.urdu || form.english ? 'FiKR&CD Dictionary' : 'Mozilla Common Voice 27.0',
+        source: form.source.trim() || 'FiKR&CD Dictionary',
         sourceDataset: 'Common Voice 27.0 — Indus Kohistani (mvy)',
+        corpusExamples: form.corpusExamples
+          .split(/\r?\n/)
+          .map((example) => example.trim())
+          .filter(Boolean),
         status: form.verified ? 'verified' : 'pending_review',
         createdBy: firebaseUser?.uid || '',
         createdAt: serverTimestamp(),
       });
       setShowAdminForm(false);
-      setForm({ indusKohistani: '', urdu: '', english: '', dialect: '', notes: '', verified: true });
+      setForm({
+        indusKohistani: '',
+        urdu: '',
+        english: '',
+        dialect: '',
+        notes: '',
+        corpusExamples: '',
+        source: 'FiKR&CD Dictionary',
+        verified: true
+      });
     } finally {
       setSaving(false);
     }
@@ -165,14 +208,23 @@ const Dictionary: React.FC<DictionaryProps> = ({ uiLang, firebaseUser }) => {
             </div>
             <div className="mt-4 space-y-2 max-h-[560px] overflow-auto pr-1">
               {filteredEntries.map((item) => (
-                <div key={item.id} className="rounded-xl border border-zinc-800 bg-zinc-950/60 p-3">
+                <button
+                  type="button"
+                  key={item.id}
+                  onClick={() => setSelectedRecord({ kind: 'canonical', entry: item })}
+                  className="w-full rounded-xl border border-zinc-800 bg-zinc-950/60 p-3 text-left transition hover:border-[#C9A66B]/50"
+                >
                   <div className="grid gap-2 sm:grid-cols-3">
                     <div className="font-kohistani text-base text-zinc-100">{item.indusKohistani}</div>
                     <div className="text-sm text-zinc-300">{item.urdu || '—'}</div>
                     <div className="text-sm text-zinc-400">{item.english || '—'}</div>
                   </div>
-                  {(item.dialect || item.notes) && <div className="mt-2 text-[11px] leading-5 text-zinc-500">{[item.dialect, item.notes].filter(Boolean).join(' · ')}</div>}
-                </div>
+                  <div className="mt-2 flex flex-wrap gap-2 text-[10px] text-zinc-500">
+                    {item.dialect && <span>{item.dialect}</span>}
+                    {item.corpusExamples?.length ? <span>{item.corpusExamples.length} {t('corpus examples', 'کارپس مثالیں')}</span> : null}
+                    {item.source && <span>{item.source}</span>}
+                  </div>
+                </button>
               ))}
               {filteredEntries.length === 0 && (
                 <div className="rounded-xl border border-dashed border-zinc-800 px-4 py-8 text-center text-xs text-zinc-500">
@@ -196,7 +248,16 @@ const Dictionary: React.FC<DictionaryProps> = ({ uiLang, firebaseUser }) => {
               {mozillaLoading && <div className="px-3 py-8 text-center text-xs text-zinc-500">{t('Loading corpus lexicon…', 'کارپس کا لغوی ذخیرہ لوڈ ہو رہا ہے…')}</div>}
               {!mozillaLoading && filteredMozilla.map((item) => (
                 <div key={item.word} className="flex items-center justify-between gap-3 rounded-xl border border-zinc-800 bg-zinc-950/60 px-3 py-2.5">
-                  <span className="font-kohistani text-sm text-zinc-100">{item.word}</span>
+                  <button
+                    type="button"
+                    onClick={() => setSelectedRecord({ kind: 'candidate', candidate: item })}
+                    className="min-w-0 flex-1 text-left"
+                  >
+                    <span className="font-kohistani text-sm text-zinc-100">{item.word}</span>
+                    <span className="mt-1 block text-[10px] text-zinc-500">
+                      {item.frequency} {t('corpus occurrences · open lexical record', 'کارپس استعمالات · لغوی ریکارڈ کھولیں')}
+                    </span>
+                  </button>
                   <div className="flex items-center gap-2">
                     <span className="text-[10px] text-zinc-500">{item.frequency}</span>
                     {adminAllowed && (
@@ -225,6 +286,100 @@ const Dictionary: React.FC<DictionaryProps> = ({ uiLang, firebaseUser }) => {
           </div>
         </div>
 
+        {selectedRecord && (
+          <div className="fixed inset-0 z-40 flex items-center justify-center bg-black/70 p-4 backdrop-blur-sm">
+            <div className="w-full max-w-3xl max-h-[90vh] overflow-auto rounded-2xl border border-zinc-700 bg-zinc-950 p-5 shadow-2xl">
+              <div className="flex items-start justify-between gap-4">
+                <div>
+                  <div className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#C9A66B]">
+                    {selectedRecord.kind === 'canonical'
+                      ? t('Verified lexical record', 'مصدقہ لغوی ریکارڈ')
+                      : t('Corpus lexical candidate', 'کارپس لغوی امیدوار')}
+                  </div>
+                  <h2 className="mt-2 font-kohistani text-2xl text-zinc-100">
+                    {selectedRecord.kind === 'canonical' ? selectedRecord.entry.indusKohistani : selectedRecord.candidate.word}
+                  </h2>
+                </div>
+                <button type="button" onClick={() => setSelectedRecord(null)} className="text-xs text-zinc-500 hover:text-zinc-200">
+                  {t('Close', 'بند کریں')}
+                </button>
+              </div>
+
+              {selectedRecord.kind === 'canonical' ? (
+                <div className="mt-6 space-y-5">
+                  <div className="grid gap-4 sm:grid-cols-2">
+                    <div className="rounded-xl border border-zinc-800 bg-zinc-900/40 p-4">
+                      <div className="text-[10px] uppercase tracking-wider text-zinc-500">{t('Urdu meaning', 'اردو معنی')}</div>
+                      <div className="mt-2 text-base text-zinc-100">{selectedRecord.entry.urdu || '—'}</div>
+                    </div>
+                    <div className="rounded-xl border border-zinc-800 bg-zinc-900/40 p-4">
+                      <div className="text-[10px] uppercase tracking-wider text-zinc-500">{t('English meaning', 'انگریزی معنی')}</div>
+                      <div className="mt-2 text-base text-zinc-100">{selectedRecord.entry.english || '—'}</div>
+                    </div>
+                  </div>
+                  <div className="grid gap-4 sm:grid-cols-3">
+                    <div><div className="text-[10px] uppercase tracking-wider text-zinc-500">{t('Dialect / variety', 'لہجہ / قسم')}</div><div className="mt-1 text-sm text-zinc-200">{selectedRecord.entry.dialect || '—'}</div></div>
+                    <div><div className="text-[10px] uppercase tracking-wider text-zinc-500">{t('Source', 'ماخذ')}</div><div className="mt-1 text-sm text-zinc-200">{selectedRecord.entry.source || '—'}</div></div>
+                    <div><div className="text-[10px] uppercase tracking-wider text-zinc-500">{t('Verification', 'تصدیق')}</div><div className="mt-1 text-sm text-emerald-400">{selectedRecord.entry.status === 'verified' ? t('Verified', 'مصدقہ') : selectedRecord.entry.status || '—'}</div></div>
+                  </div>
+                  <div>
+                    <div className="text-[10px] uppercase tracking-wider text-zinc-500">{t('Corpus examples', 'کارپس مثالیں')}</div>
+                    {selectedRecord.entry.corpusExamples?.length ? (
+                      <div className="mt-2 space-y-2">
+                        {selectedRecord.entry.corpusExamples.map((example, index) => (
+                          <div key={index} className="rounded-xl border border-zinc-800 bg-zinc-900/40 p-3 text-sm leading-6 text-zinc-300">
+                            {example}
+                          </div>
+                        ))}
+                      </div>
+                    ) : (
+                      <div className="mt-2 rounded-xl border border-dashed border-zinc-800 p-4 text-xs leading-6 text-zinc-500">
+                        {t('No attested corpus example has been attached to this dictionary entry yet.', 'اس ڈکشنری اندراج کے ساتھ ابھی کوئی مستند کارپس مثال منسلک نہیں کی گئی۔')}
+                      </div>
+                    )}
+                  </div>
+                  {selectedRecord.entry.notes && (
+                    <div>
+                      <div className="text-[10px] uppercase tracking-wider text-zinc-500">{t('Notes / usage', 'توضیحات / استعمال')}</div>
+                      <div className="mt-1 text-sm leading-6 text-zinc-300">{selectedRecord.entry.notes}</div>
+                    </div>
+                  )}
+                  {selectedRecord.entry.sourceDataset && (
+                    <div className="text-[10px] text-zinc-600">{selectedRecord.entry.sourceDataset}</div>
+                  )}
+                </div>
+              ) : (
+                <div className="mt-6 space-y-5">
+                  <div className="grid gap-4 sm:grid-cols-3">
+                    <div className="rounded-xl border border-zinc-800 bg-zinc-900/40 p-4 sm:col-span-2">
+                      <div className="text-[10px] uppercase tracking-wider text-zinc-500">{t('Meaning', 'معنی')}</div>
+                      <div className="mt-2 text-sm leading-6 text-zinc-500">
+                        {t('Not yet verified. This record is a corpus-derived lexical candidate, not a dictionary definition.', 'ابھی تصدیق شدہ نہیں۔ یہ کارپس سے اخذ کردہ لغوی امیدوار ہے، ڈکشنری کی تعریف نہیں۔')}
+                      </div>
+                    </div>
+                    <div className="rounded-xl border border-zinc-800 bg-zinc-900/40 p-4">
+                      <div className="text-[10px] uppercase tracking-wider text-zinc-500">{t('Frequency', 'تعدد')}</div>
+                      <div className="mt-2 text-lg text-zinc-100">{selectedRecord.candidate.frequency}</div>
+                    </div>
+                  </div>
+                  <div className="grid gap-4 sm:grid-cols-2">
+                    <div><div className="text-[10px] uppercase tracking-wider text-zinc-500">{t('Source', 'ماخذ')}</div><div className="mt-1 text-sm text-zinc-200">M2.5 corpus lexicon · Common Voice 27.0</div></div>
+                    <div><div className="text-[10px] uppercase tracking-wider text-zinc-500">{t('Verification', 'تصدیق')}</div><div className="mt-1 text-sm text-amber-400">{t('Candidate — not verified', 'امیدوار — ابھی مصدقہ نہیں')}</div></div>
+                  </div>
+                  <div className="rounded-xl border border-dashed border-zinc-800 p-4 text-xs leading-6 text-zinc-500">
+                    {t('Corpus examples are not available in the current M2.5 frequency artifact. Once corpus sentence-level data is attached, examples can be displayed here without inventing translations or meanings.', 'موجودہ M2.5 تعدادی فائل میں جملہ سطح کی کارپس مثالیں موجود نہیں۔ جب جملہ سطح کا کارپس ڈیٹا منسلک ہوگا تو مثالیں یہاں دکھائی جا سکیں گی، بغیر مصنوعی معنی یا ترجمہ بنائے۔')}
+                  </div>
+                  {adminAllowed && (
+                    <button type="button" onClick={() => { setSelectedRecord(null); openAdd(selectedRecord.candidate.word); }} className="inline-flex items-center gap-2 rounded-xl bg-[#C9A66B] px-4 py-2.5 text-xs font-bold text-zinc-950">
+                      <Plus className="h-4 w-4" /> {t('Create verified entry', 'مصدقہ اندراج بنائیں')}
+                    </button>
+                  )}
+                </div>
+              )}
+            </div>
+          </div>
+        )}
+
         {showAdminForm && adminAllowed && (
           <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-4 backdrop-blur-sm">
             <form onSubmit={saveEntry} className="w-full max-w-2xl rounded-2xl border border-zinc-700 bg-zinc-950 p-5 shadow-2xl">
@@ -240,6 +395,10 @@ const Dictionary: React.FC<DictionaryProps> = ({ uiLang, firebaseUser }) => {
               <div className="mt-3 grid gap-3 sm:grid-cols-2">
                 <input value={form.dialect} onChange={(e) => setForm({ ...form, dialect: e.target.value })} placeholder={t('Dialect / variety', 'لہجہ / قسم')} className="rounded-xl border border-zinc-800 bg-zinc-900 p-3 text-sm text-zinc-100 outline-none focus:border-[#C9A66B]" />
                 <input value={form.notes} onChange={(e) => setForm({ ...form, notes: e.target.value })} placeholder={t('Notes / usage', 'توضیحات / استعمال')} className="rounded-xl border border-zinc-800 bg-zinc-900 p-3 text-sm text-zinc-100 outline-none focus:border-[#C9A66B]" />
+              </div>
+              <div className="mt-3 grid gap-3 sm:grid-cols-2">
+                <input value={form.source} onChange={(e) => setForm({ ...form, source: e.target.value })} placeholder={t('Source', 'ماخذ')} className="rounded-xl border border-zinc-800 bg-zinc-900 p-3 text-sm text-zinc-100 outline-none focus:border-[#C9A66B]" />
+                <textarea value={form.corpusExamples} onChange={(e) => setForm({ ...form, corpusExamples: e.target.value })} rows={3} placeholder={t('Corpus examples — one sentence per line', 'کارپس مثالیں — ہر سطر میں ایک جملہ')} className="rounded-xl border border-zinc-800 bg-zinc-900 p-3 text-sm text-zinc-100 outline-none focus:border-[#C9A66B]" />
               </div>
               <label className="mt-4 flex items-center gap-2 text-xs text-zinc-400">
                 <input type="checkbox" checked={form.verified} onChange={(e) => setForm({ ...form, verified: e.target.checked })} />
