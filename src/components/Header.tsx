@@ -35,7 +35,7 @@ import fikrLogo from '../assets/images/fikrcd_logo_1787381137891.jpg';
 
 interface HeaderProps {
   activeTab: 'contribute' | 'my_contributions' | 'verification_queue' | 'corpus_explorer' | 'admin_panel' | 'quality_dashboard' | 'dataset_releases' | 'nlp_workspace' | 'translation_workspace' | 'speech_workspace' | 'llm_workspace' | 'mvy_milestone_23' | 'mvy_research' | 'knowledge_center' | 'roadmap' | 'my_profile' | 'consent_license' | 'dictionary';
-  setActiveTab: (tab: 'contribute' | 'my_contributions' | 'verification_queue' | 'corpus_explorer' | 'admin_panel' | 'quality_dashboard' | 'dataset_releases' | 'nlp_workspace' | 'translation_workspace' | 'speech_workspace' | 'llm_workspace' | 'mvy_research' | 'knowledge_center' | 'roadmap' | 'my_profile' | 'consent_license' | 'dictionary') => void;
+  setActiveTab: (tab: 'contribute' | 'my_contributions' | 'verification_queue' | 'corpus_explorer' | 'admin_panel' | 'quality_dashboard' | 'dataset_releases' | 'nlp_workspace' | 'translation_workspace' | 'speech_workspace' | 'llm_workspace' | 'mvy_milestone_23' | 'mvy_research' | 'knowledge_center' | 'roadmap' | 'my_profile' | 'consent_license' | 'dictionary') => void;
   currentUser: UserProfile;
   setCurrentUser: (user: UserProfile) => void;
   uiLang: UILanguage;
