@@ -3,6 +3,7 @@ import { addDoc, collection, doc, getDoc, onSnapshot, serverTimestamp } from 'fi
 import { BookOpen, CheckCircle2, Database, ExternalLink, Plus, Search, ShieldCheck, Sparkles } from 'lucide-react';
 import { db } from '../services/firebase';
 import corpusLexicon from '../data/mvyCorpusLexicon.json';
+import corpusExamples from '../data/mvyCorpusExamples.json';
 import { User as FirebaseUser } from 'firebase/auth';
 
 type UILang = 'en' | 'ur';
@@ -27,9 +28,19 @@ interface CorpusCandidate {
   frequency: number;
 }
 
+interface CorpusExampleRecord {
+  occurrences: number;
+  examples: Array<{
+    text: string;
+    source: string;
+    page?: number;
+    line?: number;
+  }>;
+}
+
 type SelectedRecord =
   | { kind: 'canonical'; entry: DictionaryEntry }
-  | { kind: 'candidate'; candidate: CorpusCandidate };
+  | { kind: 'candidate'; candidate: CorpusCandidate; evidence?: CorpusExampleRecord };
 
 interface DictionaryProps {
   uiLang: UILang;
@@ -43,6 +54,7 @@ const Dictionary: React.FC<DictionaryProps> = ({ uiLang, firebaseUser }) => {
     Array.isArray(corpusLexicon.entries) ? corpusLexicon.entries : []
   );
   const mozillaLoading = false;
+  const corpusEvidence = (corpusExamples.entries || {}) as Record<string, CorpusExampleRecord>;
   const [query, setQuery] = useState('');
   const [showAdminForm, setShowAdminForm] = useState(false);
   const [adminAllowed, setAdminAllowed] = useState(false);
@@ -250,7 +262,7 @@ const Dictionary: React.FC<DictionaryProps> = ({ uiLang, firebaseUser }) => {
                 <div key={item.word} className="flex items-center justify-between gap-3 rounded-xl border border-zinc-800 bg-zinc-950/60 px-3 py-2.5">
                   <button
                     type="button"
-                    onClick={() => setSelectedRecord({ kind: 'candidate', candidate: item })}
+                    onClick={() => setSelectedRecord({ kind: 'candidate', candidate: item, evidence: corpusEvidence[item.word] })}
                     className="min-w-0 flex-1 text-left"
                   >
                     <span className="font-kohistani text-sm text-zinc-100">{item.word}</span>
@@ -366,8 +378,26 @@ const Dictionary: React.FC<DictionaryProps> = ({ uiLang, firebaseUser }) => {
                     <div><div className="text-[10px] uppercase tracking-wider text-zinc-500">{t('Source', 'ماخذ')}</div><div className="mt-1 text-sm text-zinc-200">M2.5 corpus lexicon · Common Voice 27.0</div></div>
                     <div><div className="text-[10px] uppercase tracking-wider text-zinc-500">{t('Verification', 'تصدیق')}</div><div className="mt-1 text-sm text-amber-400">{t('Candidate — not verified', 'امیدوار — ابھی مصدقہ نہیں')}</div></div>
                   </div>
-                  <div className="rounded-xl border border-dashed border-zinc-800 p-4 text-xs leading-6 text-zinc-500">
-                    {t('Corpus examples are not available in the current M2.5 frequency artifact. Once corpus sentence-level data is attached, examples can be displayed here without inventing translations or meanings.', 'موجودہ M2.5 تعدادی فائل میں جملہ سطح کی کارپس مثالیں موجود نہیں۔ جب جملہ سطح کا کارپس ڈیٹا منسلک ہوگا تو مثالیں یہاں دکھائی جا سکیں گی، بغیر مصنوعی معنی یا ترجمہ بنائے۔')}
+                  <div>
+                    <div className="text-[10px] uppercase tracking-wider text-zinc-500">{t('Attested corpus examples', 'مستند کارپس مثالیں')}</div>
+                    {selectedRecord.evidence?.examples?.length ? (
+                      <div className="mt-2 space-y-2">
+                        {selectedRecord.evidence.examples.map((example, index) => (
+                          <div key={index} className="rounded-xl border border-zinc-800 bg-zinc-900/40 p-3">
+                            <div className="text-sm leading-6 text-zinc-200">{example.text}</div>
+                            <div className="mt-2 text-[10px] text-zinc-600">
+                              {example.source}
+                              {example.page ? ` · page ${example.page}` : ''}
+                              {example.line ? ` · line ${example.line}` : ''}
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    ) : (
+                      <div className="mt-2 rounded-xl border border-dashed border-zinc-800 p-4 text-xs leading-6 text-zinc-500">
+                        {t('No attested example was found for this lexical candidate in the indexed corpus.', 'اس لغوی امیدوار کے لیے اشاریہ شدہ کارپس میں کوئی مستند مثال نہیں ملی۔')}
+                      </div>
+                    )}
                   </div>
                   {adminAllowed && (
                     <button type="button" onClick={() => { setSelectedRecord(null); openAdd(selectedRecord.candidate.word); }} className="inline-flex items-center gap-2 rounded-xl bg-[#C9A66B] px-4 py-2.5 text-xs font-bold text-zinc-950">
