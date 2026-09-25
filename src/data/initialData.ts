@@ -189,50 +189,12 @@ export const MILESTONES: Milestone[] = [
 ];
 
 export const DEMO_USERS: UserProfile[] = [
-  {
-    id: 'saif-director',
-    name: 'Saif Ullah',
-    role: 'project_director',
-    dialect: 'duber_kandia',
-    email: 'xl8.saif@gmail.com',
-    linkedIn: 'https://www.linkedin.com/in/xl8saif'
-  },
-  {
-    id: 'user-advisor',
-    name: 'Dr. Tariq Kohistani',
-    role: 'linguistic_advisor',
-    dialect: 'duber_kandia',
-    email: 'advisor.ik@fikrcd.org'
-  },
-  {
-    id: 'user-senior-rev',
-    name: 'Abdul Qadir Kohistani',
-    role: 'senior_reviewer',
-    dialect: 'jijal_kayal',
-    email: 'senior.reviewer@fikrcd.org'
-  },
-  {
-    id: 'user-reviewer',
-    name: 'Mirza Khan',
-    role: 'reviewer',
-    dialect: 'duber_kandia',
-    email: 'reviewer.duber@fikrcd.org'
-  },
-  {
-    id: 'user-contributor',
-    name: 'Muhammad Saeed',
-    role: 'contributor',
-    dialect: 'duber_kandia',
-    email: 'saeed.seo@gmail.com',
-    phone: '+92 345 9876543'
-  },
-  {
-    id: 'user-admin',
-    name: 'FiKR&CD Admin Team',
-    role: 'administrator',
-    dialect: 'duber_kandia',
-    email: 'admin@fikrcd.org'
-  }
+  { id: 'saif-director', name: 'Saif Ullah', role: 'project_director', dialect: 'duber_kandia', email: 'xl8.saif@gmail.com', linkedIn: 'https://www.linkedin.com/in/xl8saif' },
+  { id: 'user-advisor', name: 'Dr. Hussain Ahmad Faizy', role: 'linguistic_advisor', dialect: 'duber_kandia', email: 'info@fikrcd.org' },
+  { id: 'user-senior-rev', name: 'Mujeeb ul Haq Jailani', role: 'senior_reviewer', dialect: 'duber_kandia', email: 'info@fikrcd.org' },
+  { id: 'user-reviewer', name: 'Rasheed Ahmad Faizy', role: 'reviewer', dialect: 'duber_kandia', email: 'info@fikrcd.org' },
+  { id: 'user-contributor', name: 'Muhammad Iqbal Abasindi', role: 'contributor', dialect: 'duber_kandia', email: 'info@fikrcd.org' },
+  { id: 'user-admin', name: 'FiKR&CD Admin Team', role: 'administrator', dialect: 'duber_kandia', email: 'admin@fikrcd.org' }
 ];
 
 export const INITIAL_DEMO_CONTRIBUTIONS: Contribution[] = [
