@@ -32,8 +32,8 @@ import { LinkedInIconLink } from './LinkedInIconLink';
 import fikrLogo from '../assets/images/fikrcd_logo_1787381137891.jpg';
 
 interface HeaderProps {
-  activeTab: 'contribute' | 'my_contributions' | 'verification_queue' | 'corpus_explorer' | 'admin_panel' | 'quality_dashboard' | 'dataset_releases' | 'nlp_workspace' | 'translation_workspace' | 'speech_workspace' | 'llm_workspace' | 'mvy_milestone_23' | 'roadmap' | 'my_profile' | 'consent_license';
-  setActiveTab: (tab: 'contribute' | 'my_contributions' | 'verification_queue' | 'corpus_explorer' | 'admin_panel' | 'quality_dashboard' | 'dataset_releases' | 'nlp_workspace' | 'translation_workspace' | 'speech_workspace' | 'llm_workspace' | 'roadmap' | 'my_profile' | 'consent_license') => void;
+  activeTab: 'contribute' | 'my_contributions' | 'verification_queue' | 'corpus_explorer' | 'admin_panel' | 'quality_dashboard' | 'dataset_releases' | 'nlp_workspace' | 'translation_workspace' | 'speech_workspace' | 'llm_workspace' | 'mvy_milestone_23' | 'mvy_research' | 'roadmap' | 'my_profile' | 'consent_license';
+  setActiveTab: (tab: 'contribute' | 'my_contributions' | 'verification_queue' | 'corpus_explorer' | 'admin_panel' | 'quality_dashboard' | 'dataset_releases' | 'nlp_workspace' | 'translation_workspace' | 'speech_workspace' | 'llm_workspace' | 'mvy_research' | 'roadmap' | 'my_profile' | 'consent_license') => void;
   currentUser: UserProfile;
   setCurrentUser: (user: UserProfile) => void;
   uiLang: UILanguage;
@@ -107,7 +107,7 @@ export const Header: React.FC<HeaderProps> = ({
     { id: 'translation_workspace', label: 'MTPE Translation', sublabel: 'مشینی ترجمہ', icon: Sparkles, group: 'AI & Computational NLP' },
     { id: 'speech_workspace', label: 'Speech AI', sublabel: 'صوتی ماڈلز', icon: Mic, group: 'AI & Computational NLP' },
     { id: 'llm_workspace', label: 'LLM Benchmarks', sublabel: 'بڑے لسانی ماڈلز', icon: Brain, group: 'AI & Computational NLP' },
-    { id: 'mvy_milestone_23', label: 'Mvy Research 2.3', sublabel: 'املا اور لسانی تجزیہ', icon: BookOpen, group: 'AI & Computational NLP' },
+    { id: 'mvy_milestone_23', label: 'Mvy Research', sublabel: 'تحقیقی پروگرام', icon: BookOpen, group: 'AI & Computational NLP' },
     
     { id: 'quality_dashboard', label: 'Integrity Audit', sublabel: 'معیار کا تجزیہ', icon: Activity, group: 'Governance & System' },
     { id: 'dataset_releases', label: 'Dataset Releases', sublabel: 'ڈیٹاسیٹ ریلیز', icon: GitBranch, group: 'Governance & System' },
@@ -194,7 +194,7 @@ export const Header: React.FC<HeaderProps> = ({
               className="hidden sm:inline-flex items-center gap-1.5 rounded-lg border border-[#C9A66B]/40 bg-[#C9A66B]/10 px-2.5 py-1.5 text-xs font-semibold text-[#D4B582] hover:bg-[#C9A66B]/20 transition"
             >
               <BookOpen className="h-3.5 w-3.5" />
-              <span>Mvy 2.3 Research</span>
+              <span>Mvy Research</span>
             </button>
 
             {/* Active Workspace Indicator Pill */}
