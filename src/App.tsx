@@ -204,7 +204,14 @@ export default function App() {
           />
         )}
 
-        {activeTab === 'mvy_milestone_23' && <MvyResearchDashboard uiLang={uiLang === 'ur' ? 'ur' : 'en'} />}\n\n        {activeTab === 'knowledge_center' && (\n          <KnowledgeCenter\n            uiLang={uiLang === 'ur' ? 'ur' : 'en'}\n            onNavigate={(tab) => setActiveTab(tab)}\n          />\n        )}
+        {activeTab === 'mvy_milestone_23' && <MvyResearchDashboard uiLang={uiLang === 'ur' ? 'ur' : 'en'} />}
+
+        {activeTab === 'knowledge_center' && (
+          <KnowledgeCenter
+            uiLang={uiLang === 'ur' ? 'ur' : 'en'}
+            onNavigate={(tab) => setActiveTab(tab)}
+          />
+        )}
 
         {activeTab === 'roadmap' && (
           <RoadmapView
