@@ -73,6 +73,7 @@ export const Header: React.FC<HeaderProps> = ({
   onOpenAuthModal
 }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isPlatformOpen, setIsPlatformOpen] = useState(false);
 
   const getRoleBadgeColor = (role: UserRole) => {
     switch (role) {
@@ -102,22 +103,29 @@ export const Header: React.FC<HeaderProps> = ({
   const t = (en: string, ur: string) => uiLang === 'ur' ? ur : en;
   const navTabs: NavTabItem[] = [
     { id: 'knowledge_center', label: t('Knowledge & Data', 'علم و ڈیٹا'), sublabel: 'Knowledge & Data / علم و ڈیٹا', icon: Database, group: 'Intake & Archive' },
-    { id: 'contribute', label: t('Contribute','شمولیت'), sublabel: 'Contribute / شمولیت', icon: BookOpen, group: 'Intake & Archive' },
-    { id: 'my_contributions', label: t('My contributions','میری شمولیات'), sublabel: 'My contributions / میری شمولیات', icon: Award, count: verifiedCount, group: 'Intake & Archive' },
-    { id: 'verification_queue', label: t('Review','جائزہ'), sublabel: 'Review / جائزہ', icon: CheckSquare, count: pendingReviewCount + escalatedCount, urgent: pendingReviewCount > 0, group: 'Intake & Archive' },
-    { id: 'corpus_explorer', label: t('Corpus','لسانی ذخیرہ'), sublabel: 'Corpus / لسانی ذخیرہ', icon: Layers, group: 'Intake & Archive' },
-    { id: 'nlp_workspace', label: t('AI & NLP','اے آئی اور لسانیات'), sublabel: 'AI & NLP / اے آئی اور لسانیات', icon: Cpu, group: 'AI & Computational NLP' },
-    { id: 'translation_workspace', label: t('Translation','ترجمہ'), sublabel: 'Translation / ترجمہ', icon: Sparkles, group: 'AI & Computational NLP' },
-    { id: 'speech_workspace', label: t('Speech','صوتی تحقیق'), sublabel: 'Speech / صوتی تحقیق', icon: Mic, group: 'AI & Computational NLP' },
-    { id: 'llm_workspace', label: t('Language models','لسانی ماڈلز'), sublabel: 'Language models / لسانی ماڈلز', icon: Brain, group: 'AI & Computational NLP' },
-    { id: 'mvy_milestone_23', label: t('Research','تحقیق'), sublabel: 'Research / تحقیق', icon: BookOpen, group: 'AI & Computational NLP' },
-    { id: 'quality_dashboard', label: t('Quality','معیار'), sublabel: 'Quality / معیار', icon: Activity, group: 'Governance & System' },
-    { id: 'dataset_releases', label: t('Data releases','ڈیٹا ریلیز'), sublabel: 'Data releases / ڈیٹا ریلیز', icon: GitBranch, group: 'Governance & System' },
-    { id: 'admin_panel', label: t('Administration','انتظامیہ'), sublabel: 'Administration / انتظامیہ', icon: Settings, group: 'Governance & System' },
-    { id: 'roadmap', label: t('Project plan','منصوبہ'), sublabel: 'Project plan / منصوبہ', icon: Route, group: 'Governance & System' },
-    { id: 'consent_license', label: t('Consent & terms','رضامندی اور شرائط'), sublabel: 'Consent & terms / رضامندی اور شرائط', icon: Scale, group: 'Governance & System' },
-    { id: 'my_profile', label: t('Profile','پروفائل'), sublabel: 'Profile / پروفائل', icon: UserIcon, group: 'Governance & System' }
+    { id: 'mvy_research', label: t('Research', 'تحقیق'), sublabel: 'Research / تحقیق', icon: BookOpen, group: 'AI & Computational NLP' },
+    { id: 'corpus_explorer', label: t('Explore', 'دریافت'), sublabel: 'Explore / دریافت', icon: Layers, group: 'Intake & Archive' },
+    { id: 'contribute', label: t('Contribute', 'شمولیت'), sublabel: 'Contribute / شمولیت', icon: BookOpen, group: 'Intake & Archive' },
+    { id: 'my_profile', label: t('About FiKR&CD', 'فکر اینڈ سی ڈی'), sublabel: 'About FiKR&CD / فکر اینڈ سی ڈی', icon: UserIcon, group: 'Governance & System' },
+    { id: 'my_contributions', label: t('My contributions', 'میری شمولیات'), sublabel: 'My contributions / میری شمولیات', icon: Award, count: verifiedCount, group: 'Governance & System' },
+    { id: 'verification_queue', label: t('Review', 'جائزہ'), sublabel: 'Review / جائزہ', icon: CheckSquare, count: pendingReviewCount + escalatedCount, urgent: pendingReviewCount > 0, group: 'Governance & System' },
+    { id: 'nlp_workspace', label: t('AI & NLP', 'اے آئی اور لسانیات'), sublabel: 'AI & NLP / اے آئی اور لسانیات', icon: Cpu, group: 'AI & Computational NLP' },
+    { id: 'translation_workspace', label: t('Translation', 'ترجمہ'), sublabel: 'Translation / ترجمہ', icon: Sparkles, group: 'AI & Computational NLP' },
+    { id: 'speech_workspace', label: t('Speech', 'صوتی تحقیق'), sublabel: 'Speech / صوتی تحقیق', icon: Mic, group: 'AI & Computational NLP' },
+    { id: 'llm_workspace', label: t('Language models', 'لسانی ماڈلز'), sublabel: 'Language models / لسانی ماڈلز', icon: Brain, group: 'AI & Computational NLP' },
+    { id: 'quality_dashboard', label: t('Quality', 'معیار'), sublabel: 'Quality / معیار', icon: Activity, group: 'Governance & System' },
+    { id: 'dataset_releases', label: t('Data releases', 'ڈیٹا ریلیز'), sublabel: 'Data releases / ڈیٹا ریلیز', icon: GitBranch, group: 'Governance & System' },
+    { id: 'admin_panel', label: t('Administration', 'انتظامیہ'), sublabel: 'Administration / انتظامیہ', icon: Settings, group: 'Governance & System' },
+    { id: 'roadmap', label: t('Project plan', 'منصوبہ'), sublabel: 'Project plan / منصوبہ', icon: Route, group: 'Governance & System' },
+    { id: 'consent_license', label: t('Consent & terms', 'رضامندی اور شرائط'), sublabel: 'Consent & terms / شرائط', icon: Scale, group: 'Governance & System' }
   ];
+
+  const publicNavTabs = navTabs.filter(tab =>
+    ['knowledge_center', 'mvy_research', 'corpus_explorer', 'contribute', 'my_profile'].includes(tab.id)
+  );
+  const platformTabs = navTabs.filter(tab =>
+    !['knowledge_center', 'mvy_research', 'corpus_explorer', 'contribute', 'my_profile'].includes(tab.id)
+  );
 
   const currentActiveTabObj = navTabs.find(t => t.id === activeTab) || navTabs[0];
   const CurrentIcon = currentActiveTabObj.icon;
@@ -128,13 +136,12 @@ export const Header: React.FC<HeaderProps> = ({
   };
 
   const groupedTabs = {
-    'Intake & Archive': navTabs.filter(t => t.group === 'Intake & Archive'),
-    'AI & Computational NLP': navTabs.filter(t => t.group === 'AI & Computational NLP'),
-    'Governance & System': navTabs.filter(t => t.group === 'Governance & System'),
+    'Public': publicNavTabs
   };
+
   const groupLabel = (group: string) => uiLang === 'ur'
-    ? ({ 'Intake & Archive': 'مواد اور ذخیرہ', 'AI & Computational NLP': 'اے آئی اور کمپیوٹیشنل لسانیات', 'Governance & System': 'انتظام اور نظام' } as Record<string,string>)[group]
-    : group;
+    ? ({ 'Public': 'اہم صفحات' } as Record<string, string>)[group]
+    : 'Main navigation';
 
   return (
     <>
@@ -341,67 +348,91 @@ export const Header: React.FC<HeaderProps> = ({
               </button>
             </div>
 
-            {/* Navigation Sections */}
-            <div className="flex-1 overflow-y-auto p-4 space-y-6 scrollbar-thin">
-              {Object.entries(groupedTabs).map(([groupTitle, tabs]) => (
-                <div key={groupLabel(groupTitle)} className="space-y-2">
-                  <h4 className="text-[11px] font-bold text-zinc-500 uppercase tracking-wider px-2">
-                    {groupTitle}
-                  </h4>
-                  <div className="space-y-1">
-                    {tabs.map((tab) => {
+            {/* Simplified public navigation */}
+            <div className="flex-1 overflow-y-auto p-4 space-y-5 scrollbar-thin">
+              <div className="space-y-2">
+                <h4 className="text-[11px] font-bold text-zinc-500 uppercase tracking-wider px-2">
+                  {uiLang === 'ur' ? 'اہم صفحات' : 'Main navigation'}
+                </h4>
+                <div className="space-y-1">
+                  {publicNavTabs.map((tab) => {
+                    const Icon = tab.icon;
+                    const isActive = activeTab === tab.id || (tab.id === 'mvy_research' && activeTab === 'mvy_milestone_23');
+                    return (
+                      <button
+                        key={tab.id}
+                        id={`drawer-nav-${tab.id.replace(/_/g, '-')}`}
+                        type="button"
+                        onClick={() => handleSelectTab(tab.id)}
+                        className={`w-full flex items-center justify-between p-3 rounded-xl border text-left transition cursor-pointer ${
+                          isActive
+                            ? 'bg-[#C9A66B]/15 border-[#C9A66B] text-white shadow-xs'
+                            : 'bg-zinc-900/40 hover:bg-zinc-900 border-zinc-800/80 text-zinc-300 hover:text-white hover:border-zinc-700'
+                        }`}
+                      >
+                        <div className="flex items-center gap-3">
+                          <div className={`p-2 rounded-lg ${isActive ? 'bg-[#C9A66B] text-zinc-950' : 'bg-zinc-800 text-zinc-400'}`}>
+                            <Icon className="h-4 w-4" />
+                          </div>
+                          <div>
+                            <p className={`text-sm font-semibold ${isActive ? 'text-[#D4B582]' : 'text-zinc-200'}`}>{tab.label}</p>
+                            <p className="text-[11px] text-zinc-400 font-kohistani leading-tight" dir="rtl">{tab.sublabel}</p>
+                          </div>
+                        </div>
+                        <ChevronRight className={`h-4 w-4 ${isActive ? 'text-[#C9A66B]' : 'text-zinc-600'}`} />
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+
+              <div className="border-t border-zinc-800/80 pt-4">
+                <button
+                  type="button"
+                  onClick={() => setIsPlatformOpen(!isPlatformOpen)}
+                  aria-expanded={isPlatformOpen}
+                  className="w-full flex items-center justify-between px-3 py-2.5 rounded-xl text-left text-zinc-400 hover:text-zinc-100 hover:bg-zinc-900/60 transition"
+                >
+                  <span className="text-[11px] font-bold uppercase tracking-wider">
+                    {uiLang === 'ur' ? 'پلیٹ فارم اور ٹولز' : 'Platform & tools'}
+                  </span>
+                  <ChevronDown className={`h-4 w-4 transition-transform ${isPlatformOpen ? 'rotate-180' : ''}`} />
+                </button>
+
+                {isPlatformOpen && (
+                  <div className="mt-2 space-y-1">
+                    {platformTabs.map((tab) => {
                       const Icon = tab.icon;
                       const isActive = activeTab === tab.id;
                       return (
                         <button
                           key={tab.id}
-                          id={`drawer-nav-${tab.id.replace(/_/g, '-')}`}
+                          id={`drawer-platform-${tab.id.replace(/_/g, '-')}`}
                           type="button"
                           onClick={() => handleSelectTab(tab.id)}
-                          className={`w-full flex items-center justify-between p-2.5 rounded-xl border text-left transition cursor-pointer ${
+                          className={`w-full flex items-center justify-between p-2.5 rounded-lg border text-left transition cursor-pointer ${
                             isActive
-                              ? 'bg-[#C9A66B]/15 border-[#C9A66B] text-white shadow-xs'
-                              : 'bg-zinc-900/40 hover:bg-zinc-900 border-zinc-800/80 text-zinc-300 hover:text-white hover:border-zinc-700'
+                              ? 'bg-[#C9A66B]/10 border-[#C9A66B]/70 text-white'
+                              : 'bg-zinc-900/30 hover:bg-zinc-900 border-zinc-800/60 text-zinc-400 hover:text-zinc-200'
                           }`}
                         >
-                          <div className="flex items-center gap-3">
-                            <div className={`p-2 rounded-lg ${
-                              isActive ? 'bg-[#C9A66B] text-zinc-950' : 'bg-zinc-800 text-zinc-400'
-                            }`}>
-                              <Icon className="h-4 w-4" />
-                            </div>
-                            <div>
-                              <p className={`text-xs font-semibold ${isActive ? 'text-[#D4B582]' : 'text-zinc-200'}`}>
-                                {tab.label}
-                              </p>
-                              {tab.sublabel && (
-                                <p className="text-[12px] sm:text-xs text-zinc-400 font-kohistani leading-tight" dir="rtl">
-                                  {tab.sublabel}
-                                </p>
-                              )}
-                            </div>
+                          <div className="flex items-center gap-2.5">
+                            <Icon className="h-4 w-4 text-zinc-500" />
+                            <span className="text-xs font-medium">{tab.label}</span>
                           </div>
-
-                          <div className="flex items-center gap-2">
-                            {tab.count !== undefined && tab.count > 0 && (
-                              <span className={`text-xs font-bold px-2 py-0.5 rounded-full ${
-                                isActive 
-                                  ? 'bg-[#C9A66B] text-zinc-950 font-bold'
-                                  : tab.urgent
-                                  ? 'bg-amber-500/20 text-amber-400 border border-amber-500/40'
-                                  : 'bg-emerald-950/60 text-emerald-300 border border-emerald-800/50'
-                              }`}>
-                                {tab.count}
-                              </span>
-                            )}
-                            <ChevronRight className={`h-4 w-4 ${isActive ? 'text-[#C9A66B]' : 'text-zinc-600'}`} />
-                          </div>
+                          {tab.count !== undefined && tab.count > 0 && (
+                            <span className={`text-[10px] font-bold px-1.5 py-0.5 rounded-full ${
+                              tab.urgent
+                                ? 'bg-amber-500/20 text-amber-400 border border-amber-500/40'
+                                : 'bg-emerald-950/60 text-emerald-300 border border-emerald-800/50'
+                            }`}>{tab.count}</span>
+                          )}
                         </button>
                       );
                     })}
                   </div>
-                </div>
-              ))}
+                )}
+              </div>
             </div>
 
             {/* Drawer Footer with Director & Quick Info */}
