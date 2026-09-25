@@ -1,0 +1,12 @@
+{
+  "milestone": "M4.4",
+  "title": "Morphology & Syntax",
+  "status": "exploratory_corpus_proxies",
+  "source_sha256": "497157f27dd7928236ecf66acffda639164a17ec5bab2ee2b44c6eb7d719e176",
+  "sentences": 16612,
+  "notes": [
+    "Frequent adjacent word pairs are candidate constructions, not validated syntax.",
+    "Word-form recurrence is not sufficient to establish morpheme boundaries.",
+    "Manual linguistic annotation is required for grammatical conclusions."
+  ]
+}
