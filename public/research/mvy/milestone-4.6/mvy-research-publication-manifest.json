@@ -1,0 +1,38 @@
+{
+  "title": "FiKR&CD Mvy Linguistic Research — Milestones 4.1–4.6",
+  "status": "publication_candidate",
+  "milestones": [
+    {
+      "milestone": "M4.1",
+      "local_manifests": [],
+      "status": "awaiting_workflow_execution"
+    },
+    {
+      "milestone": "M4.2",
+      "local_manifests": [],
+      "status": "awaiting_workflow_execution"
+    },
+    {
+      "milestone": "M4.3",
+      "local_manifests": [],
+      "status": "awaiting_workflow_execution"
+    },
+    {
+      "milestone": "M4.4",
+      "local_manifests": [],
+      "status": "awaiting_workflow_execution"
+    },
+    {
+      "milestone": "M4.5",
+      "local_manifests": [],
+      "status": "awaiting_workflow_execution"
+    }
+  ],
+  "principles": [
+    "reproducibility",
+    "source provenance",
+    "explicit uncertainty",
+    "expert review before linguistic claims"
+  ],
+  "next": "M5 DOI and archival release"
+}
