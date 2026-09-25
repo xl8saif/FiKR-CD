@@ -1,0 +1,19 @@
+name: Mvy Milestone 4.2 Comparative Dardic Analysis
+on: {workflow_dispatch: {}, push: {paths: ['research/mvy/**','research/dardic/**','.github/workflows/mvy-milestone-4.2.yml']}}
+permissions: {contents: write}
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: {lfs: true}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: python research/mvy/analysis/milestone-4.2/analyze_dardic_comparison.py
+      - run: |
+          mkdir -p public/research/mvy/milestone-4.2
+          cp research/mvy/analysis/milestone-4.2/output/mvy-dardic-comparative-manifest.json public/research/mvy/milestone-4.2/
+          git config user.name 'github-actions[bot]'; git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add public/research/mvy/milestone-4.2; git diff --cached --quiet || git commit -m 'Publish Mvy M4.2 comparative manifest'; git push
+      - uses: actions/upload-artifact@v4
+        with: {name: mvy-milestone-4.2, path: research/mvy/analysis/milestone-4.2/output/, retention-days: 90}
