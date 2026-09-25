@@ -14,6 +14,8 @@ import {
   KeyRound,
   LogIn,
   Linkedin,
+  Facebook,
+  MessageCircle,
   ExternalLink
 } from 'lucide-react';
 import saifPortrait from '../assets/images/saif_ullah.jpg';
@@ -32,6 +34,7 @@ import {
 } from '../services/speechAiService';
 import { AboutProjectDirector } from './AboutProjectDirector';
 import { LinkedInIconLink } from './LinkedInIconLink';
+import { CONTRIBUTORS } from '../data/contributors';
 
 interface MyProfileProps {
   firebaseUser: FirebaseUser | null;
@@ -50,21 +53,8 @@ export const MyProfile: React.FC<MyProfileProps> = ({
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
   const [successMsg, setSuccessMsg] = useState<string | null>(null);
 
-  const contributors = [
-    ['Saif Ullah', 'Project Director · Co-founder · Researcher · Linguist · Translator · Language Technology & Localization Specialist'],
-    ['Dr. Hussain Ahmad Faizy', 'Co-founder of FiKR&CD · Book Author · Researcher · Linguist · Contributor'],
-    ['Mujeeb ul Haq Jailani', 'Native speaker · Researcher · Linguist · Contributor'],
-    ['Rasheed Ahmad Faizy', 'Native speaker · Researcher · Linguist · Contributor'],
-    ['Muhammad Iqbal Abasindi', 'Native speaker · Researcher · Linguist · Contributor'],
-    ['Ihsan Ullah', 'Native speaker · Researcher · Contributor'],
-    ['Abdul Hadi', 'Native speaker · Researcher · Contributor'],
-    ['Aslam Dani', 'Native speaker · Researcher · Contributor'],
-    ['Atta Ur Rehman Aziz', 'Native speaker · Researcher · Contributor'],
-    ['Jameel Ahmad Umang', 'Native speaker · Researcher · Contributor'],
-    ['Ahsanullah Majid', 'Native speaker · Researcher · Contributor'],
-    ['Hasan Jamil', 'Native speaker · Researcher · Contributor'],
-    ['FiKR&CD Admin Team', 'Administrator']
-  ];
+  const contributors = CONTRIBUTORS;
+
 
 
   // Form editable states
@@ -83,9 +73,9 @@ export const MyProfile: React.FC<MyProfileProps> = ({
       </p>
     </div>
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-      {contributors.map(([name, role]) => (
+      {contributors.map(({ name, role, social }) => (
         <article key={name} className="rounded-2xl bg-[#141414] border border-[#262626] p-5 hover:border-[#C9A66B]/40 transition">
-          <div className="flex items-center gap-4">
+          <div className="flex items-start gap-4">
             {name === 'Saif Ullah' && (
               <div className="h-14 w-14 rounded-xl overflow-hidden border border-[#C9A66B]/40 bg-[#161616] shrink-0">
                 <img
@@ -96,9 +86,35 @@ export const MyProfile: React.FC<MyProfileProps> = ({
                 />
               </div>
             )}
-            <div className="min-w-0">
+            <div className="min-w-0 flex-1">
               <h2 className="text-sm font-bold text-[#F5F5F5]">{name}</h2>
               <p className="mt-1.5 text-xs leading-5 text-[#999]">{role}</p>
+              <div className="flex items-center gap-1.5 mt-3">
+                {social.linkedin && (
+                  <a href={social.linkedin} target="_blank" rel="noopener noreferrer" aria-label={`${name} on LinkedIn`} title="LinkedIn"
+                    className="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-[#1B1B1B] border border-[#333] text-[#AAA] hover:text-[#0A66C2] hover:border-[#0A66C2]/50 transition">
+                    <Linkedin className="h-3.5 w-3.5" />
+                  </a>
+                )}
+                {social.facebook && (
+                  <a href={social.facebook} target="_blank" rel="noopener noreferrer" aria-label={`${name} on Facebook`} title="Facebook"
+                    className="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-[#1B1B1B] border border-[#333] text-[#AAA] hover:text-[#1877F2] hover:border-[#1877F2]/50 transition">
+                    <Facebook className="h-3.5 w-3.5" />
+                  </a>
+                )}
+                {social.whatsapp && (
+                  <a href={social.whatsapp} target="_blank" rel="noopener noreferrer" aria-label={`Contact ${name} on WhatsApp`} title="WhatsApp"
+                    className="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-[#1B1B1B] border border-[#333] text-[#AAA] hover:text-[#25D366] hover:border-[#25D366]/50 transition">
+                    <MessageCircle className="h-3.5 w-3.5" />
+                  </a>
+                )}
+                {social.email && (
+                  <a href={`mailto:${social.email}`} aria-label={`Email ${name}`} title="Email"
+                    className="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-[#1B1B1B] border border-[#333] text-[#AAA] hover:text-[#C9A66B] hover:border-[#C9A66B]/50 transition">
+                    <Mail className="h-3.5 w-3.5" />
+                  </a>
+                )}
+              </div>
             </div>
           </div>
         </article>
