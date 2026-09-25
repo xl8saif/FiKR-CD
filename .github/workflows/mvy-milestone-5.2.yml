@@ -13,4 +13,4 @@ jobs:
           mkdir -p public/research/mvy/milestone-5.2
           cp research/mvy/analysis/milestone-5.2/output/mvy-versioned-research-archive.json public/research/mvy/milestone-5.2/
           git config user.name 'github-actions[bot]'; git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add public/research/mvy/milestone-5.2; git diff --cached --quiet || git commit -m 'Publish Mvy versioned archive manifest'; git push
+          git add public/research/mvy/milestone-5.2; git diff --cached --quiet || git commit -m 'Publish Mvy versioned archive manifest'; for i in 1 2 3 4 5; do git pull --rebase origin main && git push && break; sleep 2; done
