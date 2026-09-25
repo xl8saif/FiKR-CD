@@ -20,7 +20,8 @@ export const MvyResearchDashboard: React.FC<{ uiLang?: 'en' | 'ur' }> = ({ uiLan
     : ['Corpus', 'Speech data', 'Language research', 'Public resources'];
 
   const contributors = [
-    ['Dr. Hussain Ahmad Faizy', ur ? 'فکر اینڈ سی ڈی کے شریک مالک · محقق · ماہرِ لسانیات · معاون' : 'Co-owner of FiKR&CD · Researcher · Linguist · Contributor'],
+    ['Dr. Hussain Ahmad Faizy', ur ? 'فکر اینڈ سی ڈی کے شریک بانی · کتاب مصنف · محقق · ماہرِ لسانیات · معاون' : 'Co-founder of FiKR&CD · Book Author · Researcher · Linguist · Contributor'],
+    ['Muhammad Hasan Jailani', ur ? 'کتاب مصنف · مادری زبان کے بولنے والے · مؤرخ · محقق · معاون' : 'Book Author · Native Speaker · Historian · Researcher · Contributor'],
     ['Rasheed Ahmad Faizy Adv.', ur ? 'مادری زبان کے بولنے والے · محقق · ماہرِ لسانیات · معاون' : 'Native speaker · Researcher · Linguist · Contributor'],
     ['Molana Mujib ul Haq Jailani', ur ? 'مادری زبان کے بولنے والے · محقق · ماہرِ لسانیات · معاون' : 'Native speaker · Researcher · Linguist · Contributor'],
     ['Molana Hasan Jamil', ur ? 'مادری زبان کے بولنے والے · محقق · ماہرِ لسانیات · معاون' : 'Native speaker · Researcher · Linguist · Contributor'],
