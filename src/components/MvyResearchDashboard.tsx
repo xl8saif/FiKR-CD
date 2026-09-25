@@ -20,12 +20,19 @@ export const MvyResearchDashboard: React.FC<{ uiLang?: 'en' | 'ur' }> = ({ uiLan
     : ['Corpus', 'Speech data', 'Language research', 'Public resources'];
 
   const contributors = [
+    ['Saif Ullah', ur ? 'پراجیکٹ ڈائریکٹر' : 'Project Director'],
     ['Dr. Hussain Ahmad Faizy', ur ? 'فکر اینڈ سی ڈی کے شریک بانی · کتاب مصنف · محقق · ماہرِ لسانیات · معاون' : 'Co-founder of FiKR&CD · Book Author · Researcher · Linguist · Contributor'],
-    ['Muhammad Hasan Jailani', ur ? 'کتاب مصنف · مادری زبان کے بولنے والے · مؤرخ · محقق · معاون' : 'Book Author · Native Speaker · Historian · Researcher · Contributor'],
-    ['Rasheed Ahmad Faizy Adv.', ur ? 'مادری زبان کے بولنے والے · محقق · ماہرِ لسانیات · معاون' : 'Native speaker · Researcher · Linguist · Contributor'],
-    ['Molana Mujib ul Haq Jailani', ur ? 'مادری زبان کے بولنے والے · محقق · ماہرِ لسانیات · معاون' : 'Native speaker · Researcher · Linguist · Contributor'],
-    ['Molana Hasan Jamil', ur ? 'مادری زبان کے بولنے والے · محقق · ماہرِ لسانیات · معاون' : 'Native speaker · Researcher · Linguist · Contributor'],
-    ['Iqbal Ahmad Abasindi', ur ? 'مادری زبان کے بولنے والے · محقق · ماہرِ لسانیات · معاون' : 'Native speaker · Researcher · Linguist · Contributor']
+    ['Mujeeb ul Haq Jailani', ur ? 'مقامی زبان کے بولنے والے · محقق · ماہرِ لسانیات · معاون' : 'Native speaker · Researcher · Linguist · Contributor'],
+    ['Rasheed Ahmad Faizy', ur ? 'مقامی زبان کے بولنے والے · محقق · ماہرِ لسانیات · معاون' : 'Native speaker · Researcher · Linguist · Contributor'],
+    ['Muhammad Iqbal Abasindi', ur ? 'مقامی زبان کے بولنے والے · محقق · ماہرِ لسانیات · معاون' : 'Native speaker · Researcher · Linguist · Contributor'],
+    ['Ihsan Ullah', ur ? 'مقامی زبان کے بولنے والے · محقق · معاون' : 'Native speaker · Researcher · Contributor'],
+    ['Abdul Hadi', ur ? 'مقامی زبان کے بولنے والے · محقق · معاون' : 'Native speaker · Researcher · Contributor'],
+    ['Aslam Dani', ur ? 'مقامی زبان کے بولنے والے · محقق · معاون' : 'Native speaker · Researcher · Contributor'],
+    ['Atta Ur Rehman Aziz', ur ? 'مقامی زبان کے بولنے والے · محقق · معاون' : 'Native speaker · Researcher · Contributor'],
+    ['Jameel Ahmad Umang', ur ? 'مقامی زبان کے بولنے والے · محقق · معاون' : 'Native speaker · Researcher · Contributor'],
+    ['Ahsanullah Majid', ur ? 'مقامی زبان کے بولنے والے · محقق · معاون' : 'Native speaker · Researcher · Contributor'],
+    ['Hasan Jamil', ur ? 'مقامی زبان کے بولنے والے · محقق · معاون' : 'Native speaker · Researcher · Contributor'],
+    ['FiKR&CD Admin Team', ur ? 'منتظمین' : 'Administrator']
   ];
 
   return <section className="mx-auto w-full max-w-6xl px-4 py-8 sm:py-12" dir={ur ? 'rtl' : 'ltr'}>
