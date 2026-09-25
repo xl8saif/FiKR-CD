@@ -1,0 +1,18 @@
+name: Mvy Milestone 4.6 Research Publication
+on: {workflow_dispatch: {}, push: {paths: ['research/mvy/analysis/milestone-4.6/**','research/mvy/analysis/milestone-4.[1-5]/**','.github/workflows/mvy-milestone-4.6.yml']}}
+permissions: {contents: write}
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: python research/mvy/analysis/milestone-4.6/compile_publication.py
+      - run: |
+          mkdir -p public/research/mvy/milestone-4.6
+          cp research/mvy/analysis/milestone-4.6/output/mvy-research-publication-manifest.json public/research/mvy/milestone-4.6/
+          git config user.name 'github-actions[bot]'; git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add public/research/mvy/milestone-4.6; git diff --cached --quiet || git commit -m 'Publish Mvy M4.6 research publication manifest'; git push
+      - uses: actions/upload-artifact@v4
+        with: {name: mvy-milestone-4.6, path: research/mvy/analysis/milestone-4.6/output/, retention-days: 90}
