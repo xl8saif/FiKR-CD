@@ -97,24 +97,23 @@ export const Header: React.FC<HeaderProps> = ({
     }
   };
 
+  const t = (en: string, ur: string) => uiLang === 'ur' ? ur : en;
   const navTabs: NavTabItem[] = [
-    { id: 'contribute', label: 'Contribute', sublabel: 'جمع کریں', icon: BookOpen, group: 'Intake & Archive' },
-    { id: 'my_contributions', label: 'Dashboard', sublabel: 'میری خدمات', icon: Award, count: verifiedCount, group: 'Intake & Archive' },
-    { id: 'verification_queue', label: 'Review Queue', sublabel: 'جائزہ کی قطار', icon: CheckSquare, count: pendingReviewCount + escalatedCount, urgent: pendingReviewCount > 0, group: 'Intake & Archive' },
-    { id: 'corpus_explorer', label: 'Corpus & Lexicon', sublabel: 'لغت اور ذخیرہ الفاظ', icon: Layers, group: 'Intake & Archive' },
-    
-    { id: 'nlp_workspace', label: 'AI Pipeline', sublabel: 'مصنوعی ذہانت پائپ لائن', icon: Cpu, group: 'AI & Computational NLP' },
-    { id: 'translation_workspace', label: 'MTPE Translation', sublabel: 'مشینی ترجمہ', icon: Sparkles, group: 'AI & Computational NLP' },
-    { id: 'speech_workspace', label: 'Speech AI', sublabel: 'صوتی ماڈلز', icon: Mic, group: 'AI & Computational NLP' },
-    { id: 'llm_workspace', label: 'LLM Benchmarks', sublabel: 'بڑے لسانی ماڈلز', icon: Brain, group: 'AI & Computational NLP' },
-    { id: 'mvy_milestone_23', label: 'Mvy Research', sublabel: 'تحقیقی پروگرام', icon: BookOpen, group: 'AI & Computational NLP' },
-    
-    { id: 'quality_dashboard', label: 'Integrity Audit', sublabel: 'معیار کا تجزیہ', icon: Activity, group: 'Governance & System' },
-    { id: 'dataset_releases', label: 'Dataset Releases', sublabel: 'ڈیٹاسیٹ ریلیز', icon: GitBranch, group: 'Governance & System' },
-    { id: 'admin_panel', label: 'Admin Hub', sublabel: 'انتظامی پینل', icon: Settings, group: 'Governance & System' },
-    { id: 'roadmap', label: 'Roadmap', sublabel: 'منصوبہ بندی', icon: Route, group: 'Governance & System' },
-    { id: 'consent_license', label: 'Consent & License', sublabel: 'لائسنس اور شرائط', icon: Scale, group: 'Governance & System' },
-    { id: 'my_profile', label: 'My Profile', sublabel: 'پروفائل', icon: UserIcon, group: 'Governance & System' }
+    { id: 'contribute', label: t('Contribute','شمولیت'), sublabel: 'Contribute / شمولیت', icon: BookOpen, group: 'Intake & Archive' },
+    { id: 'my_contributions', label: t('My contributions','میری شمولیات'), sublabel: 'My contributions / میری شمولیات', icon: Award, count: verifiedCount, group: 'Intake & Archive' },
+    { id: 'verification_queue', label: t('Review','جائزہ'), sublabel: 'Review / جائزہ', icon: CheckSquare, count: pendingReviewCount + escalatedCount, urgent: pendingReviewCount > 0, group: 'Intake & Archive' },
+    { id: 'corpus_explorer', label: t('Corpus','لسانی ذخیرہ'), sublabel: 'Corpus / لسانی ذخیرہ', icon: Layers, group: 'Intake & Archive' },
+    { id: 'nlp_workspace', label: t('AI & NLP','اے آئی اور لسانیات'), sublabel: 'AI & NLP / اے آئی اور لسانیات', icon: Cpu, group: 'AI & Computational NLP' },
+    { id: 'translation_workspace', label: t('Translation','ترجمہ'), sublabel: 'Translation / ترجمہ', icon: Sparkles, group: 'AI & Computational NLP' },
+    { id: 'speech_workspace', label: t('Speech','صوتی تحقیق'), sublabel: 'Speech / صوتی تحقیق', icon: Mic, group: 'AI & Computational NLP' },
+    { id: 'llm_workspace', label: t('Language models','لسانی ماڈلز'), sublabel: 'Language models / لسانی ماڈلز', icon: Brain, group: 'AI & Computational NLP' },
+    { id: 'mvy_milestone_23', label: t('Research','تحقیق'), sublabel: 'Research / تحقیق', icon: BookOpen, group: 'AI & Computational NLP' },
+    { id: 'quality_dashboard', label: t('Quality','معیار'), sublabel: 'Quality / معیار', icon: Activity, group: 'Governance & System' },
+    { id: 'dataset_releases', label: t('Data releases','ڈیٹا ریلیز'), sublabel: 'Data releases / ڈیٹا ریلیز', icon: GitBranch, group: 'Governance & System' },
+    { id: 'admin_panel', label: t('Administration','انتظامیہ'), sublabel: 'Administration / انتظامیہ', icon: Settings, group: 'Governance & System' },
+    { id: 'roadmap', label: t('Project plan','منصوبہ'), sublabel: 'Project plan / منصوبہ', icon: Route, group: 'Governance & System' },
+    { id: 'consent_license', label: t('Consent & terms','رضامندی اور شرائط'), sublabel: 'Consent & terms / رضامندی اور شرائط', icon: Scale, group: 'Governance & System' },
+    { id: 'my_profile', label: t('Profile','پروفائل'), sublabel: 'Profile / پروفائل', icon: UserIcon, group: 'Governance & System' }
   ];
 
   const currentActiveTabObj = navTabs.find(t => t.id === activeTab) || navTabs[0];
@@ -157,7 +156,7 @@ export const Header: React.FC<HeaderProps> = ({
               ) : (
                 <Menu className="h-4 w-4 text-[#C9A66B] shrink-0" />
               )}
-              <span className="font-bold tracking-wide">Menu</span>
+              <span className="font-bold tracking-wide">{uiLang === 'ur' ? 'مینو' : 'Menu'}</span>
               {(pendingReviewCount > 0 || verifiedCount > 0) && !isMenuOpen && (
                 <span className="h-2 w-2 rounded-full bg-[#C9A66B] animate-pulse" />
               )}
@@ -176,7 +175,7 @@ export const Header: React.FC<HeaderProps> = ({
                   <span className="text-sm font-bold tracking-wider text-[#C9A66B]">FiKR&CD</span>
                   <span className="text-zinc-600 hidden sm:inline">•</span>
                   <span className="hidden sm:inline-block text-xs text-zinc-300 font-medium">
-                    Indus-Kohistani Preservation
+                    Indus-Kohistani Language & Culture
                   </span>
                 </div>
                 <div className="flex items-center gap-1.5 text-[11px] text-zinc-400">
