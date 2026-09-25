@@ -17,6 +17,7 @@ import { RoadmapView } from './components/RoadmapView';
 import { MyProfile } from './components/MyProfile';
 import { ConsentLicenseView } from './components/ConsentLicenseView';
 import { MvyMilestone23 } from './components/MvyMilestone23';
+import { MvyResearchDashboard } from './components/MvyResearchDashboard';
 import { Contribution, RewardConfig, UILanguage, UserProfile } from './types';
 import { DEMO_USERS, INITIAL_REWARD_CONFIG } from './data/initialData';
 import { getStoredContributions, getStoredRewardConfig } from './services/storage';
@@ -26,7 +27,7 @@ import { LinkedInIconLink } from './components/LinkedInIconLink';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState<
-    'contribute' | 'my_contributions' | 'verification_queue' | 'corpus_explorer' | 'admin_panel' | 'quality_dashboard' | 'dataset_releases' | 'nlp_workspace' | 'translation_workspace' | 'speech_workspace' | 'llm_workspace' | 'mvy_milestone_23' | 'roadmap' | 'my_profile' | 'consent_license'
+    'contribute' | 'my_contributions' | 'verification_queue' | 'corpus_explorer' | 'admin_panel' | 'quality_dashboard' | 'dataset_releases' | 'nlp_workspace' | 'translation_workspace' | 'speech_workspace' | 'llm_workspace' | 'mvy_milestone_23' | 'mvy_research' | 'roadmap' | 'my_profile' | 'consent_license'
   >('mvy_milestone_23');
 
 
@@ -202,7 +203,7 @@ export default function App() {
           />
         )}
 
-        {activeTab === 'mvy_milestone_23' && <MvyMilestone23 />}
+        {activeTab === 'mvy_milestone_23' && <MvyResearchDashboard />}
 
         {activeTab === 'roadmap' && (
           <RoadmapView
