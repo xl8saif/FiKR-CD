@@ -129,6 +129,9 @@ export const Header: React.FC<HeaderProps> = ({
     'AI & Computational NLP': navTabs.filter(t => t.group === 'AI & Computational NLP'),
     'Governance & System': navTabs.filter(t => t.group === 'Governance & System'),
   };
+  const groupLabel = (group: string) => uiLang === 'ur'
+    ? ({ 'Intake & Archive': 'مواد اور ذخیرہ', 'AI & Computational NLP': 'اے آئی اور کمپیوٹیشنل لسانیات', 'Governance & System': 'انتظام اور نظام' } as Record<string,string>)[group]
+    : group;
 
   return (
     <>
@@ -143,7 +146,7 @@ export const Header: React.FC<HeaderProps> = ({
               id="header-hamburger-menu-btn"
               type="button"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              aria-label="Toggle navigation menu"
+              aria-label={uiLang === 'ur' ? 'نیویگیشن مینو کھولیں' : 'Toggle navigation menu'}
               aria-expanded={isMenuOpen}
               className={`flex items-center gap-2 px-3 py-1.5 rounded-xl border text-xs font-semibold transition cursor-pointer ${
                 isMenuOpen
@@ -179,7 +182,7 @@ export const Header: React.FC<HeaderProps> = ({
                   </span>
                 </div>
                 <div className="flex items-center gap-1.5 text-[11px] text-zinc-400">
-                  <span>Director: <strong className="text-zinc-200 font-medium">Saif Ullah</strong></span>
+                  <span>{uiLang === 'ur' ? 'ڈائریکٹر: ' : 'Director: '}<strong className="text-zinc-200 font-medium">Saif Ullah</strong></span>
                   <LinkedInIconLink id="header-director-linkedin-link" size={15} />
                 </div>
               </div>
@@ -221,15 +224,6 @@ export const Header: React.FC<HeaderProps> = ({
               >
                 اردو
               </button>
-              <button
-                type="button"
-                onClick={() => setUiLang('ik')}
-                className={`px-2 py-1 rounded text-[11px] font-medium transition ${
-                  uiLang === 'ik' ? 'bg-[#C9A66B] text-zinc-950 font-bold shadow-xs' : 'text-zinc-400 hover:text-zinc-200'
-                }`}
-              >
-                کُشتنی
-              </button>
             </div>
 
             {/* Live Auth Pill */}
@@ -254,7 +248,7 @@ export const Header: React.FC<HeaderProps> = ({
               ) : (
                 <>
                   <KeyRound className="h-3.5 w-3.5 text-[#C9A66B] shrink-0" />
-                  <span>Sign In</span>
+                  <span>{uiLang === 'ur' ? 'سائن اِن' : 'Sign In'}</span>
                 </>
               )}
             </button>
@@ -327,7 +321,7 @@ export const Header: React.FC<HeaderProps> = ({
             {/* Navigation Sections */}
             <div className="flex-1 overflow-y-auto p-4 space-y-6 scrollbar-thin">
               {Object.entries(groupedTabs).map(([groupTitle, tabs]) => (
-                <div key={groupTitle} className="space-y-2">
+                <div key={groupLabel(groupTitle)} className="space-y-2">
                   <h4 className="text-[11px] font-bold text-zinc-500 uppercase tracking-wider px-2">
                     {groupTitle}
                   </h4>
@@ -391,7 +385,7 @@ export const Header: React.FC<HeaderProps> = ({
             <div className="p-4 border-t border-zinc-800/80 bg-zinc-900/70 text-xs space-y-2.5">
               <div className="flex items-center justify-between">
                 <div>
-                  <p className="text-[11px] text-zinc-400">Project Director & Co-Founder</p>
+                  <p className="text-[11px] text-zinc-400">{uiLang === 'ur' ? 'پروجیکٹ ڈائریکٹر اور شریک بانی' : 'Project Director & Co-Founder'}</p>
                   <p className="font-semibold text-zinc-100 text-sm">Saif Ullah</p>
                 </div>
                 <div className="flex items-center gap-2">
@@ -402,7 +396,7 @@ export const Header: React.FC<HeaderProps> = ({
                 اِنڈَس کُستَئی ژِیباں ڈیجیٹل سَنْبَھلتُب اَں تَکْنِیْکی مَنْصُوبَہ
               </p>
               <p className="text-[10px] text-zinc-500">
-                FiKR&CD Platform • Indus-Kohistani Language Preservation Initiative
+                {uiLang === 'ur' ? 'فکر اینڈ سی ڈی پلیٹ فارم • انڈس کوہستانی زبان کے تحفظ کا منصوبہ' : 'FiKR&CD Platform • Indus-Kohistani Language Preservation Initiative'}
               </p>
             </div>
           </div>
