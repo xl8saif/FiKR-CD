@@ -6,8 +6,6 @@ on:
     paths:
       - 'research/mvy/source/1765213289901-Mvy_text_corpus.tar.gz'
       - 'research/mvy/analysis/milestone-corpus-examples/**'
-      - 'src/data/mvyCorpusLexicon.json'
-      - 'src/data/mvyCorpusFullLexicon.json'
       - '.github/workflows/mvy-corpus-examples.yml'
 
 permissions:
