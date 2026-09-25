@@ -1,0 +1,16 @@
+name: Mvy Milestone 5.4 Research API
+on: {workflow_dispatch: {}, push: {paths: ['public/research/mvy/**','research/mvy/analysis/milestone-5.4/**','.github/workflows/mvy-milestone-5.4.yml']}}
+permissions: {contents: write}
+jobs:
+  api:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: python research/mvy/analysis/milestone-5.4/build_research_api.py
+      - run: |
+          mkdir -p public/research/mvy/milestone-5.4
+          cp research/mvy/analysis/milestone-5.4/output/mvy-research-api-index.json public/research/mvy/milestone-5.4/index.json
+          git config user.name 'github-actions[bot]'; git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add public/research/mvy/milestone-5.4; git diff --cached --quiet || git commit -m 'Publish Mvy research API index'; git push
