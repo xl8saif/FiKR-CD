@@ -1,72 +1,155 @@
 {
-  "api_version": "1.0",
-  "generated": "2026-09-25T05:39:40.530347+00:00",
+  "api_version": "1.1",
+  "generated": "2026-09-25T06:24:52.311077+00:00",
   "language": "mvy",
   "name": "FiKR&CD Mvy Research API",
-  "endpoints": {
-    "index": "/research/mvy/milestone-5.4/index.json"
-  },
   "resources": [
     {
-      "path": "/public/research/mvy/milestone-2/mvy-milestone-2-release-manifest.json",
-      "milestone": "2.12",
-      "title": "Milestone 2 Research Report & Dataset Release"
-    },
-    {
-      "path": "/public/research/mvy/milestone-2.10/mvy-inventory-validation-manifest.json",
-      "milestone": "2.10",
-      "title": "Orthographic Inventory Validation"
-    },
-    {
-      "path": "/public/research/mvy/milestone-2.11/mvy-lexical-morphology-manifest.json",
-      "milestone": "2.11",
-      "title": "Lexical & Morphological Analysis"
-    },
-    {
-      "path": "/public/research/mvy/milestone-2.3/mvy-grapheme-inventory.json",
       "milestone": "2.3",
-      "title": null
+      "path": "/public/research/mvy/milestone-2.3/mvy-grapheme-inventory.json",
+      "status": "published",
+      "title": null,
+      "manifest_milestone": "2.3"
     },
     {
-      "path": "/public/research/mvy/milestone-2.5/mvy-lexical-frequency-manifest.json",
       "milestone": "2.5",
-      "title": "Lexical Frequency & Hapax Analysis"
+      "path": "/public/research/mvy/milestone-2.5/mvy-lexical-frequency-manifest.json",
+      "status": "published",
+      "title": "Lexical Frequency & Hapax Analysis",
+      "manifest_milestone": "2.5"
     },
     {
-      "path": "/public/research/mvy/milestone-2.6/mvy-diacritic-manifest.json",
       "milestone": "2.6",
-      "title": "Diacritic & Combining-Mark Analysis"
+      "path": "/public/research/mvy/milestone-2.6/mvy-diacritic-manifest.json",
+      "status": "published",
+      "title": "Diacritic & Combining-Mark Analysis",
+      "manifest_milestone": "2.6"
     },
     {
-      "path": "/public/research/mvy/milestone-2.7/mvy-aspirated-manifest.json",
       "milestone": "2.7",
-      "title": "Aspirated Consonant Analysis"
+      "path": "/public/research/mvy/milestone-2.7/mvy-aspirated-manifest.json",
+      "status": "published",
+      "title": "Aspirated Consonant Analysis",
+      "manifest_milestone": "2.7"
     },
     {
-      "path": "/public/research/mvy/milestone-2.9/mvy-rare-anomalous-manifest.json",
+      "milestone": "2.8",
+      "path": "/public/research/mvy/milestone-2.8/mvy-special-letter-manifest.json",
+      "status": "workflow_pending"
+    },
+    {
       "milestone": "2.9",
-      "title": "Rare & Anomalous Sequence Detection"
+      "path": "/public/research/mvy/milestone-2.9/mvy-rare-anomalous-manifest.json",
+      "status": "published",
+      "title": "Rare & Anomalous Sequence Detection",
+      "manifest_milestone": "2.9"
     },
     {
+      "milestone": "2.10",
+      "path": "/public/research/mvy/milestone-2.10/mvy-inventory-validation-manifest.json",
+      "status": "published",
+      "title": "Orthographic Inventory Validation",
+      "manifest_milestone": "2.10"
+    },
+    {
+      "milestone": "2.11",
+      "path": "/public/research/mvy/milestone-2.11/mvy-lexical-morphology-manifest.json",
+      "status": "published",
+      "title": "Lexical & Morphological Analysis",
+      "manifest_milestone": "2.11"
+    },
+    {
+      "milestone": "2",
+      "path": "/public/research/mvy/milestone-2/mvy-milestone-2-release-manifest.json",
+      "status": "published",
+      "title": "Milestone 2 Research Report & Dataset Release",
+      "manifest_milestone": "2.12"
+    },
+    {
+      "milestone": "3.1",
+      "path": "/public/research/mvy/milestone-3.1/mvy-asr-preparation-manifest.json",
+      "status": "workflow_pending"
+    },
+    {
+      "milestone": "3.2",
       "path": "/public/research/mvy/milestone-3.2/mvy-audio-text-qc-manifest.json",
-      "milestone": "M3.2",
-      "title": "Audio–Text Quality Control"
+      "status": "published",
+      "title": "Audio–Text Quality Control",
+      "manifest_milestone": "M3.2"
     },
     {
+      "milestone": "3.3",
       "path": "/public/research/mvy/milestone-3.3/mvy-speaker-recording-metadata-manifest.json",
-      "milestone": "M3.3",
-      "title": "Speaker & Recording Metadata"
+      "status": "published",
+      "title": "Speaker & Recording Metadata",
+      "manifest_milestone": "M3.3"
     },
     {
+      "milestone": "3.4",
       "path": "/public/research/mvy/milestone-3.4/mvy-asr-split-manifest.json",
-      "milestone": "M3.4",
-      "title": "Train Validation Test Splits"
+      "status": "published",
+      "title": "Train Validation Test Splits",
+      "manifest_milestone": "M3.4"
     },
     {
+      "milestone": "3.5",
       "path": "/public/research/mvy/milestone-3.5/mvy-asr-dataset-release-manifest.json",
-      "milestone": "M3.5",
-      "title": "ASR Dataset Release"
+      "status": "published",
+      "title": "ASR Dataset Release",
+      "manifest_milestone": "M3.5"
+    },
+    {
+      "milestone": "4.1",
+      "path": "/public/research/mvy/milestone-4.1/mvy-linguistic-corpus-manifest.json",
+      "status": "workflow_pending"
+    },
+    {
+      "milestone": "4.2",
+      "path": "/public/research/mvy/milestone-4.2/mvy-dardic-comparative-manifest.json",
+      "status": "workflow_pending"
+    },
+    {
+      "milestone": "4.3",
+      "path": "/public/research/mvy/milestone-4.3/mvy-phonology-orthography-manifest.json",
+      "status": "workflow_pending"
+    },
+    {
+      "milestone": "4.4",
+      "path": "/public/research/mvy/milestone-4.4/mvy-morphology-syntax-manifest.json",
+      "status": "workflow_pending"
+    },
+    {
+      "milestone": "4.5",
+      "path": "/public/research/mvy/milestone-4.5/mvy-lexicon-manifest.json",
+      "status": "workflow_pending"
+    },
+    {
+      "milestone": "4.6",
+      "path": "/public/research/mvy/milestone-4.6/mvy-research-publication-manifest.json",
+      "status": "workflow_pending"
+    },
+    {
+      "milestone": "5.2",
+      "path": "/public/research/mvy/milestone-5.2/mvy-versioned-research-archive.json",
+      "status": "workflow_pending"
+    },
+    {
+      "milestone": "5.3",
+      "path": "/public/research/mvy/milestone-5.3/fikrcd-institutional-publication-package.json",
+      "status": "workflow_pending"
+    },
+    {
+      "milestone": "5.4",
+      "path": "/public/research/mvy/milestone-5.4/index.json",
+      "status": "published",
+      "title": null,
+      "manifest_milestone": null
     }
   ],
-  "note": "Static discovery index; source files and upstream licenses remain authoritative."
+  "omitted_milestone": "5.1 DOI release (intentionally skipped pending external DOI publication)",
+  "notes": [
+    "workflow_pending means the repository workflow is implemented but its generated public manifest is not present in the default branch.",
+    "This index never fabricates analysis results.",
+    "Source files and upstream licenses remain authoritative."
+  ]
 }
