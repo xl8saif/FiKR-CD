@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-type Resource = { id: string; title: string; milestone?: string; status?: string; description?: string };
+type Resource = { id: string; title: string; milestone?: string; status?: string; description?: string; path?: string };
 type Index = { schema_version?: string; resources?: Resource[] };
 
 export const MvyResearchDashboard: React.FC<{ uiLang?: 'en' | 'ur' }> = ({ uiLang = 'en' }) => {
