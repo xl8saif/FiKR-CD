@@ -103,7 +103,7 @@ export const Header: React.FC<HeaderProps> = ({
   const t = (en: string, ur: string) => uiLang === 'ur' ? ur : en;
   const navTabs: NavTabItem[] = [
     { id: 'knowledge_center', label: t('Knowledge & Data', 'علم و ڈیٹا'), sublabel: 'Knowledge & Data / علم و ڈیٹا', icon: Database, group: 'Intake & Archive' },
-    { id: 'mvy_research', label: t('Research', 'تحقیق'), sublabel: 'Research / تحقیق', icon: BookOpen, group: 'AI & Computational NLP' },
+    { id: 'mvy_milestone_23', label: t('Research', 'تحقیق'), sublabel: 'Research / تحقیق', icon: BookOpen, group: 'AI & Computational NLP' },
     { id: 'corpus_explorer', label: t('Explore', 'دریافت'), sublabel: 'Explore / دریافت', icon: Layers, group: 'Intake & Archive' },
     { id: 'contribute', label: t('Contribute', 'شمولیت'), sublabel: 'Contribute / شمولیت', icon: BookOpen, group: 'Intake & Archive' },
     { id: 'my_profile', label: t('About FiKR&CD', 'فکر اینڈ سی ڈی'), sublabel: 'About FiKR&CD / فکر اینڈ سی ڈی', icon: UserIcon, group: 'Governance & System' },
@@ -121,7 +121,7 @@ export const Header: React.FC<HeaderProps> = ({
   ];
 
   const publicNavTabs = navTabs.filter(tab =>
-    ['knowledge_center', 'mvy_research', 'corpus_explorer', 'contribute', 'my_profile'].includes(tab.id)
+    ['knowledge_center', 'mvy_milestone_23', 'corpus_explorer', 'contribute', 'my_profile'].includes(tab.id)
   );
   const platformTabs = navTabs.filter(tab =>
     !['knowledge_center', 'mvy_research', 'corpus_explorer', 'contribute', 'my_profile'].includes(tab.id)
@@ -357,7 +357,7 @@ export const Header: React.FC<HeaderProps> = ({
                 <div className="space-y-1">
                   {publicNavTabs.map((tab) => {
                     const Icon = tab.icon;
-                    const isActive = activeTab === tab.id || (tab.id === 'mvy_research' && activeTab === 'mvy_milestone_23');
+                    const isActive = activeTab === tab.id || (tab.id === 'mvy_milestone_23' && activeTab === 'mvy_milestone_23');
                     return (
                       <button
                         key={tab.id}
