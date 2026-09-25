@@ -6,7 +6,7 @@ ROOT=Path(__file__).resolve().parents[4]; MVY=ROOT/"research/mvy/source/common-v
 def sha(p):
  h=hashlib.sha256()
  with p.open("rb") as f:
-  for b in iter(lambda:f.read(1048576),b): h.update(b)
+  for b in iter(lambda: f.read(1048576), b''): h.update(b)
  return h.hexdigest()
 def words(s): return re.findall(r"[^\W\d_]+(?:[’'-][^\W\d_]+)*",unicodedata.normalize("NFC",s),re.UNICODE)
 def profile(path):
