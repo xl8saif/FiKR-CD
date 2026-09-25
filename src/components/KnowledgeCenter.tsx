@@ -17,7 +17,7 @@ import {
 
 interface KnowledgeCenterProps {
   uiLang: 'en' | 'ur';
-  onNavigate: (tab: 'contribute' | 'corpus_explorer' | 'mvy_milestone_23') => void;
+  onNavigate: (tab: 'contribute' | 'corpus_explorer' | 'mvy_milestone_23' | 'dictionary') => void;
 }
 
 interface ResearchResource {
@@ -59,6 +59,16 @@ export const KnowledgeCenter: React.FC<KnowledgeCenterProps> = ({ uiLang, onNavi
       ),
       action: t('Open corpus', 'متنی ذخیرہ کھولیں'),
       tab: 'corpus_explorer' as const,
+    },
+    {
+      icon: BookOpen,
+      title: t('Indus-Kohistani Dictionary', 'انڈس کوہستانی ڈکشنری'),
+      text: t(
+        'Browse Mozilla Common Voice lexical candidates and the growing FiKR&CD human-verified dictionary.',
+        'Mozilla Common Voice کے لسانی امیدوار الفاظ اور FiKR&CD کی بڑھتی ہوئی انسانی طور پر مصدقہ ڈکشنری دیکھیں۔'
+      ),
+      action: t('Open dictionary', 'ڈکشنری کھولیں'),
+      tab: 'dictionary' as const,
     },
     {
       icon: Languages,
