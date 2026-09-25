@@ -1,0 +1,18 @@
+{
+  "milestone": "M4.5",
+  "title": "Lexicon & Dictionary",
+  "status": "corpus_derived_lexical_resource",
+  "source_sha256": "497157f27dd7928236ecf66acffda639164a17ec5bab2ee2b44c6eb7d719e176",
+  "types": 7261,
+  "entries": 7261,
+  "scope": "Frequency lexicon with corpus examples; not a semantic dictionary.",
+  "future_annotation": [
+    "part of speech",
+    "sense",
+    "definition",
+    "etymology",
+    "dialect",
+    "citation",
+    "speaker metadata"
+  ]
+}
