@@ -26,5 +26,18 @@ export const MvyResearchDashboard: React.FC = () => {
         {!resources.length && <div className="py-8 text-sm text-zinc-500">Research resources are loading.</div>}
       </div>
     </div>
+    <div className="mt-10">
+      <h2 className="text-base font-medium text-zinc-200">FiKR&CD contributors</h2>
+      <p className="mt-1 text-xs leading-5 text-zinc-500">Native speakers, researchers, linguists and contributors to the Indus-Kohistani language and cultural research programme.</p>
+      <div className="mt-4 grid gap-px overflow-hidden rounded-xl border border-zinc-800 bg-zinc-800 sm:grid-cols-2">
+        {[
+          ['Dr. Hussain Ahmad Faizy','Co-owner of FiKR&CD · Researcher · Linguist · Contributor'],
+          ['Rasheed Ahmad Faizy Adv.','Native speaker · Researcher · Linguist · Contributor'],
+          ['Molana Mujib ul Haq Jailani','Native speaker · Researcher · Linguist · Contributor'],
+          ['Molana Hasan Jamil','Native speaker · Researcher · Linguist · Contributor'],
+          ['Iqbal Ahmad Abasindi','Native speaker · Researcher · Linguist · Contributor']
+        ].map(([name,role])=><div key={name} className="bg-zinc-950 px-4 py-4"><div className="text-sm text-zinc-200">{name}</div><div className="mt-1 text-xs text-zinc-500">{role}</div></div>)}
+      </div>
+    </div>
   </section>;
 };
