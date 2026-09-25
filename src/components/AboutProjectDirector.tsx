@@ -132,8 +132,11 @@ const CAREER_TIMELINE: TimelineEvent[] = [
 
 export const AboutProjectDirector: React.FC<AboutProjectDirectorProps> = ({
   className = '',
-  showCardWrapper = true
+  showCardWrapper = true,
+  uiLang = 'en'
 }) => {
+  const t = (en: string, ur: string) => uiLang === 'ur' ? ur : en;
+
   const [activeTab, setActiveTab] = useState<EvidenceTabSection>('overview');
   const [selectedLedgerCategory, setSelectedLedgerCategory] = useState<EvidenceFilterCategory>('all');
   const [ledgerSearch, setLedgerSearch] = useState('');
