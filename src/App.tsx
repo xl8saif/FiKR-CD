@@ -80,7 +80,7 @@ export default function App() {
   ).length;
 
   return (
-    <div className="min-h-screen bg-[#0C0C0C] text-[#E5E5E5] flex flex-col font-sans selection:bg-[#C9A66B] selection:text-[#0C0C0C]">
+    <div className={`min-h-screen bg-[#0C0C0C] text-[#E5E5E5] flex flex-col font-sans selection:bg-[#C9A66B] selection:text-[#0C0C0C] ${uiLang === 'ur' ? 'lang-ur' : ''}`}>
       {/* Sticky Header with real Firebase Auth Status and separated testing persona */}
       <Header
         activeTab={activeTab}
