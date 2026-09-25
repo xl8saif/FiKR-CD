@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+import regex as rx\n#!/usr/bin/env python3
 """M4.3 descriptive phonology/orthography evidence from orthographic corpus."""
 from pathlib import Path
 import csv,json,re,unicodedata,hashlib
