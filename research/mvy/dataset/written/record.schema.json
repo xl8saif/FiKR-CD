@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "FiKR&CD Mvy Written Dataset Record",
+  "type": "object",
+  "required": ["id", "source", "text", "language"],
+  "properties": {
+    "id": {"type": "string"},
+    "source": {"type": "string"},
+    "text": {"type": "string"},
+    "language": {"const": "mvy"},
+    "document": {"type": "string"},
+    "page": {"type": ["integer", "null"], "minimum": 1},
+    "line": {"type": ["integer", "null"], "minimum": 1},
+    "normalized": {"type": ["string", "null"]},
+    "quality": {
+      "type": "object",
+      "properties": {
+        "text_present": {"type": "boolean"},
+        "unicode_nfc": {"type": "boolean"},
+        "normalization_changed": {"type": "boolean"},
+        "duplicate": {"type": "boolean"}
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
