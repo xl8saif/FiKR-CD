@@ -60,7 +60,8 @@ export const MyProfile: React.FC<MyProfileProps> = ({
     'Co-founder of FiKR&CD · Book Author · Researcher · Linguist · Contributor': 'FiKR&CD کے شریک بانی · کتاب کے مصنف · محقق · ماہر لسانیات · معاون',
     'Native speaker · Researcher · Linguist · Contributor': 'مادری زبان بولنے والے · محقق · ماہر لسانیات · معاون',
     'Native speaker · Researcher · Contributor': 'مادری زبان بولنے والے · محقق · معاون',
-    'Administrator': 'منتظم'
+    'Administrator': 'منتظم',
+    'Contributor': 'معاون'
   } as Record<string, string>)[role] || role : role;
 
 
@@ -256,10 +257,10 @@ export const MyProfile: React.FC<MyProfileProps> = ({
           <div>
             <div className="flex items-center gap-2 flex-wrap">
               <h1 className="text-lg font-bold text-[#F5F5F5]">
-                {profile?.displayName || 'Contributor Profile'}
+                {profile?.displayName || t('Contributor Profile','معاون پروفائل')}
               </h1>
               <span className="text-[10px] font-mono font-bold px-2 py-0.5 rounded-full bg-emerald-950/60 text-emerald-300 border border-emerald-800/40">
-                {profile?.role || 'Contributor'}
+                {localizeRole(profile?.role || 'Contributor')}
               </span>
             </div>
             <p className="text-xs text-[#888] font-mono mt-0.5">
