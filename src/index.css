@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&display=swap');
 @import "tailwindcss";
 
 @layer base {
@@ -16,7 +17,7 @@
 
 /* Urdu & Nastaliq Typography with proper baseline clearance */
 .font-urdu {
-  font-family: 'Noto Nastaliq Urdu', 'Amiri', 'Noto Sans Arabic', serif;
+  font-family: 'Scheherazade New', 'Scheherazade', 'Noto Sans Arabic', serif;
   line-height: 2.2;
   font-feature-settings: "kern" 1, "liga" 1;
 }
@@ -65,3 +66,19 @@
   background: #444444;
 }
 
+
+
+/* Urdu interface typography: use Scheherazade New throughout the Urdu UI. */
+.lang-ur,
+.lang-ur * {
+  font-family: 'Scheherazade New', 'Scheherazade', 'Noto Sans Arabic', serif;
+}
+
+.lang-ur .font-mono,
+.lang-ur .font-mono-code,
+.lang-ur code,
+.lang-ur pre,
+.lang-ur input[type='email'],
+.lang-ur input[type='url'] {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
