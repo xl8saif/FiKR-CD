@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { 
-  BookOpen,\n  Database, 
+  BookOpen,
+  Database, 
   CheckSquare, 
   Award, 
   Settings, 
