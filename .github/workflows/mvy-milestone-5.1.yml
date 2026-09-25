@@ -13,5 +13,5 @@ jobs:
       - run: |
           mkdir -p public/research/mvy/milestone-5.1
           cp research/mvy/analysis/milestone-5.1/output/mvy-doi-release-metadata.json public/research/mvy/milestone-5.1/
-          git config user.name 'github-actions[bot]'; git config user.email '41898282+users.noreply.github.com'
+          git config user.name 'github-actions[bot]'; git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add public/research/mvy/milestone-5.1; git diff --cached --quiet || git commit -m 'Publish Mvy DOI release metadata'; git push
