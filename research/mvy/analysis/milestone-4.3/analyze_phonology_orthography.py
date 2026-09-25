@@ -8,7 +8,7 @@ ROOT=Path(__file__).resolve().parents[4]; SRC=ROOT/"research/mvy/source/common-v
 def sha(p):
  h=hashlib.sha256()
  with p.open("rb") as f:
-  for b in iter(lambda:f.read(1048576),b):h.update(b)
+  for b in iter(lambda: f.read(1048576), b''): h.update(b)
  return h.hexdigest()
 def gs(s): return re.findall(r"\X",unicodedata.normalize("NFC",s))
 with SRC.open(encoding="utf-8-sig",newline="") as f: rs=list(csv.DictReader(f,delimiter="\t"))
