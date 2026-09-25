@@ -1,0 +1,175 @@
+{
+  "milestone": "M5.2",
+  "title": "Versioned Research Archive",
+  "schema_version": "1.0",
+  "file_count": 33,
+  "files": [
+    {
+      "path": "research/mvy/analysis/milestone-2-orthographic-lexical-report.md",
+      "sha256": "c91b1f1212b69d650bea510e2bd7c7271089d0dd74be210237287c557548f38d",
+      "bytes": 8408
+    },
+    {
+      "path": "research/mvy/analysis/milestone-2.1-unique-lexical-report.md",
+      "sha256": "ce5c5013d43ce6d75e803a0b89bdc43ad989afa6a8c3db379571bed8c6d5e76a",
+      "bytes": 3807
+    },
+    {
+      "path": "research/mvy/analysis/milestone-2.10/validate_mvy_inventory.py",
+      "sha256": "82c80837d2ddad45d44a7044b04dadaf03d1575035d6200a42abbdac6d6a7d09",
+      "bytes": 7045
+    },
+    {
+      "path": "research/mvy/analysis/milestone-2.11/analyze_mvy_morphology.py",
+      "sha256": "695cae4905c27d149dcc464cef1ea569ee9070a1cd0f5aaa27d3908654427856",
+      "bytes": 5782
+    },
+    {
+      "path": "research/mvy/analysis/milestone-2.12/compile_mvy_milestone2_release.py",
+      "sha256": "192b0b57c738927f8cf0596af9a513b94aaaed87eaa4157e8cd8d7137fe5c0cc",
+      "bytes": 3056
+    },
+    {
+      "path": "research/mvy/analysis/milestone-2.2-orthographic-inventory-report.md",
+      "sha256": "08b313a744bea03acfde75575bdba90246ca7712fa459f5ae762b77e7811b325",
+      "bytes": 4298
+    },
+    {
+      "path": "research/mvy/analysis/milestone-2.3/analyze_mvy_graphemes.py",
+      "sha256": "7d39c0e7496c7dacef07d00fd9d37dedcf7acbbabce6fb2f8606f34d228442d2",
+      "bytes": 7578
+    },
+    {
+      "path": "research/mvy/analysis/milestone-2.4/analyze_mvy_orthography.py",
+      "sha256": "66009a6d509b21c7b3eed56156f20bb44180f06f6889e7790c2d1035c3b10405",
+      "bytes": 7828
+    },
+    {
+      "path": "research/mvy/analysis/milestone-2.5/analyze_mvy_lexicon.py",
+      "sha256": "1aad7dbe1a810bff8dabb00343b79a9469c48e87b809567e510752f5fb55e184",
+      "bytes": 7483
+    },
+    {
+      "path": "research/mvy/analysis/milestone-2.6/analyze_mvy_diacritics.py",
+      "sha256": "cff919b2ec66b756ac37907fb5a4b492c6b2ce8f101e46f7daf3d96da70dfcd0",
+      "bytes": 7871
+    },
+    {
+      "path": "research/mvy/analysis/milestone-2.7/analyze_mvy_aspirated.py",
+      "sha256": "cc4d3d1839bb49f91f9a61aac23b14bbea35325060580b30c85c3d11fc61ccb4",
+      "bytes": 6066
+    },
+    {
+      "path": "research/mvy/analysis/milestone-2.8/analyze_mvy_special_letters.py",
+      "sha256": "a6f37fd81e3d5b0caff0e3845b0cea4458f69fd39fae70d862f12bdd62cb1727",
+      "bytes": 10944
+    },
+    {
+      "path": "research/mvy/analysis/milestone-2.9/analyze_mvy_rare_anomalous.py",
+      "sha256": "5b2752b761de5f637f2a2c39bf070ec91baa566c6ddc2c56f2f710b45b8eb38e",
+      "bytes": 8488
+    },
+    {
+      "path": "research/mvy/analysis/milestone-3.1/prepare_mvy_asr_dataset.py",
+      "sha256": "cd022ad88cfb6db562ce6ea336fa58854efa4a09fa7123e3bdd8687f90baa774",
+      "bytes": 7591
+    },
+    {
+      "path": "research/mvy/analysis/milestone-3.2/analyze_mvy_audio_text_qc.py",
+      "sha256": "8efc12f5d8258232b27df09fe19c5998eee22a1e11f8e266142e04b934b4d759",
+      "bytes": 7019
+    },
+    {
+      "path": "research/mvy/analysis/milestone-3.3/analyze_mvy_speaker_metadata.py",
+      "sha256": "50b1f75acf17bf1c07aec73158a07776b10520a2ef53e16e6ed50fe49fae2110",
+      "bytes": 5649
+    },
+    {
+      "path": "research/mvy/analysis/milestone-3.4/create_mvy_asr_splits.py",
+      "sha256": "76a9bc3e3970dc3812d76fcc56bc78d7b6cc995f4f34b2ec6cb1c41ddb04b4f0",
+      "bytes": 5128
+    },
+    {
+      "path": "research/mvy/analysis/milestone-3.5/release_mvy_asr_dataset.py",
+      "sha256": "da405e7832d6ad2e76d3fd0c6dae82a6b47cd52c10d9017c3709fe5964b2f5c6",
+      "bytes": 3364
+    },
+    {
+      "path": "research/mvy/analysis/milestone-4.1/analyze_mvy_linguistic_corpus.py",
+      "sha256": "cc6f68b167c429b6bc478b081bcf245111d6d692670f501d9b61b8d2ecad6cee",
+      "bytes": 5334
+    },
+    {
+      "path": "research/mvy/analysis/milestone-4.2/analyze_dardic_comparison.py",
+      "sha256": "6a6535c628f1fafce30e3bccfa23d466ed1e5461b7718771f335072bad9ea850",
+      "bytes": 2577
+    },
+    {
+      "path": "research/mvy/analysis/milestone-4.3/analyze_phonology_orthography.py",
+      "sha256": "1184b78f1bc78e0cb0176b1ce6b56bf3ed7d824e06b6f8b230c135f04f1cbc4a",
+      "bytes": 2470
+    },
+    {
+      "path": "research/mvy/analysis/milestone-4.4/analyze_morphology_syntax.py",
+      "sha256": "cd7aa97fe3bc4bd3071177d1c6c71ef784e2d4b428179a6cc4f949ac650ed103",
+      "bytes": 2301
+    },
+    {
+      "path": "research/mvy/analysis/milestone-4.5/build_lexicon.py",
+      "sha256": "d9539c2db1b18c88ba633793e8a9281930a76da03d53c0d7d8fd802ba4d1ee1a",
+      "bytes": 1826
+    },
+    {
+      "path": "research/mvy/analysis/milestone-4.6/compile_publication.py",
+      "sha256": "3a109d4a21175930466347fefc87fb7af1290715b6247af2d4b0cc8ddbcef275",
+      "bytes": 1711
+    },
+    {
+      "path": "research/mvy/analysis/milestone-5.1/create_doi_release.py",
+      "sha256": "5ac1b67bfa62cae8752ea32e984305c9af187692a732bfc265da6f3fcf89d675",
+      "bytes": 1153
+    },
+    {
+      "path": "research/mvy/analysis/milestone-5.2/build_archive_manifest.py",
+      "sha256": "fd17fb9bec107fecf2d5723f91aa0a042cd9a1ab937403dc18429ba104f8dc55",
+      "bytes": 992
+    },
+    {
+      "path": "research/mvy/analysis/milestone-5.3/build_institutional_package.py",
+      "sha256": "ade39be7a8c647dcd07b417ccf0705540895a2689b5557ca1da11b87a6ea9b6a",
+      "bytes": 1261
+    },
+    {
+      "path": "research/mvy/analysis/milestone-5.4/build_research_api.py",
+      "sha256": "3eb69d98d91d6ba860c57a9aa2c0c8fa7fb626f18be5f481987fc015c5d8f0f2",
+      "bytes": 2390
+    },
+    {
+      "path": "research/mvy/analysis/mvy-character-ngrams.csv",
+      "sha256": "1fcbc40470130bc9ba63c3e212a36806988cb5f812be33c1616db31c86f33140",
+      "bytes": 9458
+    },
+    {
+      "path": "research/mvy/analysis/mvy-milestone-2.1-summary.json",
+      "sha256": "b219c03698b1282b42eefcf7ca7886f8ad73efb7f0e3a40a2f88a7a4a88a41a2",
+      "bytes": 13167
+    },
+    {
+      "path": "research/mvy/analysis/mvy-orthographic-variant-candidates.csv",
+      "sha256": "a0f4c86edaf125c3b7991eda3123c00fcf57337c623db40b423d50f3e404ea41",
+      "bytes": 779
+    },
+    {
+      "path": "research/mvy/analysis/mvy-orthography-exceptions.csv",
+      "sha256": "55d374ffafa3c494b43f4dc0cfdbad1946357ba6bcca26bcf8344d7ff10a7274",
+      "bytes": 876
+    },
+    {
+      "path": "research/mvy/analysis/mvy-unique-word-frequency-top500.csv",
+      "sha256": "9117c758602d76364fe316349c02ca74d2f9e828bbdf4235d8f38aacc738d11c",
+      "bytes": 10838
+    }
+  ],
+  "integrity": "SHA-256 per file",
+  "archive_note": "Commit history remains the authoritative version chronology; this manifest records content hashes for a reproducible snapshot."
+}
