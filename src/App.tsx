@@ -18,6 +18,7 @@ import { MyProfile } from './components/MyProfile';
 import { ConsentLicenseView } from './components/ConsentLicenseView';
 import { MvyMilestone23 } from './components/MvyMilestone23';
 import { MvyResearchDashboard } from './components/MvyResearchDashboard';
+import { KnowledgeCenter } from './components/KnowledgeCenter';
 import { Contribution, RewardConfig, UILanguage, UserProfile } from './types';
 import { DEMO_USERS, INITIAL_REWARD_CONFIG } from './data/initialData';
 import { getStoredContributions, getStoredRewardConfig } from './services/storage';
@@ -27,8 +28,8 @@ import { LinkedInIconLink } from './components/LinkedInIconLink';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState<
-    'contribute' | 'my_contributions' | 'verification_queue' | 'corpus_explorer' | 'admin_panel' | 'quality_dashboard' | 'dataset_releases' | 'nlp_workspace' | 'translation_workspace' | 'speech_workspace' | 'llm_workspace' | 'mvy_milestone_23' | 'mvy_research' | 'roadmap' | 'my_profile' | 'consent_license'
-  >('mvy_milestone_23');
+    'contribute' | 'my_contributions' | 'verification_queue' | 'corpus_explorer' | 'admin_panel' | 'quality_dashboard' | 'dataset_releases' | 'nlp_workspace' | 'translation_workspace' | 'speech_workspace' | 'llm_workspace' | 'mvy_milestone_23' | 'mvy_research' | 'knowledge_center' | 'roadmap' | 'my_profile' | 'consent_license'
+  >('knowledge_center');
 
 
   // Real Firebase Authentication State (BALL 15.2)
@@ -203,7 +204,7 @@ export default function App() {
           />
         )}
 
-        {activeTab === 'mvy_milestone_23' && <MvyResearchDashboard uiLang={uiLang === 'ur' ? 'ur' : 'en'} />}
+        {activeTab === 'mvy_milestone_23' && <MvyResearchDashboard uiLang={uiLang === 'ur' ? 'ur' : 'en'} />}\n\n        {activeTab === 'knowledge_center' && (\n          <KnowledgeCenter\n            uiLang={uiLang === 'ur' ? 'ur' : 'en'}\n            onNavigate={(tab) => setActiveTab(tab)}\n          />\n        )}
 
         {activeTab === 'roadmap' && (
           <RoadmapView
