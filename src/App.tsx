@@ -203,7 +203,7 @@ export default function App() {
           />
         )}
 
-        {activeTab === 'mvy_milestone_23' && <MvyResearchDashboard />}
+        {activeTab === 'mvy_milestone_23' && <MvyResearchDashboard uiLang={uiLang === 'ur' ? 'ur' : 'en'} />}
 
         {activeTab === 'roadmap' && (
           <RoadmapView
@@ -239,7 +239,7 @@ export default function App() {
             <span className="font-bold text-[#C9A66B] tracking-wider">FiKR&CD</span>
             <span className="hidden sm:inline text-zinc-700">•</span>
             <span className="text-zinc-300">
-              Indus-Kohistani Language Digital Preservation
+              {uiLang === 'ur' ? 'انڈس کوہستانی زبان کی ڈیجیٹل حفاظت' : 'Indus-Kohistani Language Digital Preservation'}
             </span>
           </div>
 
@@ -248,7 +248,7 @@ export default function App() {
           </div>
 
           <div className="text-[11px] text-zinc-500 flex items-center gap-2 flex-wrap">
-            <span>Director: <strong className="text-zinc-200">Saif Ullah</strong></span>
+            <span>{uiLang === 'ur' ? 'ڈائریکٹر: ' : 'Director: '}<strong className="text-zinc-200">Saif Ullah</strong></span>
             <LinkedInIconLink id="footer-director-linkedin-link" size={16} />
             <span>•</span>
             <span className="text-[#C9A66B] font-mono">v1.0</span>
