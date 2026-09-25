@@ -50,6 +50,23 @@ export const MyProfile: React.FC<MyProfileProps> = ({
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
   const [successMsg, setSuccessMsg] = useState<string | null>(null);
 
+  const contributors = [
+    ['Saif Ullah', 'Project Director'],
+    ['Dr. Hussain Ahmad Faizy', 'Co-founder of FiKR&CD · Book Author · Researcher · Linguist · Contributor'],
+    ['Mujeeb ul Haq Jailani', 'Native speaker · Researcher · Linguist · Contributor'],
+    ['Rasheed Ahmad Faizy', 'Native speaker · Researcher · Linguist · Contributor'],
+    ['Muhammad Iqbal Abasindi', 'Native speaker · Researcher · Linguist · Contributor'],
+    ['Ihsan Ullah', 'Native speaker · Researcher · Contributor'],
+    ['Abdul Hadi', 'Native speaker · Researcher · Contributor'],
+    ['Aslam Dani', 'Native speaker · Researcher · Contributor'],
+    ['Atta Ur Rehman Aziz', 'Native speaker · Researcher · Contributor'],
+    ['Jameel Ahmad Umang', 'Native speaker · Researcher · Contributor'],
+    ['Ahsanullah Majid', 'Native speaker · Researcher · Contributor'],
+    ['Hasan Jamil', 'Native speaker · Researcher · Contributor'],
+    ['FiKR&CD Admin Team', 'Administrator']
+  ];
+
+
   // Form editable states
   const [displayName, setDisplayName] = useState('');
   const [institution, setInstitution] = useState('');
@@ -58,7 +75,27 @@ export const MyProfile: React.FC<MyProfileProps> = ({
 
   // Load profile whenever firebaseUser changes
   useEffect(() => {
-    if (!firebaseUser) {
+    const contributorsSection = (
+    <section id="fikrcd-contributors" className="max-w-5xl mx-auto px-4 py-10 space-y-6">
+      <div className="text-center max-w-3xl mx-auto">
+        <p className="text-[11px] uppercase tracking-[0.2em] text-[#C9A66B] font-semibold mb-2">FiKR&CD contributors</p>
+        <h1 className="text-2xl sm:text-3xl font-bold text-[#F5F5F5]">Contributors to the Indus-Kohistani research programme</h1>
+        <p className="mt-3 text-sm leading-6 text-[#999]">
+          Native speakers, researchers, linguists and contributors to the Indus-Kohistani language and cultural research programme.
+        </p>
+      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        {contributors.map(([name, role]) => (
+          <article key={name} className="rounded-2xl bg-[#141414] border border-[#262626] p-5 hover:border-[#C9A66B]/40 transition">
+            <h2 className="text-sm font-bold text-[#F5F5F5]">{name}</h2>
+            <p className="mt-1.5 text-xs leading-5 text-[#999]">{role}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+
+  if (!firebaseUser) {
       setProfile(null);
       return;
     }
@@ -131,7 +168,9 @@ export const MyProfile: React.FC<MyProfileProps> = ({
 
   if (!firebaseUser) {
     return (
-      <div className="max-w-4xl mx-auto px-4 py-12">
+      <div className="space-y-2">
+        {contributorsSection}
+        <div className="max-w-4xl mx-auto px-4 py-12">
         <div className="bg-[#141414] border border-[#2A2A2A] rounded-2xl p-8 text-center max-w-lg mx-auto shadow-2xl">
           <div className="h-14 w-14 rounded-2xl bg-[#C9A66B]/15 border border-[#C9A66B]/30 flex items-center justify-center text-[#C9A66B] mx-auto mb-4">
             <UserIcon className="h-7 w-7" />
@@ -152,6 +191,7 @@ export const MyProfile: React.FC<MyProfileProps> = ({
             <span>Sign In to Firebase</span>
           </button>
         </div>
+        </div>
       </div>
     );
   }
@@ -166,7 +206,9 @@ export const MyProfile: React.FC<MyProfileProps> = ({
   }
 
   return (
-    <div id="my-profile-view" className="max-w-4xl mx-auto px-4 py-8 space-y-6">
+    <div className="space-y-2">
+      {contributorsSection}
+      <div id="my-profile-view" className="max-w-4xl mx-auto px-4 py-8 space-y-6">
       {/* Header Banner */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 p-6 rounded-2xl bg-[#141414] border border-[#262626]">
         <div className="flex items-center gap-4">
@@ -481,6 +523,7 @@ export const MyProfile: React.FC<MyProfileProps> = ({
       {/* Full About the Project Director Section */}
       <div className="mt-8">
         <AboutProjectDirector />
+      </div>
       </div>
     </div>
   );
