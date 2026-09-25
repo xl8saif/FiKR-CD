@@ -2,7 +2,7 @@
   "milestone": "M5.2",
   "title": "Versioned Research Archive",
   "schema_version": "1.0",
-  "file_count": 35,
+  "file_count": 37,
   "files": [
     {
       "path": "research/mvy/analysis/milestone-2-orthographic-lexical-report.md",
@@ -148,6 +148,16 @@
       "path": "research/mvy/analysis/milestone-corpus-examples/build_corpus_examples.py",
       "sha256": "806aa2055b97541077261c9b4e5dbd59b15b317a964d98eba760a433384a3ff4",
       "bytes": 6211
+    },
+    {
+      "path": "research/mvy/analysis/milestone-written-dataset-validation/output/mvy-written-dataset-manifest.json",
+      "sha256": "3ebc0b0c8eb9f9bc1e9f7b78760a12b5d17b5e98f68a7c1298d1192c281eb408",
+      "bytes": 9108
+    },
+    {
+      "path": "research/mvy/analysis/milestone-written-dataset-validation/output/mvy-written-dataset-validation.md",
+      "sha256": "878278099ffb85cf57b4ad7f18b3630fcc6ae0f514df07edc617e8e5476cf33d",
+      "bytes": 1833
     },
     {
       "path": "research/mvy/analysis/milestone-written-dataset-validation/validate_written_dataset.py",
