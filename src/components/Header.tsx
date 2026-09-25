@@ -99,7 +99,8 @@ export const Header: React.FC<HeaderProps> = ({
   };
 
   const t = (en: string, ur: string) => uiLang === 'ur' ? ur : en;
-  const navTabs: NavTabItem[] = [\n    { id: 'knowledge_center', label: t('Knowledge & Data', 'علم و ڈیٹا'), sublabel: 'Knowledge & Data / علم و ڈیٹا', icon: Database, group: 'Intake & Archive' },
+  const navTabs: NavTabItem[] = [
+    { id: 'knowledge_center', label: t('Knowledge & Data', 'علم و ڈیٹا'), sublabel: 'Knowledge & Data / علم و ڈیٹا', icon: Database, group: 'Intake & Archive' },
     { id: 'contribute', label: t('Contribute','شمولیت'), sublabel: 'Contribute / شمولیت', icon: BookOpen, group: 'Intake & Archive' },
     { id: 'my_contributions', label: t('My contributions','میری شمولیات'), sublabel: 'My contributions / میری شمولیات', icon: Award, count: verifiedCount, group: 'Intake & Archive' },
     { id: 'verification_queue', label: t('Review','جائزہ'), sublabel: 'Review / جائزہ', icon: CheckSquare, count: pendingReviewCount + escalatedCount, urgent: pendingReviewCount > 0, group: 'Intake & Archive' },
