@@ -116,8 +116,8 @@
     },
     {
       "path": "research/mvy/analysis/milestone-4.5/build_lexicon.py",
-      "sha256": "d9539c2db1b18c88ba633793e8a9281930a76da03d53c0d7d8fd802ba4d1ee1a",
-      "bytes": 1826
+      "sha256": "11b2e107e04522182b4eaef4b2fd4239fb71bdfacf6b1da63f60eb2235c65708",
+      "bytes": 1831
     },
     {
       "path": "research/mvy/analysis/milestone-4.6/compile_publication.py",
