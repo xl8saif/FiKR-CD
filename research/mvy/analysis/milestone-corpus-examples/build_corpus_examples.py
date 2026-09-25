@@ -9,7 +9,7 @@ from collections import defaultdict
 
 ROOT = Path(__file__).resolve().parents[4]
 ARCHIVE = ROOT / "research/mvy/source/1765213289901-Mvy_text_corpus.tar.gz"
-LEXICON = ROOT / "src/data/mvyCorpusLexicon.json"
+LEXICON = ROOT / "src/data/mvyCorpusFullLexicon.json"
 OUT = ROOT / "src/data/mvyCorpusExamples.json"
 
 TOKEN_RE = re.compile(r"[\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF\uFB50-\uFDFF\uFE70-\uFEFFA-Za-z0-9]+")
@@ -67,11 +67,39 @@ def extract_sources() -> list[dict]:
     return documents
 
 def main() -> None:
-    lexicon = json.loads(LEXICON.read_text(encoding="utf-8"))
-    words = [str(item.get("word", "")) for item in lexicon.get("entries", []) if item.get("word")]
+    documents = extract_sources()
+    frequencies = defaultdict(int)
+    display_forms = {}
+    for document in documents:
+        chunks = [normalize(chunk) for chunk in SPLIT_RE.split(document["text"]) if normalize(chunk)]
+        for chunk in chunks:
+            for token in TOKEN_RE.findall(chunk):
+                token_key = key(token)
+                if token_key:
+                    frequencies[token_key] += 1
+                    display_forms.setdefault(token_key, token)
+    full_entries = [
+        {"word": display_forms[token_key], "frequency": frequency}
+        for token_key, frequency in sorted(frequencies.items(), key=lambda item: (-item[1], item[0]))
+    ]
+    lexicon_output = {
+        "project": "FiKR&CD",
+        "language": "Indus-Kohistani",
+        "iso_639_3": "mvy",
+        "source": "FiKR&CD archived Mvy text corpus",
+        "milestone": "Corpus lexical evidence",
+        "status": "full corpus-derived candidates",
+        "note": "Frequency-ranked lexical candidates generated directly from the archived Mvy text corpus. These are corpus evidence, not semantic dictionary definitions or human-verified translations.",
+        "source_archive": str(ARCHIVE.relative_to(ROOT)).replace("\\", "/"),
+        "corpus_documents": len(documents),
+        "token_occurrences": sum(item["frequency"] for item in full_entries),
+        "lexical_types": len(full_entries),
+        "entries": full_entries,
+    }
+    LEXICON.write_text(json.dumps(lexicon_output, ensure_ascii=False, indent=2), encoding="utf-8")
+    words = [item["word"] for item in full_entries]
     wanted = {key(word): word for word in words}
     records = defaultdict(lambda: {"occurrences": 0, "examples": []})
-    documents = extract_sources()
 
     for document in documents:
         chunks = [normalize(chunk) for chunk in SPLIT_RE.split(document["text"]) if normalize(chunk)]
@@ -103,6 +131,7 @@ def main() -> None:
         "lexicon_source": str(LEXICON.relative_to(ROOT)).replace("\\", "/"),
         "max_examples_per_word": 5,
         "source_documents": len(documents),
+        "lexicon_words": len(words),
         "words_with_examples": sum(bool(item["examples"]) for item in records.values()),
         "entries": {word: records[word] for word in words if records[word]["examples"]},
     }
