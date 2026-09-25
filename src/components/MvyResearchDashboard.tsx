@@ -8,13 +8,13 @@ export const MvyResearchDashboard: React.FC<{ uiLang?: 'en' | 'ur' }> = ({ uiLan
   const ur = uiLang === 'ur';
 
   useEffect(() => {
-    fetch('/research/mvy/milestone-5.4/index.json', { cache: 'no-store' })
+    fetch('/research/mvy/milestone-5.4/index.json', { cache: 'force-cache' })
       .then(r => r.ok ? r.json() : null)
       .then(setIndex)
       .catch(() => setIndex(null));
   }, []);
 
-  const resources = index?.resources ?? [];
+  const resources = (index?.resources ?? []).filter(r => r.status === 'published').map(r => ({ ...r, title: r.title || ({ '2.3': 'Grapheme inventory', '5.4': 'Research catalogue' } as Record<string,string>)[r.milestone || ''] || 'Research resource' }));
   const sections = ur
     ? ['لسانی ذخیرہ', 'صوتی ڈیٹا', 'لسانی تحقیق', 'عوامی وسائل']
     : ['Corpus', 'Speech data', 'Language research', 'Public resources'];
@@ -41,13 +41,13 @@ export const MvyResearchDashboard: React.FC<{ uiLang?: 'en' | 'ur' }> = ({ uiLan
     <div className="mt-8">
       <div className="flex items-baseline justify-between gap-4">
         <h2 className="text-base font-medium text-zinc-200">{ur ? 'تحقیقی وسائل' : 'Research resources'}</h2>
-        {index?.schema_version && <span className="text-[11px] text-zinc-600">{ur ? `فہرست ${index.schema_version}` : `catalogue ${index.schema_version}`}</span>}
+        {resources.length > 0 && <span className="text-[11px] text-zinc-600">{ur ? `${resources.length} وسائل` : `${resources.length} resources`}</span>}
       </div>
       <div className="mt-3 divide-y divide-zinc-800 border-y border-zinc-800">
-        {resources.map(r => <div key={r.id} className="flex items-center justify-between gap-4 py-4">
-          <div className="min-w-0"><div className="text-sm text-zinc-200 truncate">{r.title}</div><div className="mt-1 text-xs text-zinc-500">{r.description || r.milestone || (ur ? 'تحقیقی وسیلہ' : 'Research resource')}</div></div>
-          <span className="shrink-0 text-[10px] uppercase tracking-wider text-zinc-500">{r.status || (ur ? 'دستیاب' : 'available')}</span>
-        </div>)}
+        {resources.map(r => <a key={r.id} href={r.path?.replace(/^\/public/, '')} className="flex items-center justify-between gap-4 py-4 transition hover:bg-zinc-900/60">
+          <div className="min-w-0"><div className="text-sm text-zinc-200 truncate">{r.title}</div><div className="mt-1 text-xs text-zinc-500">{ur ? 'مشین سے قابلِ مطالعہ تحقیقی وسیلہ' : 'Machine-readable research resource'}</div></div>
+          <span className="shrink-0 text-[10px] uppercase tracking-wider text-zinc-500">{ur ? 'دستیاب' : 'Open'}</span>
+        </a>)}
         {!resources.length && <div className="py-8 text-sm text-zinc-500">{ur ? 'تحقیقی وسائل لوڈ ہو رہے ہیں۔' : 'Research resources are loading.'}</div>}
       </div>
     </div>
