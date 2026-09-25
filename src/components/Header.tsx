@@ -22,6 +22,7 @@ import {
   Route,
   Menu,
   X,
+  House,
   ChevronRight,
   ExternalLink
 } from 'lucide-react';
@@ -167,14 +168,34 @@ export const Header: React.FC<HeaderProps> = ({
               )}
             </button>
 
+            {/* Home Button */}
+            <button
+              id="header-home-btn"
+              type="button"
+              onClick={() => handleSelectTab('knowledge_center')}
+              aria-label={uiLang === 'ur' ? 'ہوم' : 'Home'}
+              title={uiLang === 'ur' ? 'ہوم' : 'Home'}
+              className="flex items-center gap-1.5 rounded-xl border border-zinc-700/80 bg-zinc-900/90 px-2.5 py-1.5 text-xs font-semibold text-zinc-200 transition hover:border-[#C9A66B]/60 hover:bg-zinc-800 hover:text-white cursor-pointer"
+            >
+              <House className="h-4 w-4 text-[#C9A66B]" />
+              <span className="hidden sm:inline">{uiLang === 'ur' ? 'ہوم' : 'Home'}</span>
+            </button>
+
             {/* Brand Logo & Title */}
             <div className="flex items-center gap-2.5">
+              <button
+                type="button"
+                onClick={() => handleSelectTab('knowledge_center')}
+                aria-label={uiLang === 'ur' ? 'ہوم' : 'Home'}
+                className="rounded-md focus:outline-none focus:ring-2 focus:ring-[#C9A66B]/60 cursor-pointer"
+              >
               <img 
                 src={fikrLogo} 
                 alt="FiKR&CD Logo" 
                 referrerPolicy="no-referrer"
                 className="h-9 w-auto object-contain rounded-md bg-white p-0.5 border border-zinc-800 hidden xs:inline-block" 
               />
+              </button>
               <div>
                 <div className="flex items-center gap-1.5">
                   <span className="text-sm font-bold tracking-wider text-[#C9A66B]">FiKR&CD</span>
