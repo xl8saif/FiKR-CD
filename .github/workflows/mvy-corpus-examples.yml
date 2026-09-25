@@ -32,18 +32,29 @@ jobs:
       - name: Build sentence-level lexical evidence
         run: python research/mvy/analysis/milestone-corpus-examples/build_corpus_examples.py
 
-      - name: Publish generated evidence
+      - name: Validate full written dataset
+        id: validate_written_dataset
+        continue-on-error: true
+        run: python research/mvy/analysis/milestone-written-dataset-validation/validate_written_dataset.py
+
+      - name: Publish generated evidence and validation
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add src/data/mvyCorpusFullLexicon.json src/data/mvyCorpusExamples.json
-          git diff --cached --quiet || git commit -m 'data(mvy): publish full corpus lexicon and sentence examples'
+          git add src/data/mvyCorpusFullLexicon.json src/data/mvyCorpusExamples.json research/mvy/analysis/milestone-written-dataset-validation/output/
+          git diff --cached --quiet || git commit -m 'data(mvy): publish written corpus validation'
           git push
 
-      - name: Upload research artifact
+      - name: Upload written-dataset research artifact
         uses: actions/upload-artifact@v4
         with:
-          name: mvy-corpus-sentence-examples
-          path: src/data/mvyCorpusExamples.json
+          name: mvy-written-dataset-validation
+          path: |
+            research/mvy/analysis/milestone-written-dataset-validation/output/
+            src/data/mvyCorpusExamples.json
           if-no-files-found: error
           retention-days: 90
+
+      - name: Fail if written-dataset validation failed
+        if: steps.validate_written_dataset.outcome == 'failure'
+        run: exit 1
