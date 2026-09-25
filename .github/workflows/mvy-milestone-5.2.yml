@@ -1,0 +1,16 @@
+name: Mvy Milestone 5.2 Versioned Research Archive
+on: {workflow_dispatch: {}, push: {paths: ['research/mvy/**','.github/workflows/mvy-milestone-5.2.yml']}}
+permissions: {contents: write}
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: python research/mvy/analysis/milestone-5.2/build_archive_manifest.py
+      - run: |
+          mkdir -p public/research/mvy/milestone-5.2
+          cp research/mvy/analysis/milestone-5.2/output/mvy-versioned-research-archive.json public/research/mvy/milestone-5.2/
+          git config user.name 'github-actions[bot]'; git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add public/research/mvy/milestone-5.2; git diff --cached --quiet || git commit -m 'Publish Mvy versioned archive manifest'; git push
