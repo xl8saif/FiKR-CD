@@ -32,6 +32,9 @@ jobs:
       - name: Build sentence-level lexical evidence
         run: python research/mvy/analysis/milestone-corpus-examples/build_corpus_examples.py
 
+      - name: Audit written corpus orthography
+        run: python research/mvy/analysis/milestone-written-dataset-validation/audit_orthography.py
+
       - name: Validate full written dataset
         id: validate_written_dataset
         continue-on-error: true
