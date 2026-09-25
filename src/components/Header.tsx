@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { 
-  BookOpen, 
+  BookOpen,\n  Database, 
   CheckSquare, 
   Award, 
   Settings, 
@@ -32,8 +32,8 @@ import { LinkedInIconLink } from './LinkedInIconLink';
 import fikrLogo from '../assets/images/fikrcd_logo_1787381137891.jpg';
 
 interface HeaderProps {
-  activeTab: 'contribute' | 'my_contributions' | 'verification_queue' | 'corpus_explorer' | 'admin_panel' | 'quality_dashboard' | 'dataset_releases' | 'nlp_workspace' | 'translation_workspace' | 'speech_workspace' | 'llm_workspace' | 'mvy_milestone_23' | 'mvy_research' | 'roadmap' | 'my_profile' | 'consent_license';
-  setActiveTab: (tab: 'contribute' | 'my_contributions' | 'verification_queue' | 'corpus_explorer' | 'admin_panel' | 'quality_dashboard' | 'dataset_releases' | 'nlp_workspace' | 'translation_workspace' | 'speech_workspace' | 'llm_workspace' | 'mvy_research' | 'roadmap' | 'my_profile' | 'consent_license') => void;
+  activeTab: 'contribute' | 'my_contributions' | 'verification_queue' | 'corpus_explorer' | 'admin_panel' | 'quality_dashboard' | 'dataset_releases' | 'nlp_workspace' | 'translation_workspace' | 'speech_workspace' | 'llm_workspace' | 'mvy_milestone_23' | 'mvy_research' | 'knowledge_center' | 'roadmap' | 'my_profile' | 'consent_license';
+  setActiveTab: (tab: 'contribute' | 'my_contributions' | 'verification_queue' | 'corpus_explorer' | 'admin_panel' | 'quality_dashboard' | 'dataset_releases' | 'nlp_workspace' | 'translation_workspace' | 'speech_workspace' | 'llm_workspace' | 'mvy_research' | 'knowledge_center' | 'roadmap' | 'my_profile' | 'consent_license') => void;
   currentUser: UserProfile;
   setCurrentUser: (user: UserProfile) => void;
   uiLang: UILanguage;
@@ -98,7 +98,7 @@ export const Header: React.FC<HeaderProps> = ({
   };
 
   const t = (en: string, ur: string) => uiLang === 'ur' ? ur : en;
-  const navTabs: NavTabItem[] = [
+  const navTabs: NavTabItem[] = [\n    { id: 'knowledge_center', label: t('Knowledge & Data', 'علم و ڈیٹا'), sublabel: 'Knowledge & Data / علم و ڈیٹا', icon: Database, group: 'Intake & Archive' },
     { id: 'contribute', label: t('Contribute','شمولیت'), sublabel: 'Contribute / شمولیت', icon: BookOpen, group: 'Intake & Archive' },
     { id: 'my_contributions', label: t('My contributions','میری شمولیات'), sublabel: 'My contributions / میری شمولیات', icon: Award, count: verifiedCount, group: 'Intake & Archive' },
     { id: 'verification_queue', label: t('Review','جائزہ'), sublabel: 'Review / جائزہ', icon: CheckSquare, count: pendingReviewCount + escalatedCount, urgent: pendingReviewCount > 0, group: 'Intake & Archive' },
