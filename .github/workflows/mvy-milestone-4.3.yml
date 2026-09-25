@@ -9,6 +9,7 @@ jobs:
         with: {lfs: true}
       - uses: actions/setup-python@v5
         with: {python-version: '3.12'}
+      - run: pip install regex
       - run: python research/mvy/analysis/milestone-4.3/analyze_phonology_orthography.py
       - run: |
           mkdir -p public/research/mvy/milestone-4.3
