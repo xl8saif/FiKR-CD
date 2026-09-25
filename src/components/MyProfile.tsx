@@ -92,7 +92,6 @@ export const MyProfile: React.FC<MyProfileProps> = ({
     </div>
   </section>
   );
-  );
 
   // Load profile whenever firebaseUser changes
   useEffect(() => {
