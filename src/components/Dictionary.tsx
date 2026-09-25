@@ -2,6 +2,7 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { addDoc, collection, doc, getDoc, onSnapshot, serverTimestamp } from 'firebase/firestore';
 import { BookOpen, CheckCircle2, Database, ExternalLink, Plus, Search, ShieldCheck, Sparkles } from 'lucide-react';
 import { db } from '../services/firebase';
+import corpusLexicon from '../data/mvyCorpusLexicon.json';
 import { User as FirebaseUser } from 'firebase/auth';
 
 type UILang = 'en' | 'ur';
@@ -24,13 +25,13 @@ interface DictionaryProps {
   firebaseUser: FirebaseUser | null;
 }
 
-const CORPUS_LEXICON_SOURCE = '/research/mvy/dictionary/mvy-corpus-lexicon.json';
-
 const Dictionary: React.FC<DictionaryProps> = ({ uiLang, firebaseUser }) => {
   const ur = uiLang === 'ur';
   const [entries, setEntries] = useState<DictionaryEntry[]>([]);
-  const [mozillaWords, setMozillaWords] = useState<Array<{ word: string; frequency: number }>>([]);
-  const [mozillaLoading, setMozillaLoading] = useState(true);
+  const [mozillaWords] = useState<Array<{ word: string; frequency: number }>>(
+    Array.isArray(corpusLexicon.entries) ? corpusLexicon.entries : []
+  );
+  const mozillaLoading = false;
   const [query, setQuery] = useState('');
   const [showAdminForm, setShowAdminForm] = useState(false);
   const [adminAllowed, setAdminAllowed] = useState(false);
@@ -50,24 +51,6 @@ const Dictionary: React.FC<DictionaryProps> = ({ uiLang, firebaseUser }) => {
       () => setEntries([])
     );
     return unsubscribe;
-  }, []);
-
-  useEffect(() => {
-    let active = true;
-    fetch(CORPUS_LEXICON_SOURCE, { cache: 'no-store' })
-      .then((response) => response.ok ? response.json() : Promise.reject(new Error('Lexicon unavailable')))
-      .then((data: { entries?: Array<{ word: string; frequency: number }> }) => {
-        if (!active) return;
-        setMozillaWords(Array.isArray(data.entries) ? data.entries : []);
-        setMozillaLoading(false);
-      })
-      .catch(() => {
-        if (active) {
-          setMozillaWords([]);
-          setMozillaLoading(false);
-        }
-      });
-    return () => { active = false; };
   }, []);
 
   useEffect(() => {
