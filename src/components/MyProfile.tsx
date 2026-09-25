@@ -51,7 +51,7 @@ export const MyProfile: React.FC<MyProfileProps> = ({
   const [successMsg, setSuccessMsg] = useState<string | null>(null);
 
   const contributors = [
-    ['Saif Ullah', 'Project Director'],
+    ['Saif Ullah', 'Project Director · Co-founder · Researcher · Linguist · Translator · Language Technology & Localization Specialist'],
     ['Dr. Hussain Ahmad Faizy', 'Co-founder of FiKR&CD · Book Author · Researcher · Linguist · Contributor'],
     ['Mujeeb ul Haq Jailani', 'Native speaker · Researcher · Linguist · Contributor'],
     ['Rasheed Ahmad Faizy', 'Native speaker · Researcher · Linguist · Contributor'],
