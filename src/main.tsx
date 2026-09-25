@@ -55,7 +55,6 @@ class RootErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState
   }
 }
 
-// Intercept unhandled promise rejections gracefully in sandboxed iframe preview
 if (typeof window !== 'undefined') {
   window.addEventListener('unhandledrejection', (event) => {
     console.warn('Handled unhandled rejection in preview context:', event.reason);
@@ -67,8 +66,6 @@ createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <RootErrorBoundary>
       <App />
-      <Analytics />
     </RootErrorBoundary>
   </StrictMode>,
 );
-
