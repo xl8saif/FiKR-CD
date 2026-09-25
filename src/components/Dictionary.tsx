@@ -24,8 +24,7 @@ interface DictionaryProps {
   firebaseUser: FirebaseUser | null;
 }
 
-const MOZILLA_SOURCE =
-  'https://raw.githubusercontent.com/xl8saif/FiKR-CD/main/research/mvy/source/common-voice-27/validated.tsv';
+const CORPUS_LEXICON_SOURCE = '/research/mvy/dictionary/mvy-corpus-lexicon.json';
 
 const Dictionary: React.FC<DictionaryProps> = ({ uiLang, firebaseUser }) => {
   const ur = uiLang === 'ur';
@@ -55,30 +54,11 @@ const Dictionary: React.FC<DictionaryProps> = ({ uiLang, firebaseUser }) => {
 
   useEffect(() => {
     let active = true;
-    fetch(MOZILLA_SOURCE, { cache: 'force-cache' })
-      .then((response) => response.ok ? response.text() : '')
-      .then((text) => {
+    fetch(CORPUS_LEXICON_SOURCE, { cache: 'no-store' })
+      .then((response) => response.ok ? response.json() : Promise.reject(new Error('Lexicon unavailable')))
+      .then((data: { entries?: Array<{ word: string; frequency: number }> }) => {
         if (!active) return;
-        const counts = new Map<string, number>();
-        const lines = text.split(/\\r?\\n/);
-        for (let i = 1; i < lines.length; i += 1) {
-          const line = lines[i];
-          if (!line) continue;
-          const tab = line.indexOf('\\t');
-          if (tab < 0) continue;
-          const sentence = line.slice(tab + 1).split('\\t')[0].trim();
-          const words = sentence.split(/\\s+/);
-          for (const raw of words) {
-            const word = raw.replace(/^[،۔؛,:!?()\\[\\]{}"“”‘’]+|[،۔؛,:!?()\\[\\]{}"“”‘’]+$/g, '').trim();
-            if (word.length < 2) continue;
-            counts.set(word, (counts.get(word) || 0) + 1);
-          }
-        }
-        const ranked = Array.from(counts.entries())
-          .map(([word, frequency]) => ({ word, frequency }))
-          .sort((a, b) => b.frequency - a.frequency || a.word.localeCompare(b.word))
-          .slice(0, 500);
-        setMozillaWords(ranked);
+        setMozillaWords(Array.isArray(data.entries) ? data.entries : []);
         setMozillaLoading(false);
       })
       .catch(() => {
@@ -222,15 +202,15 @@ const Dictionary: React.FC<DictionaryProps> = ({ uiLang, firebaseUser }) => {
           <div className="rounded-2xl border border-zinc-800 bg-zinc-900/30 p-5">
             <div className="flex items-center justify-between gap-3">
               <div>
-                <h2 className="text-base font-semibold text-zinc-100">{t('Mozilla Common Voice candidates', 'Mozilla Common Voice کے الفاظ')}</h2>
+                <h2 className="text-base font-semibold text-zinc-100">{t('Corpus-derived lexical candidates', 'کارپس سے اخذ کردہ لغوی امیدوار')}</h2>
                 <p className="mt-1 text-xs text-zinc-500">
-                  {t('Frequency-ranked lexical candidates extracted from the repository’s Common Voice 27.0 validated mvy source. They are candidates, not automatically canonical entries.', 'ریپوزٹری میں موجود Common Voice 27.0 کے validated mvy ماخذ سے اخذ کیے گئے تعدادی طور پر مرتب الفاظ۔ یہ امیدوار الفاظ ہیں، خودکار طور پر مصدقہ اندراجات نہیں۔')}
+                  {t('Frequency-ranked lexical candidates from the published M2.5 corpus analysis. They are corpus evidence, not semantic definitions or automatically canonical entries.', 'شائع شدہ M2.5 کارپس تجزیے سے تعدادی طور پر مرتب لغوی امیدوار۔ یہ کارپس کے شواہد ہیں، لغوی تعریفیں یا خودکار طور پر مصدقہ اندراجات نہیں۔')}
                 </p>
               </div>
               <Database className="h-5 w-5 text-[#C9A66B]" />
             </div>
             <div className="mt-4 space-y-2 max-h-[560px] overflow-auto pr-1">
-              {mozillaLoading && <div className="px-3 py-8 text-center text-xs text-zinc-500">{t('Loading Mozilla source…', 'Mozilla ماخذ لوڈ ہو رہا ہے…')}</div>}
+              {mozillaLoading && <div className="px-3 py-8 text-center text-xs text-zinc-500">{t('Loading corpus lexicon…', 'کارپس کا لغوی ذخیرہ لوڈ ہو رہا ہے…')}</div>}
               {!mozillaLoading && filteredMozilla.map((item) => (
                 <div key={item.word} className="flex items-center justify-between gap-3 rounded-xl border border-zinc-800 bg-zinc-950/60 px-3 py-2.5">
                   <span className="font-kohistani text-sm text-zinc-100">{item.word}</span>
@@ -244,10 +224,10 @@ const Dictionary: React.FC<DictionaryProps> = ({ uiLang, firebaseUser }) => {
                   </div>
                 </div>
               ))}
-              {!mozillaLoading && filteredMozilla.length === 0 && <div className="px-3 py-8 text-center text-xs text-zinc-500">{t('No Mozilla candidates found.', 'Mozilla کے الفاظ نہیں ملے۔')}</div>}
+              {!mozillaLoading && filteredMozilla.length === 0 && <div className="px-3 py-8 text-center text-xs text-zinc-500">{t('No corpus candidates found.', 'کارپس کے الفاظ نہیں ملے۔')}</div>}
             </div>
             <a href="https://commonvoice.mozilla.org/en/datasets" target="_blank" rel="noreferrer" className="mt-4 inline-flex items-center gap-2 text-xs text-[#C9A66B] hover:text-[#D4B582]">
-              {t('Mozilla Common Voice dataset catalogue', 'Mozilla Common Voice ڈیٹا سیٹ فہرست')}
+              {t('Common Voice 27.0 dataset catalogue', 'Common Voice 27.0 ڈیٹا سیٹ فہرست')}
               <ExternalLink className="h-3.5 w-3.5" />
             </a>
           </div>
