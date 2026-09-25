@@ -95,7 +95,9 @@ export const MyProfile: React.FC<MyProfileProps> = ({
     </section>
   );
 
-  if (!firebaseUser) {
+  // Load profile whenever firebaseUser changes
+  useEffect(() => {
+    if (!firebaseUser) {
       setProfile(null);
       return;
     }
