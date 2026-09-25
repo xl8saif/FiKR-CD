@@ -2,7 +2,7 @@
   "milestone": "M5.2",
   "title": "Versioned Research Archive",
   "schema_version": "1.0",
-  "file_count": 34,
+  "file_count": 35,
   "files": [
     {
       "path": "research/mvy/analysis/milestone-2-orthographic-lexical-report.md",
@@ -148,6 +148,11 @@
       "path": "research/mvy/analysis/milestone-corpus-examples/build_corpus_examples.py",
       "sha256": "806aa2055b97541077261c9b4e5dbd59b15b317a964d98eba760a433384a3ff4",
       "bytes": 6211
+    },
+    {
+      "path": "research/mvy/analysis/milestone-written-dataset-validation/validate_written_dataset.py",
+      "sha256": "a7451146ff6596bc180a6cc34a39034d3d9d9b5bef05e5d9199444a8aebc2fb0",
+      "bytes": 9199
     },
     {
       "path": "research/mvy/analysis/mvy-character-ngrams.csv",
