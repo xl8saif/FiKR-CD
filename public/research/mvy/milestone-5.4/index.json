@@ -1,6 +1,6 @@
 {
   "api_version": "1.1",
-  "generated": "2026-09-25T06:24:52.311077+00:00",
+  "generated": "2026-09-25T15:15:44.873289+00:00",
   "language": "mvy",
   "name": "FiKR&CD Mvy Research API",
   "resources": [
@@ -106,7 +106,9 @@
     {
       "milestone": "4.2",
       "path": "/public/research/mvy/milestone-4.2/mvy-dardic-comparative-manifest.json",
-      "status": "workflow_pending"
+      "status": "published",
+      "title": "Comparative Dardic Analysis",
+      "manifest_milestone": "M4.2"
     },
     {
       "milestone": "4.3",
@@ -116,22 +118,30 @@
     {
       "milestone": "4.4",
       "path": "/public/research/mvy/milestone-4.4/mvy-morphology-syntax-manifest.json",
-      "status": "workflow_pending"
+      "status": "published",
+      "title": "Morphology & Syntax",
+      "manifest_milestone": "M4.4"
     },
     {
       "milestone": "4.5",
       "path": "/public/research/mvy/milestone-4.5/mvy-lexicon-manifest.json",
-      "status": "workflow_pending"
+      "status": "published",
+      "title": "Lexicon & Dictionary",
+      "manifest_milestone": "M4.5"
     },
     {
       "milestone": "4.6",
       "path": "/public/research/mvy/milestone-4.6/mvy-research-publication-manifest.json",
-      "status": "workflow_pending"
+      "status": "published",
+      "title": "FiKR&CD Mvy Linguistic Research — Milestones 4.1–4.6",
+      "manifest_milestone": null
     },
     {
       "milestone": "5.2",
       "path": "/public/research/mvy/milestone-5.2/mvy-versioned-research-archive.json",
-      "status": "workflow_pending"
+      "status": "published",
+      "title": "Versioned Research Archive",
+      "manifest_milestone": "M5.2"
     },
     {
       "milestone": "5.3",
