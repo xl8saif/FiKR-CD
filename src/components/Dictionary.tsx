@@ -2,7 +2,7 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { addDoc, collection, doc, getDoc, onSnapshot, serverTimestamp } from 'firebase/firestore';
 import { BookOpen, CheckCircle2, Database, ExternalLink, Plus, Search, ShieldCheck, Sparkles } from 'lucide-react';
 import { db } from '../services/firebase';
-import corpusLexicon from '../data/mvyCorpusLexicon.json';
+import corpusLexicon from '../data/mvyCorpusFullLexicon.json';
 import corpusExamples from '../data/mvyCorpusExamples.json';
 import { User as FirebaseUser } from 'firebase/auth';
 
@@ -251,7 +251,7 @@ const Dictionary: React.FC<DictionaryProps> = ({ uiLang, firebaseUser }) => {
               <div>
                 <h2 className="text-base font-semibold text-zinc-100">{t('Corpus-derived lexical candidates', 'کارپس سے اخذ کردہ لغوی امیدوار')}</h2>
                 <p className="mt-1 text-xs text-zinc-500">
-                  {t('Frequency-ranked lexical candidates from the published M2.5 corpus analysis. They are corpus evidence, not semantic definitions or automatically canonical entries.', 'شائع شدہ M2.5 کارپس تجزیے سے تعدادی طور پر مرتب لغوی امیدوار۔ یہ کارپس کے شواہد ہیں، لغوی تعریفیں یا خودکار طور پر مصدقہ اندراجات نہیں۔')}
+                  {t('Frequency-ranked lexical candidates from the full archived Mvy corpus analysis. They are corpus evidence, not semantic definitions or automatically canonical entries.', 'شائع شدہ M2.5 کارپس تجزیے سے تعدادی طور پر مرتب لغوی امیدوار۔ یہ کارپس کے شواہد ہیں، لغوی تعریفیں یا خودکار طور پر مصدقہ اندراجات نہیں۔')}
                 </p>
               </div>
               <Database className="h-5 w-5 text-[#C9A66B]" />
