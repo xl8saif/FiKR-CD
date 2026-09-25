@@ -108,7 +108,7 @@ const CAREER_TIMELINE: TimelineEvent[] = [
     period: '2021 – 2024',
     stage: 'Institutional Leadership & Digital Infrastructure',
     title: 'Founding of FiKR&CD & Digital Orthography Standardization',
-    description: 'Formed the Forum for Indus-Kohistani Research & Culture Development (FiKR&CD) to institutionalize preservation efforts, establish Unicode-compliant digital orthography (ڇ، څ، ݜ، ڙ، ݨ), and build trilingual lexical databases.',
+    description: 'Formed the Forum for Indus-Kohistani Research & Cultural Development (FiKR&CD) to institutionalize preservation efforts, establish Unicode-compliant digital orthography (ڇ، څ، ݜ، ڙ، ݨ), and build trilingual lexical databases.',
     highlights: [
       'Establishment of FiKR&CD community and research governance',
       'Unicode standard integration and Perso-Arabic digital typing support',
@@ -121,7 +121,7 @@ const CAREER_TIMELINE: TimelineEvent[] = [
     title: 'AI/NLP Datasets, Speech Engineering & Sustainable Future Impact',
     description: 'Architected modern computational preservation systems, connecting community-verified datasets with Whisper ASR speech models, MTPE machine translation workflows, and instruction-tuning datasets to ensure long-term digital survival.',
     highlights: [
-      'BALL 1–30 milestone engineering and institutional data release governance',
+      'M1–M30 milestone engineering and institutional data release governance',
       'Whisper ASR dataset manifests and LLM instruction fine-tuning splits',
       'Sustainable open-access digital infrastructure for future generations'
     ]
@@ -620,7 +620,7 @@ export const AboutProjectDirector: React.FC<AboutProjectDirectorProps> = ({
             <div>
               <span className="text-[10px] text-[#777] uppercase font-bold tracking-wider block">Initiative Framework</span>
               <p className="text-xs font-bold text-[#D4B582]">
-                FiKR&CD — Forum for Indus-Kohistani Research & Culture Development
+                FiKR&CD — Forum for Indus-Kohistani Research & Cultural Development
               </p>
             </div>
             <span className="text-xs text-[#888] font-mono">ISO 639-3: mvy • Dardic / Kohistany • Perso-Arabic Digital Script</span>
@@ -653,7 +653,7 @@ export const AboutProjectDirector: React.FC<AboutProjectDirectorProps> = ({
               <ul className="space-y-2 text-xs text-[#888]">
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="h-3.5 w-3.5 text-emerald-400 shrink-0 mt-0.5" />
-                  <span>Conceived and executed the BALL 1–30 institutional data architecture, uniting RAW ingestion, human validation, and DERIVED engineering splits.</span>
+                  <span>Conceived and executed the M1–M30 institutional data architecture, uniting RAW ingestion, human validation, and DERIVED engineering splits.</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="h-3.5 w-3.5 text-emerald-400 shrink-0 mt-0.5" />
