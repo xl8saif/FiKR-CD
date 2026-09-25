@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import { addDoc, collection, doc, getDoc, onSnapshot, serverTimestamp } from 'firebase/firestore';
+import { addDoc, collection, doc, getDoc, onSnapshot, serverTimestamp, updateDoc } from 'firebase/firestore';
 import { BookOpen, CheckCircle2, Database, ExternalLink, Plus, Search, ShieldCheck, Sparkles } from 'lucide-react';
 import { db } from '../services/firebase';
 import corpusLexicon from '../data/mvyCorpusFullLexicon.json';
@@ -50,6 +50,7 @@ interface DictionaryProps {
 const Dictionary: React.FC<DictionaryProps> = ({ uiLang, firebaseUser }) => {
   const ur = uiLang === 'ur';
   const [entries, setEntries] = useState<DictionaryEntry[]>([]);
+  const [pendingEntries, setPendingEntries] = useState<DictionaryEntry[]>([]);
   const [mozillaWords] = useState<CorpusCandidate[]>(
     Array.isArray(corpusLexicon.entries) ? corpusLexicon.entries : []
   );
@@ -77,14 +78,14 @@ const Dictionary: React.FC<DictionaryProps> = ({ uiLang, firebaseUser }) => {
     const unsubscribe = onSnapshot(
       collection(db, 'dictionary_entries'),
       (snapshot) => {
-        const next = snapshot.docs.map((item) => ({ id: item.id, ...item.data() } as DictionaryEntry))
-          .filter((item) => item.status === 'verified');
-        setEntries(next);
+        const all = snapshot.docs.map((item) => ({ id: item.id, ...item.data() } as DictionaryEntry));
+        setEntries(all.filter((item) => item.status === 'verified'));
+        if (adminAllowed) setPendingEntries(all.filter((item) => item.status === 'pending_review'));
       },
       () => setEntries([])
     );
     return unsubscribe;
-  }, []);
+  }, [adminAllowed]);
 
   useEffect(() => {
     let active = true;
@@ -120,16 +121,16 @@ const Dictionary: React.FC<DictionaryProps> = ({ uiLang, firebaseUser }) => {
     return mozillaWords.filter((item) => item.word.toLocaleLowerCase().includes(q));
   }, [mozillaWords, query]);
 
-  const openAdd = (word = '') => {
+  const openAdd = (word = '', evidence?: CorpusExampleRecord) => {
     setForm({
       indusKohistani: word,
       urdu: '',
       english: '',
       dialect: '',
       notes: '',
-      corpusExamples: '',
+      corpusExamples: evidence?.examples?.map((item) => item.text).join('\n') || '',
       source: 'FiKR&CD Dictionary',
-      verified: true
+      verified: false
     });
     setShowAdminForm(true);
   };
@@ -151,7 +152,8 @@ const Dictionary: React.FC<DictionaryProps> = ({ uiLang, firebaseUser }) => {
           .split(/\r?\n/)
           .map((example) => example.trim())
           .filter(Boolean),
-        status: form.verified ? 'verified' : 'pending_review',
+        status: 'pending_review',
+        verificationStatus: 'pending_review',
         createdBy: firebaseUser?.uid || '',
         createdAt: serverTimestamp(),
       });
@@ -169,6 +171,16 @@ const Dictionary: React.FC<DictionaryProps> = ({ uiLang, firebaseUser }) => {
     } finally {
       setSaving(false);
     }
+  };
+
+  const approveEntry = async (entry: DictionaryEntry) => {
+    if (!adminAllowed) return;
+    await updateDoc(doc(db, 'dictionary_entries', entry.id), {
+      status: 'verified',
+      verificationStatus: 'verified',
+      verifiedBy: firebaseUser?.uid || '',
+      verifiedAt: serverTimestamp(),
+    });
   };
 
   return (
@@ -289,6 +301,35 @@ const Dictionary: React.FC<DictionaryProps> = ({ uiLang, firebaseUser }) => {
           </div>
         </div>
 
+        {adminAllowed && pendingEntries.length > 0 && (
+          <div className="mt-6 rounded-2xl border border-amber-700/40 bg-amber-950/10 p-5">
+            <div className="flex items-center justify-between gap-3">
+              <div>
+                <h2 className="text-base font-semibold text-zinc-100">{t('Human verification queue', 'انسانی تصدیقی قطار')}</h2>
+                <p className="mt-1 text-xs text-zinc-500">{t('Review meanings, dialect and corpus evidence before publishing a canonical entry.', 'بنیادی اندراج شائع کرنے سے پہلے معنی، لہجے اور کارپس شواہد کا جائزہ لیں۔')}</p>
+              </div>
+              <ShieldCheck className="h-5 w-5 text-amber-400" />
+            </div>
+            <div className="mt-4 space-y-2">
+              {pendingEntries.map((item) => (
+                <div key={item.id} className="rounded-xl border border-zinc-800 bg-zinc-950/60 p-3">
+                  <div className="grid gap-2 sm:grid-cols-4">
+                    <div className="font-kohistani text-zinc-100">{item.indusKohistani}</div>
+                    <div className="text-sm text-zinc-300">{item.urdu || '—'}</div>
+                    <div className="text-sm text-zinc-400">{item.english || '—'}</div>
+                    <div className="text-xs text-zinc-500">{item.dialect || t('Dialect not supplied', 'لہجہ درج نہیں')}</div>
+                  </div>
+                  {item.corpusExamples?.length ? <div className="mt-2 text-[10px] text-zinc-500">{item.corpusExamples.length} {t('corpus examples attached', 'کارپس مثالیں منسلک')}</div> : null}
+                  <div className="mt-3 flex gap-2">
+                    <button type="button" onClick={() => setSelectedRecord({ kind: 'canonical', entry: item })} className="rounded-lg border border-zinc-700 px-3 py-1.5 text-xs text-zinc-300 hover:border-[#C9A66B]">{t('Review', 'جائزہ')}</button>
+                    <button type="button" onClick={() => approveEntry(item)} className="rounded-lg bg-[#C9A66B] px-3 py-1.5 text-xs font-bold text-zinc-950">{t('Verify & publish', 'تصدیق اور اشاعت')}</button>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
         <div className="mt-6 rounded-2xl border border-[#C9A66B]/20 bg-[#C9A66B]/5 p-4">
           <div className="flex items-start gap-3">
             <Sparkles className="mt-0.5 h-4 w-4 shrink-0 text-[#C9A66B]" />
@@ -407,8 +448,8 @@ const Dictionary: React.FC<DictionaryProps> = ({ uiLang, firebaseUser }) => {
                     )}
                   </div>
                   {adminAllowed && (
-                    <button type="button" onClick={() => { setSelectedRecord(null); openAdd(selectedRecord.candidate.word); }} className="inline-flex items-center gap-2 rounded-xl bg-[#C9A66B] px-4 py-2.5 text-xs font-bold text-zinc-950">
-                      <Plus className="h-4 w-4" /> {t('Create verified entry', 'مصدقہ اندراج بنائیں')}
+                    <button type="button" onClick={() => { setSelectedRecord(null); openAdd(selectedRecord.candidate.word, selectedRecord.evidence); }} className="inline-flex items-center gap-2 rounded-xl bg-[#C9A66B] px-4 py-2.5 text-xs font-bold text-zinc-950">
+                      <Plus className="h-4 w-4" /> {t('Send for human verification', 'انسانی تصدیق کے لیے بھیجیں')}
                     </button>
                   )}
                 </div>
@@ -439,7 +480,7 @@ const Dictionary: React.FC<DictionaryProps> = ({ uiLang, firebaseUser }) => {
               </div>
               <label className="mt-4 flex items-center gap-2 text-xs text-zinc-400">
                 <input type="checkbox" checked={form.verified} onChange={(e) => setForm({ ...form, verified: e.target.checked })} />
-                {t('Publish as verified canonical entry', 'مصدقہ بنیادی اندراج کے طور پر شائع کریں')}
+                {t('Entry is submitted to the human verification queue. Publication requires explicit verification.', 'اندراج انسانی تصدیقی قطار میں جمع ہوگا۔ اشاعت کے لیے واضح تصدیق ضروری ہے۔')}
               </label>
               <button disabled={saving} type="submit" className="mt-5 inline-flex items-center gap-2 rounded-xl bg-[#C9A66B] px-4 py-2.5 text-xs font-bold text-zinc-950 disabled:opacity-50">
                 <Plus className="h-4 w-4" />
