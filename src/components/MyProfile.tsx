@@ -73,26 +73,25 @@ export const MyProfile: React.FC<MyProfileProps> = ({
   const [nativeDialect, setNativeDialect] = useState(DEFAULT_DIALECT_ID);
   const [isNativeSpeaker, setIsNativeSpeaker] = useState(true);
 
-  // Load profile whenever firebaseUser changes
-  useEffect(() => {
-    const contributorsSection = (
-    <section id="fikrcd-contributors" className="max-w-5xl mx-auto px-4 py-10 space-y-6">
-      <div className="text-center max-w-3xl mx-auto">
-        <p className="text-[11px] uppercase tracking-[0.2em] text-[#C9A66B] font-semibold mb-2">FiKR&CD contributors</p>
-        <h1 className="text-2xl sm:text-3xl font-bold text-[#F5F5F5]">Contributors to the Indus-Kohistani research programme</h1>
-        <p className="mt-3 text-sm leading-6 text-[#999]">
-          Native speakers, researchers, linguists and contributors to the Indus-Kohistani language and cultural research programme.
-        </p>
-      </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-        {contributors.map(([name, role]) => (
-          <article key={name} className="rounded-2xl bg-[#141414] border border-[#262626] p-5 hover:border-[#C9A66B]/40 transition">
-            <h2 className="text-sm font-bold text-[#F5F5F5]">{name}</h2>
-            <p className="mt-1.5 text-xs leading-5 text-[#999]">{role}</p>
-          </article>
-        ))}
-      </div>
-    </section>
+  const contributorsSection = (
+  <section id="fikrcd-contributors" className="max-w-5xl mx-auto px-4 py-10 space-y-6">
+    <div className="text-center max-w-3xl mx-auto">
+      <p className="text-[11px] uppercase tracking-[0.2em] text-[#C9A66B] font-semibold mb-2">FiKR&CD contributors</p>
+      <h1 className="text-2xl sm:text-3xl font-bold text-[#F5F5F5]">Contributors to the Indus-Kohistani research programme</h1>
+      <p className="mt-3 text-sm leading-6 text-[#999]">
+        Native speakers, researchers, linguists and contributors to the Indus-Kohistani language and cultural research programme.
+      </p>
+    </div>
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+      {contributors.map(([name, role]) => (
+        <article key={name} className="rounded-2xl bg-[#141414] border border-[#262626] p-5 hover:border-[#C9A66B]/40 transition">
+          <h2 className="text-sm font-bold text-[#F5F5F5]">{name}</h2>
+          <p className="mt-1.5 text-xs leading-5 text-[#999]">{role}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+  );
   );
 
   // Load profile whenever firebaseUser changes
