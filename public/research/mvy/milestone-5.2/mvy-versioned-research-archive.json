@@ -2,7 +2,7 @@
   "milestone": "M5.2",
   "title": "Versioned Research Archive",
   "schema_version": "1.0",
-  "file_count": 41,
+  "file_count": 44,
   "files": [
     {
       "path": "research/mvy/analysis/milestone-2-orthographic-lexical-report.md",
@@ -158,6 +158,21 @@
       "path": "research/mvy/analysis/milestone-written-dataset-validation/detect_duplicates.py",
       "sha256": "bda0f774cdf8bd6e21913b3d117937dc5c8bf365dead721273e0c56dfe9ffdd4",
       "bytes": 8017
+    },
+    {
+      "path": "research/mvy/analysis/milestone-written-dataset-validation/flag_quality.py",
+      "sha256": "bf427d23769aa1b88736533a000c657969bd47cb5198b5b9051f608571cf65eb",
+      "bytes": 8635
+    },
+    {
+      "path": "research/mvy/analysis/milestone-written-dataset-validation/output/mvy-duplicate-audit.json",
+      "sha256": "450909532a0b825875a3589e6a41cc43cafe0eaec2198ddf899366e04a499536",
+      "bytes": 48520
+    },
+    {
+      "path": "research/mvy/analysis/milestone-written-dataset-validation/output/mvy-duplicate-audit.md",
+      "sha256": "0d9e4de97868438fd34c3fffe827e619bd47703a890acd4a0e8c54fb99bf6ddc",
+      "bytes": 1157
     },
     {
       "path": "research/mvy/analysis/milestone-written-dataset-validation/output/mvy-orthographic-audit.json",
