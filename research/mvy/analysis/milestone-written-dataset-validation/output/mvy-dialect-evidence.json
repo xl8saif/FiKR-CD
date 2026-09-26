@@ -1,0 +1,92 @@
+{
+  "dataset": "Mvy Written Corpus",
+  "language": "mvy",
+  "iso_639_3": "mvy",
+  "stage": "dialect-variety-evidence-mapping",
+  "policy": {
+    "inference": false,
+    "description": "Dialect labels are assigned only from explicit source-name evidence; otherwise the source remains unknown.",
+    "recognized_varieties": [
+      "bankad",
+      "duber-kandia",
+      "jijal-kayal",
+      "ranolia",
+      "seo-patan"
+    ]
+  },
+  "summary": {
+    "source_documents": 8,
+    "sources_with_explicit_dialect_evidence": 0,
+    "unknown_sources": 8,
+    "ambiguous_sources": 0,
+    "text_units_by_dialect": {
+      "unknown": 7540
+    }
+  },
+  "sources": [
+    {
+      "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+      "source_sha256": "32a37032e16599d1c9f5c93e65b6dcd67c7c3881849aaaa787f5bb523a54dd5b",
+      "assigned_dialect": "unknown",
+      "evidence_basis": "no_explicit_source_metadata",
+      "confidence": "none",
+      "text_units": 7487
+    },
+    {
+      "source": "Mvy_text_corpus/آلُو مالُو کالُو-Indus Kohistani-Inside.pdf",
+      "source_sha256": "51e9f466a48f8a506be2b602add872001b5b6efd6586587416c32685ffff9be6",
+      "assigned_dialect": "unknown",
+      "evidence_basis": "no_explicit_source_metadata",
+      "confidence": "none",
+      "text_units": 6
+    },
+    {
+      "source": "Mvy_text_corpus/ماحَولَئیں مَسلِی-Indus Kohistani-Cover.pdf",
+      "source_sha256": "2d7451103d49ee4666f4fe8c7823f771e8aabb7971eececb14aec1c02ea75953",
+      "assigned_dialect": "unknown",
+      "evidence_basis": "no_explicit_source_metadata",
+      "confidence": "none",
+      "text_units": 2
+    },
+    {
+      "source": "Mvy_text_corpus/ماحَولَئیں مَسلِی-Indus Kohistani-Inside.pdf",
+      "source_sha256": "dfbfd614fae87e555bd64cf9eb09d7cf0be17ea212e24a93de8c63f046e030ae",
+      "assigned_dialect": "unknown",
+      "evidence_basis": "no_explicit_source_metadata",
+      "confidence": "none",
+      "text_units": 16
+    },
+    {
+      "source": "Mvy_text_corpus/مصروف پِیلِیہ-Indus Kohistani-Cover.pdf",
+      "source_sha256": "aff9c02d457894dae884ce56dcc0d0c56263d3367e1525102039e644cc47a87e",
+      "assigned_dialect": "unknown",
+      "evidence_basis": "no_explicit_source_metadata",
+      "confidence": "none",
+      "text_units": 2
+    },
+    {
+      "source": "Mvy_text_corpus/مصروف پِیلِیہ-Indus Kohistani-Inside.pdf",
+      "source_sha256": "247a264d30aa56f02936efe149c89738729959956341692e22612712a14c6bc0",
+      "assigned_dialect": "unknown",
+      "evidence_basis": "no_explicit_source_metadata",
+      "confidence": "none",
+      "text_units": 8
+    },
+    {
+      "source": "Mvy_text_corpus/مصروف گَھئیں اَمئیں گِی-Indus Kohistani-Pages.pdf",
+      "source_sha256": "aa7a2571e8e913e45287209643de1d3f128bb0bb0fdf74882319410aced11996",
+      "assigned_dialect": "unknown",
+      "evidence_basis": "no_explicit_source_metadata",
+      "confidence": "none",
+      "text_units": 11
+    },
+    {
+      "source": "Mvy_text_corpus/ݜزِل پِیلِیہ-Indus Kohistani-Inside.pdf",
+      "source_sha256": "a7d62b51c56948ec02daafeede399f9597e7bdf0f48dee2e464c30e17b8707ef",
+      "assigned_dialect": "unknown",
+      "evidence_basis": "no_explicit_source_metadata",
+      "confidence": "none",
+      "text_units": 8
+    }
+  ]
+}
