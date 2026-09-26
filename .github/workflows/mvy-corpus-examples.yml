@@ -36,8 +36,8 @@ jobs:
       - name: Audit written corpus orthography
         run: python research/mvy/analysis/milestone-written-dataset-validation/audit_orthography.py
 
-      - name: Detect exact and near duplicates
-        run: python research/mvy/analysis/milestone-written-dataset-validation/detect_duplicates.py
+      - name: Flag written dataset quality issues
+        run: python research/mvy/analysis/milestone-written-dataset-validation/flag_quality.py
 
       - name: Validate full written dataset
         id: validate_written_dataset
