@@ -55,10 +55,9 @@ The corpus-example generation script is:
 
 1. Full-corpus statistical validation.
 2. Orthographic normalization audit.
-3. Duplicate and near-duplicate detection.
-4. Sentence/document quality flags.
-5. Dialect/variety metadata where evidence exists.
-6. Leakage-aware train/validation/test splits for NLP experiments.
-7. Versioned dataset card and DOI-ready research release.
+3. Sentence/document quality flags.
+4. Dialect/variety metadata where evidence exists.
+5. Leakage-aware train/validation/test splits for NLP experiments.
+6. Versioned dataset card and DOI-ready research release.
 
 Audio/ASR engineering remains a separate future milestone and is not required for this written-data release.
