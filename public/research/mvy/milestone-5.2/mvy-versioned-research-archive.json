@@ -2,7 +2,7 @@
   "milestone": "M5.2",
   "title": "Versioned Research Archive",
   "schema_version": "1.0",
-  "file_count": 45,
+  "file_count": 50,
   "files": [
     {
       "path": "research/mvy/analysis/milestone-2-orthographic-lexical-report.md",
@@ -95,6 +95,11 @@
       "bytes": 3364
     },
     {
+      "path": "research/mvy/analysis/milestone-3.6/split_mvy_written_dataset.py",
+      "sha256": "fc89a095ef53cbc63c6c09f47136090891aa92e2731136bf4db9c996fed0247d",
+      "bytes": 8721
+    },
+    {
       "path": "research/mvy/analysis/milestone-4.1/analyze_mvy_linguistic_corpus.py",
       "sha256": "cc6f68b167c429b6bc478b081bcf245111d6d692670f501d9b61b8d2ecad6cee",
       "bytes": 5334
@@ -170,6 +175,16 @@
       "bytes": 4104
     },
     {
+      "path": "research/mvy/analysis/milestone-written-dataset-validation/output/mvy-dialect-evidence.json",
+      "sha256": "2090fea6ed7d1fcc0c467570fd480a86816e4b000c05b2fae9bef482798e6045",
+      "bytes": 3334
+    },
+    {
+      "path": "research/mvy/analysis/milestone-written-dataset-validation/output/mvy-dialect-evidence.md",
+      "sha256": "096ed8aa43d0ba13d4f50c1a630999b1871969aaab32d49c5ba6e90a64963832",
+      "bytes": 665
+    },
+    {
       "path": "research/mvy/analysis/milestone-written-dataset-validation/output/mvy-duplicate-audit.json",
       "sha256": "450909532a0b825875a3589e6a41cc43cafe0eaec2198ddf899366e04a499536",
       "bytes": 48520
@@ -193,6 +208,16 @@
       "path": "research/mvy/analysis/milestone-written-dataset-validation/output/mvy-written-dataset-manifest.json",
       "sha256": "3ebc0b0c8eb9f9bc1e9f7b78760a12b5d17b5e98f68a7c1298d1192c281eb408",
       "bytes": 9108
+    },
+    {
+      "path": "research/mvy/analysis/milestone-written-dataset-validation/output/mvy-written-dataset-quality.json",
+      "sha256": "d53c10bd130a8676603f370c4f445090c290ec64ecec7a4942ccebb4fae70bc5",
+      "bytes": 1519560
+    },
+    {
+      "path": "research/mvy/analysis/milestone-written-dataset-validation/output/mvy-written-dataset-quality.md",
+      "sha256": "5f1caebcb6c3e05fc18eaccb5c4db1b3ef9cad4bc0c459d4c6fec2b9c65e4ed3",
+      "bytes": 1357
     },
     {
       "path": "research/mvy/analysis/milestone-written-dataset-validation/output/mvy-written-dataset-validation.md",
