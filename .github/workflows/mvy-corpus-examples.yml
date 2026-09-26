@@ -6,6 +6,7 @@ on:
     paths:
       - 'research/mvy/source/1765213289901-Mvy_text_corpus.tar.gz'
       - 'research/mvy/analysis/milestone-corpus-examples/**'
+      - 'research/mvy/analysis/milestone-written-dataset-validation/**'
       - '.github/workflows/mvy-corpus-examples.yml'
 
 permissions:
@@ -34,6 +35,9 @@ jobs:
 
       - name: Audit written corpus orthography
         run: python research/mvy/analysis/milestone-written-dataset-validation/audit_orthography.py
+
+      - name: Detect exact and near duplicates
+        run: python research/mvy/analysis/milestone-written-dataset-validation/detect_duplicates.py
 
       - name: Validate full written dataset
         id: validate_written_dataset
