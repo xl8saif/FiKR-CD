@@ -1,0 +1,1362 @@
+{
+  "dataset": "Mvy Written Corpus",
+  "language": "mvy",
+  "source_archive": "research/mvy/source/1765213289901-Mvy_text_corpus.tar.gz",
+  "scope": "Non-destructive duplicate and near-duplicate detection over normalized non-empty text/page units.",
+  "units_analyzed": 7540,
+  "source_documents": 8,
+  "exact_duplicates": {
+    "groups": [
+      {
+        "sha256": "8d955d413657559133cb2b22de1c2e2791427a2e955929f3470d35b1cbf459c6",
+        "count": 3,
+        "locations": [
+          {
+            "id": 2032,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 2673
+          },
+          {
+            "id": 2035,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 2679
+          },
+          {
+            "id": 2038,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 2684
+          }
+        ],
+        "sample_text": "(فَران٘ساں متل)"
+      },
+      {
+        "sha256": "cb899ea83be11c2041c5e9bae53a83c71bd5e0eb1a840fffd2c77b5b65091cfb",
+        "count": 3,
+        "locations": [
+          {
+            "id": 4636,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 5288
+          },
+          {
+            "id": 4672,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 5324
+          },
+          {
+            "id": 4695,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 5347
+          }
+        ],
+        "sample_text": "ݜُو شاناں،کہ کؤں ماݜے اس پھت کیرُوں،"
+      },
+      {
+        "sha256": "df1989b087531b5b4a7eff6cc079e85c483318ef48f51d235ac9a38372a00918",
+        "count": 3,
+        "locations": [
+          {
+            "id": 437,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 678
+          },
+          {
+            "id": 736,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 977
+          },
+          {
+            "id": 918,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 1161
+          }
+        ],
+        "sample_text": "وے مدھؤں"
+      },
+      {
+        "sha256": "f63d77e6fc731d62903b12ac37c29e8e14b36ccb877ac7bf4f2805e295a0d354",
+        "count": 3,
+        "locations": [
+          {
+            "id": 4536,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 5185
+          },
+          {
+            "id": 4544,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 5193
+          },
+          {
+            "id": 4593,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 5245
+          }
+        ],
+        "sample_text": "آں ہُم صِفت کرژا تھی؛"
+      },
+      {
+        "sha256": "042319b2c74cd6162d7041d32e0f81a0c8775168657aad84745136681afdbed2",
+        "count": 2,
+        "locations": [
+          {
+            "id": 4668,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 5320
+          },
+          {
+            "id": 4690,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 5342
+          }
+        ],
+        "sample_text": "اسیں ہُوئن٘یاں ثُبوت اشتوۡ (کمزور) ہو"
+      },
+      {
+        "sha256": "073def6bafb5c87df9bca0c6f49d8026870a904650d12b0122b49f547c96c513",
+        "count": 2,
+        "locations": [
+          {
+            "id": 611,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 852
+          },
+          {
+            "id": 941,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 1186
+          }
+        ],
+        "sample_text": "ہلیشیْ لا پاݜ کرؤں"
+      },
+      {
+        "sha256": "0c20c4226e3e15076ece51aaa70fdec4bef02f283584ee6722356469a62f8fb6",
+        "count": 2,
+        "locations": [
+          {
+            "id": 7261,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 7914
+          },
+          {
+            "id": 7267,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 7920
+          }
+        ],
+        "sample_text": "ارمان ارمان مِیں پاکستانَیں وادی"
+      },
+      {
+        "sha256": "0f9f4fb6204a2c7bfc2d1ca4a96efbb4d339f617b0cc75ef011aae5badd4e2bc",
+        "count": 2,
+        "locations": [
+          {
+            "id": 948,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 1194
+          },
+          {
+            "id": 955,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 1201
+          }
+        ],
+        "sample_text": "شاپوراں خانے میْ پشی گېل مِلا آن٘ڇھی پلیاؤ۔"
+      },
+      {
+        "sha256": "14d2dffb21078a6b6b978a41ed96a6829c209acda18b90be0e5ff26339d6ee0c",
+        "count": 2,
+        "locations": [
+          {
+            "id": 1550,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 1958
+          },
+          {
+            "id": 1552,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 1960
+          }
+        ],
+        "sample_text": "درؤں (باب): ایمانَیں اېْگُٹ آں چئ ہوئیں اْں بارہ مہ"
+      },
+      {
+        "sha256": "184d4555cd4dbd2d4c279abc02e5f66c1d3f7897689493292ebc24226e26fdc3",
+        "count": 2,
+        "locations": [
+          {
+            "id": 4539,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 5188
+          },
+          {
+            "id": 4638,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 5290
+          }
+        ],
+        "sample_text": "اس کېں نی قبلالُوں سو کاپُھر ہوتُھو۔"
+      },
+      {
+        "sha256": "19f75a3650c4adeddfa4dac931505dfe337fa3ae7c18cefc940f4829ab550d3b",
+        "count": 2,
+        "locations": [
+          {
+            "id": 4537,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 5186
+          },
+          {
+            "id": 4545,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 5194
+          }
+        ],
+        "sample_text": "آں اسیں پھت کران٘لو عذاباں مستحق ہو تُھو،"
+      },
+      {
+        "sha256": "1bbe02b5c95ea37925207feb243e1d5baaf03c91f78ff80c3502e7b17acf9cff",
+        "count": 2,
+        "locations": [
+          {
+            "id": 1789,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 2295
+          },
+          {
+            "id": 1821,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 2328
+          }
+        ],
+        "sample_text": "ہمیش دھران٘لوْ"
+      },
+      {
+        "sha256": "245b4668aaacb7a505cb5be550f0aaa58946ad84c77ce071eab907b3131cc2c9",
+        "count": 2,
+        "locations": [
+          {
+            "id": 564,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 805
+          },
+          {
+            "id": 732,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 973
+          }
+        ],
+        "sample_text": "بِکسیں بھیت ہرؤں"
+      },
+      {
+        "sha256": "24d39d9a7f20d7a4bebb4e6a9db7ce7166d654f4b6b477c9137765535345d074",
+        "count": 2,
+        "locations": [
+          {
+            "id": 1456,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 1829
+          },
+          {
+            "id": 1467,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 1840
+          }
+        ],
+        "sample_text": "درؤں: باب"
+      },
+      {
+        "sha256": "286b43f7753ee5f1d422050d664bc86ca634d86f251eafae0c107fef12ae06cd",
+        "count": 2,
+        "locations": [
+          {
+            "id": 493,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 734
+          },
+          {
+            "id": 752,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 993
+          }
+        ],
+        "sample_text": "بِکسیں کھُریۡ گلؤں"
+      },
+      {
+        "sha256": "42fafd533d4e6f1dc04910f351c8242f0c3304b7a363f677148d8750c41e856c",
+        "count": 2,
+        "locations": [
+          {
+            "id": 565,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 806
+          },
+          {
+            "id": 733,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 974
+          }
+        ],
+        "sample_text": "بِکسی لا ݜِݜ دېوں"
+      },
+      {
+        "sha256": "42ff8f8a8091fc9a8e94b599bfeef0a68fbcce8a8db4e16c9a4debb79db9781d",
+        "count": 2,
+        "locations": [
+          {
+            "id": 4634,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 5286
+          },
+          {
+            "id": 4670,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 5322
+          }
+        ],
+        "sample_text": "آں اسیں کِریا سزا دیُوژا تھی،"
+      },
+      {
+        "sha256": "44f071feb06c2b8dc9401ac969c14224531c88ac50d4cb34edf3b899a00bfd7a",
+        "count": 2,
+        "locations": [
+          {
+            "id": 7517,
+            "source": "Mvy_text_corpus/مصروف پِیلِیہ-Indus Kohistani-Inside.pdf",
+            "page": 5,
+            "line": null
+          },
+          {
+            "id": 7536,
+            "source": "Mvy_text_corpus/ݜزِل پِیلِیہ-Indus Kohistani-Inside.pdf",
+            "page": 5,
+            "line": null
+          }
+        ],
+        "sample_text": "10 Η˵β ϳ˴ϘϴϦ ̯˴ϴﺮاں ϳﺎ ϧ˴ϴﺮاں، Α˴ﮯۡ ո˴Όﯽ زϳﺎت Ηόﺪاد ϣ˴ہ ﺧ˴ﻮηﯽ ٫˶Ϧ ا˴ک ز˴ا΋ﮯ ̳ﺎں η˶ ̰Ϡہ ϣ˴ہ د˴ھﺮ˴΋ϴϨΘﯽ۔ 3 ϣ˶ ̴ﮯ اک ﺧϴﺎل ا˶ϳΘ˵ﮭﻮ۔ ϣ˴ہ Ռ˴ﮭϴﺮؤں ا˴ک ո˶ ϴﺰ ا˴΋ϴϨ٘Ζ ﭼہ Η˴δﯽ ٫˶Ϧ ϣ˴ہ Η˶ϴﺰ Α˴ϴ٬ﺎم۔"
+      },
+      {
+        "sha256": "46ab28f4e66d932f9376af997f5a3de6be22d21938b57e63856ad636213ec48e",
+        "count": 2,
+        "locations": [
+          {
+            "id": 4548,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 5197
+          },
+          {
+            "id": 4596,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 5248
+          }
+        ],
+        "sample_text": "اسیں مثال ماستُناں ڇا رکاتی (رکعات) نِوان٘ز،"
+      },
+      {
+        "sha256": "4c74e4340d071e6f654ecca788fa03d19b1b6a031e78f6a90b0edc4282e73391",
+        "count": 2,
+        "locations": [
+          {
+            "id": 7518,
+            "source": "Mvy_text_corpus/مصروف پِیلِیہ-Indus Kohistani-Inside.pdf",
+            "page": 6,
+            "line": null
+          },
+          {
+            "id": 7537,
+            "source": "Mvy_text_corpus/ݜزِل پِیلِیہ-Indus Kohistani-Inside.pdf",
+            "page": 6,
+            "line": null
+          }
+        ],
+        "sample_text": "4 Α˴ﮯۡ ϣ˵Ζ زϧﺎورؤں η˶ﯽ ز˴ؤک ϧ˴ϴﺮاΗﮯ۔ ز˴΋ϴﮟ ز˶ ϳΐ భ˵ﻮں ̯ﺮؤں Η˶ﮭﯽ۔ 9 د˴راں Α˴Ϩﺪ ٫˵ϨϠ˵ﻮۡ Η˵β ﺧ˴ ̢ﺎ ϧ˶ﯽ ٫˵ﻮ΋ϴﮟ۔ ϣ˴ہ ո˴Όﯽ زϳﺎت ϟ˴Όϴ ̰ﮭ ﭼ˶ ϴϨﮉه ϣﺎϧ٘ﺰ˵و Α˴Όϴ٬˴ΌϴϨΖ۔"
+      },
+      {
+        "sha256": "4d8e2da338e85718329324c902608d0a2e518709b4a678a5ae68b2cacdf1cf53",
+        "count": 2,
+        "locations": [
+          {
+            "id": 7520,
+            "source": "Mvy_text_corpus/مصروف پِیلِیہ-Indus Kohistani-Inside.pdf",
+            "page": 8,
+            "line": null
+          },
+          {
+            "id": 7539,
+            "source": "Mvy_text_corpus/ݜزِل پِیلِیہ-Indus Kohistani-Inside.pdf",
+            "page": 8,
+            "line": null
+          }
+        ],
+        "sample_text": "6 ϣ˵Ζ ̳ﮭﺎں ϣ˴Ϩﺎت ﭼہ، ًﺧﻄﺮه Η˶ﮭﯽ! ا˴ϟہ ϧ˶ﯽۡ Α˴ﺰ˴΋ﮯ ً۔ 7 ϣ˴ہ ̯˴ϴ ̰˶ﯽ Η˴Όﮯ ϣ˵Ζ Α˵Ջ ϗ˶δϤ˴Όϴﮟ ϣ˶Ս˴ﮭΌϴﮟ ̯˶ﺮاں ո˴Ί زϳﺎت ﺧ˴ﻮش Η˶ﮭﯽ، ̳θﮯ ﭼہ Η˵β ﺧﻮش Ηﮭﮯ۔"
+      },
+      {
+        "sha256": "4e091cf324dc5d05fda40444fc030627e3868f70a9ca86ae36528831e0c5c428",
+        "count": 2,
+        "locations": [
+          {
+            "id": 4549,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 5198
+          },
+          {
+            "id": 4597,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 5249
+          }
+        ],
+        "sample_text": "یا اِیدیاں (عید) نِوان٘ز یی تے ݜُوشاں مُت کمہۡ تھو۔"
+      },
+      {
+        "sha256": "550b929958b8c1c96f20b81d37db88a44db183aa4908b266770c7e1344bc1a3a",
+        "count": 2,
+        "locations": [
+          {
+            "id": 403,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 644
+          },
+          {
+            "id": 942,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 1187
+          }
+        ],
+        "sample_text": "کھا پھُلیۡ مہ گڑؤں"
+      },
+      {
+        "sha256": "5b317fa71ec4adc0a279a9d889e538404acdac9f92e2ebcc19d23b24f0aba76e",
+        "count": 2,
+        "locations": [
+          {
+            "id": 2023,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 2655
+          },
+          {
+            "id": 2026,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 2661
+          }
+        ],
+        "sample_text": "(فران٘ساں متل)"
+      },
+      {
+        "sha256": "5f592d79c60c2a9e6591885b37d187b365361e9d8142c8c1a2090ce2df62dc38",
+        "count": 2,
+        "locations": [
+          {
+            "id": 567,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 808
+          },
+          {
+            "id": 866,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 1107
+          }
+        ],
+        "sample_text": "مَیاں ہتھ لا ژُوں مارؤں"
+      },
+      {
+        "sha256": "71568fbcf7497df7977d920fbc10de2edecf2b138e63ebadacdfa50a2672580d",
+        "count": 2,
+        "locations": [
+          {
+            "id": 1570,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 1981
+          },
+          {
+            "id": 1572,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 1983
+          }
+        ],
+        "sample_text": "درؤں (باب): ݜسیں بارہ مہ چےْ کام نېت آں خُلوص نہ بغېر صحیح نیْ ہوئ تُھوْ، آں ہر ماݜے سوْ مِلا تُھوْ چےْ گیْ نَیں نېت کر چھیْ۔"
+      },
+      {
+        "sha256": "82564fd2ee33482ffa537ed1533a11d2e3803475ecca342b778add5b6fbc914e",
+        "count": 2,
+        "locations": [
+          {
+            "id": 78,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 109
+          },
+          {
+            "id": 81,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 116
+          }
+        ],
+        "sample_text": "[3:19 pm, 27/12/2023] Faiza:"
+      },
+      {
+        "sha256": "87e56d016ddbdd9e21eab16ab40624ec07bfb965270d7c57f03b4e3d11157854",
+        "count": 2,
+        "locations": [
+          {
+            "id": 7519,
+            "source": "Mvy_text_corpus/مصروف پِیلِیہ-Indus Kohistani-Inside.pdf",
+            "page": 7,
+            "line": null
+          },
+          {
+            "id": 7538,
+            "source": "Mvy_text_corpus/ݜزِل پِیلِیہ-Indus Kohistani-Inside.pdf",
+            "page": 7,
+            "line": null
+          }
+        ],
+        "sample_text": "8 Η˵β ϣ˶ﯽۡ ̡˴మ˴ﺎΗﮯ ا˴΋ﯽۡ ﭼہ ϣ˴ہ ̯˴ΌϴΘ˵ﻮک ﭼ˴ﺎخ Η˶ﮭﯽ؟ ϣ˴ہ ոﺎں ̯˶ﺮاں ո˴Όﯽ زϳﺎت ϟΌϴ ̰ﮭ ̡˴θ˴ﺰ˴ϳΌϨΖ ، ﺧ˴ﻮ ϣ˴ہ ո˴Όﯽ زϳﺎت ﭼ˴ﺎخ Η˶ﮭﯽ۔ 5 ۡا˴ک ϗ˶δϤ˵ ̰ﺎں ̳ﮭﺎں ϣϨﺎϧΖ، ً ո˴Όﯽ ز˶ ϳﺎت γ˵ ̴ﺎ ﺧﻮرا ̯ﺎں ̯˶ﺮاں ϣ˶ﯽ ̡ﺎΗ˶Όϴﻮں ا˶ی ً۔"
+      },
+      {
+        "sha256": "9109e397fb0b71a89bec334da3b3e6c0c7410d0aed5ae339f3faeec106891bd6",
+        "count": 2,
+        "locations": [
+          {
+            "id": 7516,
+            "source": "Mvy_text_corpus/مصروف پِیلِیہ-Indus Kohistani-Inside.pdf",
+            "page": 4,
+            "line": null
+          },
+          {
+            "id": 7535,
+            "source": "Mvy_text_corpus/ݜزِل پِیلِیہ-Indus Kohistani-Inside.pdf",
+            "page": 4,
+            "line": null
+          }
+        ],
+        "sample_text": "2 ،̲٘ Ϩ̲٘، ̯˴ﮭ ̢˵ﻮ΋ﯽ ̯˶ﮭ د˴ﮀ˵ﮭﻮ΋ﯽ ̯˶ﮭϨ ۔̲٘ ̲٘، ̯˴ﮭ ̢˵ﻮ΋ﯽ ̯˶ﮭϨ ۡد˴ﮀ˵ﮭﻮ΋ﯽ ̯˶ﮭϨ Α˴ﮯ ﭼ˵ ̠ ﭼﺎپ ا˴ک ϗﻄﺎر ϣ˴Ϩ٘ﺰ Α˶ϴϨ٘Θ˶ﯽ۔ 11"
+      },
+      {
+        "sha256": "9486d692199dc19022c6b8993f28fd384ff1aa9629a037a5d508f1dfa75497f0",
+        "count": 2,
+        "locations": [
+          {
+            "id": 2692,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 3340
+          },
+          {
+            "id": 3426,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 4074
+          }
+        ],
+        "sample_text": "اسیں گی علامات تھی؟"
+      },
+      {
+        "sha256": "95c27cefdd7481abfe583b5b0086b9f13bbee96b47d02a368be091a0ce6b2b14",
+        "count": 2,
+        "locations": [
+          {
+            "id": 731,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 972
+          },
+          {
+            "id": 742,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 983
+          }
+        ],
+        "sample_text": "کاݨ ٹاک کرے بھیؤں"
+      },
+      {
+        "sha256": "9b4d124f55dff3703e4115e940c50e9bcf5d6746dcff7d1e0beb4f0354520482",
+        "count": 2,
+        "locations": [
+          {
+            "id": 4538,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 5187
+          },
+          {
+            "id": 4546,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 5195
+          }
+        ],
+        "sample_text": "آں اسے لر بنژا تُھو۔"
+      },
+      {
+        "sha256": "b3397a4a741c3ac5c5be57acefcec91f33a0a65ab81feb109be30473fa962873",
+        "count": 2,
+        "locations": [
+          {
+            "id": 447,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 688
+          },
+          {
+            "id": 898,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 1139
+          }
+        ],
+        "sample_text": "بے کؤں بکُل کپر ہوں"
+      },
+      {
+        "sha256": "b43a864f4657b9abb2e185b51f97b78b22b9dafaa51a78701f70143e007e1abf",
+        "count": 2,
+        "locations": [
+          {
+            "id": 7515,
+            "source": "Mvy_text_corpus/مصروف پِیلِیہ-Indus Kohistani-Inside.pdf",
+            "page": 3,
+            "line": null
+          },
+          {
+            "id": 7534,
+            "source": "Mvy_text_corpus/ݜزِل پِیلِیہ-Indus Kohistani-Inside.pdf",
+            "page": 3,
+            "line": null
+          }
+        ],
+        "sample_text": "1 ا˴γﻼم ϋϠϴ ̰Ϣ۔ ϣ˴ہ ا˴س ϗﻄﺎر ϣ˴Ϩ٘ﺰ ո˴ﻮر˴΋ϴﮟ ̡˶ϴϠﯽ Η˶ﮭﯽ۔ Η˵β ϣ˶ﯽۡ ̡˴θ˴ﺎΗﮯ ا˴΋ﯽ؟"
+      },
+      {
+        "sha256": "bd89a66ab56ced2920cd7c5600efb69d6e193f1bd2ee9ac1a30eed1475d76fd8",
+        "count": 2,
+        "locations": [
+          {
+            "id": 563,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 804
+          },
+          {
+            "id": 765,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 1006
+          }
+        ],
+        "sample_text": "خُگُݨ کرؤں"
+      },
+      {
+        "sha256": "bf0f758e6bccfcc91c1b418a51a9afb17b6e9de3122ecad43a599fdd20e3d73e",
+        "count": 2,
+        "locations": [
+          {
+            "id": 1996,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 2602
+          },
+          {
+            "id": 2011,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 2632
+          }
+        ],
+        "sample_text": "(چیناں متل)"
+      },
+      {
+        "sha256": "c1421b81f80299ea2a3b88ffdc59d42a443b93e725f0d1cbbdc32b3445e2a062",
+        "count": 2,
+        "locations": [
+          {
+            "id": 3571,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 4219
+          },
+          {
+            "id": 3580,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 4228
+          }
+        ],
+        "sample_text": "تاں ربَیں گِھن٘لیۡ گِھن٘لیۡ نِعمتی پھېرٹیۡرا تھو؟"
+      },
+      {
+        "sha256": "c54a3be35dc8b0b194d9f85c75b6e7ffa93c0be4cc0fc91beb32155fd12b4e4a",
+        "count": 2,
+        "locations": [
+          {
+            "id": 1382,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 1746
+          },
+          {
+            "id": 1387,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 1752
+          }
+        ],
+        "sample_text": "اِنسانی حقہٛ واں عام اِعلان"
+      },
+      {
+        "sha256": "c814a79e75f5f69bc2c54381702f197a436ad68f33448633f8d3899f46cbd652",
+        "count": 2,
+        "locations": [
+          {
+            "id": 557,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 798
+          },
+          {
+            "id": 771,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 1012
+          }
+        ],
+        "sample_text": "چس بھلݜ کرؤں"
+      },
+      {
+        "sha256": "c8de8a5a6be94b5a213226f0c89a5c85c7d82187fa1feaf8b13bc9ca7b35235b",
+        "count": 2,
+        "locations": [
+          {
+            "id": 7514,
+            "source": "Mvy_text_corpus/مصروف پِیلِیہ-Indus Kohistani-Inside.pdf",
+            "page": 2,
+            "line": null
+          },
+          {
+            "id": 7533,
+            "source": "Mvy_text_corpus/ݜزِل پِیلِیہ-Indus Kohistani-Inside.pdf",
+            "page": 2,
+            "line": null
+          }
+        ],
+        "sample_text": "Copyright © 2024, Kohistan Cultural Development Program (KCDP), Initiative for People in Need (IPN), North Pakistan http://creativecommons.org/licenses/by/4.0/ You are free to make commercial use of this work. You may adapt and add to this work. You must keep the copyright and credits for authors, illustrators, etc. Translated by: Talib Jan Abasindhi, Trial Version This book is an adaptation of the original, , Copyright © 2015, Pratham Books. Licensed under CC BY 4.0. Busy Ants Busy Ants Author:"
+      },
+      {
+        "sha256": "c9f46cfef7053e78fdd4599107619875ec514f7e9fcba282eb95ca0839ea5690",
+        "count": 2,
+        "locations": [
+          {
+            "id": 1071,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 1318
+          },
+          {
+            "id": 1077,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 1324
+          }
+        ],
+        "sample_text": "بنہ ݜے کھہ پېرمانے"
+      },
+      {
+        "sha256": "d58cfbf705673e34d3e58f4d2b4caab1ec203fabf3839cb4bc2c96c4f3f95731",
+        "count": 2,
+        "locations": [
+          {
+            "id": 4493,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 5142
+          },
+          {
+            "id": 4718,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 5370
+          }
+        ],
+        "sample_text": "اللہ پاکے امَیں ایک څیز مُتاں کِریا وجہۡ ،"
+      },
+      {
+        "sha256": "d9d5bdbb9a0d4bdb84e150a9595b66f5ef82a6d14df6698ad6af23a428791909",
+        "count": 2,
+        "locations": [
+          {
+            "id": 4494,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 5143
+          },
+          {
+            "id": 4719,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 5371
+          }
+        ],
+        "sample_text": "شرط یا رکاوٹ سن٘دژېل ہُوئ تھو؛"
+      },
+      {
+        "sha256": "ddc80cb86fdb8ce5e1b8c614c12859e6e2a793946a10026d5bebeee4a3941b95",
+        "count": 2,
+        "locations": [
+          {
+            "id": 5441,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 6093
+          },
+          {
+            "id": 5456,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 6108
+          }
+        ],
+        "sample_text": "کھیں تسی ہِن نِوان٘ز شریۡ تھُو۔"
+      },
+      {
+        "sha256": "deddd8a321a7bf8ff9916e695ddb291c300cad05f5d914add5bddbdc57bb278f",
+        "count": 2,
+        "locations": [
+          {
+            "id": 1302,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 1637
+          },
+          {
+            "id": 1378,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 1739
+          }
+        ],
+        "sample_text": "پُنیاک:"
+      },
+      {
+        "sha256": "df6845ce8be63007c882f71539386b08a07b84f517c706b56848bd53a0c7562c",
+        "count": 2,
+        "locations": [
+          {
+            "id": 399,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 640
+          },
+          {
+            "id": 887,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 1128
+          }
+        ],
+        "sample_text": "بے کؤں اؤں گُوں لا ہوں"
+      },
+      {
+        "sha256": "e6d292c6c21c5f71ad656b755f7a0823e67bea00395fc028ee9dcb97015c1793",
+        "count": 2,
+        "locations": [
+          {
+            "id": 3718,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 4366
+          },
+          {
+            "id": 3744,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 4392
+          }
+        ],
+        "sample_text": "(وو نبی)، تاں گُھوں رباں گَھیں یار بنہ۔"
+      },
+      {
+        "sha256": "e7f3e6d9d98f65eb2e89f259349099c6a2c8db9007f5da8371d889b299a3a7de",
+        "count": 2,
+        "locations": [
+          {
+            "id": 649,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 890
+          },
+          {
+            "id": 806,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 1047
+          }
+        ],
+        "sample_text": "وریۡ ڈالا گلے تِلؤں"
+      },
+      {
+        "sha256": "e995237a21a3361c956600e4d1ff7ac2290287c235f22bb232cfc86940a0758f",
+        "count": 2,
+        "locations": [
+          {
+            "id": 425,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 666
+          },
+          {
+            "id": 694,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 935
+          }
+        ],
+        "sample_text": "بٹے لکئ بنؤں"
+      },
+      {
+        "sha256": "f7c521d6297d53f345b5a554b79efda0efb032fcd60bcc158a57202767aa11b5",
+        "count": 2,
+        "locations": [
+          {
+            "id": 70,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 99
+          },
+          {
+            "id": 74,
+            "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+            "page": null,
+            "line": 103
+          }
+        ],
+        "sample_text": "[0:08 pm, 26/12/2023] Faiza:"
+      }
+    ],
+    "duplicate_units": 104,
+    "groups_returned": 50,
+    "truncated": false
+  },
+  "near_duplicates": {
+    "candidate_pairs": 2819,
+    "pairs_returned": 18,
+    "truncated": false,
+    "pairs": [
+      {
+        "left": {
+          "id": 948,
+          "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+          "page": null,
+          "line": 1194,
+          "token_count": 8,
+          "text": "شاپوراں خانے میْ پشی گېل مِلا آن٘ڇھی پلیاؤ۔"
+        },
+        "right": {
+          "id": 955,
+          "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+          "page": null,
+          "line": 1201,
+          "token_count": 8,
+          "text": "شاپوراں خانے میْ پشی گېل مِلا آن٘ڇھی پلیاؤ۔"
+        },
+        "simhash_hamming_distance": 0,
+        "token_shingle_jaccard": 1.0
+      },
+      {
+        "left": {
+          "id": 1550,
+          "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+          "page": null,
+          "line": 1958,
+          "token_count": 10,
+          "text": "درؤں (باب): ایمانَیں اېْگُٹ آں چئ ہوئیں اْں بارہ مہ"
+        },
+        "right": {
+          "id": 1552,
+          "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+          "page": null,
+          "line": 1960,
+          "token_count": 10,
+          "text": "درؤں (باب): ایمانَیں اېْگُٹ آں چئ ہوئیں اْں بارہ مہ"
+        },
+        "simhash_hamming_distance": 0,
+        "token_shingle_jaccard": 1.0
+      },
+      {
+        "left": {
+          "id": 1568,
+          "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+          "page": null,
+          "line": 1978,
+          "token_count": 28,
+          "text": "درؤں (باب):ݜسیں بارہ مہ چےْ کام نېت آں خُلوص نہ بغېر صحیح نیْ ہوئ تُھوْ، آں ہر ماݜے سوْ مِلا تُھوْ چےْ گیْ نَیں نېت کر چھیْ۔"
+        },
+        "right": {
+          "id": 1570,
+          "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+          "page": null,
+          "line": 1981,
+          "token_count": 28,
+          "text": "درؤں (باب): ݜسیں بارہ مہ چےْ کام نېت آں خُلوص نہ بغېر صحیح نیْ ہوئ تُھوْ، آں ہر ماݜے سوْ مِلا تُھوْ چےْ گیْ نَیں نېت کر چھیْ۔"
+        },
+        "simhash_hamming_distance": 0,
+        "token_shingle_jaccard": 1.0
+      },
+      {
+        "left": {
+          "id": 1568,
+          "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+          "page": null,
+          "line": 1978,
+          "token_count": 28,
+          "text": "درؤں (باب):ݜسیں بارہ مہ چےْ کام نېت آں خُلوص نہ بغېر صحیح نیْ ہوئ تُھوْ، آں ہر ماݜے سوْ مِلا تُھوْ چےْ گیْ نَیں نېت کر چھیْ۔"
+        },
+        "right": {
+          "id": 1572,
+          "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+          "page": null,
+          "line": 1983,
+          "token_count": 28,
+          "text": "درؤں (باب): ݜسیں بارہ مہ چےْ کام نېت آں خُلوص نہ بغېر صحیح نیْ ہوئ تُھوْ، آں ہر ماݜے سوْ مِلا تُھوْ چےْ گیْ نَیں نېت کر چھیْ۔"
+        },
+        "simhash_hamming_distance": 0,
+        "token_shingle_jaccard": 1.0
+      },
+      {
+        "left": {
+          "id": 1570,
+          "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+          "page": null,
+          "line": 1981,
+          "token_count": 28,
+          "text": "درؤں (باب): ݜسیں بارہ مہ چےْ کام نېت آں خُلوص نہ بغېر صحیح نیْ ہوئ تُھوْ، آں ہر ماݜے سوْ مِلا تُھوْ چےْ گیْ نَیں نېت کر چھیْ۔"
+        },
+        "right": {
+          "id": 1572,
+          "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+          "page": null,
+          "line": 1983,
+          "token_count": 28,
+          "text": "درؤں (باب): ݜسیں بارہ مہ چےْ کام نېت آں خُلوص نہ بغېر صحیح نیْ ہوئ تُھوْ، آں ہر ماݜے سوْ مِلا تُھوْ چےْ گیْ نَیں نېت کر چھیْ۔"
+        },
+        "simhash_hamming_distance": 0,
+        "token_shingle_jaccard": 1.0
+      },
+      {
+        "left": {
+          "id": 3718,
+          "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+          "page": null,
+          "line": 4366,
+          "token_count": 9,
+          "text": "(وو نبی)، تاں گُھوں رباں گَھیں یار بنہ۔"
+        },
+        "right": {
+          "id": 3744,
+          "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+          "page": null,
+          "line": 4392,
+          "token_count": 9,
+          "text": "(وو نبی)، تاں گُھوں رباں گَھیں یار بنہ۔"
+        },
+        "simhash_hamming_distance": 0,
+        "token_shingle_jaccard": 1.0
+      },
+      {
+        "left": {
+          "id": 4493,
+          "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+          "page": null,
+          "line": 5142,
+          "token_count": 9,
+          "text": "اللہ پاکے امَیں ایک څیز مُتاں کِریا وجہۡ ،"
+        },
+        "right": {
+          "id": 4718,
+          "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+          "page": null,
+          "line": 5370,
+          "token_count": 9,
+          "text": "اللہ پاکے امَیں ایک څیز مُتاں کِریا وجہۡ ،"
+        },
+        "simhash_hamming_distance": 0,
+        "token_shingle_jaccard": 1.0
+      },
+      {
+        "left": {
+          "id": 4537,
+          "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+          "page": null,
+          "line": 5186,
+          "token_count": 8,
+          "text": "آں اسیں پھت کران٘لو عذاباں مستحق ہو تُھو،"
+        },
+        "right": {
+          "id": 4545,
+          "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+          "page": null,
+          "line": 5194,
+          "token_count": 8,
+          "text": "آں اسیں پھت کران٘لو عذاباں مستحق ہو تُھو،"
+        },
+        "simhash_hamming_distance": 0,
+        "token_shingle_jaccard": 1.0
+      },
+      {
+        "left": {
+          "id": 4549,
+          "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+          "page": null,
+          "line": 5198,
+          "token_count": 10,
+          "text": "یا اِیدیاں (عید) نِوان٘ز یی تے ݜُوشاں مُت کمہۡ تھو۔"
+        },
+        "right": {
+          "id": 4597,
+          "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+          "page": null,
+          "line": 5249,
+          "token_count": 10,
+          "text": "یا اِیدیاں (عید) نِوان٘ز یی تے ݜُوشاں مُت کمہۡ تھو۔"
+        },
+        "simhash_hamming_distance": 0,
+        "token_shingle_jaccard": 1.0
+      },
+      {
+        "left": {
+          "id": 7514,
+          "source": "Mvy_text_corpus/مصروف پِیلِیہ-Indus Kohistani-Inside.pdf",
+          "page": 2,
+          "line": null,
+          "token_count": 86,
+          "text": "Copyright © 2024, Kohistan Cultural Development Program (KCDP), Initiative for People in Need (IPN), North Pakistan http://creativecommons.org/licenses/by/4.0/ You are free to make commercial use of this work. You may adapt and add to this work. You must keep the copyright and credits for authors, illustrators, etc. Translated by: Talib Jan Abasindhi, Trial Version This book is an adaptation of the original, , Copyright © 2015, Pratham Books. Licensed under CC BY 4.0. Busy Ants Busy Ants Author:"
+        },
+        "right": {
+          "id": 7533,
+          "source": "Mvy_text_corpus/ݜزِل پِیلِیہ-Indus Kohistani-Inside.pdf",
+          "page": 2,
+          "line": null,
+          "token_count": 86,
+          "text": "Copyright © 2024, Kohistan Cultural Development Program (KCDP), Initiative for People in Need (IPN), North Pakistan http://creativecommons.org/licenses/by/4.0/ You are free to make commercial use of this work. You may adapt and add to this work. You must keep the copyright and credits for authors, illustrators, etc. Translated by: Talib Jan Abasindhi, Trial Version This book is an adaptation of the original, , Copyright © 2015, Pratham Books. Licensed under CC BY 4.0. Busy Ants Busy Ants Author:"
+        },
+        "simhash_hamming_distance": 0,
+        "token_shingle_jaccard": 1.0
+      },
+      {
+        "left": {
+          "id": 7515,
+          "source": "Mvy_text_corpus/مصروف پِیلِیہ-Indus Kohistani-Inside.pdf",
+          "page": 3,
+          "line": null,
+          "token_count": 18,
+          "text": "1 ا˴γﻼم ϋϠϴ ̰Ϣ۔ ϣ˴ہ ا˴س ϗﻄﺎر ϣ˴Ϩ٘ﺰ ո˴ﻮر˴΋ϴﮟ ̡˶ϴϠﯽ Η˶ﮭﯽ۔ Η˵β ϣ˶ﯽۡ ̡˴θ˴ﺎΗﮯ ا˴΋ﯽ؟"
+        },
+        "right": {
+          "id": 7534,
+          "source": "Mvy_text_corpus/ݜزِل پِیلِیہ-Indus Kohistani-Inside.pdf",
+          "page": 3,
+          "line": null,
+          "token_count": 18,
+          "text": "1 ا˴γﻼم ϋϠϴ ̰Ϣ۔ ϣ˴ہ ا˴س ϗﻄﺎر ϣ˴Ϩ٘ﺰ ո˴ﻮر˴΋ϴﮟ ̡˶ϴϠﯽ Η˶ﮭﯽ۔ Η˵β ϣ˶ﯽۡ ̡˴θ˴ﺎΗﮯ ا˴΋ﯽ؟"
+        },
+        "simhash_hamming_distance": 0,
+        "token_shingle_jaccard": 1.0
+      },
+      {
+        "left": {
+          "id": 7516,
+          "source": "Mvy_text_corpus/مصروف پِیلِیہ-Indus Kohistani-Inside.pdf",
+          "page": 4,
+          "line": null,
+          "token_count": 35,
+          "text": "2 ،̲٘ Ϩ̲٘، ̯˴ﮭ ̢˵ﻮ΋ﯽ ̯˶ﮭ د˴ﮀ˵ﮭﻮ΋ﯽ ̯˶ﮭϨ ۔̲٘ ̲٘، ̯˴ﮭ ̢˵ﻮ΋ﯽ ̯˶ﮭϨ ۡد˴ﮀ˵ﮭﻮ΋ﯽ ̯˶ﮭϨ Α˴ﮯ ﭼ˵ ̠ ﭼﺎپ ا˴ک ϗﻄﺎر ϣ˴Ϩ٘ﺰ Α˶ϴϨ٘Θ˶ﯽ۔ 11"
+        },
+        "right": {
+          "id": 7535,
+          "source": "Mvy_text_corpus/ݜزِل پِیلِیہ-Indus Kohistani-Inside.pdf",
+          "page": 4,
+          "line": null,
+          "token_count": 35,
+          "text": "2 ،̲٘ Ϩ̲٘، ̯˴ﮭ ̢˵ﻮ΋ﯽ ̯˶ﮭ د˴ﮀ˵ﮭﻮ΋ﯽ ̯˶ﮭϨ ۔̲٘ ̲٘، ̯˴ﮭ ̢˵ﻮ΋ﯽ ̯˶ﮭϨ ۡد˴ﮀ˵ﮭﻮ΋ﯽ ̯˶ﮭϨ Α˴ﮯ ﭼ˵ ̠ ﭼﺎپ ا˴ک ϗﻄﺎر ϣ˴Ϩ٘ﺰ Α˶ϴϨ٘Θ˶ﯽ۔ 11"
+        },
+        "simhash_hamming_distance": 0,
+        "token_shingle_jaccard": 1.0
+      },
+      {
+        "left": {
+          "id": 7517,
+          "source": "Mvy_text_corpus/مصروف پِیلِیہ-Indus Kohistani-Inside.pdf",
+          "page": 5,
+          "line": null,
+          "token_count": 46,
+          "text": "10 Η˵β ϳ˴ϘϴϦ ̯˴ϴﺮاں ϳﺎ ϧ˴ϴﺮاں، Α˴ﮯۡ ո˴Όﯽ زϳﺎت Ηόﺪاد ϣ˴ہ ﺧ˴ﻮηﯽ ٫˶Ϧ ا˴ک ز˴ا΋ﮯ ̳ﺎں η˶ ̰Ϡہ ϣ˴ہ د˴ھﺮ˴΋ϴϨΘﯽ۔ 3 ϣ˶ ̴ﮯ اک ﺧϴﺎل ا˶ϳΘ˵ﮭﻮ۔ ϣ˴ہ Ռ˴ﮭϴﺮؤں ا˴ک ո˶ ϴﺰ ا˴΋ϴϨ٘Ζ ﭼہ Η˴δﯽ ٫˶Ϧ ϣ˴ہ Η˶ϴﺰ Α˴ϴ٬ﺎم۔"
+        },
+        "right": {
+          "id": 7536,
+          "source": "Mvy_text_corpus/ݜزِل پِیلِیہ-Indus Kohistani-Inside.pdf",
+          "page": 5,
+          "line": null,
+          "token_count": 46,
+          "text": "10 Η˵β ϳ˴ϘϴϦ ̯˴ϴﺮاں ϳﺎ ϧ˴ϴﺮاں، Α˴ﮯۡ ո˴Όﯽ زϳﺎت Ηόﺪاد ϣ˴ہ ﺧ˴ﻮηﯽ ٫˶Ϧ ا˴ک ز˴ا΋ﮯ ̳ﺎں η˶ ̰Ϡہ ϣ˴ہ د˴ھﺮ˴΋ϴϨΘﯽ۔ 3 ϣ˶ ̴ﮯ اک ﺧϴﺎل ا˶ϳΘ˵ﮭﻮ۔ ϣ˴ہ Ռ˴ﮭϴﺮؤں ا˴ک ո˶ ϴﺰ ا˴΋ϴϨ٘Ζ ﭼہ Η˴δﯽ ٫˶Ϧ ϣ˴ہ Η˶ϴﺰ Α˴ϴ٬ﺎم۔"
+        },
+        "simhash_hamming_distance": 0,
+        "token_shingle_jaccard": 1.0
+      },
+      {
+        "left": {
+          "id": 7518,
+          "source": "Mvy_text_corpus/مصروف پِیلِیہ-Indus Kohistani-Inside.pdf",
+          "page": 6,
+          "line": null,
+          "token_count": 39,
+          "text": "4 Α˴ﮯۡ ϣ˵Ζ زϧﺎورؤں η˶ﯽ ز˴ؤک ϧ˴ϴﺮاΗﮯ۔ ز˴΋ϴﮟ ز˶ ϳΐ భ˵ﻮں ̯ﺮؤں Η˶ﮭﯽ۔ 9 د˴راں Α˴Ϩﺪ ٫˵ϨϠ˵ﻮۡ Η˵β ﺧ˴ ̢ﺎ ϧ˶ﯽ ٫˵ﻮ΋ϴﮟ۔ ϣ˴ہ ո˴Όﯽ زϳﺎت ϟ˴Όϴ ̰ﮭ ﭼ˶ ϴϨﮉه ϣﺎϧ٘ﺰ˵و Α˴Όϴ٬˴ΌϴϨΖ۔"
+        },
+        "right": {
+          "id": 7537,
+          "source": "Mvy_text_corpus/ݜزِل پِیلِیہ-Indus Kohistani-Inside.pdf",
+          "page": 6,
+          "line": null,
+          "token_count": 39,
+          "text": "4 Α˴ﮯۡ ϣ˵Ζ زϧﺎورؤں η˶ﯽ ز˴ؤک ϧ˴ϴﺮاΗﮯ۔ ز˴΋ϴﮟ ز˶ ϳΐ భ˵ﻮں ̯ﺮؤں Η˶ﮭﯽ۔ 9 د˴راں Α˴Ϩﺪ ٫˵ϨϠ˵ﻮۡ Η˵β ﺧ˴ ̢ﺎ ϧ˶ﯽ ٫˵ﻮ΋ϴﮟ۔ ϣ˴ہ ո˴Όﯽ زϳﺎت ϟ˴Όϴ ̰ﮭ ﭼ˶ ϴϨﮉه ϣﺎϧ٘ﺰ˵و Α˴Όϴ٬˴ΌϴϨΖ۔"
+        },
+        "simhash_hamming_distance": 0,
+        "token_shingle_jaccard": 1.0
+      },
+      {
+        "left": {
+          "id": 7519,
+          "source": "Mvy_text_corpus/مصروف پِیلِیہ-Indus Kohistani-Inside.pdf",
+          "page": 7,
+          "line": null,
+          "token_count": 51,
+          "text": "8 Η˵β ϣ˶ﯽۡ ̡˴మ˴ﺎΗﮯ ا˴΋ﯽۡ ﭼہ ϣ˴ہ ̯˴ΌϴΘ˵ﻮک ﭼ˴ﺎخ Η˶ﮭﯽ؟ ϣ˴ہ ոﺎں ̯˶ﺮاں ո˴Όﯽ زϳﺎت ϟΌϴ ̰ﮭ ̡˴θ˴ﺰ˴ϳΌϨΖ ، ﺧ˴ﻮ ϣ˴ہ ո˴Όﯽ زϳﺎت ﭼ˴ﺎخ Η˶ﮭﯽ۔ 5 ۡا˴ک ϗ˶δϤ˵ ̰ﺎں ̳ﮭﺎں ϣϨﺎϧΖ، ً ո˴Όﯽ ز˶ ϳﺎت γ˵ ̴ﺎ ﺧﻮرا ̯ﺎں ̯˶ﺮاں ϣ˶ﯽ ̡ﺎΗ˶Όϴﻮں ا˶ی ً۔"
+        },
+        "right": {
+          "id": 7538,
+          "source": "Mvy_text_corpus/ݜزِل پِیلِیہ-Indus Kohistani-Inside.pdf",
+          "page": 7,
+          "line": null,
+          "token_count": 51,
+          "text": "8 Η˵β ϣ˶ﯽۡ ̡˴మ˴ﺎΗﮯ ا˴΋ﯽۡ ﭼہ ϣ˴ہ ̯˴ΌϴΘ˵ﻮک ﭼ˴ﺎخ Η˶ﮭﯽ؟ ϣ˴ہ ոﺎں ̯˶ﺮاں ո˴Όﯽ زϳﺎت ϟΌϴ ̰ﮭ ̡˴θ˴ﺰ˴ϳΌϨΖ ، ﺧ˴ﻮ ϣ˴ہ ո˴Όﯽ زϳﺎت ﭼ˴ﺎخ Η˶ﮭﯽ۔ 5 ۡا˴ک ϗ˶δϤ˵ ̰ﺎں ̳ﮭﺎں ϣϨﺎϧΖ، ً ո˴Όﯽ ز˶ ϳﺎت γ˵ ̴ﺎ ﺧﻮرا ̯ﺎں ̯˶ﺮاں ϣ˶ﯽ ̡ﺎΗ˶Όϴﻮں ا˶ی ً۔"
+        },
+        "simhash_hamming_distance": 0,
+        "token_shingle_jaccard": 1.0
+      },
+      {
+        "left": {
+          "id": 7520,
+          "source": "Mvy_text_corpus/مصروف پِیلِیہ-Indus Kohistani-Inside.pdf",
+          "page": 8,
+          "line": null,
+          "token_count": 29,
+          "text": "6 ϣ˵Ζ ̳ﮭﺎں ϣ˴Ϩﺎت ﭼہ، ًﺧﻄﺮه Η˶ﮭﯽ! ا˴ϟہ ϧ˶ﯽۡ Α˴ﺰ˴΋ﮯ ً۔ 7 ϣ˴ہ ̯˴ϴ ̰˶ﯽ Η˴Όﮯ ϣ˵Ζ Α˵Ջ ϗ˶δϤ˴Όϴﮟ ϣ˶Ս˴ﮭΌϴﮟ ̯˶ﺮاں ո˴Ί زϳﺎت ﺧ˴ﻮش Η˶ﮭﯽ، ̳θﮯ ﭼہ Η˵β ﺧﻮش Ηﮭﮯ۔"
+        },
+        "right": {
+          "id": 7539,
+          "source": "Mvy_text_corpus/ݜزِل پِیلِیہ-Indus Kohistani-Inside.pdf",
+          "page": 8,
+          "line": null,
+          "token_count": 29,
+          "text": "6 ϣ˵Ζ ̳ﮭﺎں ϣ˴Ϩﺎت ﭼہ، ًﺧﻄﺮه Η˶ﮭﯽ! ا˴ϟہ ϧ˶ﯽۡ Α˴ﺰ˴΋ﮯ ً۔ 7 ϣ˴ہ ̯˴ϴ ̰˶ﯽ Η˴Όﮯ ϣ˵Ζ Α˵Ջ ϗ˶δϤ˴Όϴﮟ ϣ˶Ս˴ﮭΌϴﮟ ̯˶ﺮاں ո˴Ί زϳﺎت ﺧ˴ﻮش Η˶ﮭﯽ، ̳θﮯ ﭼہ Η˵β ﺧﻮش Ηﮭﮯ۔"
+        },
+        "simhash_hamming_distance": 0,
+        "token_shingle_jaccard": 1.0
+      },
+      {
+        "left": {
+          "id": 7513,
+          "source": "Mvy_text_corpus/مصروف پِیلِیہ-Indus Kohistani-Inside.pdf",
+          "page": 1,
+          "line": null,
+          "token_count": 36,
+          "text": "ϣﺼﺮوف ̡˶ϴϠ˶ϴہ Busy Ants Author: Kanchan Bannerjee Illustrator: Deepa Balsavar Reformatted for Bloom By: Cara Ediger. Images by Pratham Books, © 2015 Pratham Books. CC BY 4.0. Kohistani Cultural Development Program (KCDP) English, Indus Kohistani Pakistan"
+        },
+        "right": {
+          "id": 7532,
+          "source": "Mvy_text_corpus/ݜزِل پِیلِیہ-Indus Kohistani-Inside.pdf",
+          "page": 1,
+          "line": null,
+          "token_count": 37,
+          "text": "భﺰ˶ ل ̡˶ϴϠ˶ϴہ Busy Ants Author: Kanchan Bannerjee Illustrator: Deepa Balsavar Reformatted for Bloom By: Cara Ediger. Images by Pratham Books, © 2015 Pratham Books. CC BY 4.0. Kohistani Cultural Development Program (KCDP) English, Indus Kohistani Pakistan"
+        },
+        "simhash_hamming_distance": 2,
+        "token_shingle_jaccard": 0.911765
+      },
+      {
+        "left": {
+          "id": 1505,
+          "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+          "page": null,
+          "line": 1903,
+          "token_count": 12,
+          "text": "درؤں (باب): قبلان٘لہٛ واں دیناں کمہٛ اْؤں مہ کوکسی نہ مُوٹُھوْ ہوں۔"
+        },
+        "right": {
+          "id": 1507,
+          "source": "Mvy_text_corpus/mvy_txt_corpus.txt",
+          "page": null,
+          "line": 1905,
+          "token_count": 12,
+          "text": "درؤں (باب): قبلان٘لہٛ واں دیناں کمہٛ اْؤں مہ کوکسی نہ مُوٹُھوْ ہوں"
+        },
+        "simhash_hamming_distance": 4,
+        "token_shingle_jaccard": 0.777778
+      }
+    ],
+    "method": "64-bit token SimHash; four 16-bit locality bands; Hamming <= 6; 5-token-shingle Jaccard >= 0.55."
+  },
+  "interpretation": {
+    "exact_duplicate": "Identical after Unicode NFC and whitespace normalization.",
+    "near_duplicate": "High-overlap candidate requiring human review; never automatically removed.",
+    "source_preserved": true
+  }
+}
